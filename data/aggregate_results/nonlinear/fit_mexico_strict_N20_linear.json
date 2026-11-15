@@ -1,0 +1,216 @@
+{
+  "model_key": "mexico_strict_N20_linear",
+  "code_revision": "nonlinear-m3-20261113-v1",
+  "spec_sha256": "3fa8bf9053d10fb885320f945c7237a069fe79b1857de2b382974f2556d222fa",
+  "source_hashes": {
+    "work\\revision_20261113\\nonlinear\\prespecified_specification.json": {
+      "bytes": 4655,
+      "sha256": "3fa8bf9053d10fb885320f945c7237a069fe79b1857de2b382974f2556d222fa"
+    },
+    "F:\\analysis\\climate_biliary_20261102\\work\\panel_composite_humidity.parquet": {
+      "bytes": 128705609,
+      "sha256": "8791be152c870ab691754e930eeade1b2c82a48d591fc10db963612a61ef2031"
+    },
+    "F:\\analysis\\climate_biliary_20261102\\work\\mexico_composite_state_day_panel.parquet": {
+      "bytes": 1023737,
+      "sha256": "a1ff9a0cf41d8d332ef258df0fd943a6caeb5368bfcbdcf815af9f8a32b39507"
+    },
+    "D:\\数据库集合\\新增数据\\ERA5_crossnational\\mex_state_day_2015_2023.csv": {
+      "bytes": 3046204,
+      "sha256": "86c29713eff4de30501af92fcb06e16b78160eaab1188d81ee4f53137ecca565"
+    },
+    "outputs\\upgrade_20261112\\mexico_boundary_daily_counts.csv": {
+      "bytes": 2396026,
+      "sha256": "324562604a3aa43245b85e6cbce4bd366b76e04eeaafa9eb286b896f335c6fb7"
+    },
+    "outputs\\upgrade_20261112\\holiday_calendar_dates.csv": {
+      "bytes": 8545,
+      "sha256": "81cc89846d36546ccdba3ef46f68d4bc0c35f9ec7b3d72613137c7a73a46579d"
+    },
+    "work\\frozen_snapshot\\tables\\n20_composite_continuous_lag.csv": {
+      "bytes": 798,
+      "sha256": "ab98033afc74f8fcf56d2919290255c664a9d82b0e9dd9086a98db35f2882e86"
+    },
+    "work\\frozen_snapshot\\tables\\n20_composite_groups_corrected.csv": {
+      "bytes": 653,
+      "sha256": "86d230b15be1b68b925855f22a7b97792a4de7a58b031abf8317755bb71cca88"
+    },
+    "work\\upgrade_20261112\\clinical_code_day_aggregate.parquet": {
+      "bytes": 3446417,
+      "sha256": "30b614eefbf492409022ae8f3449ef739c38deb553b07b75aa42c899772369c6"
+    }
+  },
+  "formula": "strict_N20 ~ t0 + t1 + t2 + t3 + t4 + t5 + t6 + t7 + holiday | stratum",
+  "outcome": "strict_N20",
+  "outcome_label": "Mexico strict N20",
+  "family": "strict_N20",
+  "fixed_effect": "stratum",
+  "cluster_1": "state",
+  "cluster_2": "day_id",
+  "vcov": "CRV1:state+day_id; inclusion-exclusion intersection retained",
+  "coefficient_names": [
+    "t0",
+    "t1",
+    "t2",
+    "t3",
+    "t4",
+    "t5",
+    "t6",
+    "t7",
+    "holiday"
+  ],
+  "coefficients": [
+    0.015561484534216014,
+    -0.00957725404988846,
+    0.019010714939967754,
+    -0.0037633343456004156,
+    0.00943817103336074,
+    -0.014403804487775035,
+    0.016712932733613337,
+    -0.012943147159877646,
+    -0.5024157874598593
+  ],
+  "covariance": [
+    [
+      3.689153727257886e-05,
+      -4.99171887788763e-05,
+      2.579265192607826e-05,
+      3.6263867116214337e-06,
+      -4.455901234396407e-06,
+      1.18502762053287e-05,
+      -2.3682381976583743e-05,
+      1.4056595004195085e-05,
+      -1.3862592023564943e-05
+    ],
+    [
+      -4.99171887788763e-05,
+      0.00013583296590041966,
+      -0.00011165714153977142,
+      4.8978975741219326e-05,
+      -1.0743305538028396e-05,
+      -2.216487851492935e-05,
+      2.8429698009532727e-05,
+      -6.313831516563914e-06,
+      0.0001629864495880984
+    ],
+    [
+      2.579265192607826e-05,
+      -0.00011165714153977142,
+      0.0001425835429566639,
+      -9.985611480706045e-05,
+      2.9383470367460076e-05,
+      1.5465665832141004e-05,
+      -2.0599361298676663e-05,
+      -4.651988625147934e-06,
+      -0.0001339438330088966
+    ],
+    [
+      3.6263867116214337e-06,
+      4.8978975741219326e-05,
+      -9.985611480706045e-05,
+      0.00013416271462870214,
+      -8.47103625268757e-05,
+      3.271616311722494e-05,
+      -3.7802396176362537e-06,
+      5.309153697493114e-06,
+      -1.680176017417187e-05
+    ],
+    [
+      -4.455901234396407e-06,
+      -1.0743305538028396e-05,
+      2.9383470367460076e-05,
+      -8.47103625268757e-05,
+      0.00010364792271873981,
+      -7.709790207827916e-05,
+      2.9861865557790983e-05,
+      -2.608412257115927e-06,
+      7.46575278480255e-05
+    ],
+    [
+      1.18502762053287e-05,
+      -2.216487851492935e-05,
+      1.5465665832141004e-05,
+      3.271616311722494e-05,
+      -7.709790207827916e-05,
+      0.00010697081074272063,
+      -7.225435475846686e-05,
+      1.1360101059484108e-05,
+      -0.00015185180503945954
+    ],
+    [
+      -2.3682381976583743e-05,
+      2.8429698009532727e-05,
+      -2.0599361298676663e-05,
+      -3.7802396176362537e-06,
+      2.9861865557790983e-05,
+      -7.225435475846686e-05,
+      9.842235407696817e-05,
+      -4.357714208715101e-05,
+      0.00016383617546379404
+    ],
+    [
+      1.4056595004195085e-05,
+      -6.313831516563914e-06,
+      -4.651988625147934e-06,
+      5.309153697493114e-06,
+      -2.608412257115927e-06,
+      1.1360101059484108e-05,
+      -4.357714208715101e-05,
+      4.306775127797014e-05,
+      -0.0001065750742602755
+    ],
+    [
+      -1.3862592023564943e-05,
+      0.0001629864495880984,
+      -0.0001339438330088966,
+      -1.680176017417187e-05,
+      7.46575278480255e-05,
+      -0.00015185180503945954,
+      0.00016383617546379404,
+      -0.0001065750742602755,
+      0.008093964599393183
+    ]
+  ],
+  "eigenvalues": [
+    2.4820129572433386e-06,
+    6.0054320619305515e-06,
+    7.507247426930485e-06,
+    1.6748972803795668e-05,
+    7.070948466903175e-05,
+    9.110642715143268e-05,
+    0.0002519916221139845,
+    0.0003407832524195131,
+    0.008108209747364089
+  ],
+  "max_abs_asymmetry": 3.7608262858090935e-19,
+  "analysis_rows": 58208,
+  "model_rows": 39390,
+  "events_model": 32352.0,
+  "clusters_1": 32,
+  "clusters_2": 1819,
+  "clusters_intersection": 39390,
+  "t_df": 31,
+  "sample_flow": {
+    "model": "mexico_strict_N20_linear",
+    "family": "strict_N20",
+    "outcome": "Mexico strict N20",
+    "source_rows_before_lag": 58432,
+    "analysis_rows_after_complete_lag_frame": 58208,
+    "source_events_full_window": 32446.0,
+    "events_after_lag_before_fit": 32352.0,
+    "zero_event_strata": 4372,
+    "zero_event_strata_rows_expected_removed": 18818,
+    "rows_remaining_after_zero_strata": 39390,
+    "positive_singleton_strata": 0,
+    "positive_singleton_rows_expected_removed": 0,
+    "other_solver_dropped_rows_after_zero_strata": 0,
+    "model_rows_retained": 39390,
+    "events_model_retained": 32352.0,
+    "G_cluster_1_retained": 32,
+    "G_cluster_2_retained": 1819,
+    "G_intersection_retained": 39390,
+    "cluster_1": "state",
+    "cluster_2": "day_id",
+    "t_df": 31
+  }
+}

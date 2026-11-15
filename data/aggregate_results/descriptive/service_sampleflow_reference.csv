@@ -1,0 +1,38 @@
+﻿stage,rows,health_regions,dates,min_date,max_date,note,events_urgent_N20,events_admission_attributed_beddays,events_reimbursement_2022BRL,events_any_drainage,events_broad_urgent,events_broad_elective,events_strict_urgent,events_strict_elective,events
+exposure_panel_2018_2022,821700,450,1826,2018-01-01,2022-12-31,Complete established Brazil health-region by calendar-day exposure panel.,,,,,,,,,
+strict_N20_urgent_outcomes_joined,821700,450,1826,2018-01-01,2022-12-31,"IDENT=1, diagnosis=N20, CAR_INT=02; sparse outcome dates zero-filled after validated one-to-one join.",226402.0,805746.0,194858996.9507213,,,,,,
+SP_any_drainage_linked_zero_filled,821700,450,1826,2018-01-01,2022-12-31,Existing SP linked outcome; restored 674415 unlinked region-days as zero.,,,,84764.0,,,,,
+SP_any_drainage_lag0_7_complete,818550,450,1819,2018-01-08,2022-12-31,First seven days within each region removed only to form complete chronological lag 0-7 predictors.,,,,84572.0,,,,,
+urgent_elective_categories_joined,821700,450,1826,2018-01-01,2022-12-31,Broad N20-N23 and strict N20 urgent/elective totals restored to full region-day panel.,,,,,315504.0,115870.0,226402.0,94799.0,
+service_original_two_way_urgent_N20_input_to_fit,821700,450,1826,,,Rows passed to the specified fixed-effect Poisson model.,,,,,,,,,226402.0
+service_original_two_way_urgent_N20_retained_by_fit,366584,450,1826,,,Estimator retained sample; model_events summed from model._data.,,,,,,,,,226402.0
+service_original_two_way_admission_attributed_beddays_input_to_fit,821700,450,1826,,,Rows passed to the specified fixed-effect Poisson model.,,,,,,,,,805746.0
+service_original_two_way_admission_attributed_beddays_retained_by_fit,356593,450,1826,,,Estimator retained sample; model_events summed from model._data.,,,,,,,,,805746.0
+service_original_two_way_reimbursement_2022BRL_input_to_fit,821700,450,1826,,,Rows passed to the specified fixed-effect Poisson model.,,,,,,,,,194858996.9507213
+service_original_two_way_reimbursement_2022BRL_retained_by_fit,366584,450,1826,,,Estimator retained sample; model_events summed from model._data.,,,,,,,,,194858996.9507213
+service_holiday_two_way_urgent_N20_input_to_fit,821700,450,1826,,,Rows passed to the specified fixed-effect Poisson model.,,,,,,,,,226402.0
+service_holiday_two_way_urgent_N20_retained_by_fit,366584,450,1826,,,Estimator retained sample; model_events summed from model._data.,,,,,,,,,226402.0
+service_holiday_two_way_admission_attributed_beddays_input_to_fit,821700,450,1826,,,Rows passed to the specified fixed-effect Poisson model.,,,,,,,,,805746.0
+service_holiday_two_way_admission_attributed_beddays_retained_by_fit,356593,450,1826,,,Estimator retained sample; model_events summed from model._data.,,,,,,,,,805746.0
+service_holiday_two_way_reimbursement_2022BRL_input_to_fit,821700,450,1826,,,Rows passed to the specified fixed-effect Poisson model.,,,,,,,,,194858996.9507213
+service_holiday_two_way_reimbursement_2022BRL_retained_by_fit,366584,450,1826,,,Estimator retained sample; model_events summed from model._data.,,,,,,,,,194858996.9507213
+service_holiday_excluding_2020_2021_urgent_N20_input_to_fit,492750,450,1095,,,Rows passed to the specified fixed-effect Poisson model.,,,,,,,,,136094.0
+service_holiday_excluding_2020_2021_urgent_N20_retained_by_fit,220501,450,1095,,,Estimator retained sample; model_events summed from model._data.,,,,,,,,,136094.0
+service_holiday_excluding_2020_2021_admission_attributed_beddays_input_to_fit,492750,450,1095,,,Rows passed to the specified fixed-effect Poisson model.,,,,,,,,,497269.0
+service_holiday_excluding_2020_2021_admission_attributed_beddays_retained_by_fit,215201,450,1095,,,Estimator retained sample; model_events summed from model._data.,,,,,,,,,497269.0
+service_holiday_excluding_2020_2021_reimbursement_2022BRL_input_to_fit,492750,450,1095,,,Rows passed to the specified fixed-effect Poisson model.,,,,,,,,,117395550.77468914
+service_holiday_excluding_2020_2021_reimbursement_2022BRL_retained_by_fit,220501,450,1095,,,Estimator retained sample; model_events summed from model._data.,,,,,,,,,117395550.77468914
+drainage_continuous_two_way_input_to_fit,818550,450,1819,,,Rows passed to the specified fixed-effect Poisson model.,,,,,,,,,84572.0
+drainage_continuous_two_way_retained_by_fit,180241,443,1819,,,Estimator retained sample; model_events summed from model._data.,,,,,,,,,84572.0
+drainage_continuous_holiday_two_way_input_to_fit,818550,450,1819,,,Rows passed to the specified fixed-effect Poisson model.,,,,,,,,,84572.0
+drainage_continuous_holiday_two_way_retained_by_fit,180241,443,1819,,,Estimator retained sample; model_events summed from model._data.,,,,,,,,,84572.0
+drainage_continuous_holiday_excluding_2020_2021_input_to_fit,489600,450,1088,,,Rows passed to the specified fixed-effect Poisson model.,,,,,,,,,49201.0
+drainage_continuous_holiday_excluding_2020_2021_retained_by_fit,105097,437,1088,,,Estimator retained sample; model_events summed from model._data.,,,,,,,,,49201.0
+broad_urgent_elective_holiday_two_way_input_to_fit,1643400,450,1826,,,Rows passed to the specified fixed-effect Poisson model.,,,,,,,,,431374.0
+broad_urgent_elective_holiday_two_way_retained_by_fit,658844,450,1826,,,Estimator retained sample; model_events summed from model._data.,,,,,,,,,431374.0
+broad_urgent_elective_holiday_two_way_excluding_2020_2021_input_to_fit,985500,450,1095,,,Rows passed to the specified fixed-effect Poisson model.,,,,,,,,,270941.0
+broad_urgent_elective_holiday_two_way_excluding_2020_2021_retained_by_fit,410215,450,1095,,,Estimator retained sample; model_events summed from model._data.,,,,,,,,,270941.0
+strict_urgent_elective_holiday_two_way_input_to_fit,1643400,450,1826,,,Rows passed to the specified fixed-effect Poisson model.,,,,,,,,,321201.0
+strict_urgent_elective_holiday_two_way_retained_by_fit,543323,450,1826,,,Estimator retained sample; model_events summed from model._data.,,,,,,,,,321201.0
+strict_urgent_elective_holiday_two_way_excluding_2020_2021_input_to_fit,985500,450,1095,,,Rows passed to the specified fixed-effect Poisson model.,,,,,,,,,199026.0
+strict_urgent_elective_holiday_two_way_excluding_2020_2021_retained_by_fit,335648,450,1095,,,Estimator retained sample; model_events summed from model._data.,,,,,,,,,199026.0

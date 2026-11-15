@@ -1,0 +1,198 @@
+{
+  "status": "complete",
+  "code_revision": "nonlinear-m3-20261113-v1",
+  "specification_sha256": "3fa8bf9053d10fb885320f945c7237a069fe79b1857de2b382974f2556d222fa",
+  "threads": 4,
+  "input_hashes": {
+    "work\\revision_20261113\\nonlinear\\prespecified_specification.json": {
+      "bytes": 4655,
+      "sha256": "3fa8bf9053d10fb885320f945c7237a069fe79b1857de2b382974f2556d222fa"
+    },
+    "F:\\analysis\\climate_biliary_20261102\\work\\panel_composite_humidity.parquet": {
+      "bytes": 128705609,
+      "sha256": "8791be152c870ab691754e930eeade1b2c82a48d591fc10db963612a61ef2031"
+    },
+    "F:\\analysis\\climate_biliary_20261102\\work\\mexico_composite_state_day_panel.parquet": {
+      "bytes": 1023737,
+      "sha256": "a1ff9a0cf41d8d332ef258df0fd943a6caeb5368bfcbdcf815af9f8a32b39507"
+    },
+    "D:\\数据库集合\\新增数据\\ERA5_crossnational\\mex_state_day_2015_2023.csv": {
+      "bytes": 3046204,
+      "sha256": "86c29713eff4de30501af92fcb06e16b78160eaab1188d81ee4f53137ecca565"
+    },
+    "outputs\\upgrade_20261112\\mexico_boundary_daily_counts.csv": {
+      "bytes": 2396026,
+      "sha256": "324562604a3aa43245b85e6cbce4bd366b76e04eeaafa9eb286b896f335c6fb7"
+    },
+    "outputs\\upgrade_20261112\\holiday_calendar_dates.csv": {
+      "bytes": 8545,
+      "sha256": "81cc89846d36546ccdba3ef46f68d4bc0c35f9ec7b3d72613137c7a73a46579d"
+    },
+    "work\\frozen_snapshot\\tables\\n20_composite_continuous_lag.csv": {
+      "bytes": 798,
+      "sha256": "ab98033afc74f8fcf56d2919290255c664a9d82b0e9dd9086a98db35f2882e86"
+    },
+    "work\\frozen_snapshot\\tables\\n20_composite_groups_corrected.csv": {
+      "bytes": 653,
+      "sha256": "86d230b15be1b68b925855f22a7b97792a4de7a58b031abf8317755bb71cca88"
+    },
+    "work\\upgrade_20261112\\clinical_code_day_aggregate.parquet": {
+      "bytes": 3446417,
+      "sha256": "30b614eefbf492409022ae8f3449ef739c38deb553b07b75aa42c899772369c6"
+    }
+  },
+  "models_completed": [
+    "brazil_strict_N20_linear",
+    "brazil_strict_N20_spline3df",
+    "mexico_strict_N20_linear",
+    "mexico_strict_N20_spline3df",
+    "brazil_primary_linear_temp_fire_two_way",
+    "brazil_primary_spline3df_temp_fire_two_way",
+    "brazil_primary_same_day_compound_two_way"
+  ],
+  "historical_point_estimates_reproduced": true,
+  "point_estimate_and_psd_checks": {
+    "model_fit_count": 7,
+    "model_rows": {
+      "brazil_strict_N20_linear": 45436,
+      "brazil_strict_N20_spline3df": 45436,
+      "mexico_strict_N20_linear": 39390,
+      "mexico_strict_N20_spline3df": 39390,
+      "brazil_primary_linear_temp_fire_two_way": 1481520,
+      "brazil_primary_spline3df_temp_fire_two_way": 1481520,
+      "brazil_primary_same_day_compound_two_way": 1484094
+    },
+    "historical_primary_temperature_RR": 1.0147355263387658,
+    "historical_primary_fire_RR": 1.0547419524185717,
+    "historical_same_day_compound_RRs": {
+      "heat_only": 1.0213892974192136,
+      "smoke_only": 1.015525514847996,
+      "composite": 1.0675608338374927
+    },
+    "primary_events_full_window": 1132163.0,
+    "primary_events_after_lag_window": 1130926.0,
+    "all_historical_sample_and_point_estimate_anchors_passed": true,
+    "all_full_covariance_dimensions_valid": true,
+    "explicit_psd_sensitivity_models": [
+      "brazil_strict_N20_spline3df",
+      "mexico_strict_N20_spline3df",
+      "brazil_primary_spline3df_temp_fire_two_way"
+    ],
+    "psd_joint_nonlinearity_F_and_p": [
+      {
+        "family": "Brazil",
+        "F": 8.19849423773475,
+        "df_num": 16,
+        "df_denom": 26,
+        "p_F": 1.6813518944368864e-06,
+        "raw_p_F": 1.6703528701314735e-06,
+        "raw_test_status": "ok"
+      },
+      {
+        "family": "Mexico",
+        "F": 0.6490988265905702,
+        "df_num": 16,
+        "df_denom": 31,
+        "p_F": 0.8186091504547626,
+        "raw_p_F": null,
+        "raw_test_status": "non_psd_restriction_covariance_no_projection"
+      },
+      {
+        "family": "Brazil_primary_2008_2022",
+        "F": 7.709172835729514,
+        "df_num": 16,
+        "df_denom": 449,
+        "p_F": 3.387088295045065e-16,
+        "raw_p_F": 3.387088295037929e-16,
+        "raw_test_status": "ok"
+      }
+    ],
+    "P90_raw_vs_psd": [
+      {
+        "model": "brazil_strict_N20_spline3df",
+        "percentile": "P90",
+        "exposure_value_C": 27.02415968852007,
+        "RR_raw": 1.127171578479376,
+        "RR_psd": 1.127171578479376,
+        "SE_raw": 0.0195307689933175,
+        "SE_psd": 0.0199516819370528,
+        "CI_low_raw": 1.0828163694992927,
+        "CI_high_raw": 1.173343701775759,
+        "CI_low_psd": 1.081879923081301,
+        "CI_high_psd": 1.1743593168021214,
+        "p_raw": 1.764999790486295e-06,
+        "p_psd": 2.461537009774207e-06,
+        "t_df": 26
+      },
+      {
+        "model": "mexico_strict_N20_spline3df",
+        "percentile": "P90",
+        "exposure_value_C": 27.19612503051757,
+        "RR_raw": 1.074918578952124,
+        "RR_psd": 1.074918578952124,
+        "SE_raw": 0.0511336482011751,
+        "SE_psd": 0.0545520819018241,
+        "CI_low_raw": 0.9684650874313732,
+        "CI_high_raw": 1.1930734172782769,
+        "CI_low_psd": 0.9617364884533518,
+        "CI_high_psd": 1.2014205192886342,
+        "p_raw": 0.1676576594278207,
+        "p_psd": 0.195075263052462,
+        "t_df": 31
+      },
+      {
+        "model": "brazil_primary_spline3df_temp_fire_two_way",
+        "percentile": "P90",
+        "exposure_value_C": 27.464642748663543,
+        "RR_raw": 1.131434725783418,
+        "RR_psd": 1.131434725783418,
+        "SE_raw": 0.0096433992572425,
+        "SE_psd": 0.0096433992572424,
+        "CI_low_raw": 1.1101939116306845,
+        "CI_high_raw": 1.1530819303704212,
+        "CI_low_psd": 1.1101939116306847,
+        "CI_high_psd": 1.153081930370421,
+        "p_raw": 3.218492168566541e-32,
+        "p_psd": 3.218492168560672e-32,
+        "t_df": 449
+      }
+    ],
+    "models_refit_during_finalization": false
+  },
+  "outputs": [
+    "coefficients.csv",
+    "covariance_diagnostics.csv",
+    "covariance_matrices.json",
+    "covariance_psd_sensitivity.json",
+    "finalization_audit.json",
+    "finalize.log",
+    "finalize_report.log",
+    "fit_brazil_primary_linear_temp_fire_two_way.json",
+    "fit_brazil_primary_same_day_compound_two_way.json",
+    "fit_brazil_primary_spline3df_temp_fire_two_way.json",
+    "fit_brazil_strict_N20_linear.json",
+    "fit_brazil_strict_N20_spline3df.json",
+    "fit_mexico_strict_N20_linear.json",
+    "fit_mexico_strict_N20_spline3df.json",
+    "historical_vs_updated_inference.csv",
+    "input_manifest.json",
+    "joint_nonlinearity_tests.csv",
+    "joint_nonlinearity_tests_psd.csv",
+    "knots_and_percentiles.json",
+    "psd_covariance_diagnostics.csv",
+    "psd_sensitivity.log",
+    "raw_vs_psd_curve_uncertainty.csv",
+    "raw_vs_psd_percentile_uncertainty.csv",
+    "run.err.log",
+    "run.log",
+    "run_manifest.json",
+    "run_status.json",
+    "sample_flow.csv",
+    "source_sample_audit.json",
+    "temperature_and_category_contrasts.csv",
+    "temperature_contrasts_psd.csv",
+    "temperature_curves.csv",
+    "temperature_curves_psd.csv",
+    "方法报告_中文.md"
+  ]
+}

@@ -1,0 +1,10 @@
+﻿country,stage,period,unit,source_or_input_n,valid_geography_n,exposure_complete_n,lag0_7_complete_n,events_broad_or_named,events_urgent,events_elective,events_after_fit,rows_after_fit,note
+Brazil,primary_panel_full_window,2008–2022,health_region-day,2465550,450,2465550.0,,1132163,,,,,N20–N23 aggregate events in 450×calendar-day panel; not unique persons.
+Brazil,clinical_aggregate_broad,2018–2022,admission,431374,431374,,,431374,315504.0,115870.0,,,"N20–N23, IDENT=1; CAR_INT 02 urgent and 01 elective; sum of aggregate admissions."
+Brazil,clinical_aggregate_strict_N20,2018–2022,admission,321201,321201,,,321201,226402.0,94799.0,,,Strict diagnosis N20 only; separate from broad N20–N23.
+Brazil,service_full_window_area_day,2018–2022,health_region-day,821700,450,821700.0,818550.0,226402,226402.0,,226402.0,366584.0,Saved service sample flow: strict urgent N20. Same-day full-window input then separate lag-0–7 complete input.
+Brazil,SP_any_drainage_full_window,2018–2022,procedure-linked admission,821700,450,821700.0,818550.0,84764,,,84572.0,180241.0,"84,764 full-window procedure events; 84,572 events in the lag-0–7 complete input/fit sample. See separate sample-flow stages."
+Brazil,SP_any_removal_full_window,2018–2022,procedure-linked admission,821700,450,821700,818550,71833,,,71684,158873,"71,833 full-window events; continuous lag-0–7 model has 71,684 events and 158,873 fitted rows; categorical full-window model has 71,833 events and 159,591 fitted rows."
+Mexico,baseline_raw_cache,2018–2022,admission,40907,40415,39809.0,,40415,,,,,Raw cache 40907; invalid/out-of-range state 492; valid-state admissions 40415; complete climate exposure among valid-state admissions 39809.
+Mexico,municipality_exposure_branch,2018–2022,valid-state admission,40415,40415,39809.0,,40415,,,,,Valid-state admissions with complete temperature/fire categories: 39809 across 1830 municipalities; 606 valid-state admissions lack complete municipality-date climate exposure.
+Mexico,source_2023_boundary_additions,admission date in 2022,admission,33,33,,,33,,,,,"Separate source-boundary extension; 33 broad N20–N23, including 29 strict N20; no municipality-level exposure branch."

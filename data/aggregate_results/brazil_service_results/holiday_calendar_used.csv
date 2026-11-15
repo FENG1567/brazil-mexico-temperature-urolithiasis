@@ -1,0 +1,50 @@
+﻿country,date,holiday_name,date_role,calendar_source
+BR,2018-01-01,Confraternização Universal,statutory calendar date,python-holidays PUBLIC
+BR,2018-03-30,Sexta-feira Santa,statutory calendar date,python-holidays PUBLIC
+BR,2018-04-21,Tiradentes,statutory calendar date,python-holidays PUBLIC
+BR,2018-05-01,Dia do Trabalhador,statutory calendar date,python-holidays PUBLIC
+BR,2018-09-07,Independência do Brasil,statutory calendar date,python-holidays PUBLIC
+BR,2018-10-07,Eleições gerais 2018 primeiro turno,nationwide ordinary federal election day,Official TSE federal election calendar
+BR,2018-10-12,Nossa Senhora Aparecida,statutory calendar date,python-holidays PUBLIC
+BR,2018-10-28,Eleições gerais 2018 segundo turno,nationwide ordinary federal election day,Official TSE federal election calendar
+BR,2018-11-02,Finados,statutory calendar date,python-holidays PUBLIC
+BR,2018-11-15,Proclamação da República,statutory calendar date,python-holidays PUBLIC
+BR,2018-12-25,Natal,statutory calendar date,python-holidays PUBLIC
+BR,2019-01-01,Confraternização Universal,statutory calendar date,python-holidays PUBLIC
+BR,2019-04-19,Sexta-feira Santa,statutory calendar date,python-holidays PUBLIC
+BR,2019-04-21,Tiradentes,statutory calendar date,python-holidays PUBLIC
+BR,2019-05-01,Dia do Trabalhador,statutory calendar date,python-holidays PUBLIC
+BR,2019-09-07,Independência do Brasil,statutory calendar date,python-holidays PUBLIC
+BR,2019-10-12,Nossa Senhora Aparecida,statutory calendar date,python-holidays PUBLIC
+BR,2019-11-02,Finados,statutory calendar date,python-holidays PUBLIC
+BR,2019-11-15,Proclamação da República,statutory calendar date,python-holidays PUBLIC
+BR,2019-12-25,Natal,statutory calendar date,python-holidays PUBLIC
+BR,2020-01-01,Confraternização Universal,statutory calendar date,python-holidays PUBLIC
+BR,2020-04-10,Sexta-feira Santa,statutory calendar date,python-holidays PUBLIC
+BR,2020-04-21,Tiradentes,statutory calendar date,python-holidays PUBLIC
+BR,2020-05-01,Dia do Trabalhador,statutory calendar date,python-holidays PUBLIC
+BR,2020-09-07,Independência do Brasil,statutory calendar date,python-holidays PUBLIC
+BR,2020-10-12,Nossa Senhora Aparecida,statutory calendar date,python-holidays PUBLIC
+BR,2020-11-02,Finados,statutory calendar date,python-holidays PUBLIC
+BR,2020-11-15,Proclamação da República,statutory calendar date,python-holidays PUBLIC
+BR,2020-12-25,Natal,statutory calendar date,python-holidays PUBLIC
+BR,2021-01-01,Confraternização Universal,statutory calendar date,python-holidays PUBLIC
+BR,2021-04-02,Sexta-feira Santa,statutory calendar date,python-holidays PUBLIC
+BR,2021-04-21,Tiradentes,statutory calendar date,python-holidays PUBLIC
+BR,2021-05-01,Dia do Trabalhador,statutory calendar date,python-holidays PUBLIC
+BR,2021-09-07,Independência do Brasil,statutory calendar date,python-holidays PUBLIC
+BR,2021-10-12,Nossa Senhora Aparecida,statutory calendar date,python-holidays PUBLIC
+BR,2021-11-02,Finados,statutory calendar date,python-holidays PUBLIC
+BR,2021-11-15,Proclamação da República,statutory calendar date,python-holidays PUBLIC
+BR,2021-12-25,Natal,statutory calendar date,python-holidays PUBLIC
+BR,2022-01-01,Confraternização Universal,statutory calendar date,python-holidays PUBLIC
+BR,2022-04-15,Sexta-feira Santa,statutory calendar date,python-holidays PUBLIC
+BR,2022-04-21,Tiradentes,statutory calendar date,python-holidays PUBLIC
+BR,2022-05-01,Dia do Trabalhador,statutory calendar date,python-holidays PUBLIC
+BR,2022-09-07,Independência do Brasil,statutory calendar date,python-holidays PUBLIC
+BR,2022-10-02,Eleições gerais 2022 primeiro turno,nationwide ordinary federal election day,Official TSE federal election calendar
+BR,2022-10-12,Nossa Senhora Aparecida,statutory calendar date,python-holidays PUBLIC
+BR,2022-10-30,Eleições gerais 2022 segundo turno,nationwide ordinary federal election day,Official TSE federal election calendar
+BR,2022-11-02,Finados,statutory calendar date,python-holidays PUBLIC
+BR,2022-11-15,Proclamação da República,statutory calendar date,python-holidays PUBLIC
+BR,2022-12-25,Natal,statutory calendar date,python-holidays PUBLIC

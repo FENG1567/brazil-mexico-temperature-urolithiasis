@@ -1,0 +1,4 @@
+﻿model,family,null,restrictions,rank,F,df_num,df_denom,p_F,restriction_covariance_min_eigenvalue,status
+brazil_strict_N20_spline3df,Brazil,"all 16 added nonlinear coefficients are zero, conditional on temperature linear terms and unchanged covariates",16,16,8.203988141688123,16,26,1.6703528701314735e-06,3.856239242008951e-07,ok
+mexico_strict_N20_spline3df,Mexico,,16,16,0.23088277626039133,16,31,,-1.372906235794238e-07,non_psd_restriction_covariance_no_projection
+brazil_primary_spline3df_temp_fire_two_way,Brazil_primary_2008_2022,"all 16 added nonlinear coefficients are zero, conditional on temperature linear terms and unchanged covariates",16,16,7.709172835729895,16,449,3.387088295037929e-16,3.0991981614825833e-07,ok

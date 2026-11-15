@@ -1,0 +1,5 @@
+﻿CAR_INT,admission_type,aggregate_cells,admissions,health_regions,diagnosis
+01,elective,104446,115870,448,N20–N23 broad
+02,urgent,283349,315504,450,N20–N23 broad
+01,elective,85068,94799,448,N20 strict
+02,urgent,201138,226402,450,N20 strict

@@ -1,0 +1,22 @@
+# Rebuilt figures, tables, and source maps are local build products.
+artifacts/
+logs/
+private/
+raw/
+.env
+.env.*
+*.pem
+*.key
+
+# Python environments and transient files.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# OS/editor metadata.
+.DS_Store
+Thumbs.db

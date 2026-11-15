@@ -1,0 +1,497 @@
+[
+  {
+    "name": "panel_composite_humidity.parquet",
+    "sha256": "8791be152c870ab691754e930eeade1b2c82a48d591fc10db963612a61ef2031",
+    "bytes": 128705609,
+    "rows": 2629800,
+    "columns": [
+      {
+        "name": "hrid",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "date",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "K80",
+        "type": "INTEGER"
+      },
+      {
+        "name": "K81",
+        "type": "INTEGER"
+      },
+      {
+        "name": "K85",
+        "type": "INTEGER"
+      },
+      {
+        "name": "N20_N23",
+        "type": "INTEGER"
+      },
+      {
+        "name": "tmean",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "tmax",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "year",
+        "type": "INTEGER"
+      },
+      {
+        "name": "year_num",
+        "type": "INTEGER"
+      },
+      {
+        "name": "pop",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "month",
+        "type": "TINYINT"
+      },
+      {
+        "name": "dow",
+        "type": "TINYINT"
+      },
+      {
+        "name": "K80_sev",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "K81_sev",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "K85_sev",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "N20_N23_sev",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "K80_death",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "K81_death",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "K85_death",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "N20_N23_death",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "K80_icu",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "K81_icu",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "K85_icu",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "N20_N23_icu",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "K80_bd",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "K81_bd",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "K85_bd",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "N20_N23_bd",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "stratum",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "fire_pm25",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "t_p90",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "s_p75",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "heat",
+        "type": "TINYINT"
+      },
+      {
+        "name": "smoke",
+        "type": "TINYINT"
+      },
+      {
+        "name": "composite",
+        "type": "TINYINT"
+      },
+      {
+        "name": "rh",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "humidex",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "t_p10",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "cold",
+        "type": "TINYINT"
+      }
+    ],
+    "data_level": "Geographic daily analysis panel; no individual hospital records",
+    "redistribution_status": "Source-specific reuse terms require author verification before public release",
+    "parts": [
+      {
+        "path": "data/processed_inputs/panel_composite_humidity.parquet.parts/part000",
+        "sha256": "12a77d9b01603710bb42686fb8d0e97f0af449d6cabb70c516afa103c02a0230",
+        "bytes": 16777216
+      },
+      {
+        "path": "data/processed_inputs/panel_composite_humidity.parquet.parts/part001",
+        "sha256": "f5a96cb713586465b3e4b66a1586c2808e75881066ab3f6cd06526b9932816e8",
+        "bytes": 16777216
+      },
+      {
+        "path": "data/processed_inputs/panel_composite_humidity.parquet.parts/part002",
+        "sha256": "cd54f32fe28bb9a7999cb185df6eea0fd3ffac4c0d98cc1d35336330f5739dcf",
+        "bytes": 16777216
+      },
+      {
+        "path": "data/processed_inputs/panel_composite_humidity.parquet.parts/part003",
+        "sha256": "1062a41107d1018f5e1abd9eecc95cf370f0fe23cb8cddc23bd2b1388d4e41da",
+        "bytes": 16777216
+      },
+      {
+        "path": "data/processed_inputs/panel_composite_humidity.parquet.parts/part004",
+        "sha256": "d7b5c5842cce5fbb886ebb6ae8bcd25c4898929fad1c68a74e08c45c61742e28",
+        "bytes": 16777216
+      },
+      {
+        "path": "data/processed_inputs/panel_composite_humidity.parquet.parts/part005",
+        "sha256": "8b7a5115864ce4e8aba6745b498518164d4065fc1291d0f1e00f91010f8660ad",
+        "bytes": 16777216
+      },
+      {
+        "path": "data/processed_inputs/panel_composite_humidity.parquet.parts/part006",
+        "sha256": "50b259f1e9ac586e195bd87272517ff2bea0234205bf773a38b664bb3d483fb3",
+        "bytes": 16777216
+      },
+      {
+        "path": "data/processed_inputs/panel_composite_humidity.parquet.parts/part007",
+        "sha256": "2ef4a24bb1b9e88024f9c4090521d49fc66231df164b7683b25c76ac6c2fef98",
+        "bytes": 11265097
+      }
+    ]
+  },
+  {
+    "name": "mexico_composite_state_day_panel.parquet",
+    "sha256": "a1ff9a0cf41d8d332ef258df0fd943a6caeb5368bfcbdcf815af9f8a32b39507",
+    "bytes": 1023737,
+    "rows": 58432,
+    "columns": [
+      {
+        "name": "state",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "date",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "N20",
+        "type": "BIGINT"
+      },
+      {
+        "name": "tmean",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "ym",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "dow",
+        "type": "INTEGER"
+      },
+      {
+        "name": "stratum",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "rh",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "cataract",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "fracture",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "fire_pm25",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "t_p90",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "f_p75",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "heat",
+        "type": "TINYINT"
+      },
+      {
+        "name": "smoke",
+        "type": "TINYINT"
+      },
+      {
+        "name": "composite",
+        "type": "TINYINT"
+      }
+    ],
+    "data_level": "Geographic daily analysis panel; no individual hospital records",
+    "redistribution_status": "Source-specific reuse terms require author verification before public release",
+    "path": "data/processed_inputs/mexico_composite_state_day_panel.parquet"
+  },
+  {
+    "name": "clinical_code_day_aggregate.parquet",
+    "sha256": "30b614eefbf492409022ae8f3449ef739c38deb553b07b75aa42c899772369c6",
+    "bytes": 3446417,
+    "rows": 387795,
+    "columns": [
+      {
+        "name": "IDENT",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "diagnosis",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "CAR_INT",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "PROC_REA",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "competence",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "hrid",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "date",
+        "type": "DATE"
+      },
+      {
+        "name": "admissions",
+        "type": "BIGINT"
+      },
+      {
+        "name": "beddays",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "nominal_cost",
+        "type": "DOUBLE"
+      }
+    ],
+    "data_level": "Geographic daily analysis panel; no individual hospital records",
+    "redistribution_status": "Source-specific reuse terms require author verification before public release",
+    "path": "data/processed_inputs/clinical_code_day_aggregate.parquet"
+  },
+  {
+    "name": "mex_state_day_2015_2023.csv",
+    "sha256": "86c29713eff4de30501af92fcb06e16b78160eaab1188d81ee4f53137ecca565",
+    "bytes": 3046204,
+    "rows": 93504,
+    "columns": [
+      {
+        "name": "state",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "year",
+        "type": "BIGINT"
+      },
+      {
+        "name": "month",
+        "type": "BIGINT"
+      },
+      {
+        "name": "day",
+        "type": "BIGINT"
+      },
+      {
+        "name": "tmean",
+        "type": "DOUBLE"
+      }
+    ],
+    "data_level": "Geographic daily analysis panel; no individual hospital records",
+    "redistribution_status": "Source-specific reuse terms require author verification before public release",
+    "path": "data/processed_inputs/mex_state_day_2015_2023.csv"
+  },
+  {
+    "name": "sp_linked_daily_outcomes.csv",
+    "sha256": "704980c745b9e9caf8768c48792b01200daf993295592f8c7bd110bb97779f5e",
+    "bytes": 5007990,
+    "rows": 147285,
+    "columns": [
+      {
+        "name": "hrid",
+        "type": "BIGINT"
+      },
+      {
+        "name": "date",
+        "type": "BIGINT"
+      },
+      {
+        "name": "sp_seen_in_screened_rows",
+        "type": "BIGINT"
+      },
+      {
+        "name": "sp_drainage",
+        "type": "BIGINT"
+      },
+      {
+        "name": "sp_removal",
+        "type": "BIGINT"
+      },
+      {
+        "name": "rd_drainage",
+        "type": "BIGINT"
+      },
+      {
+        "name": "rd_removal",
+        "type": "BIGINT"
+      },
+      {
+        "name": "any_drainage",
+        "type": "BIGINT"
+      },
+      {
+        "name": "any_removal",
+        "type": "BIGINT"
+      },
+      {
+        "name": "generic_principal",
+        "type": "BIGINT"
+      },
+      {
+        "name": "generic_resolved",
+        "type": "BIGINT"
+      }
+    ],
+    "data_level": "Geographic daily analysis panel; no individual hospital records",
+    "redistribution_status": "Source-specific reuse terms require author verification before public release",
+    "path": "data/processed_inputs/sp_linked_daily_outcomes.csv"
+  },
+  {
+    "name": "mexico_boundary_daily_counts.csv",
+    "sha256": "324562604a3aa43245b85e6cbce4bd366b76e04eeaafa9eb286b896f335c6fb7",
+    "bytes": 2396026,
+    "rows": 58432,
+    "columns": [
+      {
+        "name": "state",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "date",
+        "type": "DATE"
+      },
+      {
+        "name": "broad_N20_N23",
+        "type": "BIGINT"
+      },
+      {
+        "name": "admissions",
+        "type": "BIGINT"
+      },
+      {
+        "name": "nephrostomy",
+        "type": "BIGINT"
+      },
+      {
+        "name": "ureteral_catheterization",
+        "type": "BIGINT"
+      },
+      {
+        "name": "urinary_stone_fragmentation_lithotripsy",
+        "type": "BIGINT"
+      },
+      {
+        "name": "TIPO_Q",
+        "type": "BIGINT"
+      },
+      {
+        "name": "no_TIPO_Q",
+        "type": "BIGINT"
+      },
+      {
+        "name": "added_2023_broad",
+        "type": "BIGINT"
+      },
+      {
+        "name": "added_2023_strict",
+        "type": "BIGINT"
+      },
+      {
+        "name": "added_2023_nephrostomy",
+        "type": "BIGINT"
+      },
+      {
+        "name": "added_2023_ureteral_catheterization",
+        "type": "BIGINT"
+      },
+      {
+        "name": "added_2023_urinary_stone_fragmentation_lithotripsy",
+        "type": "BIGINT"
+      },
+      {
+        "name": "added_2023_TIPO_Q",
+        "type": "BIGINT"
+      }
+    ],
+    "data_level": "Geographic daily analysis panel; no individual hospital records",
+    "redistribution_status": "Source-specific reuse terms require author verification before public release",
+    "path": "data/processed_inputs/mexico_boundary_daily_counts.csv"
+  }
+]

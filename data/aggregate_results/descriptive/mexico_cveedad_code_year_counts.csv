@@ -1,0 +1,20 @@
+﻿country,year,source_year,cveedad_code,admissions,age_codebook_vintage
+Mexico,2018,2018,1,1,legacy 2014 SAEH v2.2
+Mexico,2018,2018,2,12,legacy 2014 SAEH v2.2
+Mexico,2018,2018,3,9362,legacy 2014 SAEH v2.2
+Mexico,2018,2019,3,28,mixed 2019 source; code3 EDAD15–29 unit ambiguous
+Mexico,2019,2019,1,1,mixed 2019 source; code3 EDAD15–29 unit ambiguous
+Mexico,2019,2019,2,17,mixed 2019 source; code3 EDAD15–29 unit ambiguous
+Mexico,2019,2019,3,10470,mixed 2019 source; code3 EDAD15–29 unit ambiguous
+Mexico,2019,2020,5,29,GIIS-B002-03-07 v3.7 (December 2020)
+Mexico,2020,2020,4,7,GIIS-B002-03-07 v3.7 (December 2020)
+Mexico,2020,2020,5,4593,GIIS-B002-03-07 v3.7 (December 2020)
+Mexico,2020,2021,5,8,GIIS-B002-03-07 v3.7 (December 2020)
+Mexico,2021,2021,2,1,GIIS-B002-03-07 v3.7 (December 2020)
+Mexico,2021,2021,4,3,GIIS-B002-03-07 v3.7 (December 2020)
+Mexico,2021,2021,5,6654,GIIS-B002-03-07 v3.7 (December 2020)
+Mexico,2021,2022,5,14,GIIS-B002-03-07 v3.7 (December 2020)
+Mexico,2022,2022,3,2,GIIS-B002-03-07 v3.7 (December 2020)
+Mexico,2022,2022,4,5,GIIS-B002-03-07 v3.7 (December 2020)
+Mexico,2022,2022,5,9207,GIIS-B002-03-07 v3.7 (December 2020)
+Mexico,2022,2022,9,1,GIIS-B002-03-07 v3.7 (December 2020)

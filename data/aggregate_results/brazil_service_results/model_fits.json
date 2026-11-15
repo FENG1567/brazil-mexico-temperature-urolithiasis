@@ -1,0 +1,4792 @@
+{
+  "service_original_two_way_urgent_N20": {
+    "model_id": "service_original_two_way_urgent_N20",
+    "model_family": "service_category",
+    "formula": "urgent_N20 ~ h_only + s_only + both | stratum",
+    "fixed_effect": "health region x year-month x day-of-week",
+    "cluster": "CRV1, two-way by hrid + day_id",
+    "inference": "Student t with df=min(retained hrid clusters, retained date clusters)-1",
+    "df": 449,
+    "input_rows": 821700,
+    "model_rows": 366584,
+    "rows_dropped_by_fit": 455116,
+    "input_events": 226402.0,
+    "model_events": 226402.0,
+    "input_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1826
+    },
+    "retained_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1826
+    },
+    "strata_input": 189000,
+    "strata_model": 83876,
+    "covariance_eigen_diagnostics": {
+      "dimension": 3,
+      "max_absolute_asymmetry": 1.3552527156068805e-20,
+      "min_eigenvalue": 6.144935412847447e-05,
+      "max_eigenvalue": 0.0002875839337927915,
+      "max_absolute_eigenvalue": 0.0002875839337927915,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.2136745030156992,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        6.144935412847447e-05,
+        0.00015674134406404135,
+        0.0002875839337927915
+      ]
+    },
+    "coefficient_names": [
+      "h_only",
+      "s_only",
+      "both"
+    ],
+    "coefficients": [
+      0.051512855126540656,
+      0.012262452842567446,
+      0.06460954438750643
+    ],
+    "covariance_raw": [
+      [
+        0.00016253787871923944,
+        2.0189876141942355e-06,
+        2.71395729573996e-05
+      ],
+      [
+        2.0189876141942363e-06,
+        6.794985118872135e-05,
+        3.707089710602388e-05
+      ],
+      [
+        2.71395729573996e-05,
+        3.7070897106023896e-05,
+        0.0002752869020773466
+      ]
+    ],
+    "covariance_used_for_linear_contrasts": [
+      [
+        0.00016253787871923944,
+        2.018987614194236e-06,
+        2.71395729573996e-05
+      ],
+      [
+        2.018987614194236e-06,
+        6.794985118872135e-05,
+        3.707089710602389e-05
+      ],
+      [
+        2.71395729573996e-05,
+        3.707089710602389e-05,
+        0.0002752869020773466
+      ]
+    ],
+    "covariance_symmetrized_for_rounding_only": true,
+    "eigen_diagnostics": {
+      "dimension": 3,
+      "max_absolute_asymmetry": 1.3552527156068805e-20,
+      "min_eigenvalue": 6.144935412847447e-05,
+      "max_eigenvalue": 0.0002875839337927915,
+      "max_absolute_eigenvalue": 0.0002875839337927915,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.2136745030156992,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        6.144935412847447e-05,
+        0.00015674134406404135,
+        0.0002875839337927915
+      ]
+    },
+    "absolute_sampling_diagnostic": {
+      "coefficient_order": [
+        "h_only",
+        "s_only",
+        "both"
+      ],
+      "raw_covariance_submatrix": [
+        [
+          0.00016253787871923944,
+          2.018987614194236e-06,
+          2.71395729573996e-05
+        ],
+        [
+          2.018987614194236e-06,
+          6.794985118872135e-05,
+          3.707089710602389e-05
+        ],
+        [
+          2.71395729573996e-05,
+          3.707089710602389e-05,
+          0.0002752869020773466
+        ]
+      ],
+      "raw_submatrix_eigenvalues": [
+        6.144935412847447e-05,
+        0.00015674134406404132,
+        0.0002875839337927915
+      ],
+      "PSD_covariance_submatrix": [
+        [
+          0.0001625378787192394,
+          2.0189876141942355e-06,
+          2.713957295739962e-05
+        ],
+        [
+          2.0189876141942355e-06,
+          6.794985118872131e-05,
+          3.7070897106023856e-05
+        ],
+        [
+          2.713957295739962e-05,
+          3.7070897106023856e-05,
+          0.00027528690207734665
+        ]
+      ],
+      "PSD_eigenvalues": [
+        6.144935412847447e-05,
+        0.00015674134406404132,
+        0.0002875839337927915
+      ],
+      "negative_eigenvalues_set_to_zero_explicitly": 0,
+      "projection_frobenius_norm": 1.0321470964321824e-19,
+      "point_contrast_gradient": [
+        17685.54058008931,
+        -17.48517519217785,
+        -14.921770230102993
+      ],
+      "raw_delta_method_variance": 50822.857292858185,
+      "raw_delta_method_interval": [
+        467.96837418214517,
+        1351.6902502862597
+      ],
+      "PSD_draw_interval": [
+        464.24721953799997,
+        1357.552148837734
+      ]
+    }
+  },
+  "service_original_two_way_admission_attributed_beddays": {
+    "model_id": "service_original_two_way_admission_attributed_beddays",
+    "model_family": "service_category",
+    "formula": "admission_attributed_beddays ~ h_only + s_only + both | stratum",
+    "fixed_effect": "health region x year-month x day-of-week",
+    "cluster": "CRV1, two-way by hrid + day_id",
+    "inference": "Student t with df=min(retained hrid clusters, retained date clusters)-1",
+    "df": 449,
+    "input_rows": 821700,
+    "model_rows": 356593,
+    "rows_dropped_by_fit": 465107,
+    "input_events": 805746.0,
+    "model_events": 805746.0,
+    "input_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1826
+    },
+    "retained_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1826
+    },
+    "strata_input": 189000,
+    "strata_model": 81580,
+    "covariance_eigen_diagnostics": {
+      "dimension": 3,
+      "max_absolute_asymmetry": 1.3552527156068805e-20,
+      "min_eigenvalue": 0.00015299213525406198,
+      "max_eigenvalue": 0.0007126231585123165,
+      "max_absolute_eigenvalue": 0.0007126231585123165,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.21468869405458393,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        0.00015299213525406198,
+        0.00036127948355878345,
+        0.0007126231585123165
+      ]
+    },
+    "coefficient_names": [
+      "h_only",
+      "s_only",
+      "both"
+    ],
+    "coefficients": [
+      0.051480048952687214,
+      0.030058581294106976,
+      0.08820052840794242
+    ],
+    "covariance_raw": [
+      [
+        0.0004803627003589954,
+        5.069744482922127e-05,
+        0.00015960651334812317
+      ],
+      [
+        5.0697444829221254e-05,
+        0.00017411614095321734,
+        9.205304576505877e-05
+      ],
+      [
+        0.00015960651334812317,
+        9.205304576505877e-05,
+        0.0005724159360129493
+      ]
+    ],
+    "covariance_used_for_linear_contrasts": [
+      [
+        0.0004803627003589954,
+        5.069744482922126e-05,
+        0.00015960651334812317
+      ],
+      [
+        5.069744482922126e-05,
+        0.00017411614095321734,
+        9.205304576505877e-05
+      ],
+      [
+        0.00015960651334812317,
+        9.205304576505877e-05,
+        0.0005724159360129493
+      ]
+    ],
+    "covariance_symmetrized_for_rounding_only": true,
+    "eigen_diagnostics": {
+      "dimension": 3,
+      "max_absolute_asymmetry": 1.3552527156068805e-20,
+      "min_eigenvalue": 0.00015299213525406198,
+      "max_eigenvalue": 0.0007126231585123165,
+      "max_absolute_eigenvalue": 0.0007126231585123165,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.21468869405458393,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        0.00015299213525406198,
+        0.00036127948355878345,
+        0.0007126231585123165
+      ]
+    },
+    "absolute_sampling_diagnostic": {
+      "coefficient_order": [
+        "h_only",
+        "s_only",
+        "both"
+      ],
+      "raw_covariance_submatrix": [
+        [
+          0.0004803627003589954,
+          5.069744482922126e-05,
+          0.00015960651334812317
+        ],
+        [
+          5.069744482922126e-05,
+          0.00017411614095321734,
+          9.205304576505877e-05
+        ],
+        [
+          0.00015960651334812317,
+          9.205304576505877e-05,
+          0.0005724159360129493
+        ]
+      ],
+      "raw_submatrix_eigenvalues": [
+        0.00015299213525406198,
+        0.00036127948355878356,
+        0.0007126231585123163
+      ],
+      "PSD_covariance_submatrix": [
+        [
+          0.0004803627003589957,
+          5.069744482922125e-05,
+          0.0001596065133481232
+        ],
+        [
+          5.069744482922125e-05,
+          0.00017411614095321713,
+          9.205304576505869e-05
+        ],
+        [
+          0.0001596065133481232,
+          9.205304576505869e-05,
+          0.0005724159360129494
+        ]
+      ],
+      "PSD_eigenvalues": [
+        0.00015299213525406198,
+        0.00036127948355878356,
+        0.0007126231585123163
+      ],
+      "negative_eigenvalues_set_to_zero_explicitly": 0,
+      "projection_frobenius_norm": 4.2382806712749782e-19,
+      "point_contrast_gradient": [
+        63141.83643485194,
+        -63.6683612356137,
+        -56.65820026479196
+      ],
+      "raw_delta_method_variance": 1913607.5716045797,
+      "raw_delta_method_interval": [
+        536.9533581306441,
+        5959.615009783328
+      ],
+      "PSD_draw_interval": [
+        527.8815608634329,
+        5918.913866314101
+      ]
+    }
+  },
+  "service_original_two_way_reimbursement_2022BRL": {
+    "model_id": "service_original_two_way_reimbursement_2022BRL",
+    "model_family": "service_category",
+    "formula": "reimbursement_2022BRL ~ h_only + s_only + both | stratum",
+    "fixed_effect": "health region x year-month x day-of-week",
+    "cluster": "CRV1, two-way by hrid + day_id",
+    "inference": "Student t with df=min(retained hrid clusters, retained date clusters)-1",
+    "df": 449,
+    "input_rows": 821700,
+    "model_rows": 366584,
+    "rows_dropped_by_fit": 455116,
+    "input_events": 194858996.95072132,
+    "model_events": 194858996.95072132,
+    "input_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1826
+    },
+    "retained_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1826
+    },
+    "strata_input": 189000,
+    "strata_model": 83876,
+    "covariance_eigen_diagnostics": {
+      "dimension": 3,
+      "max_absolute_asymmetry": 2.710505431213761e-20,
+      "min_eigenvalue": 0.00016968364042727684,
+      "max_eigenvalue": 0.0006541994871556271,
+      "max_absolute_eigenvalue": 0.0006541994871556271,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.2593759912057389,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        0.00016968364042727684,
+        0.00028090534062790974,
+        0.0006541994871556271
+      ]
+    },
+    "coefficient_names": [
+      "h_only",
+      "s_only",
+      "both"
+    ],
+    "coefficients": [
+      0.03783334811385972,
+      0.01601449484780268,
+      0.03818097879488869
+    ],
+    "covariance_raw": [
+      [
+        0.0002817222265252773,
+        -4.3397314722983715e-06,
+        4.7267016777086976e-05
+      ],
+      [
+        -4.339731472298365e-06,
+        0.0002346892600433531,
+        0.00015896127626514002
+      ],
+      [
+        4.726701677708698e-05,
+        0.00015896127626514,
+        0.0005883769816421835
+      ]
+    ],
+    "covariance_used_for_linear_contrasts": [
+      [
+        0.0002817222265252773,
+        -4.339731472298368e-06,
+        4.726701677708698e-05
+      ],
+      [
+        -4.339731472298368e-06,
+        0.0002346892600433531,
+        0.00015896127626514
+      ],
+      [
+        4.726701677708698e-05,
+        0.00015896127626514,
+        0.0005883769816421835
+      ]
+    ],
+    "covariance_symmetrized_for_rounding_only": true,
+    "eigen_diagnostics": {
+      "dimension": 3,
+      "max_absolute_asymmetry": 2.710505431213761e-20,
+      "min_eigenvalue": 0.00016968364042727684,
+      "max_eigenvalue": 0.0006541994871556271,
+      "max_absolute_eigenvalue": 0.0006541994871556271,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.2593759912057389,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        0.00016968364042727684,
+        0.00028090534062790974,
+        0.0006541994871556271
+      ]
+    },
+    "absolute_sampling_diagnostic": {
+      "coefficient_order": [
+        "h_only",
+        "s_only",
+        "both"
+      ],
+      "raw_covariance_submatrix": [
+        [
+          0.0002817222265252773,
+          -4.339731472298368e-06,
+          4.726701677708698e-05
+        ],
+        [
+          -4.339731472298368e-06,
+          0.0002346892600433531,
+          0.00015896127626514
+        ],
+        [
+          4.726701677708698e-05,
+          0.00015896127626514,
+          0.0005883769816421835
+        ]
+      ],
+      "raw_submatrix_eigenvalues": [
+        0.00016968364042727687,
+        0.00028090534062790974,
+        0.0006541994871556271
+      ],
+      "PSD_covariance_submatrix": [
+        [
+          0.00028172222652527714,
+          -4.339731472298263e-06,
+          4.726701677708705e-05
+        ],
+        [
+          -4.339731472298263e-06,
+          0.00023468926004335293,
+          0.00015896127626513994
+        ],
+        [
+          4.726701677708705e-05,
+          0.00015896127626513994,
+          0.0005883769816421826
+        ]
+      ],
+      "PSD_eigenvalues": [
+        0.00016968364042727687,
+        0.00028090534062790974,
+        0.0006541994871556271
+      ],
+      "negative_eigenvalues_set_to_zero_explicitly": 0,
+      "projection_frobenius_norm": 9.177898068921526e-19,
+      "point_contrast_gradient": [
+        15837476.332904771,
+        -10894.83592659235,
+        -8594.674349296838
+      ],
+      "raw_delta_method_variance": 70651893368.42963,
+      "raw_delta_method_interval": [
+        77868.73791870062,
+        1119821.3540470144
+      ],
+      "PSD_draw_interval": [
+        73606.56181079053,
+        1122799.20700256
+      ]
+    }
+  },
+  "service_holiday_two_way_urgent_N20": {
+    "model_id": "service_holiday_two_way_urgent_N20",
+    "model_family": "service_category",
+    "formula": "urgent_N20 ~ h_only + s_only + both + holiday | stratum",
+    "fixed_effect": "health region x year-month x day-of-week",
+    "cluster": "CRV1, two-way by hrid + day_id",
+    "inference": "Student t with df=min(retained hrid clusters, retained date clusters)-1",
+    "df": 449,
+    "input_rows": 821700,
+    "model_rows": 366584,
+    "rows_dropped_by_fit": 455116,
+    "input_events": 226402.0,
+    "model_events": 226402.0,
+    "input_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1826
+    },
+    "retained_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1826
+    },
+    "strata_input": 189000,
+    "strata_model": 83876,
+    "covariance_eigen_diagnostics": {
+      "dimension": 4,
+      "max_absolute_asymmetry": 1.3552527156068805e-20,
+      "min_eigenvalue": 5.965143171876797e-05,
+      "max_eigenvalue": 0.0009427110780848125,
+      "max_absolute_eigenvalue": 0.0009427110780848125,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.06327647261762774,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        5.965143171876797e-05,
+        0.00014538311548553524,
+        0.0002807742162634454,
+        0.0009427110780848125
+      ]
+    },
+    "coefficient_names": [
+      "h_only",
+      "s_only",
+      "both",
+      "holiday"
+    ],
+    "coefficients": [
+      0.049251774384393994,
+      0.012997613389893237,
+      0.06104801065185852,
+      -0.36441851129731145
+    ],
+    "covariance_raw": [
+      [
+        0.0001517468738539395,
+        2.9592661272702605e-06,
+        2.4712691454702594e-05,
+        4.0751911954569217e-05
+      ],
+      [
+        2.959266127270259e-06,
+        6.609347136811036e-05,
+        3.587465433615923e-05,
+        1.9485000381859262e-05
+      ],
+      [
+        2.4712691454702607e-05,
+        3.587465433615923e-05,
+        0.00027107734022756963,
+        1.7444003030256463e-05
+      ],
+      [
+        4.075191195456922e-05,
+        1.9485000381859265e-05,
+        1.7444003030256463e-05,
+        0.0009396021561029414
+      ]
+    ],
+    "covariance_used_for_linear_contrasts": [
+      [
+        0.0001517468738539395,
+        2.9592661272702597e-06,
+        2.47126914547026e-05,
+        4.075191195456922e-05
+      ],
+      [
+        2.9592661272702597e-06,
+        6.609347136811036e-05,
+        3.587465433615923e-05,
+        1.9485000381859265e-05
+      ],
+      [
+        2.47126914547026e-05,
+        3.587465433615923e-05,
+        0.00027107734022756963,
+        1.7444003030256463e-05
+      ],
+      [
+        4.075191195456922e-05,
+        1.9485000381859265e-05,
+        1.7444003030256463e-05,
+        0.0009396021561029414
+      ]
+    ],
+    "covariance_symmetrized_for_rounding_only": true,
+    "eigen_diagnostics": {
+      "dimension": 4,
+      "max_absolute_asymmetry": 1.3552527156068805e-20,
+      "min_eigenvalue": 5.965143171876797e-05,
+      "max_eigenvalue": 0.0009427110780848125,
+      "max_absolute_eigenvalue": 0.0009427110780848125,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.06327647261762774,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        5.965143171876797e-05,
+        0.00014538311548553524,
+        0.0002807742162634454,
+        0.0009427110780848125
+      ]
+    },
+    "absolute_sampling_diagnostic": {
+      "coefficient_order": [
+        "h_only",
+        "s_only",
+        "both",
+        "holiday"
+      ],
+      "raw_covariance_submatrix": [
+        [
+          0.0001517468738539395,
+          2.9592661272702597e-06,
+          2.47126914547026e-05,
+          4.075191195456922e-05
+        ],
+        [
+          2.9592661272702597e-06,
+          6.609347136811036e-05,
+          3.587465433615923e-05,
+          1.9485000381859265e-05
+        ],
+        [
+          2.47126914547026e-05,
+          3.587465433615923e-05,
+          0.00027107734022756963,
+          1.7444003030256463e-05
+        ],
+        [
+          4.075191195456922e-05,
+          1.9485000381859265e-05,
+          1.7444003030256463e-05,
+          0.0009396021561029414
+        ]
+      ],
+      "raw_submatrix_eigenvalues": [
+        5.965143171876797e-05,
+        0.00014538311548553524,
+        0.0002807742162634452,
+        0.0009427110780848125
+      ],
+      "PSD_covariance_submatrix": [
+        [
+          0.00015174687385393943,
+          2.959266127270259e-06,
+          2.4712691454702553e-05,
+          4.075191195456924e-05
+        ],
+        [
+          2.959266127270259e-06,
+          6.609347136811023e-05,
+          3.587465433615914e-05,
+          1.9485000381859363e-05
+        ],
+        [
+          2.4712691454702553e-05,
+          3.587465433615914e-05,
+          0.0002710773402275691,
+          1.744400303025683e-05
+        ],
+        [
+          4.075191195456924e-05,
+          1.9485000381859363e-05,
+          1.744400303025683e-05,
+          0.0009396021561029414
+        ]
+      ],
+      "PSD_eigenvalues": [
+        5.965143171876797e-05,
+        0.00014538311548553524,
+        0.0002807742162634452,
+        0.0009427110780848125
+      ],
+      "negative_eigenvalues_set_to_zero_explicitly": 0,
+      "projection_frobenius_norm": 7.929829985550969e-19,
+      "point_contrast_gradient": [
+        17703.50281503852,
+        -16.74354047054294,
+        -14.23903182740105,
+        -2.376000021981112
+      ],
+      "raw_delta_method_variance": 47542.05326977318,
+      "raw_delta_method_interval": [
+        443.50828733357184,
+        1298.2305857233134
+      ],
+      "PSD_draw_interval": [
+        439.3449002630518,
+        1287.264479357103
+      ]
+    }
+  },
+  "service_holiday_two_way_admission_attributed_beddays": {
+    "model_id": "service_holiday_two_way_admission_attributed_beddays",
+    "model_family": "service_category",
+    "formula": "admission_attributed_beddays ~ h_only + s_only + both + holiday | stratum",
+    "fixed_effect": "health region x year-month x day-of-week",
+    "cluster": "CRV1, two-way by hrid + day_id",
+    "inference": "Student t with df=min(retained hrid clusters, retained date clusters)-1",
+    "df": 449,
+    "input_rows": 821700,
+    "model_rows": 356593,
+    "rows_dropped_by_fit": 465107,
+    "input_events": 805746.0,
+    "model_events": 805746.0,
+    "input_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1826
+    },
+    "retained_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1826
+    },
+    "strata_input": 189000,
+    "strata_model": 81580,
+    "covariance_eigen_diagnostics": {
+      "dimension": 4,
+      "max_absolute_asymmetry": 5.421010862427522e-20,
+      "min_eigenvalue": 0.00015163192212498303,
+      "max_eigenvalue": 0.0014551824280001743,
+      "max_absolute_eigenvalue": 0.0014551824280001743,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.10420131469933121,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        0.00015163192212498303,
+        0.0003405805967035039,
+        0.0006541354616312187,
+        0.0014551824280001743
+      ]
+    },
+    "coefficient_names": [
+      "h_only",
+      "s_only",
+      "both",
+      "holiday"
+    ],
+    "coefficients": [
+      0.05000797392597623,
+      0.03087331463782271,
+      0.08554530822565956,
+      -0.29636098741885764
+    ],
+    "covariance_raw": [
+      [
+        0.0004801523629677139,
+        5.111536346206238e-05,
+        0.00016239258678678293,
+        0.00020664234825067585
+      ],
+      [
+        5.111536346206237e-05,
+        0.00017247673600279616,
+        8.735978442036612e-05,
+        6.373702979969617e-05
+      ],
+      [
+        0.00016239258678678293,
+        8.73597844203661e-05,
+        0.0005594299988445982,
+        8.303870636524822e-05
+      ],
+      [
+        0.0002066423482506759,
+        6.373702979969617e-05,
+        8.303870636524821e-05,
+        0.0013894713106447705
+      ]
+    ],
+    "covariance_used_for_linear_contrasts": [
+      [
+        0.0004801523629677139,
+        5.1115363462062376e-05,
+        0.00016239258678678293,
+        0.00020664234825067587
+      ],
+      [
+        5.1115363462062376e-05,
+        0.00017247673600279616,
+        8.735978442036611e-05,
+        6.373702979969617e-05
+      ],
+      [
+        0.00016239258678678293,
+        8.735978442036611e-05,
+        0.0005594299988445982,
+        8.303870636524821e-05
+      ],
+      [
+        0.00020664234825067587,
+        6.373702979969617e-05,
+        8.303870636524821e-05,
+        0.0013894713106447705
+      ]
+    ],
+    "covariance_symmetrized_for_rounding_only": true,
+    "eigen_diagnostics": {
+      "dimension": 4,
+      "max_absolute_asymmetry": 5.421010862427522e-20,
+      "min_eigenvalue": 0.00015163192212498303,
+      "max_eigenvalue": 0.0014551824280001743,
+      "max_absolute_eigenvalue": 0.0014551824280001743,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.10420131469933121,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        0.00015163192212498303,
+        0.0003405805967035039,
+        0.0006541354616312187,
+        0.0014551824280001743
+      ]
+    },
+    "absolute_sampling_diagnostic": {
+      "coefficient_order": [
+        "h_only",
+        "s_only",
+        "both",
+        "holiday"
+      ],
+      "raw_covariance_submatrix": [
+        [
+          0.0004801523629677139,
+          5.1115363462062376e-05,
+          0.00016239258678678293,
+          0.00020664234825067587
+        ],
+        [
+          5.1115363462062376e-05,
+          0.00017247673600279616,
+          8.735978442036611e-05,
+          6.373702979969617e-05
+        ],
+        [
+          0.00016239258678678293,
+          8.735978442036611e-05,
+          0.0005594299988445982,
+          8.303870636524821e-05
+        ],
+        [
+          0.00020664234825067587,
+          6.373702979969617e-05,
+          8.303870636524821e-05,
+          0.0013894713106447705
+        ]
+      ],
+      "raw_submatrix_eigenvalues": [
+        0.00015163192212498303,
+        0.00034058059670350366,
+        0.0006541354616312186,
+        0.001455182428000174
+      ],
+      "PSD_covariance_submatrix": [
+        [
+          0.0004801523629677139,
+          5.111536346206237e-05,
+          0.00016239258678678304,
+          0.00020664234825067585
+        ],
+        [
+          5.111536346206237e-05,
+          0.00017247673600279646,
+          8.735978442036627e-05,
+          6.373702979969688e-05
+        ],
+        [
+          0.00016239258678678304,
+          8.735978442036627e-05,
+          0.0005594299988445986,
+          8.30387063652487e-05
+        ],
+        [
+          0.00020664234825067585,
+          6.373702979969688e-05,
+          8.30387063652487e-05,
+          0.0013894713106447714
+        ]
+      ],
+      "PSD_eigenvalues": [
+        0.00015163192212498303,
+        0.00034058059670350366,
+        0.0006541354616312186,
+        0.001455182428000174
+      ],
+      "negative_eigenvalues_set_to_zero_explicitly": 0,
+      "projection_frobenius_norm": 1.5793492049408197e-18,
+      "point_contrast_gradient": [
+        63183.999712464356,
+        -61.85969596117502,
+        -55.047352816472994,
+        -6.888397500845734
+      ],
+      "raw_delta_method_variance": 1915166.8640032315,
+      "raw_delta_method_interval": [
+        445.2677410148267,
+        5870.138255508169
+      ],
+      "PSD_draw_interval": [
+        401.6953053391341,
+        5751.054690234899
+      ]
+    }
+  },
+  "service_holiday_two_way_reimbursement_2022BRL": {
+    "model_id": "service_holiday_two_way_reimbursement_2022BRL",
+    "model_family": "service_category",
+    "formula": "reimbursement_2022BRL ~ h_only + s_only + both + holiday | stratum",
+    "fixed_effect": "health region x year-month x day-of-week",
+    "cluster": "CRV1, two-way by hrid + day_id",
+    "inference": "Student t with df=min(retained hrid clusters, retained date clusters)-1",
+    "df": 449,
+    "input_rows": 821700,
+    "model_rows": 366584,
+    "rows_dropped_by_fit": 455116,
+    "input_events": 194858996.95072132,
+    "model_events": 194858996.95072132,
+    "input_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1826
+    },
+    "retained_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1826
+    },
+    "strata_input": 189000,
+    "strata_model": 83876,
+    "covariance_eigen_diagnostics": {
+      "dimension": 4,
+      "max_absolute_asymmetry": 8.131516293641283e-20,
+      "min_eigenvalue": 0.0001661260184272828,
+      "max_eigenvalue": 0.001541004357765751,
+      "max_absolute_eigenvalue": 0.001541004357765751,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.10780373046325657,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        0.0001661260184272828,
+        0.00026930027225442353,
+        0.0006219827091798217,
+        0.001541004357765751
+      ]
+    },
+    "coefficient_names": [
+      "h_only",
+      "s_only",
+      "both",
+      "holiday"
+    ],
+    "coefficients": [
+      0.035766235398195005,
+      0.0167707986751822,
+      0.03309057488928225,
+      -0.39487259650060885
+    ],
+    "covariance_raw": [
+      [
+        0.0002691987339863785,
+        -6.456723361201596e-06,
+        4.8543409829581444e-05,
+        2.6960455335729936e-05
+      ],
+      [
+        -6.456723361201581e-06,
+        0.0002281236185758726,
+        0.000151917821364703,
+        2.827349587910148e-05
+      ],
+      [
+        4.8543409829581444e-05,
+        0.00015191782136470293,
+        0.0005800873385475668,
+        0.00012885792176691517
+      ],
+      [
+        2.696045533572994e-05,
+        2.827349587910147e-05,
+        0.00012885792176691517,
+        0.0015210036665174618
+      ]
+    ],
+    "covariance_used_for_linear_contrasts": [
+      [
+        0.0002691987339863785,
+        -6.456723361201589e-06,
+        4.8543409829581444e-05,
+        2.6960455335729936e-05
+      ],
+      [
+        -6.456723361201589e-06,
+        0.0002281236185758726,
+        0.00015191782136470298,
+        2.8273495879101475e-05
+      ],
+      [
+        4.8543409829581444e-05,
+        0.00015191782136470298,
+        0.0005800873385475668,
+        0.00012885792176691517
+      ],
+      [
+        2.6960455335729936e-05,
+        2.8273495879101475e-05,
+        0.00012885792176691517,
+        0.0015210036665174618
+      ]
+    ],
+    "covariance_symmetrized_for_rounding_only": true,
+    "eigen_diagnostics": {
+      "dimension": 4,
+      "max_absolute_asymmetry": 8.131516293641283e-20,
+      "min_eigenvalue": 0.0001661260184272828,
+      "max_eigenvalue": 0.001541004357765751,
+      "max_absolute_eigenvalue": 0.001541004357765751,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.10780373046325657,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        0.0001661260184272828,
+        0.00026930027225442353,
+        0.0006219827091798217,
+        0.001541004357765751
+      ]
+    },
+    "absolute_sampling_diagnostic": {
+      "coefficient_order": [
+        "h_only",
+        "s_only",
+        "both",
+        "holiday"
+      ],
+      "raw_covariance_submatrix": [
+        [
+          0.0002691987339863785,
+          -6.456723361201589e-06,
+          4.8543409829581444e-05,
+          2.6960455335729936e-05
+        ],
+        [
+          -6.456723361201589e-06,
+          0.0002281236185758726,
+          0.00015191782136470298,
+          2.8273495879101475e-05
+        ],
+        [
+          4.8543409829581444e-05,
+          0.00015191782136470298,
+          0.0005800873385475668,
+          0.00012885792176691517
+        ],
+        [
+          2.6960455335729936e-05,
+          2.8273495879101475e-05,
+          0.00012885792176691517,
+          0.0015210036665174618
+        ]
+      ],
+      "raw_submatrix_eigenvalues": [
+        0.00016612601842728287,
+        0.00026930027225442353,
+        0.0006219827091798217,
+        0.0015410043577657512
+      ],
+      "PSD_covariance_submatrix": [
+        [
+          0.0002691987339863786,
+          -6.456723361201625e-06,
+          4.854340982958143e-05,
+          2.696045533572996e-05
+        ],
+        [
+          -6.456723361201625e-06,
+          0.0002281236185758726,
+          0.00015191782136470287,
+          2.8273495879101448e-05
+        ],
+        [
+          4.854340982958143e-05,
+          0.00015191782136470287,
+          0.0005800873385475666,
+          0.0001288579217669152
+        ],
+        [
+          2.696045533572996e-05,
+          2.8273495879101448e-05,
+          0.0001288579217669152,
+          0.0015210036665174614
+        ]
+      ],
+      "PSD_eigenvalues": [
+        0.00016612601842728287,
+        0.00026930027225442353,
+        0.0006219827091798217,
+        0.0015410043577657512
+      ],
+      "negative_eigenvalues_set_to_zero_explicitly": 0,
+      "projection_frobenius_norm": 5.182969618170373e-19,
+      "point_contrast_gradient": [
+        15852542.518114205,
+        -10322.89071008563,
+        -8096.849313005805,
+        -1243.061377535721
+      ],
+      "raw_delta_method_variance": 67639159944.66441,
+      "raw_delta_method_interval": [
+        56960.00958936068,
+        1076455.1725860722
+      ],
+      "PSD_draw_interval": [
+        53636.43922692987,
+        1065941.2838514904
+      ]
+    }
+  },
+  "service_holiday_excluding_2020_2021_urgent_N20": {
+    "model_id": "service_holiday_excluding_2020_2021_urgent_N20",
+    "model_family": "service_category",
+    "formula": "urgent_N20 ~ h_only + s_only + both + holiday | stratum",
+    "fixed_effect": "health region x year-month x day-of-week",
+    "cluster": "CRV1, two-way by hrid + day_id",
+    "inference": "Student t with df=min(retained hrid clusters, retained date clusters)-1",
+    "df": 449,
+    "input_rows": 492750,
+    "model_rows": 220501,
+    "rows_dropped_by_fit": 272249,
+    "input_events": 136094.0,
+    "model_events": 136094.0,
+    "input_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1095
+    },
+    "retained_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1095
+    },
+    "strata_input": 113400,
+    "strata_model": 50489,
+    "covariance_eigen_diagnostics": {
+      "dimension": 4,
+      "max_absolute_asymmetry": 2.710505431213761e-20,
+      "min_eigenvalue": 8.835195289782436e-05,
+      "max_eigenvalue": 0.0014795780885412603,
+      "max_absolute_eigenvalue": 0.0014795780885412603,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.059714288540817714,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        8.835195289782436e-05,
+        0.0002942849994068103,
+        0.0005932129868676563,
+        0.0014795780885412603
+      ]
+    },
+    "coefficient_names": [
+      "h_only",
+      "s_only",
+      "both",
+      "holiday"
+    ],
+    "coefficients": [
+      0.027904700811562305,
+      0.00970009355465544,
+      0.055174651891571266,
+      -0.33913127665586684
+    ],
+    "covariance_raw": [
+      [
+        0.0002948808751148663,
+        -7.157243509384434e-06,
+        2.3034390226723605e-06,
+        3.2515674177739517e-05
+      ],
+      [
+        -7.157243509384426e-06,
+        9.75172362420053e-05,
+        6.46639444243531e-05,
+        1.976117183346702e-05
+      ],
+      [
+        2.303439022672364e-06,
+        6.466394442435307e-05,
+        0.0005864413759406889,
+        -4.122916475524402e-05
+      ],
+      [
+        3.251567417773952e-05,
+        1.976117183346703e-05,
+        -4.1229164755244015e-05,
+        0.001476588540415991
+      ]
+    ],
+    "covariance_used_for_linear_contrasts": [
+      [
+        0.0002948808751148663,
+        -7.15724350938443e-06,
+        2.303439022672362e-06,
+        3.251567417773952e-05
+      ],
+      [
+        -7.15724350938443e-06,
+        9.75172362420053e-05,
+        6.466394442435308e-05,
+        1.9761171833467027e-05
+      ],
+      [
+        2.303439022672362e-06,
+        6.466394442435308e-05,
+        0.0005864413759406889,
+        -4.1229164755244015e-05
+      ],
+      [
+        3.251567417773952e-05,
+        1.9761171833467027e-05,
+        -4.1229164755244015e-05,
+        0.001476588540415991
+      ]
+    ],
+    "covariance_symmetrized_for_rounding_only": true,
+    "eigen_diagnostics": {
+      "dimension": 4,
+      "max_absolute_asymmetry": 2.710505431213761e-20,
+      "min_eigenvalue": 8.835195289782436e-05,
+      "max_eigenvalue": 0.0014795780885412603,
+      "max_absolute_eigenvalue": 0.0014795780885412603,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.059714288540817714,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        8.835195289782436e-05,
+        0.0002942849994068103,
+        0.0005932129868676563,
+        0.0014795780885412603
+      ]
+    }
+  },
+  "service_holiday_excluding_2020_2021_admission_attributed_beddays": {
+    "model_id": "service_holiday_excluding_2020_2021_admission_attributed_beddays",
+    "model_family": "service_category",
+    "formula": "admission_attributed_beddays ~ h_only + s_only + both + holiday | stratum",
+    "fixed_effect": "health region x year-month x day-of-week",
+    "cluster": "CRV1, two-way by hrid + day_id",
+    "inference": "Student t with df=min(retained hrid clusters, retained date clusters)-1",
+    "df": 449,
+    "input_rows": 492750,
+    "model_rows": 215201,
+    "rows_dropped_by_fit": 277549,
+    "input_events": 497269.0,
+    "model_events": 497269.0,
+    "input_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1095
+    },
+    "retained_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1095
+    },
+    "strata_input": 113400,
+    "strata_model": 49271,
+    "covariance_eigen_diagnostics": {
+      "dimension": 4,
+      "max_absolute_asymmetry": 8.131516293641283e-20,
+      "min_eigenvalue": 0.00022180536782634612,
+      "max_eigenvalue": 0.002009720044440078,
+      "max_absolute_eigenvalue": 0.002009720044440078,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.1103663012368186,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        0.00022180536782634612,
+        0.0007444345514271242,
+        0.0011366829724185382,
+        0.002009720044440078
+      ]
+    },
+    "coefficient_names": [
+      "h_only",
+      "s_only",
+      "both",
+      "holiday"
+    ],
+    "coefficients": [
+      0.047888536670372184,
+      0.02112732663316021,
+      0.06675016949083193,
+      -0.24154271114963416
+    ],
+    "covariance_raw": [
+      [
+        0.0007605018431777022,
+        -7.243089291271109e-05,
+        9.662551606176669e-05,
+        5.9310034910493834e-05
+      ],
+      [
+        -7.243089291271109e-05,
+        0.00024280667158997366,
+        8.300279914967844e-05,
+        1.3481307183750898e-05
+      ],
+      [
+        9.66255160617667e-05,
+        8.300279914967836e-05,
+        0.0011764930570819635,
+        -0.0002517242966494543
+      ],
+      [
+        5.931003491049382e-05,
+        1.3481307183750908e-05,
+        -0.00025172429664945423,
+        0.0019328413642624475
+      ]
+    ],
+    "covariance_used_for_linear_contrasts": [
+      [
+        0.0007605018431777022,
+        -7.243089291271109e-05,
+        9.66255160617667e-05,
+        5.931003491049383e-05
+      ],
+      [
+        -7.243089291271109e-05,
+        0.00024280667158997366,
+        8.30027991496784e-05,
+        1.3481307183750903e-05
+      ],
+      [
+        9.66255160617667e-05,
+        8.30027991496784e-05,
+        0.0011764930570819635,
+        -0.0002517242966494543
+      ],
+      [
+        5.931003491049383e-05,
+        1.3481307183750903e-05,
+        -0.0002517242966494543,
+        0.0019328413642624475
+      ]
+    ],
+    "covariance_symmetrized_for_rounding_only": true,
+    "eigen_diagnostics": {
+      "dimension": 4,
+      "max_absolute_asymmetry": 8.131516293641283e-20,
+      "min_eigenvalue": 0.00022180536782634612,
+      "max_eigenvalue": 0.002009720044440078,
+      "max_absolute_eigenvalue": 0.002009720044440078,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.1103663012368186,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        0.00022180536782634612,
+        0.0007444345514271242,
+        0.0011366829724185382,
+        0.002009720044440078
+      ]
+    }
+  },
+  "service_holiday_excluding_2020_2021_reimbursement_2022BRL": {
+    "model_id": "service_holiday_excluding_2020_2021_reimbursement_2022BRL",
+    "model_family": "service_category",
+    "formula": "reimbursement_2022BRL ~ h_only + s_only + both + holiday | stratum",
+    "fixed_effect": "health region x year-month x day-of-week",
+    "cluster": "CRV1, two-way by hrid + day_id",
+    "inference": "Student t with df=min(retained hrid clusters, retained date clusters)-1",
+    "df": 449,
+    "input_rows": 492750,
+    "model_rows": 220501,
+    "rows_dropped_by_fit": 272249,
+    "input_events": 117395550.77468914,
+    "model_events": 117395550.77468914,
+    "input_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1095
+    },
+    "retained_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1095
+    },
+    "strata_input": 113400,
+    "strata_model": 50489,
+    "covariance_eigen_diagnostics": {
+      "dimension": 4,
+      "max_absolute_asymmetry": 8.131516293641283e-20,
+      "min_eigenvalue": 0.00032216974471542374,
+      "max_eigenvalue": 0.00259380830383725,
+      "max_absolute_eigenvalue": 0.00259380830383725,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.12420723005582546,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        0.00032216974471542374,
+        0.0005573861991110873,
+        0.0013910509461418905,
+        0.00259380830383725
+      ]
+    },
+    "coefficient_names": [
+      "h_only",
+      "s_only",
+      "both",
+      "holiday"
+    ],
+    "coefficients": [
+      0.018600501455029506,
+      -0.00024172366410022019,
+      0.03055059493078712,
+      -0.3732174374267475
+    ],
+    "covariance_raw": [
+      [
+        0.0005541180624562419,
+        2.930217944114684e-05,
+        -1.739820498166147e-05,
+        -3.9967230569722784e-05
+      ],
+      [
+        2.9302179441146815e-05,
+        0.0003596664375317466,
+        0.0001848962231985811,
+        -3.7397899651894886e-05
+      ],
+      [
+        -1.7398204981661458e-05,
+        0.00018489622319858119,
+        0.0013635970223837245,
+        -7.778919950135876e-05
+      ],
+      [
+        -3.996723056972276e-05,
+        -3.73978996518949e-05,
+        -7.778919950135875e-05,
+        0.0025870336714339387
+      ]
+    ],
+    "covariance_used_for_linear_contrasts": [
+      [
+        0.0005541180624562419,
+        2.930217944114683e-05,
+        -1.7398204981661465e-05,
+        -3.996723056972277e-05
+      ],
+      [
+        2.930217944114683e-05,
+        0.0003596664375317466,
+        0.00018489622319858113,
+        -3.739789965189489e-05
+      ],
+      [
+        -1.7398204981661465e-05,
+        0.00018489622319858113,
+        0.0013635970223837245,
+        -7.778919950135875e-05
+      ],
+      [
+        -3.996723056972277e-05,
+        -3.739789965189489e-05,
+        -7.778919950135875e-05,
+        0.0025870336714339387
+      ]
+    ],
+    "covariance_symmetrized_for_rounding_only": true,
+    "eigen_diagnostics": {
+      "dimension": 4,
+      "max_absolute_asymmetry": 8.131516293641283e-20,
+      "min_eigenvalue": 0.00032216974471542374,
+      "max_eigenvalue": 0.00259380830383725,
+      "max_absolute_eigenvalue": 0.00259380830383725,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.12420723005582546,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        0.00032216974471542374,
+        0.0005573861991110873,
+        0.0013910509461418905,
+        0.00259380830383725
+      ]
+    }
+  },
+  "drainage_continuous_two_way": {
+    "model_id": "drainage_continuous_two_way",
+    "model_family": "drainage_continuous_lag0_7",
+    "formula": "any_drainage ~ t0 + t1 + t2 + t3 + t4 + t5 + t6 + t7 + f0 + f1 + f2 + f3 + f4 + f5 + f6 + f7 | stratum",
+    "fixed_effect": "health region x year-month x day-of-week",
+    "cluster": "CRV1, two-way by hrid + day_id",
+    "inference": "Student t with df=min(retained hrid clusters, retained date clusters)-1",
+    "df": 442,
+    "input_rows": 818550,
+    "model_rows": 180241,
+    "rows_dropped_by_fit": 638309,
+    "input_events": 84572.0,
+    "model_events": 84572.0,
+    "input_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1819
+    },
+    "retained_cluster_counts": {
+      "hrid": 443,
+      "day_id": 1819
+    },
+    "strata_input": 189000,
+    "strata_model": 41271,
+    "covariance_eigen_diagnostics": {
+      "dimension": 16,
+      "max_absolute_asymmetry": 1.463672932855431e-18,
+      "min_eigenvalue": 9.453910804014191e-07,
+      "max_eigenvalue": 0.007547636155081128,
+      "max_absolute_eigenvalue": 0.007547636155081128,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.00012525657848053186,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        9.453910804014191e-07,
+        1.953138696174579e-06,
+        3.7163615861267524e-06,
+        5.603361521886583e-06,
+        9.725543570259612e-06,
+        2.2093778759550566e-05,
+        3.45157192439343e-05,
+        4.9475405366288364e-05,
+        0.00012625647893173126,
+        0.0002441624870612788,
+        0.0005123887998887539,
+        0.0008116771203426742,
+        0.0016780345952349949,
+        0.002895733334834924,
+        0.004715176822684363,
+        0.007547636155081128
+      ]
+    },
+    "coefficient_names": [
+      "t0",
+      "t1",
+      "t2",
+      "t3",
+      "t4",
+      "t5",
+      "t6",
+      "t7",
+      "f0",
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7"
+    ],
+    "coefficients": [
+      -0.0005441929543235167,
+      -0.0001180707660787201,
+      0.004459197780934049,
+      -0.0016728868582254282,
+      0.0029118044518498002,
+      0.0026105088948691654,
+      0.0019474489059467435,
+      0.0027634090352582808,
+      0.06824392683596392,
+      0.034061668842713534,
+      -0.09834076351299431,
+      0.06296417517749121,
+      -0.052980480848059536,
+      0.06417105197172533,
+      -0.07933276871137784,
+      0.06782795327226186
+    ],
+    "covariance_raw": [
+      [
+        1.1169781393432946e-05,
+        -1.0856044201046466e-05,
+        5.976122550826287e-06,
+        -2.6062541766933152e-06,
+        5.159208940585373e-07,
+        2.6996970781596587e-07,
+        1.70535837017404e-06,
+        4.4932189848531113e-07,
+        -5.07677765332252e-05,
+        5.357129541845618e-05,
+        -1.6510012854968015e-05,
+        -2.548376748997125e-05,
+        1.279556446579888e-05,
+        -8.143064539045106e-06,
+        -6.228973552666782e-06,
+        1.1369664281106944e-05
+      ],
+      [
+        -1.0856044201046466e-05,
+        2.1855419445351766e-05,
+        -1.510470987113918e-05,
+        5.605827327889026e-06,
+        -1.9404994151452352e-06,
+        3.751312997956978e-07,
+        -3.188915845727742e-06,
+        1.315725556347652e-06,
+        3.0092734498807013e-05,
+        -5.5191080305067874e-05,
+        2.5114161250897716e-05,
+        2.1755619053894868e-05,
+        -4.732119024853269e-06,
+        1.2480908662110967e-05,
+        1.8089172728235055e-06,
+        -8.775546524589553e-06
+      ],
+      [
+        5.97612255082626e-06,
+        -1.5104709871139142e-05,
+        2.1248019084384203e-05,
+        -1.3272900327640323e-05,
+        2.820867128654248e-06,
+        1.2179647310046734e-06,
+        1.427734164405292e-06,
+        -1.5745339931219658e-06,
+        -2.231311004782077e-06,
+        9.531761476375723e-06,
+        -3.8662613062548694e-05,
+        3.057728383018613e-05,
+        -8.785223516244153e-08,
+        -7.592459293593133e-06,
+        -8.017610917756434e-06,
+        6.6611654263934184e-06
+      ],
+      [
+        -2.606254176693291e-06,
+        5.605827327888985e-06,
+        -1.3272900327640294e-05,
+        2.0378614662223945e-05,
+        -1.1622581895842422e-05,
+        1.2226459044363927e-06,
+        -1.1875937353499255e-06,
+        1.3562459016053363e-06,
+        -1.390221367044245e-05,
+        -4.183301355532383e-06,
+        2.9119368593059256e-05,
+        -4.1375313062556974e-05,
+        2.8338024679914293e-05,
+        -6.421581963336962e-07,
+        -8.083500233288947e-07,
+        -1.4089599941701009e-05
+      ],
+      [
+        5.159208940585237e-07,
+        -1.9404994151452263e-06,
+        2.820867128654265e-06,
+        -1.1622581895842475e-05,
+        1.9216284210072865e-05,
+        -1.2145298273788933e-05,
+        5.228441817908888e-06,
+        -2.3678982937769286e-06,
+        2.4841530180552965e-05,
+        -6.470491287485847e-06,
+        -3.0763324286336306e-06,
+        -6.483468439406765e-06,
+        -4.6563609772776415e-05,
+        2.1210695255546123e-05,
+        1.893873386108325e-05,
+        9.842475864797572e-07
+      ],
+      [
+        2.6996970781597487e-07,
+        3.7513129979568967e-07,
+        1.2179647310046683e-06,
+        1.2226459044364316e-06,
+        -1.214529827378893e-05,
+        1.9537265737409013e-05,
+        -1.3007952634593301e-05,
+        4.7216678138893855e-06,
+        -2.3086425491927623e-05,
+        3.7656198428293877e-05,
+        -2.1066127084099006e-05,
+        1.3481678141444538e-05,
+        3.9776158159016835e-05,
+        -4.667372618740459e-05,
+        -1.320325161526403e-05,
+        1.648316014213526e-05
+      ],
+      [
+        1.7053583701740356e-06,
+        -3.1889158457277392e-06,
+        1.4277341644053071e-06,
+        -1.1875937353499632e-06,
+        5.228441817908921e-06,
+        -1.3007952634593323e-05,
+        2.273407299416688e-05,
+        -1.2434862812790944e-05,
+        5.94463077577918e-06,
+        -3.181919431049724e-05,
+        1.476391263331971e-05,
+        -2.236592734503866e-06,
+        -2.4060260364477753e-05,
+        1.0454790531359212e-05,
+        -9.188787446486706e-06,
+        2.561126445530923e-05
+      ],
+      [
+        4.49321898485312e-07,
+        1.3157255563476557e-06,
+        -1.574533993121981e-06,
+        1.356245901605355e-06,
+        -2.3678982937769273e-06,
+        4.721667813889375e-06,
+        -1.2434862812790952e-05,
+        1.2257652566389116e-05,
+        -4.893985162032398e-06,
+        3.278055761375693e-06,
+        1.3632712414385433e-05,
+        -2.3457573956594745e-05,
+        2.061436302224942e-05,
+        -9.212091838140666e-06,
+        1.998316682931447e-05,
+        -3.7887270148928304e-05
+      ],
+      [
+        -5.076777653322518e-05,
+        3.009273449880705e-05,
+        -2.2313110047822144e-06,
+        -1.3902213670442352e-05,
+        2.4841530180552894e-05,
+        -2.3086425491927623e-05,
+        5.94463077577917e-06,
+        -4.893985162032405e-06,
+        0.0015628796228204034,
+        -0.0017145951062580195,
+        0.000539286276358191,
+        0.00012585254123770667,
+        -0.00017712923350339158,
+        -8.454123032974116e-05,
+        0.00027954055974289765,
+        -0.0003938895305906065
+      ],
+      [
+        5.35712954184562e-05,
+        -5.5191080305068104e-05,
+        9.53176147637616e-06,
+        -4.183301355532681e-06,
+        -6.470491287485693e-06,
+        3.7656198428293904e-05,
+        -3.181919431049723e-05,
+        3.2780557613756624e-06,
+        -0.0017145951062580195,
+        0.003314469049904313,
+        -0.001852864303473551,
+        0.00048590436265326175,
+        -0.00020976668952760787,
+        0.0002635439052957029,
+        -0.0006686946198262676,
+        0.0007661210956710361
+      ],
+      [
+        -1.651001285496803e-05,
+        2.511416125089785e-05,
+        -3.8662613062549026e-05,
+        2.91193685930595e-05,
+        -3.076332428633752e-06,
+        -2.106612708409904e-05,
+        1.4763912633319701e-05,
+        1.363271241438542e-05,
+        0.00053928627635819,
+        -0.0018528643034735502,
+        0.0025900590311815005,
+        -0.0019574872241376008,
+        0.000931268451686362,
+        -0.000635879073553791,
+        0.00048820115357902494,
+        -0.0003616687976113098
+      ],
+      [
+        -2.548376748997132e-05,
+        2.1755619053894908e-05,
+        3.05772838301862e-05,
+        -4.1375313062557116e-05,
+        -6.483468439406709e-06,
+        1.3481678141444554e-05,
+        -2.2365927345038897e-06,
+        -2.34575739565947e-05,
+        0.0001258525412377081,
+        0.0004859043626532603,
+        -0.0019574872241376,
+        0.0030448859984393392,
+        -0.0018235718609111856,
+        0.0010673134577879034,
+        -0.0001160754485954004,
+        -0.00018657344244105348
+      ],
+      [
+        1.2795564465798937e-05,
+        -4.7321190248533115e-06,
+        -8.785223516248389e-08,
+        2.8338024679914483e-05,
+        -4.656360977277648e-05,
+        3.977615815901688e-05,
+        -2.40602603644777e-05,
+        2.06143630222494e-05,
+        -0.00017712923350339185,
+        -0.00020976668952760703,
+        0.0009312684516863611,
+        -0.0018235718609111845,
+        0.0020556355435995986,
+        -0.0014126740810384687,
+        0.00020257915277006373,
+        9.810131907271209e-05
+      ],
+      [
+        -8.143064539045128e-06,
+        1.248090866211099e-05,
+        -7.592459293593063e-06,
+        -6.421581963338283e-07,
+        2.121069525554613e-05,
+        -4.66737261874046e-05,
+        1.0454790531359166e-05,
+        -9.212091838140634e-06,
+        -8.454123032974172e-05,
+        0.000263543905295703,
+        -0.0006358790735537916,
+        0.0010673134577879047,
+        -0.0014126740810384698,
+        0.002380891897912142,
+        -0.001061139173979443,
+        -0.00014240149378545657
+      ],
+      [
+        -6.228973552666773e-06,
+        1.8089172728235165e-06,
+        -8.01761091775653e-06,
+        -8.083500233288354e-07,
+        1.8938733861083366e-05,
+        -1.3203251615264206e-05,
+        -9.188787446486652e-06,
+        1.9983166829314423e-05,
+        0.0002795405597428981,
+        -0.0006686946198262672,
+        0.0004882011535790252,
+        -0.00011607544859540036,
+        0.0002025791527700633,
+        -0.001061139173979442,
+        0.0020062325341795055,
+        -0.0011299158277970896
+      ],
+      [
+        1.1369664281106924e-05,
+        -8.775546524589551e-06,
+        6.661165426393473e-06,
+        -1.4089599941701034e-05,
+        9.842475864796395e-07,
+        1.648316014213543e-05,
+        2.5611264455309183e-05,
+        -3.788727014892825e-05,
+        -0.00039388953059060674,
+        0.0007661210956710358,
+        -0.0003616687976113095,
+        -0.0001865734424410535,
+        9.810131907271258e-05,
+        -0.00014240149378545744,
+        -0.0011299158277970904,
+        0.0015556437057542396
+      ]
+    ],
+    "covariance_used_for_linear_contrasts": [
+      [
+        1.1169781393432946e-05,
+        -1.0856044201046466e-05,
+        5.976122550826273e-06,
+        -2.606254176693303e-06,
+        5.159208940585305e-07,
+        2.6996970781597037e-07,
+        1.705358370174038e-06,
+        4.4932189848531156e-07,
+        -5.0767776533225184e-05,
+        5.357129541845619e-05,
+        -1.6510012854968022e-05,
+        -2.5483767489971285e-05,
+        1.2795564465798908e-05,
+        -8.143064539045118e-06,
+        -6.228973552666777e-06,
+        1.1369664281106934e-05
+      ],
+      [
+        -1.0856044201046466e-05,
+        2.1855419445351766e-05,
+        -1.5104709871139162e-05,
+        5.6058273278890054e-06,
+        -1.940499415145231e-06,
+        3.7513129979569375e-07,
+        -3.188915845727741e-06,
+        1.315725556347654e-06,
+        3.0092734498807034e-05,
+        -5.519108030506799e-05,
+        2.5114161250897784e-05,
+        2.1755619053894888e-05,
+        -4.73211902485329e-06,
+        1.2480908662110979e-05,
+        1.808917272823511e-06,
+        -8.775546524589551e-06
+      ],
+      [
+        5.976122550826273e-06,
+        -1.5104709871139162e-05,
+        2.1248019084384203e-05,
+        -1.3272900327640309e-05,
+        2.8208671286542564e-06,
+        1.2179647310046708e-06,
+        1.4277341644052995e-06,
+        -1.5745339931219735e-06,
+        -2.231311004782146e-06,
+        9.531761476375942e-06,
+        -3.8662613062548864e-05,
+        3.057728383018616e-05,
+        -8.785223516246271e-08,
+        -7.592459293593099e-06,
+        -8.017610917756482e-06,
+        6.6611654263934455e-06
+      ],
+      [
+        -2.606254176693303e-06,
+        5.6058273278890054e-06,
+        -1.3272900327640309e-05,
+        2.0378614662223945e-05,
+        -1.162258189584245e-05,
+        1.2226459044364122e-06,
+        -1.1875937353499444e-06,
+        1.3562459016053456e-06,
+        -1.3902213670442401e-05,
+        -4.183301355532532e-06,
+        2.9119368593059378e-05,
+        -4.137531306255704e-05,
+        2.8338024679914388e-05,
+        -6.421581963337623e-07,
+        -8.08350023328865e-07,
+        -1.408959994170102e-05
+      ],
+      [
+        5.159208940585305e-07,
+        -1.940499415145231e-06,
+        2.8208671286542564e-06,
+        -1.162258189584245e-05,
+        1.9216284210072865e-05,
+        -1.2145298273788931e-05,
+        5.228441817908905e-06,
+        -2.3678982937769277e-06,
+        2.484153018055293e-05,
+        -6.4704912874857696e-06,
+        -3.0763324286336916e-06,
+        -6.483468439406737e-06,
+        -4.656360977277645e-05,
+        2.1210695255546127e-05,
+        1.893873386108331e-05,
+        9.842475864796983e-07
+      ],
+      [
+        2.6996970781597037e-07,
+        3.7513129979569375e-07,
+        1.2179647310046708e-06,
+        1.2226459044364122e-06,
+        -1.2145298273788931e-05,
+        1.9537265737409013e-05,
+        -1.3007952634593313e-05,
+        4.7216678138893804e-06,
+        -2.3086425491927623e-05,
+        3.765619842829389e-05,
+        -2.1066127084099023e-05,
+        1.3481678141444546e-05,
+        3.9776158159016855e-05,
+        -4.6673726187404594e-05,
+        -1.3203251615264118e-05,
+        1.6483160142135346e-05
+      ],
+      [
+        1.705358370174038e-06,
+        -3.188915845727741e-06,
+        1.4277341644052995e-06,
+        -1.1875937353499444e-06,
+        5.228441817908905e-06,
+        -1.3007952634593313e-05,
+        2.273407299416688e-05,
+        -1.2434862812790947e-05,
+        5.944630775779175e-06,
+        -3.181919431049723e-05,
+        1.4763912633319706e-05,
+        -2.236592734503878e-06,
+        -2.4060260364477726e-05,
+        1.045479053135919e-05,
+        -9.18878744648668e-06,
+        2.5611264455309206e-05
+      ],
+      [
+        4.4932189848531156e-07,
+        1.315725556347654e-06,
+        -1.5745339931219735e-06,
+        1.3562459016053456e-06,
+        -2.3678982937769277e-06,
+        4.7216678138893804e-06,
+        -1.2434862812790947e-05,
+        1.2257652566389116e-05,
+        -4.893985162032402e-06,
+        3.2780557613756777e-06,
+        1.3632712414385427e-05,
+        -2.3457573956594724e-05,
+        2.061436302224941e-05,
+        -9.212091838140651e-06,
+        1.9983166829314447e-05,
+        -3.788727014892828e-05
+      ],
+      [
+        -5.0767776533225184e-05,
+        3.0092734498807034e-05,
+        -2.231311004782146e-06,
+        -1.3902213670442401e-05,
+        2.484153018055293e-05,
+        -2.3086425491927623e-05,
+        5.944630775779175e-06,
+        -4.893985162032402e-06,
+        0.0015628796228204034,
+        -0.0017145951062580195,
+        0.0005392862763581905,
+        0.0001258525412377074,
+        -0.00017712923350339172,
+        -8.454123032974143e-05,
+        0.00027954055974289786,
+        -0.00039388953059060663
+      ],
+      [
+        5.357129541845619e-05,
+        -5.519108030506799e-05,
+        9.531761476375942e-06,
+        -4.183301355532532e-06,
+        -6.4704912874857696e-06,
+        3.765619842829389e-05,
+        -3.181919431049723e-05,
+        3.2780557613756777e-06,
+        -0.0017145951062580195,
+        0.003314469049904313,
+        -0.0018528643034735506,
+        0.00048590436265326105,
+        -0.00020976668952760744,
+        0.00026354390529570297,
+        -0.0006686946198262674,
+        0.000766121095671036
+      ],
+      [
+        -1.6510012854968022e-05,
+        2.5114161250897784e-05,
+        -3.8662613062548864e-05,
+        2.9119368593059378e-05,
+        -3.0763324286336916e-06,
+        -2.1066127084099023e-05,
+        1.4763912633319706e-05,
+        1.3632712414385427e-05,
+        0.0005392862763581905,
+        -0.0018528643034735506,
+        0.0025900590311815005,
+        -0.0019574872241376003,
+        0.0009312684516863616,
+        -0.0006358790735537913,
+        0.0004882011535790251,
+        -0.0003616687976113097
+      ],
+      [
+        -2.5483767489971285e-05,
+        2.1755619053894888e-05,
+        3.057728383018616e-05,
+        -4.137531306255704e-05,
+        -6.483468439406737e-06,
+        1.3481678141444546e-05,
+        -2.236592734503878e-06,
+        -2.3457573956594724e-05,
+        0.0001258525412377074,
+        0.00048590436265326105,
+        -0.0019574872241376003,
+        0.0030448859984393392,
+        -0.0018235718609111852,
+        0.001067313457787904,
+        -0.00011607544859540037,
+        -0.0001865734424410535
+      ],
+      [
+        1.2795564465798908e-05,
+        -4.73211902485329e-06,
+        -8.785223516246271e-08,
+        2.8338024679914388e-05,
+        -4.656360977277645e-05,
+        3.9776158159016855e-05,
+        -2.4060260364477726e-05,
+        2.061436302224941e-05,
+        -0.00017712923350339172,
+        -0.00020976668952760744,
+        0.0009312684516863616,
+        -0.0018235718609111852,
+        0.0020556355435995986,
+        -0.0014126740810384694,
+        0.0002025791527700635,
+        9.810131907271233e-05
+      ],
+      [
+        -8.143064539045118e-06,
+        1.2480908662110979e-05,
+        -7.592459293593099e-06,
+        -6.421581963337623e-07,
+        2.1210695255546127e-05,
+        -4.6673726187404594e-05,
+        1.045479053135919e-05,
+        -9.212091838140651e-06,
+        -8.454123032974143e-05,
+        0.00026354390529570297,
+        -0.0006358790735537913,
+        0.001067313457787904,
+        -0.0014126740810384694,
+        0.002380891897912142,
+        -0.0010611391739794424,
+        -0.000142401493785457
+      ],
+      [
+        -6.228973552666777e-06,
+        1.808917272823511e-06,
+        -8.017610917756482e-06,
+        -8.08350023328865e-07,
+        1.893873386108331e-05,
+        -1.3203251615264118e-05,
+        -9.18878744648668e-06,
+        1.9983166829314447e-05,
+        0.00027954055974289786,
+        -0.0006686946198262674,
+        0.0004882011535790251,
+        -0.00011607544859540037,
+        0.0002025791527700635,
+        -0.0010611391739794424,
+        0.0020062325341795055,
+        -0.00112991582779709
+      ],
+      [
+        1.1369664281106934e-05,
+        -8.775546524589551e-06,
+        6.6611654263934455e-06,
+        -1.408959994170102e-05,
+        9.842475864796983e-07,
+        1.6483160142135346e-05,
+        2.5611264455309206e-05,
+        -3.788727014892828e-05,
+        -0.00039388953059060663,
+        0.000766121095671036,
+        -0.0003616687976113097,
+        -0.0001865734424410535,
+        9.810131907271233e-05,
+        -0.000142401493785457,
+        -0.00112991582779709,
+        0.0015556437057542396
+      ]
+    ],
+    "covariance_symmetrized_for_rounding_only": true,
+    "eigen_diagnostics": {
+      "dimension": 16,
+      "max_absolute_asymmetry": 1.463672932855431e-18,
+      "min_eigenvalue": 9.453910804014191e-07,
+      "max_eigenvalue": 0.007547636155081128,
+      "max_absolute_eigenvalue": 0.007547636155081128,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.00012525657848053186,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        9.453910804014191e-07,
+        1.953138696174579e-06,
+        3.7163615861267524e-06,
+        5.603361521886583e-06,
+        9.725543570259612e-06,
+        2.2093778759550566e-05,
+        3.45157192439343e-05,
+        4.9475405366288364e-05,
+        0.00012625647893173126,
+        0.0002441624870612788,
+        0.0005123887998887539,
+        0.0008116771203426742,
+        0.0016780345952349949,
+        0.002895733334834924,
+        0.004715176822684363,
+        0.007547636155081128
+      ]
+    }
+  },
+  "drainage_continuous_holiday_two_way": {
+    "model_id": "drainage_continuous_holiday_two_way",
+    "model_family": "drainage_continuous_lag0_7",
+    "formula": "any_drainage ~ t0 + t1 + t2 + t3 + t4 + t5 + t6 + t7 + f0 + f1 + f2 + f3 + f4 + f5 + f6 + f7 + holiday | stratum",
+    "fixed_effect": "health region x year-month x day-of-week",
+    "cluster": "CRV1, two-way by hrid + day_id",
+    "inference": "Student t with df=min(retained hrid clusters, retained date clusters)-1",
+    "df": 442,
+    "input_rows": 818550,
+    "model_rows": 180241,
+    "rows_dropped_by_fit": 638309,
+    "input_events": 84572.0,
+    "model_events": 84572.0,
+    "input_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1819
+    },
+    "retained_cluster_counts": {
+      "hrid": 443,
+      "day_id": 1819
+    },
+    "strata_input": 189000,
+    "strata_model": 41271,
+    "covariance_eigen_diagnostics": {
+      "dimension": 17,
+      "max_absolute_asymmetry": 2.927345865710862e-18,
+      "min_eigenvalue": 8.741230955422322e-07,
+      "max_eigenvalue": 0.007629811716963406,
+      "max_absolute_eigenvalue": 0.007629811716963406,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.00011456679770993419,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        8.741230955422322e-07,
+        1.8143803501666192e-06,
+        3.498458859847337e-06,
+        5.3101572155986786e-06,
+        8.970107425790488e-06,
+        2.2009575976357218e-05,
+        3.4250054383546e-05,
+        4.985809463735787e-05,
+        0.00011888413773378459,
+        0.0002344965033502181,
+        0.0004892120407099385,
+        0.0007996108240062918,
+        0.0013548512789722214,
+        0.0017339325492013813,
+        0.0029321357187984914,
+        0.004602209690102379,
+        0.007629811716963406
+      ]
+    },
+    "coefficient_names": [
+      "t0",
+      "t1",
+      "t2",
+      "t3",
+      "t4",
+      "t5",
+      "t6",
+      "t7",
+      "f0",
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "holiday"
+    ],
+    "coefficients": [
+      -0.00032238937470060997,
+      -0.0010652390865221496,
+      0.0037556788429999825,
+      -0.0012786712773161018,
+      0.002981127138172668,
+      0.003005456798208824,
+      0.002648848523228079,
+      0.002294675369483437,
+      0.0653097220631275,
+      0.03116101949660467,
+      -0.09381918535451726,
+      0.06357999711648153,
+      -0.050627678673662635,
+      0.057945687367866046,
+      -0.06774584955680152,
+      0.05204867189649676,
+      -0.4108259460470191
+    ],
+    "covariance_raw": [
+      [
+        1.0874056811014346e-05,
+        -1.0930983422828755e-05,
+        6.242896440290684e-06,
+        -2.723363241375875e-06,
+        5.35209756607137e-07,
+        3.434190122559198e-07,
+        1.7737722759611204e-06,
+        3.813653181437537e-07,
+        -4.969227891436879e-05,
+        5.219895537744323e-05,
+        -1.4106234331496258e-05,
+        -2.659955127258024e-05,
+        1.3241019248711456e-05,
+        -8.948074787764906e-06,
+        -4.595314112344307e-06,
+        9.887327337179015e-06,
+        -4.7518474996968815e-06
+      ],
+      [
+        -1.0930983422828745e-05,
+        2.1912513639082604e-05,
+        -1.5267836436994965e-05,
+        5.580761393196273e-06,
+        -1.7779274049765174e-06,
+        1.863784926256603e-07,
+        -3.2949715651923797e-06,
+        1.335540910104922e-06,
+        2.9341238847378866e-05,
+        -5.21393137541858e-05,
+        2.0461680931752545e-05,
+        2.5179207232304956e-05,
+        -6.915554796014213e-06,
+        1.5146762929876564e-05,
+        -3.078285691239057e-07,
+        -6.591061581299586e-06,
+        9.27717621050867e-06
+      ],
+      [
+        6.242896440290678e-06,
+        -1.526783643699495e-05,
+        2.1041880955986346e-05,
+        -1.3070097656282851e-05,
+        2.750369618464665e-06,
+        1.2060337622819282e-06,
+        1.5733463932425507e-06,
+        -1.4558806761239689e-06,
+        -3.4319928952828883e-06,
+        8.974965445994726e-06,
+        -3.451474943485665e-05,
+        2.6720988325785854e-05,
+        2.044265331135093e-06,
+        -9.125501579095408e-06,
+        -1.0280911445933965e-05,
+        6.775433528393313e-06,
+        -6.93240258781083e-06
+      ],
+      [
+        -2.7233632413758624e-06,
+        5.580761393196249e-06,
+        -1.3070097656282826e-05,
+        2.0066298220083198e-05,
+        -1.1607545639271576e-05,
+        1.3234588366822464e-06,
+        -1.178719194600885e-06,
+        1.1198185868715312e-06,
+        -1.2249072720431272e-05,
+        -4.699007113676676e-06,
+        2.6245159558194592e-05,
+        -3.831842017821186e-05,
+        2.695636519071684e-05,
+        -2.0082375576605123e-08,
+        1.175719485976551e-06,
+        -1.4904812360801503e-05,
+        -1.05782715784289e-06
+      ],
+      [
+        5.352097566071508e-07,
+        -1.77792740497655e-06,
+        2.7503696184646955e-06,
+        -1.1607545639271605e-05,
+        1.913977216968177e-05,
+        -1.2143585986696641e-05,
+        5.3455386725812226e-06,
+        -2.2911940905496953e-06,
+        2.4050955283126168e-05,
+        -8.080417828575186e-06,
+        -7.517778625322506e-07,
+        -6.718792383463502e-06,
+        -4.774963090970723e-05,
+        2.2840468033716125e-05,
+        1.7613786611332212e-05,
+        4.356589255995891e-07,
+        -6.685608581850995e-06
+      ],
+      [
+        3.434190122559132e-07,
+        1.8637849262568263e-07,
+        1.2060337622819125e-06,
+        1.3234588366822684e-06,
+        -1.2143585986696675e-05,
+        1.9451944580021877e-05,
+        -1.3181813712839686e-05,
+        4.725861895687709e-06,
+        -1.9537149928606374e-05,
+        3.725405675026064e-05,
+        -2.309209416180444e-05,
+        1.1941113141255963e-05,
+        4.0306603278818357e-05,
+        -4.902776436822183e-05,
+        -1.1301596597107775e-05,
+        1.8283429980295104e-05,
+        -1.5334351410324307e-06
+      ],
+      [
+        1.773772275961118e-06,
+        -3.294971565192383e-06,
+        1.5733463932425414e-06,
+        -1.1787191946008814e-06,
+        5.345538672581245e-06,
+        -1.3181813712839712e-05,
+        2.2537041958206005e-05,
+        -1.2205760487778427e-05,
+        2.612804543553191e-06,
+        -3.054991387312779e-05,
+        1.6950851134923478e-05,
+        -2.9085779412170995e-06,
+        -2.2900245153964248e-05,
+        1.2119402271016569e-05,
+        -1.2695055046559358e-05,
+        2.5996261520072945e-05,
+        1.4246282151382208e-05
+      ],
+      [
+        3.813653181437514e-07,
+        1.335540910104931e-06,
+        -1.4558806761239672e-06,
+        1.1198185868715289e-06,
+        -2.2911940905497016e-06,
+        4.7258618956877275e-06,
+        -1.2205760487778434e-05,
+        1.1951308897141077e-05,
+        -4.096202536664519e-06,
+        4.061680972347664e-06,
+        1.1293658815850637e-05,
+        -2.0924545726728183e-05,
+        1.87854793623434e-05,
+        -8.401354485585338e-06,
+        2.2238793052001076e-05,
+        -3.912692748467667e-05,
+        -1.6175268149919303e-06
+      ],
+      [
+        -4.9692278914368785e-05,
+        2.9341238847378842e-05,
+        -3.431992895282845e-06,
+        -1.2249072720431284e-05,
+        2.4050955283126184e-05,
+        -1.953714992860639e-05,
+        2.6128045435531945e-06,
+        -4.096202536664534e-06,
+        0.001569027299298728,
+        -0.0017377402221974644,
+        0.0005624096203704027,
+        9.616526752425532e-05,
+        -0.00013821936497854887,
+        -0.00013786377932795244,
+        0.00028331518917285015,
+        -0.0003830975613516973,
+        -2.2839313780795678e-05
+      ],
+      [
+        5.219895537744319e-05,
+        -5.213931375418577e-05,
+        8.974965445994706e-06,
+        -4.699007113676702e-06,
+        -8.080417828575257e-06,
+        3.725405675026078e-05,
+        -3.0549913873127884e-05,
+        4.0616809723477185e-06,
+        -0.001737740222197464,
+        0.0033168906786683583,
+        -0.0018591497027776404,
+        0.0005197759788311178,
+        -0.0002439357350213175,
+        0.0002875777592992517,
+        -0.0006550010652461166,
+        0.0007283272939813318,
+        -2.5880476928409854e-05
+      ],
+      [
+        -1.4106234331496217e-05,
+        2.0461680931752508e-05,
+        -3.451474943485667e-05,
+        2.6245159558194718e-05,
+        -7.517778625322557e-07,
+        -2.3092094161804573e-05,
+        1.6950851134923587e-05,
+        1.1293658815850603e-05,
+        0.0005624096203704019,
+        -0.0018591497027776397,
+        0.002580825188140497,
+        -0.0019660883603914276,
+        0.0009609699107579213,
+        -0.0006453951808628644,
+        0.0005209318471339967,
+        -0.0003632532559598787,
+        0.00012810117396585963
+      ],
+      [
+        -2.6599551272580215e-05,
+        2.517920723230497e-05,
+        2.672098832578592e-05,
+        -3.8318420178211975e-05,
+        -6.7187923834635235e-06,
+        1.1941113141256116e-05,
+        -2.9085779412171834e-06,
+        -2.0924545726728213e-05,
+        9.616526752425562e-05,
+        0.0005197759788311188,
+        -0.0019660883603914298,
+        0.0030278407003234307,
+        -0.0018246745061138946,
+        0.0010748222960590334,
+        -0.00017315992883100212,
+        -0.00016169938258762416,
+        8.507584024377594e-06
+      ],
+      [
+        1.324101924871142e-05,
+        -6.915554796014083e-06,
+        2.0442653311349253e-06,
+        2.6956365190716996e-05,
+        -4.7749630909707276e-05,
+        4.0306603278818275e-05,
+        -2.290024515396415e-05,
+        1.8785479362343433e-05,
+        -0.00013821936497854936,
+        -0.00024393573502131934,
+        0.0009609699107579243,
+        -0.0018246745061138957,
+        0.0020287947520642134,
+        -0.001377918601117269,
+        0.0002289632787357799,
+        8.149107565602486e-05,
+        -1.9835787863752234e-05
+      ],
+      [
+        -8.948074787764904e-06,
+        1.5146762929876488e-05,
+        -9.125501579095317e-06,
+        -2.0082375576710156e-08,
+        2.2840468033716257e-05,
+        -4.902776436822189e-05,
+        1.2119402271016501e-05,
+        -8.401354485585335e-06,
+        -0.00013786377932795238,
+        0.0002875777592992535,
+        -0.0006453951808628669,
+        0.0010748222960590347,
+        -0.001377918601117271,
+        0.0023415488110101585,
+        -0.0010760063485755254,
+        -0.0001557020889757269,
+        0.0002217328783432271
+      ],
+      [
+        -4.595314112344276e-06,
+        -3.078285691239019e-07,
+        -1.0280911445933966e-05,
+        1.1757194859766035e-06,
+        1.7613786611332073e-05,
+        -1.1301596597107561e-05,
+        -1.2695055046559467e-05,
+        2.2238793052001073e-05,
+        0.0002833151891728502,
+        -0.0006550010652461176,
+        0.0005209318471339989,
+        -0.00017315992883100371,
+        0.00022896327873578158,
+        -0.0010760063485755259,
+        0.0020479340171371324,
+        -0.0011303727215094292,
+        -0.0002122809120459224
+      ],
+      [
+        9.887327337179005e-06,
+        -6.5910615812995775e-06,
+        6.7754335283932825e-06,
+        -1.4904812360801505e-05,
+        4.356589255996628e-07,
+        1.8283429980294982e-05,
+        2.5996261520073016e-05,
+        -3.912692748467666e-05,
+        -0.00038309756135169716,
+        0.0007283272939813317,
+        -0.00036325325595987885,
+        -0.0001616993825876242,
+        8.149107565602463e-05,
+        -0.00015570208897572674,
+        -0.001130372721509429,
+        0.0015275964144197845,
+        1.933978582990484e-05
+      ],
+      [
+        -4.75184749969689e-06,
+        9.277176210508688e-06,
+        -6.932402587810847e-06,
+        -1.057827157842881e-06,
+        -6.685608581850991e-06,
+        -1.5334351410324396e-06,
+        1.4246282151382203e-05,
+        -1.6175268149919173e-06,
+        -2.2839313780795708e-05,
+        -2.588047692840986e-05,
+        0.00012810117396585958,
+        8.507584024377818e-06,
+        -1.9835787863752553e-05,
+        0.00022173287834322718,
+        -0.00021228091204592242,
+        1.9339785829904846e-05,
+        0.0014342967334887969
+      ]
+    ],
+    "covariance_used_for_linear_contrasts": [
+      [
+        1.0874056811014346e-05,
+        -1.093098342282875e-05,
+        6.24289644029068e-06,
+        -2.7233632413758688e-06,
+        5.352097566071439e-07,
+        3.434190122559165e-07,
+        1.7737722759611192e-06,
+        3.8136531814375255e-07,
+        -4.9692278914368785e-05,
+        5.219895537744321e-05,
+        -1.4106234331496237e-05,
+        -2.6599551272580225e-05,
+        1.3241019248711438e-05,
+        -8.948074787764906e-06,
+        -4.595314112344292e-06,
+        9.88732733717901e-06,
+        -4.751847499696886e-06
+      ],
+      [
+        -1.093098342282875e-05,
+        2.1912513639082604e-05,
+        -1.5267836436994958e-05,
+        5.580761393196261e-06,
+        -1.7779274049765337e-06,
+        1.8637849262567146e-07,
+        -3.2949715651923814e-06,
+        1.3355409101049265e-06,
+        2.9341238847378855e-05,
+        -5.213931375418578e-05,
+        2.0461680931752525e-05,
+        2.5179207232304963e-05,
+        -6.915554796014148e-06,
+        1.5146762929876525e-05,
+        -3.078285691239038e-07,
+        -6.591061581299582e-06,
+        9.277176210508678e-06
+      ],
+      [
+        6.24289644029068e-06,
+        -1.5267836436994958e-05,
+        2.1041880955986346e-05,
+        -1.3070097656282839e-05,
+        2.7503696184646802e-06,
+        1.2060337622819204e-06,
+        1.573346393242546e-06,
+        -1.455880676123968e-06,
+        -3.4319928952828667e-06,
+        8.974965445994716e-06,
+        -3.451474943485666e-05,
+        2.6720988325785888e-05,
+        2.044265331135009e-06,
+        -9.125501579095362e-06,
+        -1.0280911445933965e-05,
+        6.775433528393298e-06,
+        -6.9324025878108385e-06
+      ],
+      [
+        -2.7233632413758688e-06,
+        5.580761393196261e-06,
+        -1.3070097656282839e-05,
+        2.0066298220083198e-05,
+        -1.1607545639271591e-05,
+        1.3234588366822574e-06,
+        -1.1787191946008833e-06,
+        1.1198185868715301e-06,
+        -1.2249072720431277e-05,
+        -4.69900711367669e-06,
+        2.6245159558194657e-05,
+        -3.831842017821192e-05,
+        2.6956365190716918e-05,
+        -2.008237557665764e-08,
+        1.1757194859765772e-06,
+        -1.4904812360801503e-05,
+        -1.0578271578428855e-06
+      ],
+      [
+        5.352097566071439e-07,
+        -1.7779274049765337e-06,
+        2.7503696184646802e-06,
+        -1.1607545639271591e-05,
+        1.913977216968177e-05,
+        -1.2143585986696658e-05,
+        5.345538672581234e-06,
+        -2.2911940905496987e-06,
+        2.4050955283126178e-05,
+        -8.080417828575221e-06,
+        -7.517778625322532e-07,
+        -6.718792383463513e-06,
+        -4.7749630909707256e-05,
+        2.2840468033716192e-05,
+        1.7613786611332144e-05,
+        4.3565892559962594e-07,
+        -6.685608581850993e-06
+      ],
+      [
+        3.434190122559165e-07,
+        1.8637849262567146e-07,
+        1.2060337622819204e-06,
+        1.3234588366822574e-06,
+        -1.2143585986696658e-05,
+        1.9451944580021877e-05,
+        -1.3181813712839698e-05,
+        4.725861895687718e-06,
+        -1.953714992860638e-05,
+        3.7254056750260706e-05,
+        -2.309209416180451e-05,
+        1.194111314125604e-05,
+        4.0306603278818316e-05,
+        -4.9027764368221865e-05,
+        -1.1301596597107668e-05,
+        1.8283429980295043e-05,
+        -1.5334351410324351e-06
+      ],
+      [
+        1.7737722759611192e-06,
+        -3.2949715651923814e-06,
+        1.573346393242546e-06,
+        -1.1787191946008833e-06,
+        5.345538672581234e-06,
+        -1.3181813712839698e-05,
+        2.2537041958206005e-05,
+        -1.220576048777843e-05,
+        2.612804543553193e-06,
+        -3.0549913873127836e-05,
+        1.6950851134923532e-05,
+        -2.9085779412171415e-06,
+        -2.29002451539642e-05,
+        1.2119402271016535e-05,
+        -1.2695055046559412e-05,
+        2.599626152007298e-05,
+        1.4246282151382206e-05
+      ],
+      [
+        3.8136531814375255e-07,
+        1.3355409101049265e-06,
+        -1.455880676123968e-06,
+        1.1198185868715301e-06,
+        -2.2911940905496987e-06,
+        4.725861895687718e-06,
+        -1.220576048777843e-05,
+        1.1951308897141077e-05,
+        -4.096202536664527e-06,
+        4.061680972347691e-06,
+        1.129365881585062e-05,
+        -2.0924545726728196e-05,
+        1.8785479362343416e-05,
+        -8.401354485585337e-06,
+        2.2238793052001076e-05,
+        -3.9126927484676664e-05,
+        -1.6175268149919237e-06
+      ],
+      [
+        -4.9692278914368785e-05,
+        2.9341238847378855e-05,
+        -3.4319928952828667e-06,
+        -1.2249072720431277e-05,
+        2.4050955283126178e-05,
+        -1.953714992860638e-05,
+        2.612804543553193e-06,
+        -4.096202536664527e-06,
+        0.001569027299298728,
+        -0.0017377402221974642,
+        0.0005624096203704022,
+        9.616526752425547e-05,
+        -0.00013821936497854912,
+        -0.0001378637793279524,
+        0.00028331518917285015,
+        -0.0003830975613516972,
+        -2.2839313780795695e-05
+      ],
+      [
+        5.219895537744321e-05,
+        -5.213931375418578e-05,
+        8.974965445994716e-06,
+        -4.69900711367669e-06,
+        -8.080417828575221e-06,
+        3.7254056750260706e-05,
+        -3.0549913873127836e-05,
+        4.061680972347691e-06,
+        -0.0017377402221974642,
+        0.0033168906786683583,
+        -0.00185914970277764,
+        0.0005197759788311183,
+        -0.00024393573502131842,
+        0.0002875777592992526,
+        -0.0006550010652461171,
+        0.0007283272939813317,
+        -2.5880476928409857e-05
+      ],
+      [
+        -1.4106234331496237e-05,
+        2.0461680931752525e-05,
+        -3.451474943485666e-05,
+        2.6245159558194657e-05,
+        -7.517778625322532e-07,
+        -2.309209416180451e-05,
+        1.6950851134923532e-05,
+        1.129365881585062e-05,
+        0.0005624096203704022,
+        -0.00185914970277764,
+        0.002580825188140497,
+        -0.001966088360391429,
+        0.0009609699107579227,
+        -0.0006453951808628657,
+        0.0005209318471339978,
+        -0.00036325325595987874,
+        0.0001281011739658596
+      ],
+      [
+        -2.6599551272580225e-05,
+        2.5179207232304963e-05,
+        2.6720988325785888e-05,
+        -3.831842017821192e-05,
+        -6.718792383463513e-06,
+        1.194111314125604e-05,
+        -2.9085779412171415e-06,
+        -2.0924545726728196e-05,
+        9.616526752425547e-05,
+        0.0005197759788311183,
+        -0.001966088360391429,
+        0.0030278407003234307,
+        -0.0018246745061138952,
+        0.001074822296059034,
+        -0.00017315992883100293,
+        -0.0001616993825876242,
+        8.507584024377706e-06
+      ],
+      [
+        1.3241019248711438e-05,
+        -6.915554796014148e-06,
+        2.044265331135009e-06,
+        2.6956365190716918e-05,
+        -4.7749630909707256e-05,
+        4.0306603278818316e-05,
+        -2.29002451539642e-05,
+        1.8785479362343416e-05,
+        -0.00013821936497854912,
+        -0.00024393573502131842,
+        0.0009609699107579227,
+        -0.0018246745061138952,
+        0.0020287947520642134,
+        -0.00137791860111727,
+        0.00022896327873578074,
+        8.149107565602474e-05,
+        -1.9835787863752394e-05
+      ],
+      [
+        -8.948074787764906e-06,
+        1.5146762929876525e-05,
+        -9.125501579095362e-06,
+        -2.008237557665764e-08,
+        2.2840468033716192e-05,
+        -4.9027764368221865e-05,
+        1.2119402271016535e-05,
+        -8.401354485585337e-06,
+        -0.0001378637793279524,
+        0.0002875777592992526,
+        -0.0006453951808628657,
+        0.001074822296059034,
+        -0.00137791860111727,
+        0.0023415488110101585,
+        -0.0010760063485755257,
+        -0.00015570208897572682,
+        0.00022173287834322713
+      ],
+      [
+        -4.595314112344292e-06,
+        -3.078285691239038e-07,
+        -1.0280911445933965e-05,
+        1.1757194859765772e-06,
+        1.7613786611332144e-05,
+        -1.1301596597107668e-05,
+        -1.2695055046559412e-05,
+        2.2238793052001076e-05,
+        0.00028331518917285015,
+        -0.0006550010652461171,
+        0.0005209318471339978,
+        -0.00017315992883100293,
+        0.00022896327873578074,
+        -0.0010760063485755257,
+        0.0020479340171371324,
+        -0.0011303727215094292,
+        -0.00021228091204592242
+      ],
+      [
+        9.88732733717901e-06,
+        -6.591061581299582e-06,
+        6.775433528393298e-06,
+        -1.4904812360801503e-05,
+        4.3565892559962594e-07,
+        1.8283429980295043e-05,
+        2.599626152007298e-05,
+        -3.9126927484676664e-05,
+        -0.0003830975613516972,
+        0.0007283272939813317,
+        -0.00036325325595987874,
+        -0.0001616993825876242,
+        8.149107565602474e-05,
+        -0.00015570208897572682,
+        -0.0011303727215094292,
+        0.0015275964144197845,
+        1.9339785829904843e-05
+      ],
+      [
+        -4.751847499696886e-06,
+        9.277176210508678e-06,
+        -6.9324025878108385e-06,
+        -1.0578271578428855e-06,
+        -6.685608581850993e-06,
+        -1.5334351410324351e-06,
+        1.4246282151382206e-05,
+        -1.6175268149919237e-06,
+        -2.2839313780795695e-05,
+        -2.5880476928409857e-05,
+        0.0001281011739658596,
+        8.507584024377706e-06,
+        -1.9835787863752394e-05,
+        0.00022173287834322713,
+        -0.00021228091204592242,
+        1.9339785829904843e-05,
+        0.0014342967334887969
+      ]
+    ],
+    "covariance_symmetrized_for_rounding_only": true,
+    "eigen_diagnostics": {
+      "dimension": 17,
+      "max_absolute_asymmetry": 2.927345865710862e-18,
+      "min_eigenvalue": 8.741230955422322e-07,
+      "max_eigenvalue": 0.007629811716963406,
+      "max_absolute_eigenvalue": 0.007629811716963406,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.00011456679770993419,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        8.741230955422322e-07,
+        1.8143803501666192e-06,
+        3.498458859847337e-06,
+        5.3101572155986786e-06,
+        8.970107425790488e-06,
+        2.2009575976357218e-05,
+        3.4250054383546e-05,
+        4.985809463735787e-05,
+        0.00011888413773378459,
+        0.0002344965033502181,
+        0.0004892120407099385,
+        0.0007996108240062918,
+        0.0013548512789722214,
+        0.0017339325492013813,
+        0.0029321357187984914,
+        0.004602209690102379,
+        0.007629811716963406
+      ]
+    }
+  },
+  "drainage_continuous_holiday_excluding_2020_2021": {
+    "model_id": "drainage_continuous_holiday_excluding_2020_2021",
+    "model_family": "drainage_continuous_lag0_7",
+    "formula": "any_drainage ~ t0 + t1 + t2 + t3 + t4 + t5 + t6 + t7 + f0 + f1 + f2 + f3 + f4 + f5 + f6 + f7 + holiday | stratum",
+    "fixed_effect": "health region x year-month x day-of-week",
+    "cluster": "CRV1, two-way by hrid + day_id",
+    "inference": "Student t with df=min(retained hrid clusters, retained date clusters)-1",
+    "df": 436,
+    "input_rows": 489600,
+    "model_rows": 105097,
+    "rows_dropped_by_fit": 384503,
+    "input_events": 49201.0,
+    "model_events": 49201.0,
+    "input_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1088
+    },
+    "retained_cluster_counts": {
+      "hrid": 437,
+      "day_id": 1088
+    },
+    "strata_input": 113400,
+    "strata_model": 24132,
+    "covariance_eigen_diagnostics": {
+      "dimension": 17,
+      "max_absolute_asymmetry": 4.553649124439119e-18,
+      "min_eigenvalue": 1.68044706299627e-06,
+      "max_eigenvalue": 0.01440692125780515,
+      "max_absolute_eigenvalue": 0.01440692125780515,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.00011664164972692306,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1.440692125780515e-12,
+      "eigenvalues": [
+        1.68044706299627e-06,
+        2.1702048750778686e-06,
+        5.369447435769666e-06,
+        1.146795605074466e-05,
+        1.4340329504463589e-05,
+        4.2320633311616184e-05,
+        7.075414052396137e-05,
+        9.924754114115513e-05,
+        0.00022125398316866102,
+        0.0003345479884005371,
+        0.0007939149102756635,
+        0.0019867694949454087,
+        0.0023495924788256802,
+        0.002798822226045227,
+        0.006886608847837806,
+        0.008551166886214445,
+        0.01440692125780515
+      ]
+    },
+    "coefficient_names": [
+      "t0",
+      "t1",
+      "t2",
+      "t3",
+      "t4",
+      "t5",
+      "t6",
+      "t7",
+      "f0",
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "holiday"
+    ],
+    "coefficients": [
+      -0.0039810698326998555,
+      0.004583910592806462,
+      -0.0018782165380945885,
+      0.004105636508585221,
+      0.006706129526667582,
+      0.0006374071349620888,
+      -0.0009968245111696492,
+      0.0032139099602435553,
+      0.032989484290868724,
+      0.05610543302555014,
+      -0.08602745161786209,
+      0.09884536268506017,
+      -0.09734930971823827,
+      0.10329583202860107,
+      -0.11259105985365632,
+      0.0563009634329599,
+      -0.4288322195783778
+    ],
+    "covariance_raw": [
+      [
+        1.9318976807939697e-05,
+        -2.1769161204315126e-05,
+        1.4631218998137756e-05,
+        -9.327627766918783e-06,
+        3.9131945653721055e-06,
+        5.619023740856705e-07,
+        1.0790143648340549e-06,
+        -2.0693526485657864e-07,
+        -7.682623713674551e-05,
+        9.80758448821586e-05,
+        -4.534953363430266e-05,
+        -3.047100067056109e-05,
+        2.2969929646228894e-05,
+        -1.8078744598068254e-05,
+        1.4145350479163289e-05,
+        6.2557271634831e-06,
+        -1.1324562812659692e-05
+      ],
+      [
+        -2.1769161204315163e-05,
+        4.412024044919486e-05,
+        -3.265058965127604e-05,
+        1.4496265947059739e-05,
+        -8.607405004755968e-06,
+        3.9595175997490625e-06,
+        -4.0041843228368925e-06,
+        8.979016853418854e-07,
+        5.580944229433994e-05,
+        -0.0001359764315259526,
+        9.775069898974413e-05,
+        5.521728158278466e-05,
+        -4.669686531860453e-05,
+        3.391947349675328e-05,
+        -2.5514326915966272e-05,
+        3.998027406449185e-06,
+        2.9061865239282143e-05
+      ],
+      [
+        1.463121899813778e-05,
+        -3.2650589651276015e-05,
+        4.2067312596350506e-05,
+        -2.662581354713342e-05,
+        1.0509818692774182e-05,
+        -7.854546056991204e-07,
+        -5.71580087530216e-08,
+        3.4374607889826126e-06,
+        -5.546228063860015e-05,
+        7.265161849325885e-05,
+        -8.277038253557792e-05,
+        1.0763530319108368e-05,
+        2.7057279358887086e-05,
+        -3.7500173445332116e-05,
+        1.717345385718414e-05,
+        -9.335454863962747e-06,
+        -3.137073923932328e-05
+      ],
+      [
+        -9.327627766918798e-06,
+        1.4496265947059755e-05,
+        -2.662581354713344e-05,
+        4.06593621783261e-05,
+        -2.5555697786485465e-05,
+        8.592914604877024e-07,
+        3.684140477141586e-06,
+        -3.5640695533593803e-06,
+        3.505344301663464e-05,
+        -5.1468758198050014e-05,
+        6.175053269799967e-05,
+        -8.195185548288172e-05,
+        6.385337375834364e-05,
+        3.7787177813289503e-06,
+        -7.119848301893978e-07,
+        -3.3569664668185416e-06,
+        -9.767758874187128e-06
+      ],
+      [
+        3.913194565372105e-06,
+        -8.607405004755956e-06,
+        1.0509818692774195e-05,
+        -2.5555697786485475e-05,
+        4.1770212902216454e-05,
+        -2.6068886817731617e-05,
+        9.293486819228044e-06,
+        -2.4214323985915994e-06,
+        2.5551841703960907e-05,
+        -4.314015859388631e-07,
+        -2.8587877558238617e-05,
+        2.3311082162934463e-05,
+        -8.98293968395454e-05,
+        6.192974176031114e-05,
+        -9.675392549448523e-06,
+        1.7319823113084068e-06,
+        1.3984718785100904e-05
+      ],
+      [
+        5.619023740856681e-07,
+        3.959517599749074e-06,
+        -7.854546056991411e-07,
+        8.592914604876973e-07,
+        -2.6068886817731596e-05,
+        4.474145173238813e-05,
+        -2.9714756125173003e-05,
+        9.23864488759645e-06,
+        -5.850291818688761e-05,
+        4.1693670374598086e-05,
+        2.941788264830409e-05,
+        6.452365949670183e-07,
+        3.090329133982274e-05,
+        -8.923593613895215e-05,
+        2.609719339736187e-05,
+        1.0577332141526665e-05,
+        -1.5685180767506608e-05
+      ],
+      [
+        1.0790143648340615e-06,
+        -4.004184322836901e-06,
+        -5.7158008753017786e-08,
+        3.6841404771416038e-06,
+        9.293486819228024e-06,
+        -2.9714756125173023e-05,
+        4.340903193552349e-05,
+        -2.2043354937612415e-05,
+        7.395590597801695e-05,
+        -3.97122950000757e-05,
+        -3.9035262267846724e-05,
+        3.6760044971263835e-05,
+        -3.5392833494492015e-05,
+        5.89121427369591e-05,
+        -8.792965760341629e-05,
+        7.240722072905667e-05,
+        3.0207815208563903e-05
+      ],
+      [
+        -2.069352648565761e-07,
+        8.97901685341882e-07,
+        3.437460788982624e-06,
+        -3.564069553359407e-06,
+        -2.421432398591578e-06,
+        9.238644887596447e-06,
+        -2.204335493761241e-05,
+        1.8305980123526747e-05,
+        -4.995093834672609e-05,
+        3.4368470099506015e-05,
+        -3.442593107634015e-06,
+        -3.799237762300769e-05,
+        5.6008495615489875e-05,
+        -2.6110044628025246e-05,
+        4.561802043511861e-05,
+        -7.448177698382569e-05,
+        -1.721842079574825e-05
+      ],
+      [
+        -7.68262371367454e-05,
+        5.5809442294339615e-05,
+        -5.5462280638599814e-05,
+        3.5053443016634355e-05,
+        2.5551841703961128e-05,
+        -5.850291818688778e-05,
+        7.395590597801702e-05,
+        -4.995093834672608e-05,
+        0.002821619816765106,
+        -0.002964954673882858,
+        0.0007548260952290436,
+        0.0003400228233307617,
+        -0.0006445663239420255,
+        0.0001395033217854669,
+        -6.870935031015444e-05,
+        -0.0002011647053277151,
+        0.00023769749154533833
+      ],
+      [
+        9.807584488215839e-05,
+        -0.00013597643152595202,
+        7.265161849325828e-05,
+        -5.146875819804954e-05,
+        -4.3140158593916466e-07,
+        4.169367037459824e-05,
+        -3.9712295000075646e-05,
+        3.4368470099505927e-05,
+        -0.002964954673882859,
+        0.005413910244175471,
+        -0.002862873614889967,
+        0.00039434048936269384,
+        0.00013422956253220233,
+        0.0006360241583316866,
+        -0.0006959781498884312,
+        0.00041444023425734055,
+        -0.0001253519988495705
+      ],
+      [
+        -4.53495336343026e-05,
+        9.775069898974403e-05,
+        -8.277038253557781e-05,
+        6.17505326979995e-05,
+        -2.8587877558238434e-05,
+        2.9417882648303987e-05,
+        -3.903526226784691e-05,
+        -3.4425931076338813e-06,
+        0.0007548260952290444,
+        -0.0028628736148899703,
+        0.004208971808316274,
+        -0.002919479430354584,
+        0.0014834240975906527,
+        -0.0012039360897847587,
+        0.0005788235221627228,
+        3.392399493518309e-05,
+        9.889553503979438e-05
+      ],
+      [
+        -3.047100067056108e-05,
+        5.521728158278453e-05,
+        1.0763530319108484e-05,
+        -8.195185548288203e-05,
+        2.331108216293465e-05,
+        6.452365949668269e-07,
+        3.6760044971264235e-05,
+        -3.799237762300791e-05,
+        0.0003400228233307627,
+        0.0003943404893626915,
+        -0.0029194794303545805,
+        0.004981479355736813,
+        -0.00385619457664135,
+        0.0020171026318650687,
+        -0.0005889777309580898,
+        1.800299324947219e-05,
+        0.00019031480182811185
+      ],
+      [
+        2.296992964622894e-05,
+        -4.669686531860458e-05,
+        2.7057279358887062e-05,
+        6.385337375834375e-05,
+        -8.982939683954546e-05,
+        3.090329133982301e-05,
+        -3.5392833494492476e-05,
+        5.600849561549009e-05,
+        -0.0006445663239420262,
+        0.00013422956253220387,
+        0.0014834240975906516,
+        -0.00385619457664135,
+        0.0050098192046002694,
+        -0.0032884684382525615,
+        0.0014981955764471252,
+        -0.0005772518202589446,
+        -0.0002548918614307071
+      ],
+      [
+        -1.807874459806828e-05,
+        3.391947349675336e-05,
+        -3.750017344533218e-05,
+        3.7787177813289503e-06,
+        6.192974176031114e-05,
+        -8.923593613895223e-05,
+        5.89121427369594e-05,
+        -2.6110044628025416e-05,
+        0.0001395033217854671,
+        0.0006360241583316856,
+        -0.0012039360897847572,
+        0.0020171026318650705,
+        -0.0032884684382525594,
+        0.00563616002984401,
+        -0.003707186651029574,
+        0.0005859688998382234,
+        0.00020240944467434156
+      ],
+      [
+        1.4145350479163311e-05,
+        -2.5514326915966296e-05,
+        1.717345385718417e-05,
+        -7.119848301894757e-07,
+        -9.675392549448433e-06,
+        2.6097193397361877e-05,
+        -8.79296576034163e-05,
+        4.561802043511871e-05,
+        -6.870935031015432e-05,
+        -0.0006959781498884308,
+        0.0005788235221627212,
+        -0.0005889777309580878,
+        0.0014981955764471206,
+        -0.0037071866510295704,
+        0.005052282424630338,
+        -0.002485522393336435,
+        -0.0002577535453842724
+      ],
+      [
+        6.2557271634830684e-06,
+        3.998027406449259e-06,
+        -9.335454863962828e-06,
+        -3.3569664668183942e-06,
+        1.7319823113083069e-06,
+        1.0577332141526546e-05,
+        7.240722072905675e-05,
+        -7.448177698382576e-05,
+        -0.00020116470532771468,
+        0.0004144402342573393,
+        3.392399493518466e-05,
+        1.800299324946884e-05,
+        -0.0005772518202589403,
+        0.0005859688998382205,
+        -0.002485522393336434,
+        0.002777421391637048,
+        8.834318981355863e-05
+      ],
+      [
+        -1.1324562812659686e-05,
+        2.906186523928213e-05,
+        -3.137073923932328e-05,
+        -9.767758874187114e-06,
+        1.3984718785100904e-05,
+        -1.568518076750662e-05,
+        3.020781520856392e-05,
+        -1.7218420795748252e-05,
+        0.00023769749154533833,
+        -0.00012535199884957044,
+        9.889553503979443e-05,
+        0.0001903148018281117,
+        -0.00025489186143070686,
+        0.00020240944467434153,
+        -0.00025775354538427284,
+        8.834318981355897e-05,
+        0.002380891928993552
+      ]
+    ],
+    "covariance_used_for_linear_contrasts": [
+      [
+        1.9318976807939697e-05,
+        -2.1769161204315143e-05,
+        1.4631218998137768e-05,
+        -9.327627766918791e-06,
+        3.9131945653721055e-06,
+        5.619023740856693e-07,
+        1.0790143648340583e-06,
+        -2.0693526485657737e-07,
+        -7.682623713674546e-05,
+        9.80758448821585e-05,
+        -4.534953363430263e-05,
+        -3.0471000670561087e-05,
+        2.2969929646228918e-05,
+        -1.8078744598068267e-05,
+        1.4145350479163301e-05,
+        6.255727163483084e-06,
+        -1.1324562812659689e-05
+      ],
+      [
+        -2.1769161204315143e-05,
+        4.412024044919486e-05,
+        -3.265058965127603e-05,
+        1.4496265947059747e-05,
+        -8.607405004755963e-06,
+        3.9595175997490685e-06,
+        -4.004184322836897e-06,
+        8.979016853418837e-07,
+        5.580944229433978e-05,
+        -0.00013597643152595231,
+        9.775069898974409e-05,
+        5.521728158278459e-05,
+        -4.669686531860456e-05,
+        3.391947349675332e-05,
+        -2.5514326915966283e-05,
+        3.998027406449222e-06,
+        2.9061865239282137e-05
+      ],
+      [
+        1.4631218998137768e-05,
+        -3.265058965127603e-05,
+        4.2067312596350506e-05,
+        -2.662581354713343e-05,
+        1.0509818692774188e-05,
+        -7.854546056991307e-07,
+        -5.715800875301969e-08,
+        3.4374607889826185e-06,
+        -5.5462280638599983e-05,
+        7.265161849325857e-05,
+        -8.277038253557786e-05,
+        1.0763530319108426e-05,
+        2.7057279358887072e-05,
+        -3.750017344533215e-05,
+        1.7173453857184155e-05,
+        -9.335454863962788e-06,
+        -3.137073923932328e-05
+      ],
+      [
+        -9.327627766918791e-06,
+        1.4496265947059747e-05,
+        -2.662581354713343e-05,
+        4.06593621783261e-05,
+        -2.555569778648547e-05,
+        8.592914604876999e-07,
+        3.684140477141595e-06,
+        -3.564069553359394e-06,
+        3.50534430166345e-05,
+        -5.146875819804978e-05,
+        6.175053269799959e-05,
+        -8.195185548288188e-05,
+        6.385337375834369e-05,
+        3.7787177813289503e-06,
+        -7.119848301894367e-07,
+        -3.356966466818468e-06,
+        -9.767758874187121e-06
+      ],
+      [
+        3.9131945653721055e-06,
+        -8.607405004755963e-06,
+        1.0509818692774188e-05,
+        -2.555569778648547e-05,
+        4.1770212902216454e-05,
+        -2.6068886817731606e-05,
+        9.293486819228034e-06,
+        -2.421432398591589e-06,
+        2.555184170396102e-05,
+        -4.314015859390139e-07,
+        -2.8587877558238526e-05,
+        2.331108216293456e-05,
+        -8.982939683954543e-05,
+        6.192974176031114e-05,
+        -9.675392549448477e-06,
+        1.7319823113083568e-06,
+        1.3984718785100904e-05
+      ],
+      [
+        5.619023740856693e-07,
+        3.9595175997490685e-06,
+        -7.854546056991307e-07,
+        8.592914604876999e-07,
+        -2.6068886817731606e-05,
+        4.474145173238813e-05,
+        -2.9714756125173013e-05,
+        9.238644887596449e-06,
+        -5.850291818688769e-05,
+        4.169367037459817e-05,
+        2.9417882648304038e-05,
+        6.452365949669226e-07,
+        3.090329133982288e-05,
+        -8.923593613895219e-05,
+        2.6097193397361874e-05,
+        1.0577332141526605e-05,
+        -1.568518076750661e-05
+      ],
+      [
+        1.0790143648340583e-06,
+        -4.004184322836897e-06,
+        -5.715800875301969e-08,
+        3.684140477141595e-06,
+        9.293486819228034e-06,
+        -2.9714756125173013e-05,
+        4.340903193552349e-05,
+        -2.2043354937612415e-05,
+        7.395590597801698e-05,
+        -3.971229500007567e-05,
+        -3.903526226784681e-05,
+        3.676004497126404e-05,
+        -3.5392833494492245e-05,
+        5.891214273695925e-05,
+        -8.792965760341629e-05,
+        7.240722072905671e-05,
+        3.0207815208563913e-05
+      ],
+      [
+        -2.0693526485657737e-07,
+        8.979016853418837e-07,
+        3.4374607889826185e-06,
+        -3.564069553359394e-06,
+        -2.421432398591589e-06,
+        9.238644887596449e-06,
+        -2.2043354937612415e-05,
+        1.8305980123526747e-05,
+        -4.9950938346726087e-05,
+        3.4368470099505974e-05,
+        -3.4425931076339482e-06,
+        -3.79923776230078e-05,
+        5.600849561548998e-05,
+        -2.611004462802533e-05,
+        4.561802043511866e-05,
+        -7.448177698382572e-05,
+        -1.7218420795748252e-05
+      ],
+      [
+        -7.682623713674546e-05,
+        5.580944229433978e-05,
+        -5.5462280638599983e-05,
+        3.50534430166345e-05,
+        2.555184170396102e-05,
+        -5.850291818688769e-05,
+        7.395590597801698e-05,
+        -4.9950938346726087e-05,
+        0.002821619816765106,
+        -0.0029649546738828585,
+        0.0007548260952290439,
+        0.00034002282333076223,
+        -0.0006445663239420258,
+        0.000139503321785467,
+        -6.870935031015439e-05,
+        -0.0002011647053277149,
+        0.00023769749154533833
+      ],
+      [
+        9.80758448821585e-05,
+        -0.00013597643152595231,
+        7.265161849325857e-05,
+        -5.146875819804978e-05,
+        -4.314015859390139e-07,
+        4.169367037459817e-05,
+        -3.971229500007567e-05,
+        3.4368470099505974e-05,
+        -0.0029649546738828585,
+        0.005413910244175471,
+        -0.0028628736148899685,
+        0.0003943404893626927,
+        0.0001342295625322031,
+        0.0006360241583316861,
+        -0.000695978149888431,
+        0.00041444023425733995,
+        -0.00012535199884957046
+      ],
+      [
+        -4.534953363430263e-05,
+        9.775069898974409e-05,
+        -8.277038253557786e-05,
+        6.175053269799959e-05,
+        -2.8587877558238526e-05,
+        2.9417882648304038e-05,
+        -3.903526226784681e-05,
+        -3.4425931076339482e-06,
+        0.0007548260952290439,
+        -0.0028628736148899685,
+        0.004208971808316274,
+        -0.0029194794303545823,
+        0.0014834240975906523,
+        -0.0012039360897847578,
+        0.0005788235221627219,
+        3.3923994935183876e-05,
+        9.88955350397944e-05
+      ],
+      [
+        -3.0471000670561087e-05,
+        5.521728158278459e-05,
+        1.0763530319108426e-05,
+        -8.195185548288188e-05,
+        2.331108216293456e-05,
+        6.452365949669226e-07,
+        3.676004497126404e-05,
+        -3.79923776230078e-05,
+        0.00034002282333076223,
+        0.0003943404893626927,
+        -0.0029194794303545823,
+        0.004981479355736813,
+        -0.00385619457664135,
+        0.0020171026318650696,
+        -0.0005889777309580888,
+        1.8002993249470513e-05,
+        0.00019031480182811177
+      ],
+      [
+        2.2969929646228918e-05,
+        -4.669686531860456e-05,
+        2.7057279358887072e-05,
+        6.385337375834369e-05,
+        -8.982939683954543e-05,
+        3.090329133982288e-05,
+        -3.5392833494492245e-05,
+        5.600849561548998e-05,
+        -0.0006445663239420258,
+        0.0001342295625322031,
+        0.0014834240975906523,
+        -0.00385619457664135,
+        0.0050098192046002694,
+        -0.0032884684382525602,
+        0.001498195576447123,
+        -0.0005772518202589425,
+        -0.00025489186143070697
+      ],
+      [
+        -1.8078744598068267e-05,
+        3.391947349675332e-05,
+        -3.750017344533215e-05,
+        3.7787177813289503e-06,
+        6.192974176031114e-05,
+        -8.923593613895219e-05,
+        5.891214273695925e-05,
+        -2.611004462802533e-05,
+        0.000139503321785467,
+        0.0006360241583316861,
+        -0.0012039360897847578,
+        0.0020171026318650696,
+        -0.0032884684382525602,
+        0.00563616002984401,
+        -0.003707186651029572,
+        0.000585968899838222,
+        0.00020240944467434153
+      ],
+      [
+        1.4145350479163301e-05,
+        -2.5514326915966283e-05,
+        1.7173453857184155e-05,
+        -7.119848301894367e-07,
+        -9.675392549448477e-06,
+        2.6097193397361874e-05,
+        -8.792965760341629e-05,
+        4.561802043511866e-05,
+        -6.870935031015439e-05,
+        -0.000695978149888431,
+        0.0005788235221627219,
+        -0.0005889777309580888,
+        0.001498195576447123,
+        -0.003707186651029572,
+        0.005052282424630338,
+        -0.0024855223933364346,
+        -0.0002577535453842726
+      ],
+      [
+        6.255727163483084e-06,
+        3.998027406449222e-06,
+        -9.335454863962788e-06,
+        -3.356966466818468e-06,
+        1.7319823113083568e-06,
+        1.0577332141526605e-05,
+        7.240722072905671e-05,
+        -7.448177698382572e-05,
+        -0.0002011647053277149,
+        0.00041444023425733995,
+        3.3923994935183876e-05,
+        1.8002993249470513e-05,
+        -0.0005772518202589425,
+        0.000585968899838222,
+        -0.0024855223933364346,
+        0.002777421391637048,
+        8.834318981355881e-05
+      ],
+      [
+        -1.1324562812659689e-05,
+        2.9061865239282137e-05,
+        -3.137073923932328e-05,
+        -9.767758874187121e-06,
+        1.3984718785100904e-05,
+        -1.568518076750661e-05,
+        3.0207815208563913e-05,
+        -1.7218420795748252e-05,
+        0.00023769749154533833,
+        -0.00012535199884957046,
+        9.88955350397944e-05,
+        0.00019031480182811177,
+        -0.00025489186143070697,
+        0.00020240944467434153,
+        -0.0002577535453842726,
+        8.834318981355881e-05,
+        0.002380891928993552
+      ]
+    ],
+    "covariance_symmetrized_for_rounding_only": true,
+    "eigen_diagnostics": {
+      "dimension": 17,
+      "max_absolute_asymmetry": 4.553649124439119e-18,
+      "min_eigenvalue": 1.68044706299627e-06,
+      "max_eigenvalue": 0.01440692125780515,
+      "max_absolute_eigenvalue": 0.01440692125780515,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.00011664164972692306,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1.440692125780515e-12,
+      "eigenvalues": [
+        1.68044706299627e-06,
+        2.1702048750778686e-06,
+        5.369447435769666e-06,
+        1.146795605074466e-05,
+        1.4340329504463589e-05,
+        4.2320633311616184e-05,
+        7.075414052396137e-05,
+        9.924754114115513e-05,
+        0.00022125398316866102,
+        0.0003345479884005371,
+        0.0007939149102756635,
+        0.0019867694949454087,
+        0.0023495924788256802,
+        0.002798822226045227,
+        0.006886608847837806,
+        0.008551166886214445,
+        0.01440692125780515
+      ]
+    }
+  },
+  "broad_urgent_elective_holiday_two_way": {
+    "model_id": "broad_urgent_elective_holiday_two_way",
+    "model_family": "broad_urgent_elective_joint",
+    "formula": "count ~ C(outcome)*C(group) + C(outcome):holiday | stratum^outcome",
+    "fixed_effect": "health region x year-month x day-of-week",
+    "cluster": "CRV1, two-way by hrid + day_id",
+    "inference": "Student t with df=min(retained hrid clusters, retained date clusters)-1",
+    "df": 449,
+    "input_rows": 1643400,
+    "model_rows": 658844,
+    "rows_dropped_by_fit": 984556,
+    "input_events": 431374.0,
+    "model_events": 431374.0,
+    "input_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1826
+    },
+    "retained_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1826
+    },
+    "strata_input": 189000,
+    "strata_model": 115396,
+    "covariance_eigen_diagnostics": {
+      "dimension": 8,
+      "max_absolute_asymmetry": 5.421010862427522e-19,
+      "min_eigenvalue": 2.115410673948086e-05,
+      "max_eigenvalue": 0.006884377804835508,
+      "max_absolute_eigenvalue": 0.006884377804835508,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.003072769586326662,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        2.115410673948086e-05,
+        5.1097986628358266e-05,
+        8.843786930618942e-05,
+        0.00031601580429324805,
+        0.0006106715205621019,
+        0.0008780609680771925,
+        0.001222733496900248,
+        0.006884377804835508
+      ]
+    },
+    "coefficient_names": [
+      "C(group)[T.heat_only]",
+      "C(group)[T.smoke_only]",
+      "C(group)[T.both]",
+      "C(outcome)[T.urgent]:C(group)[T.heat_only]",
+      "C(outcome)[T.urgent]:C(group)[T.smoke_only]",
+      "C(outcome)[T.urgent]:C(group)[T.both]",
+      "C(outcome)[elective]:holiday",
+      "C(outcome)[urgent]:holiday"
+    ],
+    "coefficients": [
+      -0.002734875529197644,
+      0.023114730944850323,
+      0.04217900779292917,
+      0.05355792873860242,
+      -0.009828024265635178,
+      0.018961099780710894,
+      -0.8871542820608284,
+      -0.357463740974815
+    ],
+    "covariance_raw": [
+      [
+        0.00044522328392441037,
+        3.1341539193527924e-05,
+        1.585566560608211e-05,
+        -0.0004031470630376558,
+        -1.9624488320814747e-05,
+        -3.341828618825601e-05,
+        -0.00016431290900587836,
+        3.6114753518389456e-05
+      ],
+      [
+        3.134153919352792e-05,
+        0.00015611598732333026,
+        8.710751525030297e-05,
+        -1.4123511975384546e-05,
+        -0.00017259162152867267,
+        -9.617557586478962e-05,
+        -0.000147826314068184,
+        -6.263742637162722e-06
+      ],
+      [
+        1.5855665606082044e-05,
+        8.710751525030292e-05,
+        0.0005167577619389839,
+        1.621236490482981e-05,
+        -0.00010262083195007303,
+        -0.0005299966626529376,
+        8.901824435599282e-05,
+        -6.070917463948357e-06
+      ],
+      [
+        -0.0004031470630376558,
+        -1.412351197538455e-05,
+        1.621236490482972e-05,
+        0.0004842026408434526,
+        -1.4729151049265097e-06,
+        3.022783513568235e-05,
+        0.00018710935223607432,
+        7.753962814379109e-06
+      ],
+      [
+        -1.9624488320814727e-05,
+        -0.00017259162152867254,
+        -0.00010262083195007277,
+        -1.4729151049265368e-06,
+        0.00025384093442283037,
+        0.0001466374082034844,
+        0.00011700271415611638,
+        1.061849094874871e-05
+      ],
+      [
+        -3.3418286188255925e-05,
+        -9.617557586478954e-05,
+        -0.0005299966626529382,
+        3.0227835135682225e-05,
+        0.00014663740820348474,
+        0.0007203123700210623,
+        -8.140312062223311e-05,
+        2.055672200160556e-05
+      ],
+      [
+        -0.00016431290900587836,
+        -0.0001478263140681841,
+        8.901824435599278e-05,
+        0.00018710935223607427,
+        0.00011700271415611634,
+        -8.140312062223314e-05,
+        0.006595518824123087,
+        0.0012736880408678961
+      ],
+      [
+        3.611475351838944e-05,
+        -6.263742637162726e-06,
+        -6.07091746394836e-06,
+        7.753962814379117e-06,
+        1.0618490948748713e-05,
+        2.0556722001605577e-05,
+        0.0012736880408678961,
+        0.0009005777547451742
+      ]
+    ],
+    "covariance_used_for_linear_contrasts": [
+      [
+        0.00044522328392441037,
+        3.134153919352792e-05,
+        1.5855665606082075e-05,
+        -0.0004031470630376558,
+        -1.9624488320814737e-05,
+        -3.3418286188255966e-05,
+        -0.00016431290900587836,
+        3.611475351838945e-05
+      ],
+      [
+        3.134153919352792e-05,
+        0.00015611598732333026,
+        8.710751525030295e-05,
+        -1.4123511975384549e-05,
+        -0.0001725916215286726,
+        -9.617557586478958e-05,
+        -0.00014782631406818405,
+        -6.263742637162724e-06
+      ],
+      [
+        1.5855665606082075e-05,
+        8.710751525030295e-05,
+        0.0005167577619389839,
+        1.6212364904829765e-05,
+        -0.0001026208319500729,
+        -0.000529996662652938,
+        8.90182443559928e-05,
+        -6.0709174639483585e-06
+      ],
+      [
+        -0.0004031470630376558,
+        -1.4123511975384549e-05,
+        1.6212364904829765e-05,
+        0.0004842026408434526,
+        -1.4729151049265232e-06,
+        3.022783513568229e-05,
+        0.0001871093522360743,
+        7.753962814379112e-06
+      ],
+      [
+        -1.9624488320814737e-05,
+        -0.0001725916215286726,
+        -0.0001026208319500729,
+        -1.4729151049265232e-06,
+        0.00025384093442283037,
+        0.00014663740820348455,
+        0.00011700271415611635,
+        1.0618490948748712e-05
+      ],
+      [
+        -3.3418286188255966e-05,
+        -9.617557586478958e-05,
+        -0.000529996662652938,
+        3.022783513568229e-05,
+        0.00014663740820348455,
+        0.0007203123700210623,
+        -8.140312062223313e-05,
+        2.0556722001605567e-05
+      ],
+      [
+        -0.00016431290900587836,
+        -0.00014782631406818405,
+        8.90182443559928e-05,
+        0.0001871093522360743,
+        0.00011700271415611635,
+        -8.140312062223313e-05,
+        0.006595518824123087,
+        0.0012736880408678961
+      ],
+      [
+        3.611475351838945e-05,
+        -6.263742637162724e-06,
+        -6.0709174639483585e-06,
+        7.753962814379112e-06,
+        1.0618490948748712e-05,
+        2.0556722001605567e-05,
+        0.0012736880408678961,
+        0.0009005777547451742
+      ]
+    ],
+    "covariance_symmetrized_for_rounding_only": true,
+    "eigen_diagnostics": {
+      "dimension": 8,
+      "max_absolute_asymmetry": 5.421010862427522e-19,
+      "min_eigenvalue": 2.115410673948086e-05,
+      "max_eigenvalue": 0.006884377804835508,
+      "max_absolute_eigenvalue": 0.006884377804835508,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.003072769586326662,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        2.115410673948086e-05,
+        5.1097986628358266e-05,
+        8.843786930618942e-05,
+        0.00031601580429324805,
+        0.0006106715205621019,
+        0.0008780609680771925,
+        0.001222733496900248,
+        0.006884377804835508
+      ]
+    }
+  },
+  "broad_urgent_elective_holiday_two_way_excluding_2020_2021": {
+    "model_id": "broad_urgent_elective_holiday_two_way_excluding_2020_2021",
+    "model_family": "broad_urgent_elective_joint",
+    "formula": "count ~ C(outcome)*C(group) + C(outcome):holiday | stratum^outcome",
+    "fixed_effect": "health region x year-month x day-of-week",
+    "cluster": "CRV1, two-way by hrid + day_id",
+    "inference": "Student t with df=min(retained hrid clusters, retained date clusters)-1",
+    "df": 449,
+    "input_rows": 985500,
+    "model_rows": 410215,
+    "rows_dropped_by_fit": 575285,
+    "input_events": 270941.0,
+    "model_events": 270941.0,
+    "input_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1095
+    },
+    "retained_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1095
+    },
+    "strata_input": 113400,
+    "strata_model": 70962,
+    "covariance_eigen_diagnostics": {
+      "dimension": 8,
+      "max_absolute_asymmetry": 5.421010862427522e-19,
+      "min_eigenvalue": 3.572709656824763e-05,
+      "max_eigenvalue": 0.008961630313234424,
+      "max_absolute_eigenvalue": 0.008961630313234424,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.003986673776922744,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        3.572709656824763e-05,
+        0.00011786011109466175,
+        0.0001926991954387912,
+        0.00042903493236234554,
+        0.001009177043573644,
+        0.0014909388651264872,
+        0.0020655240570344995,
+        0.008961630313234424
+      ]
+    },
+    "coefficient_names": [
+      "C(group)[T.heat_only]",
+      "C(group)[T.smoke_only]",
+      "C(group)[T.both]",
+      "C(outcome)[T.urgent]:C(group)[T.heat_only]",
+      "C(outcome)[T.urgent]:C(group)[T.smoke_only]",
+      "C(outcome)[T.urgent]:C(group)[T.both]",
+      "C(outcome)[elective]:holiday",
+      "C(outcome)[urgent]:holiday"
+    ],
+    "coefficients": [
+      -0.025538835077781576,
+      0.026897612121311462,
+      0.03628966181127718,
+      0.06428600948308702,
+      -0.018282171141972267,
+      0.012852202912777345,
+      -0.8331704145622641,
+      -0.32465648300074457
+    ],
+    "covariance_raw": [
+      [
+        0.0008555570926830627,
+        5.208242954371243e-05,
+        6.619611742013736e-05,
+        -0.0007147584722086782,
+        -5.7415906087185565e-05,
+        -0.00013572958160313345,
+        -0.0003059464609823439,
+        1.2491364958583967e-06
+      ],
+      [
+        5.2082429543712374e-05,
+        0.0002018929661168144,
+        8.669410169305543e-05,
+        -4.276393243009776e-05,
+        -0.00021606327210627822,
+        -0.00010502775759052845,
+        -0.00020971060142919545,
+        -3.63937464992555e-05
+      ],
+      [
+        6.619611742013727e-05,
+        8.669410169305555e-05,
+        0.0008749280069319178,
+        -2.8729781170140742e-05,
+        -0.00012720227499686993,
+        -0.0008513000783121801,
+        4.322335247287575e-05,
+        -0.00010114926574822676
+      ],
+      [
+        -0.000714758472208678,
+        -4.27639324300978e-05,
+        -2.872978117014081e-05,
+        0.000818268892785336,
+        4.099118257738659e-05,
+        0.00011105135618888742,
+        0.0002630154704990524,
+        4.1257922713674986e-05
+      ],
+      [
+        -5.7415906087185504e-05,
+        -0.00021606327210627816,
+        -0.00012720227499686976,
+        4.099118257738654e-05,
+        0.0003271294365848111,
+        0.0002034680442016687,
+        0.00016685916226919984,
+        3.794639416427752e-05
+      ],
+      [
+        -0.0001357295816031334,
+        -0.00010502775759052827,
+        -0.0008513000783121796,
+        0.00011105135618888742,
+        0.0002034680442016687,
+        0.0012581954378070013,
+        -3.654689229112621e-05,
+        5.4042257419388345e-05
+      ],
+      [
+        -0.000305946460982344,
+        -0.00020971060142919542,
+        4.3223352472875786e-05,
+        0.00026301547049905244,
+        0.00016685916226919986,
+        -3.654689229112614e-05,
+        0.008458287793372377,
+        0.001873597360978157
+      ],
+      [
+        1.249136495858399e-06,
+        -3.639374649925551e-05,
+        -0.00010114926574822673,
+        4.1257922713674986e-05,
+        3.794639416427751e-05,
+        5.4042257419388304e-05,
+        0.001873597360978157,
+        0.00150833198815178
+      ]
+    ],
+    "covariance_used_for_linear_contrasts": [
+      [
+        0.0008555570926830627,
+        5.20824295437124e-05,
+        6.619611742013731e-05,
+        -0.0007147584722086781,
+        -5.741590608718554e-05,
+        -0.00013572958160313343,
+        -0.00030594646098234396,
+        1.249136495858398e-06
+      ],
+      [
+        5.20824295437124e-05,
+        0.0002018929661168144,
+        8.669410169305549e-05,
+        -4.276393243009778e-05,
+        -0.0002160632721062782,
+        -0.00010502775759052837,
+        -0.00020971060142919545,
+        -3.6393746499255506e-05
+      ],
+      [
+        6.619611742013731e-05,
+        8.669410169305549e-05,
+        0.0008749280069319178,
+        -2.8729781170140776e-05,
+        -0.00012720227499686985,
+        -0.0008513000783121798,
+        4.322335247287577e-05,
+        -0.00010114926574822675
+      ],
+      [
+        -0.0007147584722086781,
+        -4.276393243009778e-05,
+        -2.8729781170140776e-05,
+        0.000818268892785336,
+        4.099118257738656e-05,
+        0.00011105135618888742,
+        0.0002630154704990524,
+        4.1257922713674986e-05
+      ],
+      [
+        -5.741590608718554e-05,
+        -0.0002160632721062782,
+        -0.00012720227499686985,
+        4.099118257738656e-05,
+        0.0003271294365848111,
+        0.0002034680442016687,
+        0.00016685916226919986,
+        3.794639416427752e-05
+      ],
+      [
+        -0.00013572958160313343,
+        -0.00010502775759052837,
+        -0.0008513000783121798,
+        0.00011105135618888742,
+        0.0002034680442016687,
+        0.0012581954378070013,
+        -3.654689229112617e-05,
+        5.4042257419388325e-05
+      ],
+      [
+        -0.00030594646098234396,
+        -0.00020971060142919545,
+        4.322335247287577e-05,
+        0.0002630154704990524,
+        0.00016685916226919986,
+        -3.654689229112617e-05,
+        0.008458287793372377,
+        0.001873597360978157
+      ],
+      [
+        1.249136495858398e-06,
+        -3.6393746499255506e-05,
+        -0.00010114926574822675,
+        4.1257922713674986e-05,
+        3.794639416427752e-05,
+        5.4042257419388325e-05,
+        0.001873597360978157,
+        0.00150833198815178
+      ]
+    ],
+    "covariance_symmetrized_for_rounding_only": true,
+    "eigen_diagnostics": {
+      "dimension": 8,
+      "max_absolute_asymmetry": 5.421010862427522e-19,
+      "min_eigenvalue": 3.572709656824763e-05,
+      "max_eigenvalue": 0.008961630313234424,
+      "max_absolute_eigenvalue": 0.008961630313234424,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.003986673776922744,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        3.572709656824763e-05,
+        0.00011786011109466175,
+        0.0001926991954387912,
+        0.00042903493236234554,
+        0.001009177043573644,
+        0.0014909388651264872,
+        0.0020655240570344995,
+        0.008961630313234424
+      ]
+    }
+  },
+  "strict_urgent_elective_holiday_two_way": {
+    "model_id": "strict_urgent_elective_holiday_two_way",
+    "model_family": "strict_urgent_elective_joint",
+    "formula": "count ~ C(outcome)*C(group) + C(outcome):holiday | stratum^outcome",
+    "fixed_effect": "health region x year-month x day-of-week",
+    "cluster": "CRV1, two-way by hrid + day_id",
+    "inference": "Student t with df=min(retained hrid clusters, retained date clusters)-1",
+    "df": 449,
+    "input_rows": 1643400,
+    "model_rows": 543323,
+    "rows_dropped_by_fit": 1100077,
+    "input_events": 321201.0,
+    "model_events": 321201.0,
+    "input_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1826
+    },
+    "retained_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1826
+    },
+    "strata_input": 189000,
+    "strata_model": 96816,
+    "covariance_eigen_diagnostics": {
+      "dimension": 8,
+      "max_absolute_asymmetry": 4.336808689942018e-19,
+      "min_eigenvalue": 2.444297502171312e-05,
+      "max_eigenvalue": 0.007275901972981273,
+      "max_absolute_eigenvalue": 0.007275901972981273,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.0033594425972863547,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        2.444297502171312e-05,
+        6.718391832414838e-05,
+        0.0001194770257003416,
+        0.00033490882522623996,
+        0.0006728612549452812,
+        0.0010322210719691718,
+        0.0015017011503825834,
+        0.007275901972981273
+      ]
+    },
+    "coefficient_names": [
+      "C(group)[T.heat_only]",
+      "C(group)[T.smoke_only]",
+      "C(group)[T.both]",
+      "C(outcome)[T.urgent]:C(group)[T.heat_only]",
+      "C(outcome)[T.urgent]:C(group)[T.smoke_only]",
+      "C(outcome)[T.urgent]:C(group)[T.both]",
+      "C(outcome)[elective]:holiday",
+      "C(outcome)[urgent]:holiday"
+    ],
+    "coefficients": [
+      0.00973343179094895,
+      0.01953910423752576,
+      0.045913455217680116,
+      0.03951834259344618,
+      -0.006541490847632784,
+      0.015134555434176812,
+      -0.8798943709385187,
+      -0.3644185112973048
+    ],
+    "covariance_raw": [
+      [
+        0.0005108572822857154,
+        4.0256508368598745e-05,
+        3.868513314609219e-05,
+        -0.0004735500395229598,
+        -1.968926364980051e-05,
+        -4.021516636843598e-05,
+        -0.00011528258267587363,
+        6.216359664399047e-05
+      ],
+      [
+        4.025650836859875e-05,
+        0.0001698981955743808,
+        9.639650396689249e-05,
+        -1.5270450861175428e-05,
+        -0.00017593631001938524,
+        -9.281349850360148e-05,
+        -0.00018309628321647834,
+        1.204486950767447e-05
+      ],
+      [
+        3.868513314609218e-05,
+        9.639650396689235e-05,
+        0.0006160763187605082,
+        -1.3185958147311238e-05,
+        -9.811865014403922e-05,
+        -0.0006470832081947485,
+        -8.083787812850152e-06,
+        6.077751106906504e-06
+      ],
+      [
+        -0.0004735500395229598,
+        -1.527045086117541e-05,
+        -1.3185958147311271e-05,
+        0.0005879902236785991,
+        -2.3375173158120355e-06,
+        3.942877138600724e-05,
+        6.125443893963274e-05,
+        -2.1411534614182092e-05
+      ],
+      [
+        -1.9689263649800526e-05,
+        -0.00017593631001938526,
+        -9.81186501440393e-05,
+        -2.33751731581201e-06,
+        0.0002480681376855712,
+        0.00013041042847795957,
+        0.0001636341159757105,
+        7.440202349606414e-06
+      ],
+      [
+        -4.021516636843599e-05,
+        -9.281349850360132e-05,
+        -0.000647083208194748,
+        3.942877138600724e-05,
+        0.00013041042847795938,
+        0.000949168409769295,
+        -2.585013342186424e-05,
+        1.1366318873275963e-05
+      ],
+      [
+        -0.00011528258267587367,
+        -0.00018309628321647834,
+        -8.083787812850197e-06,
+        6.125443893963276e-05,
+        0.00016363411597571052,
+        -2.5850133421864196e-05,
+        0.007007034052792915,
+        0.0012782861923281927
+      ],
+      [
+        6.216359664399049e-05,
+        1.2044869507674492e-05,
+        6.077751106906507e-06,
+        -2.1411534614182102e-05,
+        7.4402023496064005e-06,
+        1.1366318873275958e-05,
+        0.0012782861923281924,
+        0.0009396055740037725
+      ]
+    ],
+    "covariance_used_for_linear_contrasts": [
+      [
+        0.0005108572822857154,
+        4.025650836859875e-05,
+        3.868513314609219e-05,
+        -0.0004735500395229598,
+        -1.968926364980052e-05,
+        -4.021516636843599e-05,
+        -0.00011528258267587364,
+        6.216359664399049e-05
+      ],
+      [
+        4.025650836859875e-05,
+        0.0001698981955743808,
+        9.639650396689242e-05,
+        -1.527045086117542e-05,
+        -0.00017593631001938524,
+        -9.28134985036014e-05,
+        -0.00018309628321647834,
+        1.2044869507674481e-05
+      ],
+      [
+        3.868513314609219e-05,
+        9.639650396689242e-05,
+        0.0006160763187605082,
+        -1.3185958147311254e-05,
+        -9.811865014403926e-05,
+        -0.0006470832081947482,
+        -8.083787812850174e-06,
+        6.077751106906506e-06
+      ],
+      [
+        -0.0004735500395229598,
+        -1.527045086117542e-05,
+        -1.3185958147311254e-05,
+        0.0005879902236785991,
+        -2.337517315812023e-06,
+        3.942877138600724e-05,
+        6.125443893963275e-05,
+        -2.1411534614182095e-05
+      ],
+      [
+        -1.968926364980052e-05,
+        -0.00017593631001938524,
+        -9.811865014403926e-05,
+        -2.337517315812023e-06,
+        0.0002480681376855712,
+        0.00013041042847795946,
+        0.0001636341159757105,
+        7.440202349606407e-06
+      ],
+      [
+        -4.021516636843599e-05,
+        -9.28134985036014e-05,
+        -0.0006470832081947482,
+        3.942877138600724e-05,
+        0.00013041042847795946,
+        0.000949168409769295,
+        -2.585013342186422e-05,
+        1.1366318873275962e-05
+      ],
+      [
+        -0.00011528258267587364,
+        -0.00018309628321647834,
+        -8.083787812850174e-06,
+        6.125443893963275e-05,
+        0.0001636341159757105,
+        -2.585013342186422e-05,
+        0.007007034052792915,
+        0.0012782861923281924
+      ],
+      [
+        6.216359664399049e-05,
+        1.2044869507674481e-05,
+        6.077751106906506e-06,
+        -2.1411534614182095e-05,
+        7.440202349606407e-06,
+        1.1366318873275962e-05,
+        0.0012782861923281924,
+        0.0009396055740037725
+      ]
+    ],
+    "covariance_symmetrized_for_rounding_only": true,
+    "eigen_diagnostics": {
+      "dimension": 8,
+      "max_absolute_asymmetry": 4.336808689942018e-19,
+      "min_eigenvalue": 2.444297502171312e-05,
+      "max_eigenvalue": 0.007275901972981273,
+      "max_absolute_eigenvalue": 0.007275901972981273,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.0033594425972863547,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        2.444297502171312e-05,
+        6.718391832414838e-05,
+        0.0001194770257003416,
+        0.00033490882522623996,
+        0.0006728612549452812,
+        0.0010322210719691718,
+        0.0015017011503825834,
+        0.007275901972981273
+      ]
+    }
+  },
+  "strict_urgent_elective_holiday_two_way_excluding_2020_2021": {
+    "model_id": "strict_urgent_elective_holiday_two_way_excluding_2020_2021",
+    "model_family": "strict_urgent_elective_joint",
+    "formula": "count ~ C(outcome)*C(group) + C(outcome):holiday | stratum^outcome",
+    "fixed_effect": "health region x year-month x day-of-week",
+    "cluster": "CRV1, two-way by hrid + day_id",
+    "inference": "Student t with df=min(retained hrid clusters, retained date clusters)-1",
+    "df": 449,
+    "input_rows": 985500,
+    "model_rows": 335648,
+    "rows_dropped_by_fit": 649852,
+    "input_events": 199026.0,
+    "model_events": 199026.0,
+    "input_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1095
+    },
+    "retained_cluster_counts": {
+      "hrid": 450,
+      "day_id": 1095
+    },
+    "strata_input": 113400,
+    "strata_model": 59199,
+    "covariance_eigen_diagnostics": {
+      "dimension": 8,
+      "max_absolute_asymmetry": 4.336808689942018e-19,
+      "min_eigenvalue": 3.6052192171150994e-05,
+      "max_eigenvalue": 0.009097715682481512,
+      "max_absolute_eigenvalue": 0.009097715682481512,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.0039627741104915825,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        3.6052192171150994e-05,
+        0.00014117322128873966,
+        0.00023211750034187942,
+        0.000480307896238641,
+        0.0010495899830136942,
+        0.0016700709203442887,
+        0.0022996831139070343,
+        0.009097715682481512
+      ]
+    },
+    "coefficient_names": [
+      "C(group)[T.heat_only]",
+      "C(group)[T.smoke_only]",
+      "C(group)[T.both]",
+      "C(outcome)[T.urgent]:C(group)[T.heat_only]",
+      "C(outcome)[T.urgent]:C(group)[T.smoke_only]",
+      "C(outcome)[T.urgent]:C(group)[T.both]",
+      "C(outcome)[elective]:holiday",
+      "C(outcome)[urgent]:holiday"
+    ],
+    "coefficients": [
+      -0.020267967726952454,
+      0.02503319357795712,
+      0.01778927389959751,
+      0.048172668538516275,
+      -0.015333100023302276,
+      0.037385377991972564,
+      -0.82006548418502,
+      -0.3391312766558624
+    ],
+    "covariance_raw": [
+      [
+        0.0009285454400053412,
+        5.012451939593701e-05,
+        9.589497872616401e-05,
+        -0.0008116035698586463,
+        -5.551321581973077e-05,
+        -0.00016302968128241826,
+        -0.00030593421084781035,
+        -6.9679558496613365e-06
+      ],
+      [
+        5.012451939593701e-05,
+        0.00022230702375299608,
+        9.664902431786668e-05,
+        -2.7078342567429048e-05,
+        -0.0002376639976304928,
+        -0.00010680665217809889,
+        -0.00025932541113129256,
+        -2.8314406817390895e-05
+      ],
+      [
+        9.589497872616381e-05,
+        9.664902431786649e-05,
+        0.0008582750664861504,
+        -5.000720287853416e-05,
+        -0.0001150815759821087,
+        -0.0009099898045238599,
+        -0.00014581081538555442,
+        -4.8916756974329685e-05
+      ],
+      [
+        -0.0008116035698586459,
+        -2.7078342567429055e-05,
+        -5.00072028785342e-05,
+        0.000989544212508658,
+        2.530975513308962e-05,
+        0.0001194453574697176,
+        0.00018757586797347445,
+        3.94838038455388e-05
+      ],
+      [
+        -5.551321581973076e-05,
+        -0.00023766399763049288,
+        -0.00011508157598210884,
+        2.5309755133089608e-05,
+        0.00035053875184197286,
+        0.00018990350827906928,
+        0.00021701601221044058,
+        4.807568922176963e-05
+      ],
+      [
+        -0.00016302968128241815,
+        -0.00010680665217809887,
+        -0.0009099898045238602,
+        0.00011944535746971762,
+        0.0001899035082790692,
+        0.001548149181855188,
+        0.00012061191220609387,
+        7.687373955643167e-06
+      ],
+      [
+        -0.0003059342108478103,
+        -0.00025932541113129256,
+        -0.00014581081538555442,
+        0.00018757586797347445,
+        0.00021701601221044047,
+        0.0001206119122060938,
+        0.008632754104975535,
+        0.001800527682632325
+      ],
+      [
+        -6.96795584966136e-06,
+        -2.8314406817390908e-05,
+        -4.89167569743297e-05,
+        3.948380384553882e-05,
+        4.8075689221769646e-05,
+        7.6873739556432e-06,
+        0.001800527682632325,
+        0.0014765967283611027
+      ]
+    ],
+    "covariance_used_for_linear_contrasts": [
+      [
+        0.0009285454400053412,
+        5.012451939593701e-05,
+        9.58949787261639e-05,
+        -0.0008116035698586461,
+        -5.551321581973076e-05,
+        -0.0001630296812824182,
+        -0.00030593421084781035,
+        -6.967955849661348e-06
+      ],
+      [
+        5.012451939593701e-05,
+        0.00022230702375299608,
+        9.664902431786658e-05,
+        -2.707834256742905e-05,
+        -0.00023766399763049286,
+        -0.00010680665217809889,
+        -0.00025932541113129256,
+        -2.83144068173909e-05
+      ],
+      [
+        9.58949787261639e-05,
+        9.664902431786658e-05,
+        0.0008582750664861504,
+        -5.000720287853418e-05,
+        -0.00011508157598210877,
+        -0.00090998980452386,
+        -0.00014581081538555442,
+        -4.891675697432969e-05
+      ],
+      [
+        -0.0008116035698586461,
+        -2.707834256742905e-05,
+        -5.000720287853418e-05,
+        0.000989544212508658,
+        2.5309755133089614e-05,
+        0.00011944535746971761,
+        0.00018757586797347445,
+        3.948380384553881e-05
+      ],
+      [
+        -5.551321581973076e-05,
+        -0.00023766399763049286,
+        -0.00011508157598210877,
+        2.5309755133089614e-05,
+        0.00035053875184197286,
+        0.00018990350827906923,
+        0.00021701601221044053,
+        4.807568922176964e-05
+      ],
+      [
+        -0.0001630296812824182,
+        -0.00010680665217809889,
+        -0.00090998980452386,
+        0.00011944535746971761,
+        0.00018990350827906923,
+        0.001548149181855188,
+        0.00012061191220609383,
+        7.687373955643184e-06
+      ],
+      [
+        -0.00030593421084781035,
+        -0.00025932541113129256,
+        -0.00014581081538555442,
+        0.00018757586797347445,
+        0.00021701601221044053,
+        0.00012061191220609383,
+        0.008632754104975535,
+        0.001800527682632325
+      ],
+      [
+        -6.967955849661348e-06,
+        -2.83144068173909e-05,
+        -4.891675697432969e-05,
+        3.948380384553881e-05,
+        4.807568922176964e-05,
+        7.687373955643184e-06,
+        0.001800527682632325,
+        0.0014765967283611027
+      ]
+    ],
+    "covariance_symmetrized_for_rounding_only": true,
+    "eigen_diagnostics": {
+      "dimension": 8,
+      "max_absolute_asymmetry": 4.336808689942018e-19,
+      "min_eigenvalue": 3.6052192171150994e-05,
+      "max_eigenvalue": 0.009097715682481512,
+      "max_absolute_eigenvalue": 0.009097715682481512,
+      "negative_eigenvalue_count": 0,
+      "negative_eigenvalue_count_below_tolerance": 0,
+      "relative_min_eigenvalue": 0.0039627741104915825,
+      "psd_with_1e-10_relative_tolerance": true,
+      "eigenvalue_tolerance": 1e-12,
+      "eigenvalues": [
+        3.6052192171150994e-05,
+        0.00014117322128873966,
+        0.00023211750034187942,
+        0.000480307896238641,
+        0.0010495899830136942,
+        0.0016700709203442887,
+        0.0022996831139070343,
+        0.009097715682481512
+      ]
+    }
+  }
+}

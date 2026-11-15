@@ -1,0 +1,15 @@
+{
+  "candidate": "SRR-20261114-C3-display-3",
+  "supplementary_archive_sha256": "511c4d54b669b19ae9e93d85a75a94aabe3dff26061c5d912c2165a57b6698f2",
+  "main_tables": {
+    "table1.csv": "4451affadf4d2716827f56fdd722e4b12cd1ec43c4aa1ba4667250f91b71153e",
+    "table2.csv": "651c6c509a6a81068b08e226c082b5e06f81ab37f1894e0eb9d3a3f8b2a9afb1",
+    "table3.csv": "eeccd3255eabeaca316c870e4fd61781bd7baba0bcde377108eb953275173657"
+  },
+  "scope": "Released aggregates and recovered revision code. Original frozen upstream pipeline not recovered.",
+  "source_results_release": "SRR-20261114-C3",
+  "display_revision": "2026-11-15",
+  "manuscript_title": "Short-Term Temperature and Urolithiasis Hospitalizations in Brazil and Mexico: Exploratory Heat–Smoke Comparisons With Cholelithiasis and Cholecystitis in Brazil",
+  "manuscript_revision": "2026-11-15",
+  "layout_revision": "Arial Bold, 18pt uppercase panel labels; bilingual figure captions revised for reader clarity; result values unchanged"
+}

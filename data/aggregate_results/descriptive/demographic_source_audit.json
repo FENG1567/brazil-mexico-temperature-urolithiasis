@@ -1,0 +1,294 @@
+{
+  "status": "complete",
+  "pid": 62156,
+  "aggregate_only": true,
+  "person_ids_read_or_written": false,
+  "Brazil": {
+    "file_count": 6803,
+    "bytes": 7151496433,
+    "aggregate_joint_rows": 1324,
+    "target_admissions": 4993174,
+    "sex_codes": [
+      "1",
+      "3"
+    ],
+    "age_codes": [
+      "0",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "age_groups": [
+      "0–14",
+      "15–44",
+      "45–64",
+      "65+",
+      "unknown_or_invalid"
+    ],
+    "panel_reconciliation_max_abs_difference": 0,
+    "source_fields_present": [
+      "SEXO",
+      "COD_IDADE",
+      "IDADE",
+      "DIAG_PRINC",
+      "DT_INTER",
+      "MUNIC_RES"
+    ],
+    "ids_read_or_written": false,
+    "sex_code_labels": {
+      "1": "male",
+      "3": "female"
+    }
+  },
+  "Mexico": {
+    "files": {
+      "mx2018_egresos.csv": 506649332,
+      "mx2019_egresos.txt": 562533021,
+      "mx2020_egresos.txt": 395015046,
+      "mx2021_egresos.txt": 377975863,
+      "mx2022_egresos.txt": 447157353
+    },
+    "file_count": 5,
+    "bytes": 2289330615,
+    "source_rows_scanned": 11758834,
+    "valid_state_target_admissions": 40415,
+    "aggregate_joint_rows": 232,
+    "baseline_admissions": 40415,
+    "sex_codes": [
+      "1",
+      "2",
+      "9"
+    ],
+    "cveedad_codes": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "9"
+    ],
+    "age_categories": [
+      "0–14 years",
+      "15–44 years",
+      "45–64 years",
+      "65+ years",
+      "ambiguous 2019 age unit (years or days; EDAD 15–29)",
+      "unspecified age (CVEEDAD=9)"
+    ],
+    "cveedad_code_year_counts": [
+      {
+        "country": "Mexico",
+        "year": 2018,
+        "source_year": 2018,
+        "cveedad_code": "1",
+        "admissions": 1,
+        "age_codebook_vintage": "legacy 2014 SAEH v2.2"
+      },
+      {
+        "country": "Mexico",
+        "year": 2018,
+        "source_year": 2018,
+        "cveedad_code": "2",
+        "admissions": 12,
+        "age_codebook_vintage": "legacy 2014 SAEH v2.2"
+      },
+      {
+        "country": "Mexico",
+        "year": 2018,
+        "source_year": 2018,
+        "cveedad_code": "3",
+        "admissions": 9362,
+        "age_codebook_vintage": "legacy 2014 SAEH v2.2"
+      },
+      {
+        "country": "Mexico",
+        "year": 2018,
+        "source_year": 2019,
+        "cveedad_code": "3",
+        "admissions": 28,
+        "age_codebook_vintage": "mixed 2019 source; code3 EDAD15–29 unit ambiguous"
+      },
+      {
+        "country": "Mexico",
+        "year": 2019,
+        "source_year": 2019,
+        "cveedad_code": "1",
+        "admissions": 1,
+        "age_codebook_vintage": "mixed 2019 source; code3 EDAD15–29 unit ambiguous"
+      },
+      {
+        "country": "Mexico",
+        "year": 2019,
+        "source_year": 2019,
+        "cveedad_code": "2",
+        "admissions": 17,
+        "age_codebook_vintage": "mixed 2019 source; code3 EDAD15–29 unit ambiguous"
+      },
+      {
+        "country": "Mexico",
+        "year": 2019,
+        "source_year": 2019,
+        "cveedad_code": "3",
+        "admissions": 10470,
+        "age_codebook_vintage": "mixed 2019 source; code3 EDAD15–29 unit ambiguous"
+      },
+      {
+        "country": "Mexico",
+        "year": 2019,
+        "source_year": 2020,
+        "cveedad_code": "5",
+        "admissions": 29,
+        "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+      },
+      {
+        "country": "Mexico",
+        "year": 2020,
+        "source_year": 2020,
+        "cveedad_code": "4",
+        "admissions": 7,
+        "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+      },
+      {
+        "country": "Mexico",
+        "year": 2020,
+        "source_year": 2020,
+        "cveedad_code": "5",
+        "admissions": 4593,
+        "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+      },
+      {
+        "country": "Mexico",
+        "year": 2020,
+        "source_year": 2021,
+        "cveedad_code": "5",
+        "admissions": 8,
+        "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+      },
+      {
+        "country": "Mexico",
+        "year": 2021,
+        "source_year": 2021,
+        "cveedad_code": "2",
+        "admissions": 1,
+        "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+      },
+      {
+        "country": "Mexico",
+        "year": 2021,
+        "source_year": 2021,
+        "cveedad_code": "4",
+        "admissions": 3,
+        "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+      },
+      {
+        "country": "Mexico",
+        "year": 2021,
+        "source_year": 2021,
+        "cveedad_code": "5",
+        "admissions": 6654,
+        "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+      },
+      {
+        "country": "Mexico",
+        "year": 2021,
+        "source_year": 2022,
+        "cveedad_code": "5",
+        "admissions": 14,
+        "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+      },
+      {
+        "country": "Mexico",
+        "year": 2022,
+        "source_year": 2022,
+        "cveedad_code": "3",
+        "admissions": 2,
+        "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+      },
+      {
+        "country": "Mexico",
+        "year": 2022,
+        "source_year": 2022,
+        "cveedad_code": "4",
+        "admissions": 5,
+        "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+      },
+      {
+        "country": "Mexico",
+        "year": 2022,
+        "source_year": 2022,
+        "cveedad_code": "5",
+        "admissions": 9207,
+        "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+      },
+      {
+        "country": "Mexico",
+        "year": 2022,
+        "source_year": 2022,
+        "cveedad_code": "9",
+        "admissions": 1,
+        "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+      }
+    ],
+    "cache_reconciliation_max_abs_difference": 0,
+    "source_fields_present": [
+      "INGRE",
+      "ENTIDAD",
+      "AFECPRIN",
+      "SEXO",
+      "EDAD",
+      "CVEEDAD"
+    ],
+    "ids_read_or_written": false,
+    "age_note": "Source-file vintage mapping: 2018 legacy units; 2019 code4/5 months/years and legacy code1/2; 2020–2022 modern units code2=hours, code3=days, code4=months, code5=years. The mixed 2019 source code3 EDAD15–29 cannot distinguish years from days and remains explicitly ambiguous. Code3 EDAD1–14 belongs in 0–14 under either unit; EDAD30–120 can only be valid years. All mappings follow source-file year, not admission year. EDAD999, inconsistent values and undocumented codes remain unknown; validation bounds hours1–23, days1–29, months1–11, years1–120.",
+    "sex_note": "Official INSP/RIISP SAEH codebook maps SEXO 1=male, 2=female, 3=intersex, 8=ignored, 9=unspecified; detailed files retain source codes.",
+    "age_codebook_url": "https://riisp.insp.mx/nada/index.php/catalog/18/variable/V11",
+    "historical_age_codebook_url": "https://riisp.insp.mx/nada/files_nesstar/SAEH_SSA/Referencias/NOTAS_TECNICAS/GII-B002-SAEH-02-02.pdf",
+    "current_age_codebook_url": "https://gobi.salud.gob.mx/gobi/guias/egresos_urgencias_lesiones/egresos/GIIS-B002-03-07_20210220.pdf?v=2022.01.13",
+    "sex_codebook_url": "https://riisp.insp.mx/nada/index.php/catalog/18/variable/V14",
+    "age_codebook_sources": {
+      "current_variable_record": "https://riisp.insp.mx/nada/index.php/catalog/18/variable/V11",
+      "historical_2014_validation_rules_v2_2": "https://riisp.insp.mx/nada/files_nesstar/SAEH_SSA/Referencias/NOTAS_TECNICAS/GII-B002-SAEH-02-02.pdf",
+      "modern_2020_v3_7": "https://gobi.salud.gob.mx/gobi/guias/egresos_urgencias_lesiones/egresos/GIIS-B002-03-07_20210220.pdf",
+      "shared_tipo_edad_explicit_2020": "https://gobi.salud.gob.mx/gobi/guias/egresos_urgencias_lesiones/urgencias/GIIS-B014-01-10_20210220.pdf"
+    },
+    "sex_codebook_source": "https://riisp.insp.mx/nada/index.php/catalog/18/variable/V14",
+    "reclassification_pid": 33368,
+    "reclassification_completed_at_utc": "2026-11-13T14:27:01.553299+00:00",
+    "cveedad_unmapped_counts": {},
+    "unresolved_age_unit_admissions": 1689,
+    "note_unmapped_count_repair": "Codes 4/5 are interpreted with source-vintage units; unresolved 2019 code3 age values are a separate ambiguity category."
+  },
+  "brazil_admissions_total": 4993174,
+  "mexico_admissions_total": 40415,
+  "N20_N23_summary": {
+    "Brazil": {
+      "sex_code": {
+        "1": 567503,
+        "3": 564660
+      },
+      "age_group": {
+        "0–14": 27381,
+        "15–44": 598260,
+        "45–64": 388975,
+        "65+": 117547
+      }
+    },
+    "Mexico": {
+      "sex_code": {
+        "1": 17131,
+        "2": 23281,
+        "9": 3
+      },
+      "age_category": {
+        "0–14 years": 1208,
+        "15–44 years": 18069,
+        "45–64 years": 15505,
+        "65+ years": 3943,
+        "ambiguous 2019 age unit (years or days; EDAD 15–29)": 1689,
+        "unspecified age (CVEEDAD=9)": 1
+      }
+    }
+  },
+  "publication_age_note": "Mexico age units were interpreted by source-file vintage, not admission year, using legacy SAEH and the modern TIPO_EDAD catalogue. For 2019 code 3, EDAD 15–29 remains explicitly ambiguous (years versus days); no age band was imputed. EDAD 1–14 gives the same 0–14 band under either unit; values 30–120 cannot be valid days. The age profile therefore includes an explicit ambiguity category. The 33 source-expanded admissions are outside this baseline demographic table. Brazilian SEXO codes are 1=male and 3=female; Mexican codes are 1=male, 2=female, 9=unspecified. These are admission counts, not unique persons."
+}

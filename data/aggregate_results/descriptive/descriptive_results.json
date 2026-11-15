@@ -1,0 +1,803 @@
+{
+  "status": "descriptive_cache_audit_complete",
+  "scope": "aggregate-only; no association models rerun; no person IDs written",
+  "brazil_primary": {
+    "period": "2008-01-01 through 2022-12-31",
+    "area_day_rows": 2465550,
+    "health_regions": 450,
+    "calendar_days": 5479,
+    "N20_N23_admissions": 1132163,
+    "diagnosis_totals": {
+      "K80": 2377992,
+      "K81": 1233598,
+      "K85": 249421,
+      "N20_N23": 1132163
+    },
+    "exposure_complete_area_days_tmean_fire_rh": 2465550,
+    "population_years": [
+      {
+        "year": 2008,
+        "areas_with_population": 450,
+        "area_population_sum": 191335196.0,
+        "area_population_mean": 425189.32444444444,
+        "area_population_median": 235369.0,
+        "area_population_min": 20969.0,
+        "area_population_max": 11586559.0,
+        "population_missing_area_years": 0,
+        "regions_with_nonunique_population_within_year": 0
+      },
+      {
+        "year": 2009,
+        "areas_with_population": 450,
+        "area_population_sum": 193174036.0,
+        "area_population_mean": 429275.6355555556,
+        "area_population_median": 236028.5,
+        "area_population_min": 21342.0,
+        "area_population_max": 11663452.0,
+        "population_missing_area_years": 0,
+        "regions_with_nonunique_population_within_year": 0
+      },
+      {
+        "year": 2010,
+        "areas_with_population": 450,
+        "area_population_sum": 194749329.0,
+        "area_population_mean": 432776.2866666667,
+        "area_population_median": 237299.5,
+        "area_population_min": 21667.0,
+        "area_population_max": 11723372.0,
+        "population_missing_area_years": 0,
+        "regions_with_nonunique_population_within_year": 0
+      },
+      {
+        "year": 2011,
+        "areas_with_population": 450,
+        "area_population_sum": 196158610.0,
+        "area_population_mean": 435908.02222222224,
+        "area_population_median": 238946.0,
+        "area_population_min": 21963.0,
+        "area_population_max": 11771291.0,
+        "population_missing_area_years": 0,
+        "regions_with_nonunique_population_within_year": 0
+      },
+      {
+        "year": 2012,
+        "areas_with_population": 450,
+        "area_population_sum": 197670620.0,
+        "area_population_mean": 439268.0444444445,
+        "area_population_median": 241531.5,
+        "area_population_min": 22295.0,
+        "area_population_max": 11821547.0,
+        "population_missing_area_years": 0,
+        "regions_with_nonunique_population_within_year": 0
+      },
+      {
+        "year": 2013,
+        "areas_with_population": 450,
+        "area_population_sum": 199226702.0,
+        "area_population_mean": 442726.00444444444,
+        "area_population_median": 242820.5,
+        "area_population_min": 22617.0,
+        "area_population_max": 11868982.0,
+        "population_missing_area_years": 0,
+        "regions_with_nonunique_population_within_year": 0
+      },
+      {
+        "year": 2014,
+        "areas_with_population": 450,
+        "area_population_sum": 200811131.0,
+        "area_population_mean": 446246.9577777778,
+        "area_population_median": 245540.5,
+        "area_population_min": 22961.0,
+        "area_population_max": 11912329.0,
+        "population_missing_area_years": 0,
+        "regions_with_nonunique_population_within_year": 0
+      },
+      {
+        "year": 2015,
+        "areas_with_population": 450,
+        "area_population_sum": 202403642.0,
+        "area_population_mean": 449785.87111111113,
+        "area_population_median": 248691.5,
+        "area_population_min": 23350.0,
+        "area_population_max": 11951362.0,
+        "population_missing_area_years": 0,
+        "regions_with_nonunique_population_within_year": 0
+      },
+      {
+        "year": 2016,
+        "areas_with_population": 450,
+        "area_population_sum": 203871925.0,
+        "area_population_mean": 453048.72222222225,
+        "area_population_median": 249094.5,
+        "area_population_min": 23694.0,
+        "area_population_max": 11980837.0,
+        "population_missing_area_years": 0,
+        "regions_with_nonunique_population_within_year": 0
+      },
+      {
+        "year": 2017,
+        "areas_with_population": 450,
+        "area_population_sum": 205211557.0,
+        "area_population_mean": 456025.6822222222,
+        "area_population_median": 249940.5,
+        "area_population_min": 24049.0,
+        "area_population_max": 11999421.0,
+        "population_missing_area_years": 0,
+        "regions_with_nonunique_population_within_year": 0
+      },
+      {
+        "year": 2018,
+        "areas_with_population": 450,
+        "area_population_sum": 206529038.0,
+        "area_population_mean": 458953.41777777777,
+        "area_population_median": 250951.5,
+        "area_population_min": 24433.0,
+        "area_population_max": 12010314.0,
+        "population_missing_area_years": 0,
+        "regions_with_nonunique_population_within_year": 0
+      },
+      {
+        "year": 2019,
+        "areas_with_population": 450,
+        "area_population_sum": 207900099.0,
+        "area_population_mean": 462000.22,
+        "area_population_median": 252749.5,
+        "area_population_min": 24870.0,
+        "area_population_max": 12015228.0,
+        "population_missing_area_years": 0,
+        "regions_with_nonunique_population_within_year": 0
+      },
+      {
+        "year": 2020,
+        "areas_with_population": 450,
+        "area_population_sum": 209164889.0,
+        "area_population_mean": 464810.8644444444,
+        "area_population_median": 253791.0,
+        "area_population_min": 25255.0,
+        "area_population_max": 12012528.0,
+        "population_missing_area_years": 0,
+        "regions_with_nonunique_population_within_year": 0
+      },
+      {
+        "year": 2021,
+        "areas_with_population": 450,
+        "area_population_sum": 210103642.0,
+        "area_population_mean": 466896.9822222222,
+        "area_population_median": 256366.0,
+        "area_population_min": 25602.0,
+        "area_population_max": 11986673.0,
+        "population_missing_area_years": 0,
+        "regions_with_nonunique_population_within_year": 0
+      },
+      {
+        "year": 2022,
+        "areas_with_population": 450,
+        "area_population_sum": 210862983.0,
+        "area_population_mean": 468584.4066666667,
+        "area_population_median": 258904.0,
+        "area_population_min": 25952.0,
+        "area_population_max": 11950472.0,
+        "population_missing_area_years": 0,
+        "regions_with_nonunique_population_within_year": 0
+      }
+    ],
+    "age_group_cache": [
+      {
+        "country": "Brazil",
+        "period": "2008–2022",
+        "diagnosis": "K80",
+        "age_group": "0-14",
+        "events": 22235.0,
+        "share_within_diagnosis_pct": 0.9350325821112939
+      },
+      {
+        "country": "Brazil",
+        "period": "2008–2022",
+        "diagnosis": "K80",
+        "age_group": "15-44",
+        "events": 1069917.0,
+        "share_within_diagnosis_pct": 44.99245581986819
+      },
+      {
+        "country": "Brazil",
+        "period": "2008–2022",
+        "diagnosis": "K80",
+        "age_group": "45-64",
+        "events": 909013.0,
+        "share_within_diagnosis_pct": 38.22607477232892
+      },
+      {
+        "country": "Brazil",
+        "period": "2008–2022",
+        "diagnosis": "K80",
+        "age_group": "65+",
+        "events": 376827.0,
+        "share_within_diagnosis_pct": 15.846436825691592
+      }
+    ],
+    "sex_case_distribution": {
+      "scope": "N20–N23, 2008–2022",
+      "counts_by_source_code": {
+        "1": 567503,
+        "3": 564660
+      },
+      "source_code_labels": {
+        "1": "male",
+        "3": "female"
+      }
+    },
+    "age_group_source_distribution": {
+      "scope": "N20–N23, 2008–2022",
+      "counts": {
+        "0–14": 27381,
+        "15–44": 598260,
+        "45–64": 388975,
+        "65+": 117547
+      },
+      "source_mapping": "DATASUS COD_IDADE/IDADE; unknown/invalid codes retained when present"
+    }
+  },
+  "brazil_clinical_2018_2022": {
+    "broad_N20_N23_total": 431374,
+    "broad_urgent": 315504,
+    "broad_elective": 115870,
+    "strict_N20_total": 321201,
+    "strict_urgent": 226402,
+    "strict_elective": 94799
+  },
+  "mexico_baseline_2018_2022": {
+    "raw_cache_records": 40907,
+    "valid_state_admissions": 40415,
+    "invalid_state_admissions": 492,
+    "diagnosis_annual": [
+      {
+        "year": 2018,
+        "diagnosis": "N20",
+        "admissions": 7446,
+        "country": "Mexico",
+        "period": "2018–2022 baseline source",
+        "annual_all_diagnoses": 9403,
+        "share_within_year_pct": 79.18749335318515
+      },
+      {
+        "year": 2018,
+        "diagnosis": "N21",
+        "admissions": 1137,
+        "country": "Mexico",
+        "period": "2018–2022 baseline source",
+        "annual_all_diagnoses": 9403,
+        "share_within_year_pct": 12.091885568435606
+      },
+      {
+        "year": 2018,
+        "diagnosis": "N22",
+        "admissions": 98,
+        "country": "Mexico",
+        "period": "2018–2022 baseline source",
+        "annual_all_diagnoses": 9403,
+        "share_within_year_pct": 1.0422205679038605
+      },
+      {
+        "year": 2018,
+        "diagnosis": "N23",
+        "admissions": 722,
+        "country": "Mexico",
+        "period": "2018–2022 baseline source",
+        "annual_all_diagnoses": 9403,
+        "share_within_year_pct": 7.67840051047538
+      },
+      {
+        "year": 2019,
+        "diagnosis": "N20",
+        "admissions": 8552,
+        "country": "Mexico",
+        "period": "2018–2022 baseline source",
+        "annual_all_diagnoses": 10517,
+        "share_within_year_pct": 81.31596462869639
+      },
+      {
+        "year": 2019,
+        "diagnosis": "N21",
+        "admissions": 1179,
+        "country": "Mexico",
+        "period": "2018–2022 baseline source",
+        "annual_all_diagnoses": 10517,
+        "share_within_year_pct": 11.210421222782163
+      },
+      {
+        "year": 2019,
+        "diagnosis": "N22",
+        "admissions": 121,
+        "country": "Mexico",
+        "period": "2018–2022 baseline source",
+        "annual_all_diagnoses": 10517,
+        "share_within_year_pct": 1.150518208614624
+      },
+      {
+        "year": 2019,
+        "diagnosis": "N23",
+        "admissions": 665,
+        "country": "Mexico",
+        "period": "2018–2022 baseline source",
+        "annual_all_diagnoses": 10517,
+        "share_within_year_pct": 6.323095939906818
+      },
+      {
+        "year": 2020,
+        "diagnosis": "N20",
+        "admissions": 3602,
+        "country": "Mexico",
+        "period": "2018–2022 baseline source",
+        "annual_all_diagnoses": 4608,
+        "share_within_year_pct": 78.16840277777777
+      },
+      {
+        "year": 2020,
+        "diagnosis": "N21",
+        "admissions": 542,
+        "country": "Mexico",
+        "period": "2018–2022 baseline source",
+        "annual_all_diagnoses": 4608,
+        "share_within_year_pct": 11.762152777777779
+      },
+      {
+        "year": 2020,
+        "diagnosis": "N22",
+        "admissions": 82,
+        "country": "Mexico",
+        "period": "2018–2022 baseline source",
+        "annual_all_diagnoses": 4608,
+        "share_within_year_pct": 1.7795138888888888
+      },
+      {
+        "year": 2020,
+        "diagnosis": "N23",
+        "admissions": 382,
+        "country": "Mexico",
+        "period": "2018–2022 baseline source",
+        "annual_all_diagnoses": 4608,
+        "share_within_year_pct": 8.289930555555555
+      },
+      {
+        "year": 2021,
+        "diagnosis": "N20",
+        "admissions": 5367,
+        "country": "Mexico",
+        "period": "2018–2022 baseline source",
+        "annual_all_diagnoses": 6672,
+        "share_within_year_pct": 80.44064748201438
+      },
+      {
+        "year": 2021,
+        "diagnosis": "N21",
+        "admissions": 645,
+        "country": "Mexico",
+        "period": "2018–2022 baseline source",
+        "annual_all_diagnoses": 6672,
+        "share_within_year_pct": 9.667266187050359
+      },
+      {
+        "year": 2021,
+        "diagnosis": "N22",
+        "admissions": 174,
+        "country": "Mexico",
+        "period": "2018–2022 baseline source",
+        "annual_all_diagnoses": 6672,
+        "share_within_year_pct": 2.6079136690647484
+      },
+      {
+        "year": 2021,
+        "diagnosis": "N23",
+        "admissions": 486,
+        "country": "Mexico",
+        "period": "2018–2022 baseline source",
+        "annual_all_diagnoses": 6672,
+        "share_within_year_pct": 7.284172661870503
+      },
+      {
+        "year": 2022,
+        "diagnosis": "N20",
+        "admissions": 7450,
+        "country": "Mexico",
+        "period": "2018–2022 baseline source",
+        "annual_all_diagnoses": 9215,
+        "share_within_year_pct": 80.84644601193706
+      },
+      {
+        "year": 2022,
+        "diagnosis": "N21",
+        "admissions": 827,
+        "country": "Mexico",
+        "period": "2018–2022 baseline source",
+        "annual_all_diagnoses": 9215,
+        "share_within_year_pct": 8.974498100922409
+      },
+      {
+        "year": 2022,
+        "diagnosis": "N22",
+        "admissions": 220,
+        "country": "Mexico",
+        "period": "2018–2022 baseline source",
+        "annual_all_diagnoses": 9215,
+        "share_within_year_pct": 2.387411828540423
+      },
+      {
+        "year": 2022,
+        "diagnosis": "N23",
+        "admissions": 718,
+        "country": "Mexico",
+        "period": "2018–2022 baseline source",
+        "annual_all_diagnoses": 9215,
+        "share_within_year_pct": 7.791644058600109
+      }
+    ],
+    "municipality_exposure_complete_valid_state_admissions": 39809,
+    "municipality_exposure_complete_with_rh_valid_state_admissions": 39809,
+    "valid_state_cases_without_climate_exposure": 606,
+    "valid_state_municipalities_with_complete_exposure_support": 1830,
+    "municipality_panel_rows": 3405490,
+    "municipality_panel_cases_all_geographies": 40907,
+    "climate_complete_cases_all_geographies": 39809,
+    "rh_complete_cases_all_geographies": 39809,
+    "event_day_join_mismatches": 0,
+    "urgent_elective": "unavailable in current cache; not inferred from procedure",
+    "age_sex": {
+      "scope": "valid-state N20–N23, 2018–2022",
+      "denominator_admissions": 40415,
+      "sex_code_counts": {
+        "1": 17131,
+        "2": 23281,
+        "9": 3
+      },
+      "sex_code_labels": {
+        "1": "male",
+        "2": "female",
+        "3": "intersex",
+        "8": "ignored",
+        "9": "unspecified"
+      },
+      "age_category_counts": {
+        "0–14 years": 1208,
+        "15–44 years": 18069,
+        "45–64 years": 15505,
+        "65+ years": 3943,
+        "ambiguous 2019 age unit (years or days; EDAD 15–29)": 1689,
+        "unspecified age (CVEEDAD=9)": 1
+      },
+      "CVEEDAD_code_counts": {
+        "2": 30,
+        "3": 19862,
+        "1": 2,
+        "5": 20505,
+        "4": 15,
+        "9": 1
+      },
+      "age_note": "Source-file vintage mapping: 2018 legacy units; 2019 code4/5 months/years and legacy code1/2; 2020–2022 modern units code2=hours, code3=days, code4=months, code5=years. The mixed 2019 source code3 EDAD15–29 cannot distinguish years from days and remains explicitly ambiguous. Code3 EDAD1–14 belongs in 0–14 under either unit; EDAD30–120 can only be valid years. All mappings follow source-file year, not admission year. EDAD999, inconsistent values and undocumented codes remain unknown; validation bounds hours1–23, days1–29, months1–11, years1–120.",
+      "sex_note": "Official SAEH codebook labels SEXO 1=male, 2=female, 3=intersex, 8=ignored, and 9=unspecified; source codes remain in the detailed files.",
+      "age_codebook_url": "https://riisp.insp.mx/nada/index.php/catalog/18/variable/V11",
+      "historical_age_codebook_url": "https://riisp.insp.mx/nada/files_nesstar/SAEH_SSA/Referencias/NOTAS_TECNICAS/GII-B002-SAEH-02-02.pdf",
+      "sex_codebook_url": "https://riisp.insp.mx/nada/index.php/catalog/18/variable/V14"
+    },
+    "source_2023_boundary_additions": {
+      "broad_N20_N23": 33,
+      "strict_N20": 29
+    }
+  },
+  "sample_flow": {
+    "brazil_2018_2022_full_area_days": 821700,
+    "brazil_2018_2022_lag0_7_complete_area_days": 818550,
+    "brazil_sp_drainage_full_window_events": 84764,
+    "brazil_sp_drainage_lag0_7_events": 84572,
+    "brazil_base_strata_full": 189000,
+    "brazil_min_rows_per_stratum_full": 4,
+    "brazil_single_observation_strata_full": 0,
+    "brazil_base_strata_lag": 189000,
+    "brazil_min_rows_per_stratum_lag": 3,
+    "brazil_single_observation_strata_lag": 0,
+    "brazil_sp_removal_full_window_events": 71833,
+    "brazil_sp_removal_lag0_7_events": 71684,
+    "brazil_sp_removal_lag0_7_fitted_rows": 158873,
+    "brazil_sp_removal_categorical_fitted_rows": 159591
+  },
+  "source_files": {
+    "brazil_primary_panel": "panel_composite_humidity.parquet",
+    "brazil_clinical_aggregate": "clinical_code_day_aggregate.parquet",
+    "mexico_baseline_case_cache": "mexico_n20_proced.parquet",
+    "mexico_id_cache_person_ids_not_exported": "mexico_n20_id_proced.parquet",
+    "mexico_municipality_exposure_panel": "mexico_n20_municipality_panel.parquet"
+  },
+  "demographic_source_audit": {
+    "status": "complete",
+    "pid": 62156,
+    "aggregate_only": true,
+    "person_ids_read_or_written": false,
+    "Brazil": {
+      "file_count": 6803,
+      "bytes": 7151496433,
+      "aggregate_joint_rows": 1324,
+      "target_admissions": 4993174,
+      "sex_codes": [
+        "1",
+        "3"
+      ],
+      "age_codes": [
+        "0",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "age_groups": [
+        "0–14",
+        "15–44",
+        "45–64",
+        "65+",
+        "unknown_or_invalid"
+      ],
+      "panel_reconciliation_max_abs_difference": 0,
+      "source_fields_present": [
+        "SEXO",
+        "COD_IDADE",
+        "IDADE",
+        "DIAG_PRINC",
+        "DT_INTER",
+        "MUNIC_RES"
+      ],
+      "ids_read_or_written": false,
+      "sex_code_labels": {
+        "1": "male",
+        "3": "female"
+      }
+    },
+    "Mexico": {
+      "files": {
+        "mx2018_egresos.csv": 506649332,
+        "mx2019_egresos.txt": 562533021,
+        "mx2020_egresos.txt": 395015046,
+        "mx2021_egresos.txt": 377975863,
+        "mx2022_egresos.txt": 447157353
+      },
+      "file_count": 5,
+      "bytes": 2289330615,
+      "source_rows_scanned": 11758834,
+      "valid_state_target_admissions": 40415,
+      "aggregate_joint_rows": 232,
+      "baseline_admissions": 40415,
+      "sex_codes": [
+        "1",
+        "2",
+        "9"
+      ],
+      "cveedad_codes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "9"
+      ],
+      "age_categories": [
+        "0–14 years",
+        "15–44 years",
+        "45–64 years",
+        "65+ years",
+        "ambiguous 2019 age unit (years or days; EDAD 15–29)",
+        "unspecified age (CVEEDAD=9)"
+      ],
+      "cveedad_code_year_counts": [
+        {
+          "country": "Mexico",
+          "year": 2018,
+          "source_year": 2018,
+          "cveedad_code": "1",
+          "admissions": 1,
+          "age_codebook_vintage": "legacy 2014 SAEH v2.2"
+        },
+        {
+          "country": "Mexico",
+          "year": 2018,
+          "source_year": 2018,
+          "cveedad_code": "2",
+          "admissions": 12,
+          "age_codebook_vintage": "legacy 2014 SAEH v2.2"
+        },
+        {
+          "country": "Mexico",
+          "year": 2018,
+          "source_year": 2018,
+          "cveedad_code": "3",
+          "admissions": 9362,
+          "age_codebook_vintage": "legacy 2014 SAEH v2.2"
+        },
+        {
+          "country": "Mexico",
+          "year": 2018,
+          "source_year": 2019,
+          "cveedad_code": "3",
+          "admissions": 28,
+          "age_codebook_vintage": "mixed 2019 source; code3 EDAD15–29 unit ambiguous"
+        },
+        {
+          "country": "Mexico",
+          "year": 2019,
+          "source_year": 2019,
+          "cveedad_code": "1",
+          "admissions": 1,
+          "age_codebook_vintage": "mixed 2019 source; code3 EDAD15–29 unit ambiguous"
+        },
+        {
+          "country": "Mexico",
+          "year": 2019,
+          "source_year": 2019,
+          "cveedad_code": "2",
+          "admissions": 17,
+          "age_codebook_vintage": "mixed 2019 source; code3 EDAD15–29 unit ambiguous"
+        },
+        {
+          "country": "Mexico",
+          "year": 2019,
+          "source_year": 2019,
+          "cveedad_code": "3",
+          "admissions": 10470,
+          "age_codebook_vintage": "mixed 2019 source; code3 EDAD15–29 unit ambiguous"
+        },
+        {
+          "country": "Mexico",
+          "year": 2019,
+          "source_year": 2020,
+          "cveedad_code": "5",
+          "admissions": 29,
+          "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+        },
+        {
+          "country": "Mexico",
+          "year": 2020,
+          "source_year": 2020,
+          "cveedad_code": "4",
+          "admissions": 7,
+          "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+        },
+        {
+          "country": "Mexico",
+          "year": 2020,
+          "source_year": 2020,
+          "cveedad_code": "5",
+          "admissions": 4593,
+          "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+        },
+        {
+          "country": "Mexico",
+          "year": 2020,
+          "source_year": 2021,
+          "cveedad_code": "5",
+          "admissions": 8,
+          "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+        },
+        {
+          "country": "Mexico",
+          "year": 2021,
+          "source_year": 2021,
+          "cveedad_code": "2",
+          "admissions": 1,
+          "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+        },
+        {
+          "country": "Mexico",
+          "year": 2021,
+          "source_year": 2021,
+          "cveedad_code": "4",
+          "admissions": 3,
+          "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+        },
+        {
+          "country": "Mexico",
+          "year": 2021,
+          "source_year": 2021,
+          "cveedad_code": "5",
+          "admissions": 6654,
+          "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+        },
+        {
+          "country": "Mexico",
+          "year": 2021,
+          "source_year": 2022,
+          "cveedad_code": "5",
+          "admissions": 14,
+          "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+        },
+        {
+          "country": "Mexico",
+          "year": 2022,
+          "source_year": 2022,
+          "cveedad_code": "3",
+          "admissions": 2,
+          "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+        },
+        {
+          "country": "Mexico",
+          "year": 2022,
+          "source_year": 2022,
+          "cveedad_code": "4",
+          "admissions": 5,
+          "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+        },
+        {
+          "country": "Mexico",
+          "year": 2022,
+          "source_year": 2022,
+          "cveedad_code": "5",
+          "admissions": 9207,
+          "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+        },
+        {
+          "country": "Mexico",
+          "year": 2022,
+          "source_year": 2022,
+          "cveedad_code": "9",
+          "admissions": 1,
+          "age_codebook_vintage": "GIIS-B002-03-07 v3.7 (December 2020)"
+        }
+      ],
+      "cache_reconciliation_max_abs_difference": 0,
+      "source_fields_present": [
+        "INGRE",
+        "ENTIDAD",
+        "AFECPRIN",
+        "SEXO",
+        "EDAD",
+        "CVEEDAD"
+      ],
+      "ids_read_or_written": false,
+      "age_note": "Source-file vintage mapping: 2018 legacy units; 2019 code4/5 months/years and legacy code1/2; 2020–2022 modern units code2=hours, code3=days, code4=months, code5=years. The mixed 2019 source code3 EDAD15–29 cannot distinguish years from days and remains explicitly ambiguous. Code3 EDAD1–14 belongs in 0–14 under either unit; EDAD30–120 can only be valid years. All mappings follow source-file year, not admission year. EDAD999, inconsistent values and undocumented codes remain unknown; validation bounds hours1–23, days1–29, months1–11, years1–120.",
+      "sex_note": "Official INSP/RIISP SAEH codebook maps SEXO 1=male, 2=female, 3=intersex, 8=ignored, 9=unspecified; detailed files retain source codes.",
+      "age_codebook_url": "https://riisp.insp.mx/nada/index.php/catalog/18/variable/V11",
+      "historical_age_codebook_url": "https://riisp.insp.mx/nada/files_nesstar/SAEH_SSA/Referencias/NOTAS_TECNICAS/GII-B002-SAEH-02-02.pdf",
+      "current_age_codebook_url": "https://gobi.salud.gob.mx/gobi/guias/egresos_urgencias_lesiones/egresos/GIIS-B002-03-07_20210220.pdf?v=2022.01.13",
+      "sex_codebook_url": "https://riisp.insp.mx/nada/index.php/catalog/18/variable/V14",
+      "age_codebook_sources": {
+        "current_variable_record": "https://riisp.insp.mx/nada/index.php/catalog/18/variable/V11",
+        "historical_2014_validation_rules_v2_2": "https://riisp.insp.mx/nada/files_nesstar/SAEH_SSA/Referencias/NOTAS_TECNICAS/GII-B002-SAEH-02-02.pdf",
+        "modern_2020_v3_7": "https://gobi.salud.gob.mx/gobi/guias/egresos_urgencias_lesiones/egresos/GIIS-B002-03-07_20210220.pdf",
+        "shared_tipo_edad_explicit_2020": "https://gobi.salud.gob.mx/gobi/guias/egresos_urgencias_lesiones/urgencias/GIIS-B014-01-10_20210220.pdf"
+      },
+      "sex_codebook_source": "https://riisp.insp.mx/nada/index.php/catalog/18/variable/V14",
+      "reclassification_pid": 33368,
+      "reclassification_completed_at_utc": "2026-11-13T14:27:01.553299+00:00",
+      "cveedad_unmapped_counts": {},
+      "unresolved_age_unit_admissions": 1689,
+      "note_unmapped_count_repair": "Codes 4/5 are interpreted with source-vintage units; unresolved 2019 code3 age values are a separate ambiguity category."
+    },
+    "brazil_admissions_total": 4993174,
+    "mexico_admissions_total": 40415,
+    "N20_N23_summary": {
+      "Brazil": {
+        "sex_code": {
+          "1": 567503,
+          "3": 564660
+        },
+        "age_group": {
+          "0–14": 27381,
+          "15–44": 598260,
+          "45–64": 388975,
+          "65+": 117547
+        }
+      },
+      "Mexico": {
+        "sex_code": {
+          "1": 17131,
+          "2": 23281,
+          "9": 3
+        },
+        "age_category": {
+          "0–14 years": 1208,
+          "15–44 years": 18069,
+          "45–64 years": 15505,
+          "65+ years": 3943,
+          "ambiguous 2019 age unit (years or days; EDAD 15–29)": 1689,
+          "unspecified age (CVEEDAD=9)": 1
+        }
+      }
+    },
+    "publication_age_note": "Mexico age units were interpreted by source-file vintage, not admission year, using legacy SAEH and the modern TIPO_EDAD catalogue. For 2019 code 3, EDAD 15–29 remains explicitly ambiguous (years versus days); no age band was imputed. EDAD 1–14 gives the same 0–14 band under either unit; values 30–120 cannot be valid days. The age profile therefore includes an explicit ambiguity category. The 33 source-expanded admissions are outside this baseline demographic table. Brazilian SEXO codes are 1=male and 3=female; Mexican codes are 1=male, 2=female, 9=unspecified. These are admission counts, not unique persons."
+  }
+}

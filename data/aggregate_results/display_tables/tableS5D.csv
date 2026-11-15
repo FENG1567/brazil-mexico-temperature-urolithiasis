@@ -1,0 +1,8 @@
+Outcome or comparison,Contrast / model,Estimate (95% CI),p / q / sample size / notes
+"Brazil ICU admission or death, urgent strict N20",Heat-only vs neither,RR 0.974 (0.847–1.119),"4,967 events; imprecise; not evidence of equivalence; p=0.7086; 20,463 model rows; 4,967 events; limited precision"
+"Brazil occupancy, inclusive dates",Resident-associated hospital-days; same-day temperature,"1,031,207 days; RR 1.0031 (1.0008–1.0054) per °C","Fire-PM₂.₅ RR 1.0204 (0.9975–1.0439) per 10 µg/m³; p=0.0088; p=0.0807; 619,735 model rows"
+"Brazil occupancy, discharge day excluded",Resident-associated hospital-days; same-day temperature,"804,968 days; RR 1.0034 (1.0010–1.0058) per °C","Fire-PM₂.₅ RR 1.0218 (0.9970–1.0472); p=0.0048; p=0.0847; 576,627 model rows"
+Brazil bed-supply interaction,Heat by baseline tertile; temperature by tertile,p=0.8187; p=0.9943,No evidence of modification under evaluated ecological measures
+Brazil monthly bed-supply interaction,"Heat RR ratio per 100 beds/100,000 residents",0.9846 (0.9538–1.0164),p=0.3389
+Brazil cataract comparator,Continuous temperature per 1 °C,RR 0.9989 (0.9941–1.0037),"Negative-control comparison, not evidence against all confounding; p=0.654; 335,928 model rows"
+Brazil fracture comparator,Continuous temperature per 1 °C,RR 1.0047 (1.0039–1.0055),"Heat-sensitive comparator; a heat–fall pathway is plausible; p<0.0001; 2,356,578 model rows"

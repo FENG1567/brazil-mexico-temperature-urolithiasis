@@ -1,0 +1,16 @@
+﻿country,period,diagnosis_scope,denominator_admissions,dimension,category_or_source_code,admissions,share_percent
+Brazil,2008–2022,N20–N23,1132163,sex_code,1 (male),567503,50.126
+Brazil,2008–2022,N20–N23,1132163,sex_code,3 (female),564660,49.874
+Brazil,2008–2022,N20–N23,1132163,age_group,0–14,27381,2.418
+Brazil,2008–2022,N20–N23,1132163,age_group,15–44,598260,52.842
+Brazil,2008–2022,N20–N23,1132163,age_group,45–64,388975,34.357
+Brazil,2008–2022,N20–N23,1132163,age_group,65+,117547,10.383
+Mexico,2018–2022 baseline,N20–N23,40415,sex_code,1 (male),17131,42.388
+Mexico,2018–2022 baseline,N20–N23,40415,sex_code,2 (female),23281,57.605
+Mexico,2018–2022 baseline,N20–N23,40415,sex_code,9 (unspecified),3,0.007
+Mexico,2018–2022 baseline,N20–N23,40415,age_category,0–14 years,1208,2.989
+Mexico,2018–2022 baseline,N20–N23,40415,age_category,15–44 years,18069,44.709
+Mexico,2018–2022 baseline,N20–N23,40415,age_category,45–64 years,15505,38.364
+Mexico,2018–2022 baseline,N20–N23,40415,age_category,65+ years,3943,9.756
+Mexico,2018–2022 baseline,N20–N23,40415,age_category,ambiguous 2019 age unit (years or days; EDAD 15–29),1689,4.179
+Mexico,2018–2022 baseline,N20–N23,40415,age_category,unspecified age (CVEEDAD=9),1,0.002

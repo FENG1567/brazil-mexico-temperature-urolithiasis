@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "date_semantics": "Explicit YYYY-MM-DD admission calendar date versus normalized cached date",
+  "checks": [
+    {
+      "sha256": "008ffaf92cf310c100e153249f247d436744b4fa8e4f5944869d71d7b015a60c",
+      "records": 40907,
+      "ISO_format_records": 40907,
+      "raw_date_parse_failures": 0,
+      "cached_date_missing": 0,
+      "explicit_vs_cached_date_mismatches": 0,
+      "admission_year_counts": {
+        "2018": 9473,
+        "2019": 10564,
+        "2020": 4651,
+        "2021": 6836,
+        "2022": 9383
+      },
+      "passed": true
+    },
+    {
+      "sha256": "12c70fd0745c85a64ceb892eb9a157cd997f75fcda88eb037c11b6bd1e93e34f",
+      "records": 40907,
+      "ISO_format_records": 40907,
+      "raw_date_parse_failures": 0,
+      "cached_date_missing": 0,
+      "explicit_vs_cached_date_mismatches": 0,
+      "admission_year_counts": {
+        "2018": 9473,
+        "2019": 10564,
+        "2020": 4651,
+        "2021": 6836,
+        "2022": 9383
+      },
+      "passed": true
+    }
+  ],
+  "individual_records_emitted": false
+}

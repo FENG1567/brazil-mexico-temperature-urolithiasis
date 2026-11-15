@@ -1,0 +1,11 @@
+{
+  "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.433/dados?formato=json&dataInicial=01/01/2018&dataFinal=31/12/2023",
+  "definition_source": "https://www3.bcb.gov.br/sgspub/consultarvalores/consultarValoresSeries.do?method=consultarSeries&series=433",
+  "series": "433 IPCA monthly percent",
+  "access_utc": "2026-11-12T11:49:35.582802+00:00",
+  "rows": 72,
+  "expected_rows": 72,
+  "sha256": "04c77b7305bc3c840dfc6872323b7bbfe357edfe05a2683b88b23b702f978678",
+  "reference_prices": "December2022",
+  "authentication": "anonymous"
+}

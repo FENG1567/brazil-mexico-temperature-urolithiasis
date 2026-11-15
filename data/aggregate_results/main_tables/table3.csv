@@ -1,0 +1,9 @@
+Outcome,Contrast / estimand,2018–2022 ratio (95% CI),Excluding 2020–2021 ratio (95% CI)
+"Urgent/elective RR ratio, N20–N23",Heat-only vs neither; calendar-adjusted,1.0550 (1.0104–1.1016),1.0664 (1.0081–1.1281)
+"Urgent/elective RR ratio, strict N20",Heat-only vs neither; calendar-adjusted,1.0403 (0.9919–1.0911),1.0494 (0.9864–1.1163)
+"Urgent admissions, strict N20",Heat-only vs neither; calendar-adjusted,1.0505 (1.0254–1.0762),1.0283 (0.9942–1.0636)
+"Admission-attributed hospital-days, strict N20",Heat-only vs neither; calendar-adjusted,1.0513 (1.0070–1.0975),1.0491 (0.9937–1.1075)
+"Total reimbursement, strict N20 (Dec 2022 BRL)",Heat-only vs neither; calendar-adjusted,1.0364 (1.0035–1.0704),1.0188 (0.9727–1.0670)
+"Reimbursement per admission, strict N20",Heat-only vs neither; geometric mean ratio,0.9971 (0.9740–1.0207),—
+"Drainage/stent records, strict N20",Temperature per 1 °C; cumulative lag 0–7,1.0121 (1.0048–1.0194),1.0125 (1.0035–1.0216)
+"Stone-extraction/lithotripsy records, strict N20†",Temperature per 1 °C; cumulative lag 0–7,1.0064 (0.9992–1.0136),—

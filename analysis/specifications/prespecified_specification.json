@@ -1,0 +1,61 @@
+{
+  "protocol_version": "2026-11-13.1",
+  "fixed_before_model_result_inspection": true,
+  "source_protocol": "work/revision_20261113/revision_protocol.md",
+  "issue": "nonlinear_sensitivity",
+  "thread": "nonlinear",
+  "threads": 4,
+  "purpose": "Finite functional-form and covariance sensitivity analyses; preserve historical estimates and source data.",
+  "country_strict_N20": {
+    "countries": [
+      "Mexico",
+      "Brazil"
+    ],
+    "cohort": "existing strict N20 linear-model cases and identical retained analysis frame per country",
+    "outcome": "state-day strict N20 admissions",
+    "temperature": "existing ERA5 tmean; identical existing exposure assignment",
+    "lags": "0-7 inclusive",
+    "model": "matched conditional Poisson/log-link, original country-specific calendar design plus state and calendar-date fixed effects; only temperature basis changes between linear and spline fits",
+    "inference": "two-way cluster-robust covariance by state and calendar date, with intersection term retained; report retained state/date/intersection cluster counts; t reference df=min(G_state-1,G_date-1)",
+    "spline": {
+      "type": "natural cubic (restricted cubic) spline",
+      "df": 3,
+      "basis": "explicit linear temperature column plus two nonlinear natural-cubic columns",
+      "knots": "one common exposure knot set per country, calculated without outcome data from pooled lag-0..7 temperatures in the matched complete-case analysis frame: boundary knots P5/P95, interior knots P33.333/P66.667",
+      "all_lag_basis": "apply identical fixed country-specific basis to each of lags 0..7",
+      "nonlinear_test": "nested Wald F test of the 16 added nonlinear coefficients (2 per lag × 8 lags) equal to zero, compared with the matched lag-specific linear model; do not test all 24 spline coefficients equal to zero",
+      "reference": "P50 Celsius",
+      "contrasts": "P10, P50, P90, P95 Celsius versus P50, applying the contrast jointly to all eight lag coefficients",
+      "curve": "100 equally spaced Celsius values from exposure P5 to P95, pointwise RR and 95% CI versus P50"
+    },
+    "reports": [
+      "all coefficients and full coefficient covariance",
+      "analysis sample flow and retained G",
+      "joint nonlinear test",
+      "curve and percentile RR/CI",
+      "cluster-robust covariance eigenvalue/PSD diagnostics including min eigenvalue and relative negative eigenvalue scale"
+    ]
+  },
+  "brazil_2008_2022_region_primary": {
+    "source": "work/panel_composite_humidity.parquet",
+    "frame": "existing regional primary frame, 2008-2022; retain original outcome, complete-case rules, fixed effects, calendar terms, humidity and other covariates, and fire0-7 specification",
+    "temperature_sensitivity": "replace only the original linear temperature lag0-7 terms with the same 3df natural-cubic basis and fixed knot/contrast/curve rules as above, knots/percentiles estimated from the matched primary analysis frame without outcome data",
+    "nonlinear_test": "nested Wald F test of the 16 added nonlinear temperature coefficients conditional on unchanged fire0-7 and other original covariates, versus matched linear temperature+fire model",
+    "inference": "two-way cluster-robust covariance by hrid and calendar date (including intersection term); t df=min(G_hrid-1,G_date-1)",
+    "outputs": [
+      "all coefficients and covariance",
+      "sample flow and retained cluster counts",
+      "temperature curve and P10/P50/P90/P95 contrasts vs P50 with pointwise 95% CI",
+      "nested nonlinear test",
+      "covariance eigenvalue/PSD diagnostics"
+    ]
+  },
+  "brazil_2008_2022_historical_inference": {
+    "temperature_fire": "refit/reconstruct the unchanged historical linear temperature+fire lag0-7 specification on its original matched frame; update inference only to two-way cluster-robust hrid+date covariance",
+    "same_day_compound": "retain original same-day compound-category model and point estimates; recompute hrid+date two-way cluster covariance and interval/p-values",
+    "historical": "do not overwrite or edit any previous estimate or output; label old and updated inference distinctly"
+  },
+  "uncertainty": "use two-sided 95% intervals with t critical values using df=min(retained cluster counts)-1; report estimates, SEs, intervals and p values",
+  "eigen": "eigendecompose symmetrized covariance; record min/max eigenvalues, count of negative eigenvalues, and abs(min eigenvalue)/max(abs eigenvalue); do not silently project to PSD",
+  "exclusions": "no new countries, diagnoses, manuscript edits, DOCX operations, or additional analyses"
+}

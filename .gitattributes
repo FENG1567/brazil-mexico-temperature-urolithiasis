@@ -1,0 +1,19 @@
+# Keep manifest-hashed payloads byte-stable across Git operations.
+* -text
+
+# Preserve documentation bytes too: they are included in manifest.csv.
+# Do not normalize hashed payload line endings during a Git checkout.
+
+# Explicitly mark common binary payload types.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.tif binary
+*.tiff binary
+*.svg binary
+*.parquet binary
+*.docx binary
+*.xlsx binary
+*.tar binary
+data/processed_inputs/*.parts/* binary

@@ -1,0 +1,5 @@
+# Tested with Python 3.12.3 for the aggregate figure and table artifact build.
+# This pins the direct runtime dependencies, not every transitive dependency.
+matplotlib==3.11.2
+numpy==2.5.4
+python-docx==1.2.0

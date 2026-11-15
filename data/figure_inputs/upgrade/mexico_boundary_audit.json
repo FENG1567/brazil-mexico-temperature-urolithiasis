@@ -1,0 +1,346 @@
+{
+  "passed": true,
+  "status": "complete",
+  "analysis": "Mexico source-boundary sensitivity",
+  "source_periods": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "admission_date_window": "2018-01-01 through 2022-12-31",
+  "exposure_window": "2018-01-01 through 2022-12-31; no 2023 exposure dates",
+  "principal_diagnosis_scope": "N20-N23; strict N20 outcomes separately identified",
+  "annual_source_2023": {
+    "year": 2023,
+    "archive_sha256": "8ad3e2e8b9c4e532e3f9c0ba2624f42f28864a7d4c278025658901987274b2c2",
+    "archive_sha256_expected": "8ad3e2e8b9c4e532e3f9c0ba2624f42f28864a7d4c278025658901987274b2c2",
+    "original_url": "http://www.dgis.salud.gob.mx/descargas/datosabiertos/egresos/ssa_egresos_2023.zip?v=2024.05.31",
+    "final_url": "https://web.archive.org/web/20250915170311id_/http://www.dgis.salud.gob.mx/descargas/datosabiertos/egresos/ssa_egresos_2023.zip?v=2024.05.31",
+    "provenance_url": "https://web.archive.org/web/20240814213833id_/http://dgis.salud.gob.mx/contenidos/basesdedatos/da_egresoshosp_gobmx.html",
+    "metadata_version": "2024.05.31",
+    "archive_capture_timestamp": "2025-09-15T17:03:11Z",
+    "acquisition_status": "downloaded_extracted_crc_validated",
+    "live_download_performed_for_this_analysis": false,
+    "extracted_sources": [
+      {
+        "archive_member": "Registros/Egresos.txt",
+        "bytes": 467960465,
+        "sha256": "153d2db75b6603e92d33a279eadb3d3839a09ceb22c9754c9f8792e7ededb872",
+        "crc32": "3049fb1c",
+        "archive_crc32": "3049fb1c",
+        "archive_uncompressed_bytes": 467960465
+      },
+      {
+        "archive_member": "Registros/Procedimientos.txt",
+        "bytes": 153971326,
+        "sha256": "a3936fa7c22cca8d2ab49d477a48832335c69aae4c567b1e05678231e469f3f5",
+        "crc32": "53210d29",
+        "archive_crc32": "53210d29",
+        "archive_uncompressed_bytes": 153971326
+      }
+    ]
+  },
+  "prior_source_years_2018_2022": {
+    "current_full_acquisition_evidence": "D:\\数据库集合\\新增数据\\Mexico_DGIS\\_evidence\\full_acquisition_2023_20261030T122231Z.json",
+    "current_full_acquisition_evidence_sha256": "961fa94400834db15626f43f57fcf7336c251e036c99815d3442cb686eb1863c",
+    "historical_2018_2022": {
+      "source_scope": "annual egresos source files 2018-2022; admission dates filtered to 2018-2022",
+      "annual_source_key_audit": "outputs\\upgrade_20261112\\mexico_specific_global_key_audit.json",
+      "annual_source_key_audit_sha256": "5386f3271ac2dbc5402b478fc01257939db442b2dc29a91a06609e689742ce6b",
+      "source_partition_audit": "outputs\\upgrade_20261112\\mexico_procedure_feasibility.json",
+      "source_partition_audit_sha256": "505beb2e4635a7f0833be7bd4f4d5d6d012e694eadf8843ca915b9cfecd7687b",
+      "annual_files": [
+        {
+          "bytes": 506649332,
+          "sha256": "b37a2c878f7d12b51a6b548fad9fde28aa3202cf13854ef754bde1151e181fc4"
+        },
+        {
+          "bytes": 562533021,
+          "sha256": "1db60e3e16f1acdbb70c36caa16db6637d53c98acbb53ebf6309e290fa90de0f"
+        },
+        {
+          "bytes": 395015046,
+          "sha256": "ecfa0373f76d5b0ca82f7302cf90aa0dccfe65f3eb17ffd6acb2fd2fadd2f6e6"
+        },
+        {
+          "bytes": 377975863,
+          "sha256": "937a27428c4229a69506395ea8121a1d74fcba46756a2c7e0996de274acb28b2"
+        },
+        {
+          "bytes": 447157353,
+          "sha256": "6d47380a1a4c53c0adf813631ffa02d939ba01e0e92807d213d720b8bde8150a"
+        }
+      ],
+      "annual_id_uniqueness_passed": true,
+      "strict_n20_partition_reconciliation": {
+        "cached_rows": 40907,
+        "unmatched_cached_rows": 0,
+        "ambiguous_cached_rows": 0,
+        "strict_valid_state_admissions": 32417,
+        "strict_unmatched": 0,
+        "strict_ambiguous": 0,
+        "strict_admission_year_differs_from_source_partition": 58,
+        "cross_year_counts": [
+          {
+            "source_file_year": 2019,
+            "admission_year": 2018,
+            "admissions": 20
+          },
+          {
+            "source_file_year": 2020,
+            "admission_year": 2019,
+            "admissions": 20
+          },
+          {
+            "source_file_year": 2021,
+            "admission_year": 2020,
+            "admissions": 5
+          },
+          {
+            "source_file_year": 2022,
+            "admission_year": 2021,
+            "admissions": 13
+          }
+        ],
+        "matching_signature": "ID + ISO admission date + state + principal diagnosis, in memory only",
+        "existing_link_rule": "procedure source file selected by admission date year"
+      }
+    },
+    "analysis_inputs": {
+      "corrected_strict_daily_counts": {
+        "sha256": "e4bd166762d0d68235cbe29023f8bbb1a20c4fa25496d965ca373ebc7b38f4cc"
+      },
+      "original_broad_state_day_panel": {
+        "sha256": "a1ff9a0cf41d8d332ef258df0fd943a6caeb5368bfcbdcf815af9f8a32b39507"
+      },
+      "original_same_day_model_panel": {
+        "sha256": "a1ff9a0cf41d8d332ef258df0fd943a6caeb5368bfcbdcf815af9f8a32b39507"
+      },
+      "era5_land_state_day_source": {
+        "sha256": "86c29713eff4de30501af92fcb06e16b78160eaab1188d81ee4f53137ecca565"
+      },
+      "holiday_calendar_dates": {
+        "sha256": "81cc89846d36546ccdba3ef46f68d4bc0c35f9ec7b3d72613137c7a73a46579d",
+        "Mexico_dates": 38
+      }
+    },
+    "procedure_code_groups": {
+      "nephrostomy": {
+        "label": "Nephrostomy",
+        "codes": [
+          "5502",
+          "5503",
+          "5504"
+        ]
+      },
+      "ureteral_catheterization": {
+        "label": "Ureteral catheterization (not stent-specific)",
+        "codes": [
+          "598X"
+        ]
+      },
+      "urinary_stone_fragmentation_lithotripsy": {
+        "label": "Urinary stone fragmentation/lithotripsy",
+        "codes": [
+          "5504",
+          "5995",
+          "9851"
+        ]
+      }
+    }
+  },
+  "baseline_ID_cache_audit": {
+    "cache_sha256": "008ffaf92cf310c100e153249f247d436744b4fa8e4f5944869d71d7b015a60c",
+    "cached_rows": 40907,
+    "unique_cached_signatures": 40907,
+    "broad_n20_n23_in_window_valid_state_signatures": 40415,
+    "duplicate_exact_signature_rows": 0,
+    "strict_n20_in_window_valid_state_signatures": 32417,
+    "signature_definition": "ID + ISO INGRE date + normalized ENTIDAD + uppercase AFECPRIN",
+    "identifiers_written": false
+  },
+  "egresos_2023_audit": {
+    "delimiter": "|",
+    "header_columns": 49,
+    "required_fields_present": [
+      "AFECPRIN",
+      "EGRESO",
+      "ENTIDAD",
+      "ID",
+      "INGRE"
+    ],
+    "records": 2591278,
+    "unique_annual_IDs": 2591278,
+    "missing_ID_records": 0,
+    "duplicate_rows_beyond_unique_annual_ID": 0,
+    "annual_ID_uniqueness_passed": true,
+    "blank_lines_excluded": 0,
+    "sql_export_trailers_excluded": 0,
+    "trailer_record_total": null,
+    "ISO_INGRE_records": 2591278,
+    "ISO_shaped_but_invalid_INGRE_dates": 0,
+    "valid_INGRE_dates": 2591278,
+    "records_with_INGRE_in_2018_2022": 18681,
+    "target_diagnosis_prefix_records_N20_N23": 10636,
+    "target_records_after_date_and_valid_state_filters": 33,
+    "invalid_or_out_of_range_state_among_target_diagnosis_dates": 0,
+    "unique_target_admission_signatures": 33,
+    "exact_duplicate_target_rows_within_2023_source": 0,
+    "target_IDs_with_conflicting_admission_signatures": 0,
+    "target_admissions_with_parseable_EGRESO": 33,
+    "target_admissions_with_nonblank_nonISO_EGRESO": 0,
+    "target_admissions_with_EGRESO_before_INGRE": 0,
+    "duplicate_target_signatures_with_conflicting_EGRESO_excluded": 0,
+    "source_rows_with_conflicting_EGRESO_for_duplicate_signature": 0,
+    "raw_identifiers_written": false,
+    "filter": "principal AFECPRIN prefix N20-N23; ISO INGRE 2018-01-01 through 2022-12-31; ENTIDAD 1-32",
+    "accepted_admissions_by_year": {
+      "2022": {
+        "broad_N20_N23": 33,
+        "strict_N20": 29
+      }
+    },
+    "accepted_admissions_by_discharge_year": {
+      "2023": 33
+    },
+    "INGRE_le_EGRESO_validation": {
+      "assessable": 33,
+      "passed": 33,
+      "failed": 0,
+      "missing_or_nonISO_EGRESO": 0,
+      "all_assessable_admissions_passed": true
+    },
+    "accepted_target_admissions": 33,
+    "accepted_strict_N20_admissions": 29
+  },
+  "cross_source_duplicate_audit": {
+    "compared_against": "audited N20-N23 baseline identifier cache",
+    "baseline_signature_match_duplicates_excluded": 0,
+    "baseline_broad_signature_duplicates_excluded": 0,
+    "baseline_strict_N20_signature_duplicates_excluded": 0,
+    "same_ID_date_state_but_diagnosis_conflicts": 0,
+    "new_unique_admissions_retained": 33,
+    "duplicate_decision": "Exact same admission signatures are excluded from additions. A conflicting principal diagnosis at an existing ID/date/state stops the pipeline for review.",
+    "identifiers_written": false
+  },
+  "procedures_2023_linkage_audit": {
+    "delimiter": "|",
+    "header_columns": 7,
+    "required_fields_present": [
+      "ID",
+      "NUMPROMED",
+      "PROMED",
+      "TIPO"
+    ],
+    "procedure_rows_parsed": 5747818,
+    "procedure_rows_linked_to_boundary_cohort": 92,
+    "boundary_admissions_with_any_procedure_row": 30,
+    "boundary_admissions_with_any_nonblank_PROMED": 30,
+    "boundary_admissions_with_no_nonblank_PROMED": 3,
+    "boundary_admissions_with_any_blank_PROMED_row": 0,
+    "linked_procedure_rows_missing_PROMED": 0,
+    "boundary_admissions_with_any_TIPO_Q_row": 12,
+    "blank_lines_excluded": 0,
+    "sql_export_trailers_excluded": 0,
+    "trailer_record_total": null,
+    "raw_identifiers_written": false
+  },
+  "daily_count_reconciliation": {
+    "base_counts_2018_2022_source_years": {
+      "broad_N20_N23": 40415,
+      "strict_N20": 32417,
+      "nephrostomy": 1758,
+      "ureteral_catheterization": 3309,
+      "urinary_stone_fragmentation_lithotripsy": 2104,
+      "TIPO_Q": 10488,
+      "no_TIPO_Q": 21929
+    },
+    "accepted_source_2023_additions": {
+      "broad_N20_N23": 33,
+      "strict_N20": 29,
+      "nephrostomy": 2,
+      "ureteral_catheterization": 4,
+      "urinary_stone_fragmentation_lithotripsy": 3,
+      "TIPO_Q": 10,
+      "no_TIPO_Q": 19
+    },
+    "augmented_counts_source_years_2018_2023": {
+      "broad_N20_N23": 40448,
+      "strict_N20": 32446,
+      "nephrostomy": 1760,
+      "ureteral_catheterization": 3313,
+      "urinary_stone_fragmentation_lithotripsy": 2107,
+      "TIPO_Q": 10498,
+      "no_TIPO_Q": 21948
+    },
+    "state_day_rows": 58432,
+    "state_count": 32,
+    "admission_date_window": "2018-01-01 through 2022-12-31",
+    "exposure_date_window": "2018-01-01 through 2022-12-31"
+  },
+  "model_fit_count": 7,
+  "model_keys": [
+    "broad_N20_N23_lag07_holiday",
+    "strict_N20_lag07_holiday",
+    "strict_N20_nephrostomy_temperature_fire_lag07_holiday",
+    "strict_N20_ureteral_catheterization_temperature_fire_lag07_holiday",
+    "strict_N20_urinary_stone_fragmentation_lithotripsy_temperature_fire_lag07_holiday",
+    "strict_N20_TIPO_Q_same_day",
+    "strict_N20_no_TIPO_Q_same_day"
+  ],
+  "model_specs": [
+    "broad N20-N23 ERA5 temperature lags 0-7 + 38-date Mexico holiday indicator; state x year-month x weekday FE; state/date CRV1; t(min(Gstate,Gdate)-1)",
+    "strict N20 same as broad model",
+    "three strict N20 procedure-group models with ERA5 temperature and fire PM2.5 lags 0-7 + holiday; same FE, two-way clustering and t approximation; six BH-adjusted contrasts",
+    "TIPO=Q and no recorded TIPO=Q same-day tmean + fire PM2.5/10; original 2018-2022 state-day panel, state CRV1, 1.96 normal intervals"
+  ],
+  "TIPO_Q_definition": "Strict N20 admission with at least one linked TIPO=Q row in its audited source-file-year procedure partition; the 2023 increment is separately counted from the 2023 source-year procedure table.",
+  "no_TIPO_Q_definition": "Strict N20 admission with no recorded TIPO=Q row in its audited source-file-year procedure partition.",
+  "procedure_group_codes": {
+    "nephrostomy": [
+      "5502",
+      "5503",
+      "5504"
+    ],
+    "ureteral_catheterization": [
+      "598X"
+    ],
+    "urinary_stone_fragmentation_lithotripsy": [
+      "5504",
+      "5995",
+      "9851"
+    ]
+  },
+  "procedure_code_semantics": {
+    "nephrostomy": "Nephrostomy",
+    "ureteral_catheterization": "Ureteral catheterization (not stent-specific)",
+    "urinary_stone_fragmentation_lithotripsy": "Urinary stone fragmentation/lithotripsy"
+  },
+  "procedure_flags_use_any_PROMED_row_regardless_of_TIPO": true,
+  "operation_date_available": false,
+  "raw_IDs_or_row_level_records_written": false,
+  "municipality_flows_recomputed": false,
+  "late_discharge_censoring": "Admissions discharged after the available 2023 source year may still be absent.",
+  "source_version_difference": "The archived 2023 SSA package carries metadata version 2024.05.31 and differs from the previously used annual source partitions; this is a source-boundary sensitivity, not proof of universal hospitalization completeness.",
+  "outputs": {
+    "mexico_boundary_model_results.csv": "1348852f5a4b46e267ffb92fa65990990f2628f7b7a527a177e4af08786e564a",
+    "mexico_boundary_full_covariance.json": "1b3696626aa487fe461d25b64917fa04b0efbddfd1c0abb1334b3cb3c21e610c",
+    "mexico_boundary_daily_counts.csv": "324562604a3aa43245b85e6cbce4bd366b76e04eeaafa9eb286b896f335c6fb7",
+    "mexico_boundary_report_zh.md": "f7448646d0c312b0b693ec975c599b60141d48a4948124d383bb10d69a3dd6c5"
+  },
+  "validation_checks": {
+    "2023_annual_ID_uniqueness": true,
+    "all_accepted_INGRE_dates_not_after_EGRESO": true,
+    "no_missing_or_nonISO_EGRESO_among_accepted": true,
+    "no_ambiguous_target_IDs": true,
+    "no_unresolved_cross_source_diagnosis_conflicts": true,
+    "baseline_broad_and_strict_signatures_reconciled": true,
+    "boundary_daily_calendar_reconciled": true,
+    "exactly_seven_predeclared_model_fits": true,
+    "all_twelve_predeclared_contrasts": true,
+    "archive_and_extracted_sources_integrity_verified": true
+  }
+}

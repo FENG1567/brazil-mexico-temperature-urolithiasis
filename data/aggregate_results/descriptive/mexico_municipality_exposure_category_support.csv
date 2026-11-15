@@ -1,0 +1,5 @@
+﻿country,panel,exposure_category,area_day_n,areas_with_exposure_n,N20_events,N20_positive_area_days,area_day_pct,N20_event_pct
+Mexico,valid-state municipalities,neither,2571142,1830,29917,27386,76.94390078944691,75.15134768519681
+Mexico,valid-state municipalities,heat_only,87636,1830,1053,975,2.6225917081141255,2.6451304981285637
+Mexico,valid-state municipalities,smoke_only,458312,1830,5957,5454,13.715428031051179,14.96395287497802
+Mexico,valid-state municipalities,both,224490,1830,2882,2598,6.718079471387787,7.239568941696601

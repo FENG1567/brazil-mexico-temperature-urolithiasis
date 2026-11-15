@@ -1,0 +1,13 @@
+Outcome or comparison,Contrast / model,Estimate (95% CI),p / q / sample size / notes
+Brazil drainage-record admissions,"Cumulative temperature lag 0–7 per 1 °C, holiday + two-way",RR 1.0121 (1.0048–1.0194),"84,572 events; 180,241 fitted rows; 443 regions and 1,819 dates; p=0.0012; 180,241 fitted rows; 84,572 outcome total"
+Brazil drainage-record admissions,"Cumulative fire-PM₂.₅ lag 0–7 per 10 µg/m³, holiday + two-way",RR 1.0596 (0.9935–1.1300),Interval includes one
+Brazil drainage-record admissions,"Cumulative temperature lag 0–7 per 1 °C, excluding 2020–2021",RR 1.0125 (1.0035–1.0216),"49,201 events; 105,097 fitted rows; 437 regions and 1,088 dates; p=0.0067; 105,097 fitted rows; 49,201 events"
+Brazil drainage-record admissions,"Cumulative fire-PM₂.₅ lag 0–7 per 10 µg/m³, excluding 2020–2021",RR 1.0529 (0.9680–1.1452),Interval includes one
+Brazil drainage/stent record,"Temperature, cumulative lag 0–7, health-region-clustered model",RR 1.0124 (1.0054–1.0195),"Health-region-clustered model; calendar-adjusted two-way results are listed separately; p=0.0005; q=0.0020 within 4 continuous contrasts; 180,241 rows; 84,764 admissions"
+Brazil stone-extraction/lithotripsy record,"Temperature, cumulative lag 0–7, health-region-clustered model",RR 1.0071 (0.9998–1.0143),"Health-region-clustered estimate; outcome records may overlap with drainage group; p=0.0553; q=0.0553 within 4 continuous contrasts; 158,873 rows; 71,833 admissions"
+Mexico nephrostomy record,"Temperature, cumulative lag 0–7",RR 1.0134 (0.9382–1.0948),"1,760 admissions; q=0.7490 (explicit PSD sensitivity) in six temperature/fire contrasts; p=0.7265; q=0.7490 in 6 contrasts; 5,325 rows; 1,760 events"
+Mexico ureteral-catheterization record,"Temperature, cumulative lag 0–7",RR 0.9897 (0.9558–1.0249),"3,313 admissions; q=0.7490 (explicit PSD sensitivity); p=0.5513; q=0.7490 in 6 contrasts; 9,061 rows; 3,313 events"
+Mexico fragmentation/lithotripsy record,"Temperature, cumulative lag 0–7",RR 1.0085 (0.9559–1.0640),"2,107 admissions; q=0.7490 (explicit PSD sensitivity); p=0.7490; q=0.7490 in 6 contrasts; 6,084 rows; 2,107 events"
+Mexico TIPO=Q surgery,Same-day temperature per 1 °C,RR 1.0113 (0.9986–1.0242),"No formal comparison with no-TIPO=Q group; p=0.0820; 22,380 rows; 10,498 events"
+Mexico no recorded TIPO=Q surgery,Same-day temperature per 1 °C,RR 1.0180 (1.0067–1.0294),"No formal comparison with TIPO=Q group; p=0.0017; 34,267 rows; 21,948 events"
+"Stone-extraction/lithotripsy record, urgent strict N20 [health-region-clustered model]",Temperature per 1 °C; cumulative lag 0–7 with national calendar control,RR 1.0064 (0.9992–1.0136),Outcome events unchanged; p=0.0824

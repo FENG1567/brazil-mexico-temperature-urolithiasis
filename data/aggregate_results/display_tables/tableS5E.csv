@@ -1,0 +1,8 @@
+Outcome or comparison,Contrast / model,Estimate (95% CI),p / q / sample size / notes
+Mexico state same-day sensitivity,"NASA POWER temperature per 1 °C, jointly modeled with fire-PM₂.₅",RR 1.0165 (1.0091–1.0240),"43,671 model rows"
+Mexico state same-day sensitivity,"Fire-PM₂.₅ per 10 µg/m³, jointly modeled with temperature",RR 0.874 (0.814–0.939),Below-one association is not interpreted as protective
+Mexico municipality sensitivity,Same-day state-capital NASA POWER temperature / municipality fire PM₂.₅,RRs 1.0165 (1.0099–1.0231) / 0.881 (0.813–0.955),"Broad N20–N23; 133,775 model rows; not lag 0–7"
+"Mexico, N20–N23, state harmonized sensitivity","NASA POWER temperature, per 1 °C; lag 0–7 cumulative",1.0264 (1.0148–1.0380),"Model rows: 43,483"
+"Brazil, strict N20, 2018–2022 baseline frame","Temperature, per 1 °C; lag 0–7 cumulative; two-way state/date clusters",1.0130 (1.0064–1.0197),"Model rows: 45,436"
+"Mexico, strict N20, 2018–2022 baseline frame","ERA5-Land temperature, per 1 °C; lag 0–7 cumulative; two-way state/date clusters",1.0265 (1.0127–1.0404),"Model rows: 39,359"
+"Mexico, broad N20–N23, source-expanded","ERA5-Land temperature, per 1 °C; lag 0–7 cumulative; calendar controls; two-way state/date clusters",1.0231 (1.0098–1.0366),"Model rows: 43,503"

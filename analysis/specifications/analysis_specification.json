@@ -1,0 +1,215 @@
+{
+  "analysis": "revision analysis Brazil service-model reanalysis",
+  "status": "specified_before_model_execution",
+  "specified_on": "2026-11-13",
+  "scope": {
+    "population_period": "2018-01-01 through 2022-12-31",
+    "geography": "Brazil health regions only",
+    "primary2008_models": false,
+    "new_countries_or_diagnoses": false,
+    "model_selection_by_p_value": false
+  },
+  "sources": {
+    "exposure_panel": "[external execution path omitted]",
+    "clinical_daily_aggregate": "work/upgrade_20261112/clinical_code_day_aggregate.parquet",
+    "fixed_price_index": "outputs/upgrade_20261112/ipca_monthly.csv",
+    "SP_linked_daily_outcomes": "outputs/upgrade_20261112/sp_linked_daily_outcomes.csv",
+    "existing_national_holiday_calendar": "outputs/upgrade_20261112/holiday_calendar_dates.csv",
+    "legacy_joint_results": "outputs/upgrade_20261112/acute_repair_model_results.csv"
+  },
+  "sample_definitions": {
+    "strict_urgent_N20": "IDENT=1, diagnosis=N20, CAR_INT=02; daily admissions by health region and admission date",
+    "bed_days": "sum of admission-attributed beddays for the same strict urgent N20 daily cohort",
+    "reimbursement": "sum(nominal_cost * existing IPCA factor from competence month to 2022-12) for the same cohort; outcome in 2022 BRL",
+    "four_exposure_categories": "heat_only=(heat=1,smoke=0), smoke_only=(0,1), both=(1,1), neither=(0,0), using the established panel flags",
+    "fixed_effect_stratum": "health region x year-month x day-of-week",
+    "pandemic_sensitivity": "retain outcome dates in 2018, 2019, and 2022; exclude all outcome dates in 2020 and 2021"
+  },
+  "models": [
+    {
+      "id": "service_original_two_way",
+      "outcomes": [
+        "urgent_N20",
+        "admission_attributed_beddays",
+        "reimbursement_2022BRL"
+      ],
+      "formula_template": "outcome ~ h_only + s_only + both | stratum",
+      "period": "2018-2022",
+      "clusters": [
+        "hrid",
+        "day_id"
+      ],
+      "inference": "two-way CRV1 covariance; Student t with df=min(retained hrid clusters, retained date clusters)-1",
+      "absolute_contrast": true
+    },
+    {
+      "id": "service_holiday_two_way",
+      "outcomes": [
+        "urgent_N20",
+        "admission_attributed_beddays",
+        "reimbursement_2022BRL"
+      ],
+      "formula_template": "outcome ~ h_only + s_only + both + holiday | stratum",
+      "period": "2018-2022",
+      "clusters": [
+        "hrid",
+        "day_id"
+      ],
+      "inference": "two-way CRV1 covariance; Student t with df=min(retained hrid clusters, retained date clusters)-1",
+      "absolute_contrast": true,
+      "role": "revised service main specification"
+    },
+    {
+      "id": "service_holiday_excluding_2020_2021",
+      "outcomes": [
+        "urgent_N20",
+        "admission_attributed_beddays",
+        "reimbursement_2022BRL"
+      ],
+      "formula_template": "outcome ~ h_only + s_only + both + holiday | stratum",
+      "period": "2018-2019 and 2022 outcome dates only",
+      "clusters": [
+        "hrid",
+        "day_id"
+      ],
+      "inference": "two-way CRV1 covariance; Student t with df=min(retained hrid clusters, retained date clusters)-1",
+      "absolute_contrast": false,
+      "role": "pandemic-period sensitivity"
+    },
+    {
+      "id": "drainage_continuous_two_way",
+      "outcome": "any_drainage",
+      "formula": "any_drainage ~ t0+t1+t2+t3+t4+t5+t6+t7+f0+f1+f2+f3+f4+f5+f6+f7 | stratum",
+      "period": "2018-2022 outcomes with complete lag 0-7 exposures; same rows for temperature and fire",
+      "clusters": [
+        "hrid",
+        "day_id"
+      ],
+      "inference": "two-way CRV1 covariance; Student t with df=min(retained hrid clusters, retained date clusters)-1",
+      "contrasts": [
+        "each lag coefficient",
+        "sum(t0..t7): cumulative RR per 1 C across lags 0-7",
+        "sum(f0..f7): cumulative RR per 10 ug/m3 across lags 0-7"
+      ]
+    },
+    {
+      "id": "drainage_continuous_holiday_two_way",
+      "outcome": "any_drainage",
+      "formula": "any_drainage ~ t0+t1+t2+t3+t4+t5+t6+t7+f0+f1+f2+f3+f4+f5+f6+f7+holiday | stratum",
+      "period": "2018-2022 outcomes with complete lag 0-7 exposures; same rows as no-holiday model",
+      "clusters": [
+        "hrid",
+        "day_id"
+      ],
+      "inference": "two-way CRV1 covariance; Student t with df=min(retained hrid clusters, retained date clusters)-1"
+    },
+    {
+      "id": "drainage_continuous_holiday_excluding_2020_2021",
+      "outcome": "any_drainage",
+      "formula": "any_drainage ~ t0+t1+t2+t3+t4+t5+t6+t7+f0+f1+f2+f3+f4+f5+f6+f7+holiday | stratum",
+      "period": "2018-2019 and 2022 outcome dates only; lag exposures retain observed chronology",
+      "clusters": [
+        "hrid",
+        "day_id"
+      ],
+      "inference": "two-way CRV1 covariance; Student t with df=min(retained hrid clusters, retained date clusters)-1"
+    },
+    {
+      "id": "broad_urgent_elective_holiday_two_way",
+      "outcome": "stacked N20-N23 urgent/elective daily counts",
+      "formula": "count ~ C(outcome)*C(group) + C(outcome):holiday | stratum^outcome",
+      "contrast": "C(outcome)[T.urgent]:C(group)[T.heat_only]; heat-only urgent RR / elective RR",
+      "period": "2018-2022",
+      "clusters": [
+        "hrid",
+        "day_id"
+      ],
+      "inference": "two-way CRV1 covariance; Student t with df=min(retained hrid clusters, retained date clusters)-1"
+    },
+    {
+      "id": "broad_urgent_elective_holiday_excluding_2020_2021",
+      "outcome": "stacked N20-N23 urgent/elective daily counts",
+      "formula": "count ~ C(outcome)*C(group) + C(outcome):holiday | stratum^outcome",
+      "contrast": "C(outcome)[T.urgent]:C(group)[T.heat_only]; heat-only urgent RR / elective RR",
+      "period": "2018-2019 and 2022 outcome dates only",
+      "clusters": [
+        "hrid",
+        "day_id"
+      ],
+      "inference": "two-way CRV1 covariance; Student t with df=min(retained hrid clusters, retained date clusters)-1"
+    },
+    {
+      "id": "strict_urgent_elective_holiday_two_way",
+      "outcome": "stacked strict N20 urgent/elective daily counts",
+      "formula": "count ~ C(outcome)*C(group) + C(outcome):holiday | stratum^outcome",
+      "contrast": "C(outcome)[T.urgent]:C(group)[T.heat_only]; heat-only urgent RR / elective RR",
+      "period": "2018-2022",
+      "clusters": [
+        "hrid",
+        "day_id"
+      ],
+      "inference": "two-way CRV1 covariance; Student t with df=min(retained hrid clusters, retained date clusters)-1"
+    },
+    {
+      "id": "strict_urgent_elective_holiday_excluding_2020_2021",
+      "outcome": "stacked strict N20 urgent/elective daily counts",
+      "formula": "count ~ C(outcome)*C(group) + C(outcome):holiday | stratum^outcome",
+      "contrast": "C(outcome)[T.urgent]:C(group)[T.heat_only]; heat-only urgent RR / elective RR",
+      "period": "2018-2019 and 2022 outcome dates only",
+      "clusters": [
+        "hrid",
+        "day_id"
+      ],
+      "inference": "two-way CRV1 covariance; Student t with df=min(retained hrid clusters, retained date clusters)-1"
+    }
+  ],
+  "legacy": {
+    "preserve_existing_joint_urgent_elective_models": true,
+    "source": "outputs/upgrade_20261112/acute_repair_model_results.csv",
+    "label": "legacy; no holiday control; health-region CRV1; retain as already-fitted historical estimate"
+  },
+  "absolute_contrast_protocol": {
+    "models": [
+      "service_original_two_way",
+      "service_holiday_two_way"
+    ],
+    "exposure_scenario": "heat-only days reassigned to neither; smoke-only, both, and holiday status unchanged",
+    "draws": 4096,
+    "seed": 20261113,
+    "distribution": "joint multivariate normal coefficient draws using the fitted covariance submatrix",
+    "per_draw_intercept": "calibrate each retained stratum intercept under factual exposures to its observed stratum outcome total, then hold that intercept fixed for the reassigned scenario",
+    "holiday_handling": "holiday indicator may vary within stratum and remains in the design matrix in both scenarios",
+    "conditioning": "condition on observed retained stratum totals; no baseline outcome-count uncertainty",
+    "outputs": [
+      "predicted associated count difference",
+      "parameter interval",
+      "difference / observed model_events",
+      "difference / observed input outcome total"
+    ],
+    "interpretation": "associational model contrast only; not causal and not an attributable fraction",
+    "covariance_psd_handling": "Retain the raw covariance; if non-PSD, explicitly eigendecompose and set negative eigenvalues to zero for joint draws, report the projection and compare the PSD-draw interval against a local raw-covariance delta-method interval."
+  },
+  "diagnostics_and_outputs": {
+    "save_full_coefficients_and_covariance_per_fit": true,
+    "save_input_and_retained_rows_events_and_clusters": true,
+    "save_model_formula_and_cluster_inference_df": true,
+    "save_covariance_eigenvalue_diagnostics": true,
+    "no_eigenvalue_clipping_without_reporting": true,
+    "results_csv": "outputs/revision_20261113/service/results.csv",
+    "absolute_csv": "outputs/revision_20261113/service/absolute_service_contrasts.csv",
+    "sample_audit_csv": "outputs/revision_20261113/service/sample_audit.csv",
+    "model_events_csv": "outputs/revision_20261113/service/model_events.csv",
+    "methods_note": "outputs/revision_20261113/service/methods_zh.md",
+    "sampleflow_csv": "outputs/revision_20261113/service/sampleflow.csv",
+    "full_covariance_and_projection_diagnostics": "outputs/revision_20261113/service/model_fits.json"
+  },
+  "runtime": {
+    "python": "py -3.12",
+    "python_libraries": "[external execution path omitted]",
+    "duckdb_threads": 4,
+    "omp_num_threads": 4,
+    "numba_num_threads": 4,
+    "openblas_num_threads": 4,
+    "execution": "hidden Start-Process with persistent stdout/stderr/status/PID; do not rerun after failure without reporting to root"
+  }
+}

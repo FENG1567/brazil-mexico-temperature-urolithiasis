@@ -1,0 +1,88 @@
+﻿country,date,holiday_name,calendar_source,library_version,observed_argument,date_role
+BR,2018-01-01,Confraternização Universal,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2018-03-30,Sexta-feira Santa,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2018-04-21,Tiradentes,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2018-05-01,Dia do Trabalhador,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2018-09-07,Independência do Brasil,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2018-10-07,Eleições gerais 2018 primeiro turno,Official TSE federal election calendar,0.108,True,nationwide ordinary federal election day
+BR,2018-10-12,Nossa Senhora Aparecida,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2018-10-28,Eleições gerais 2018 segundo turno,Official TSE federal election calendar,0.108,True,nationwide ordinary federal election day
+BR,2018-11-02,Finados,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2018-11-15,Proclamação da República,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2018-12-25,Natal,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2019-01-01,Confraternização Universal,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2019-04-19,Sexta-feira Santa,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2019-04-21,Tiradentes,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2019-05-01,Dia do Trabalhador,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2019-09-07,Independência do Brasil,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2019-10-12,Nossa Senhora Aparecida,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2019-11-02,Finados,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2019-11-15,Proclamação da República,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2019-12-25,Natal,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2020-01-01,Confraternização Universal,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2020-04-10,Sexta-feira Santa,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2020-04-21,Tiradentes,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2020-05-01,Dia do Trabalhador,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2020-09-07,Independência do Brasil,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2020-10-12,Nossa Senhora Aparecida,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2020-11-02,Finados,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2020-11-15,Proclamação da República,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2020-12-25,Natal,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2021-01-01,Confraternização Universal,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2021-04-02,Sexta-feira Santa,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2021-04-21,Tiradentes,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2021-05-01,Dia do Trabalhador,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2021-09-07,Independência do Brasil,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2021-10-12,Nossa Senhora Aparecida,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2021-11-02,Finados,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2021-11-15,Proclamação da República,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2021-12-25,Natal,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2022-01-01,Confraternização Universal,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2022-04-15,Sexta-feira Santa,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2022-04-21,Tiradentes,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2022-05-01,Dia do Trabalhador,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2022-09-07,Independência do Brasil,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2022-10-02,Eleições gerais 2022 primeiro turno,Official TSE federal election calendar,0.108,True,nationwide ordinary federal election day
+BR,2022-10-12,Nossa Senhora Aparecida,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2022-10-30,Eleições gerais 2022 segundo turno,Official TSE federal election calendar,0.108,True,nationwide ordinary federal election day
+BR,2022-11-02,Finados,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2022-11-15,Proclamação da República,python-holidays PUBLIC,0.108,True,statutory calendar date
+BR,2022-12-25,Natal,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2018-01-01,Año Nuevo,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2018-02-05,Día de la Constitución,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2018-03-19,Natalicio de Benito Juárez,python-holidays PUBLIC,0.108,True,statutory weekday-observed date
+MX,2018-05-01,Día del Trabajo,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2018-07-01,Jornada electoral federal 2018,LFT Article 74(IX) + official INE federal calendar,0.108,True,nationwide ordinary federal election day
+MX,2018-09-16,Día de la Independencia,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2018-11-19,Día de la Revolución,python-holidays PUBLIC,0.108,True,statutory weekday-observed date
+MX,2018-12-01,Transmisión del Poder Ejecutivo Federal,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2018-12-25,Navidad,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2019-01-01,Año Nuevo,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2019-02-04,Día de la Constitución,python-holidays PUBLIC,0.108,True,statutory weekday-observed date
+MX,2019-03-18,Natalicio de Benito Juárez,python-holidays PUBLIC,0.108,True,statutory weekday-observed date
+MX,2019-05-01,Día del Trabajo,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2019-09-16,Día de la Independencia,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2019-11-18,Día de la Revolución,python-holidays PUBLIC,0.108,True,statutory weekday-observed date
+MX,2019-12-25,Navidad,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2020-01-01,Año Nuevo,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2020-02-03,Día de la Constitución,python-holidays PUBLIC,0.108,True,statutory weekday-observed date
+MX,2020-03-16,Natalicio de Benito Juárez,python-holidays PUBLIC,0.108,True,statutory weekday-observed date
+MX,2020-05-01,Día del Trabajo,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2020-09-16,Día de la Independencia,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2020-11-16,Día de la Revolución,python-holidays PUBLIC,0.108,True,statutory weekday-observed date
+MX,2020-12-25,Navidad,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2021-01-01,Año Nuevo,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2021-02-01,Día de la Constitución,python-holidays PUBLIC,0.108,True,statutory weekday-observed date
+MX,2021-03-15,Natalicio de Benito Juárez,python-holidays PUBLIC,0.108,True,statutory weekday-observed date
+MX,2021-05-01,Día del Trabajo,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2021-06-06,Jornada electoral federal 2021,LFT Article 74(IX) + official INE federal calendar,0.108,True,nationwide ordinary federal election day
+MX,2021-09-16,Día de la Independencia,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2021-11-15,Día de la Revolución,python-holidays PUBLIC,0.108,True,statutory weekday-observed date
+MX,2021-12-25,Navidad,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2022-01-01,Año Nuevo,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2022-02-07,Día de la Constitución,python-holidays PUBLIC,0.108,True,statutory weekday-observed date
+MX,2022-03-21,Natalicio de Benito Juárez,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2022-05-01,Día del Trabajo,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2022-09-16,Día de la Independencia,python-holidays PUBLIC,0.108,True,statutory calendar date
+MX,2022-11-21,Día de la Revolución,python-holidays PUBLIC,0.108,True,statutory weekday-observed date
+MX,2022-12-25,Navidad,python-holidays PUBLIC,0.108,True,statutory calendar date

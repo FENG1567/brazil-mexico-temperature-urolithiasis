@@ -1,0 +1,97 @@
+[
+  {
+    "input": "data/figure_inputs/frozen/tables/same_caliber_continuous.csv",
+    "released_source": "data/aggregate_results/alternative_model_results/same_caliber_continuous.csv",
+    "sha256": "636b8710256f0708dbd98a9649026fd59031a56312b641f01e43fd1220d0cc79"
+  },
+  {
+    "input": "data/figure_inputs/frozen/tables/mexico_era5_results.csv",
+    "released_source": "data/aggregate_results/alternative_model_results/mexico_era5_results.csv",
+    "sha256": "e0aec6f6d754ab276318bba6b2a2f1fb4661a84aca055fbcdda000bfb85a9c7f"
+  },
+  {
+    "input": "data/figure_inputs/frozen/tables/mexico_composite_results.csv",
+    "released_source": "data/aggregate_results/alternative_model_results/mexico_composite_results.csv",
+    "sha256": "7706140ca1c6c121b0bebc1b26dab4caa2016218e06131654301f092eb8d467a"
+  },
+  {
+    "input": "data/figure_inputs/frozen/tables/mexico_municipality_strict_results.csv",
+    "released_source": "data/aggregate_results/alternative_model_results/mexico_municipality_strict_results.csv",
+    "sha256": "6ca77a51fa04231a9caa7c15669a3bc41c85c35bf036472b70e8e7ac6a8e7189"
+  },
+  {
+    "input": "data/figure_inputs/upgrade/mexico_admission_date_audit.json",
+    "released_source": "data/aggregate_results/additional_aggregate_results/mexico_admission_date_audit.json",
+    "sha256": "0af6e87fa2f6570634d033d0a92e5d344c7f5b108c3da76b9351629bb64cbafc"
+  },
+  {
+    "input": "data/figure_inputs/upgrade/mexico_boundary_audit.json",
+    "released_source": "data/aggregate_results/additional_aggregate_results/mexico_boundary_audit.json",
+    "sha256": "87489c4e9d1cb17a14adea64e788e992e2099b7126818c10aeaf1c534699b616"
+  },
+  {
+    "input": "data/figure_inputs/upgrade/burden_occupancy_model_results.csv",
+    "released_source": "data/aggregate_results/sensitivity_results/burden_occupancy_model_results.csv",
+    "sha256": "ac7f7c8b9e91d4f17e7b654679472ec6bc4ab273c87dbf0b372519ffc32dfdd3"
+  },
+  {
+    "input": "data/figure_inputs/upgrade/acute_repair_model_results.csv",
+    "released_source": "data/aggregate_results/sensitivity_results/acute_repair_model_results.csv",
+    "sha256": "e602c17e88c81c201397e6c83699353dca4f76e382fce6c123abf35d71cc200b"
+  },
+  {
+    "input": "data/figure_inputs/upgrade/mexico_boundary_model_results.csv",
+    "released_source": "data/aggregate_results/sensitivity_results/mexico_boundary_model_results.csv",
+    "sha256": "1348852f5a4b46e267ffb92fa65990990f2628f7b7a527a177e4af08786e564a"
+  },
+  {
+    "input": "data/figure_inputs/revision/descriptive/sample_flow_summary.csv",
+    "released_source": "data/aggregate_results/descriptive/sample_flow_summary.csv",
+    "sha256": "152954e47ddf6f4147b36445ea544968bfaa49a60e313e17a164a633d66f2d52"
+  },
+  {
+    "input": "data/figure_inputs/revision/nonlinear/temperature_and_category_contrasts.csv",
+    "released_source": "data/aggregate_results/nonlinear/temperature_and_category_contrasts.csv",
+    "sha256": "3b366e17377892cbaecc5895503ffef60ca33e8abfd56dce72d1fd80ee2bb225"
+  },
+  {
+    "input": "data/figure_inputs/revision/nonlinear/sample_flow.csv",
+    "released_source": "data/aggregate_results/nonlinear/sample_flow.csv",
+    "sha256": "ce0733845d1edb2def50587c3036ec5c5ce618e8e4eafd6eee33027c630f2e05"
+  },
+  {
+    "input": "data/figure_inputs/revision/service/results.csv",
+    "released_source": "data/aggregate_results/brazil_service_results/results.csv",
+    "sha256": "bbd87d8d623b8d7d6c72dceb0eca5aa30dc7f164d1a363e2badab27433351a5a"
+  },
+  {
+    "input": "data/figure_inputs/revision/nonlinear/temperature_curves_psd.csv",
+    "released_source": "data/aggregate_results/nonlinear/temperature_curves_psd.csv",
+    "sha256": "6c70a216ee022e724183e37d66fe1d205284aba30139c241086fec1b99393c43"
+  },
+  {
+    "input": "data/figure_inputs/revision/nonlinear/joint_nonlinearity_tests_psd.csv",
+    "released_source": "data/aggregate_results/nonlinear/joint_nonlinearity_tests_psd.csv",
+    "sha256": "7df31796c21a1b9019e12a460461517afe08e139e741552208ab62373220edea"
+  },
+  {
+    "input": "data/figure_inputs/revision/nonlinear/temperature_curves.csv",
+    "released_source": "data/aggregate_results/nonlinear/temperature_curves.csv",
+    "sha256": "1ca3257fc1c57356920746870cb99a54066411bd752c7918b74065deeca30b0b"
+  },
+  {
+    "input": "data/figure_inputs/revision/covariance/brazil_compound_interaction_two_way.csv",
+    "released_source": "data/aggregate_results/covariance/brazil_compound_interaction_two_way.csv",
+    "sha256": "adc0200f07c1057aa7fd11f0391063c67389f01a2a67eb9971ec34a3b45ea964"
+  },
+  {
+    "input": "data/figure_inputs/revision/covariance/mexico_procedure_covariance_contrasts.csv",
+    "released_source": "data/aggregate_results/covariance/mexico_procedure_covariance_contrasts.csv",
+    "sha256": "9dcac77c6f8db09abc64915e5e40b56212ac75698258e1b274d373d917a9e6ac"
+  },
+  {
+    "input": "data/figure_inputs/revision/covariance/mexico_procedure_covariance_diagnostics.csv",
+    "released_source": "data/aggregate_results/covariance/mexico_procedure_covariance_diagnostics.csv",
+    "sha256": "d805957c541f0949cd01004e7558e89b8327001ac0136fdd688ecc21bc217061"
+  }
+]

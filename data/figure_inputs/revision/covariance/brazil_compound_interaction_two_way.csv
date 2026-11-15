@@ -1,0 +1,2 @@
+﻿model,estimand,beta,variance,RR,CI_low,CI_high,p,df,contrast,covariance,model_rows
+brazil_primary_same_day_compound_two_way,multiplicative_heat_smoke_interaction,0.028806467739148772,0.00010428215890009671,1.0292253868831558,1.0087757688658812,1.0500895537922248,0.005001427144897089,449,compound - heat_only - smoke_only on log scale,two-way health-region/date CRV1; full joint covariance,1484094

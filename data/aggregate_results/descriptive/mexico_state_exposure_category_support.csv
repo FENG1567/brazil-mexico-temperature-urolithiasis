@@ -1,0 +1,5 @@
+﻿country,panel,exposure_category,area_day_n,areas_with_exposure_n,N20_events,N20_positive_area_days,area_day_pct,N20_event_pct
+Mexico,32-state daily panel,neither,44890,32,30366,17388,76.82434282584884,75.13546950389707
+Mexico,32-state daily panel,heat_only,1967,32,1000,624,3.3663061336254105,2.4743288383026103
+Mexico,32-state daily panel,smoke_only,8136,32,6046,3404,13.923877327491786,14.959792156377583
+Mexico,32-state daily panel,both,3439,32,3003,1532,5.885473713033954,7.430409501422739
