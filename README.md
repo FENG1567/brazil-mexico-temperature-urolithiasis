@@ -1,7 +1,9 @@
 # Short-Term Temperature and Urolithiasis Hospitalizations in Brazil and Mexico: Exploratory Heat–Smoke Comparisons With Cholelithiasis and Cholecystitis in Brazil
 
+Presentation patch v1.1.1 restores the manuscript title and the previously approved vertical placement of panel A in Figure 1. Scientific results and exposure inputs are unchanged from v1.1.0.
 
-Code release: **v1.1.0**  
+
+Code release: **v1.1.1**  
 Corrected-results identity: **TEMP-20261115-C1**  
 Historical release: **v1.0.0** remains available unchanged.  
 Authors: Shuo Feng, Chao Shi, Tianming Liu, Haoran Ding, Fenghe Hang, Zhenghao Huang, and Xianzhi Meng.

@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this reproducibility release, please cite it and the associated manuscript."
 type: software
-title: "Short-term temperature and urolithiasis hospitalizations in Brazil and Mexico: urgent inpatient service use and public reimbursement in Brazil"
+title: "Short-Term Temperature and Urolithiasis Hospitalizations in Brazil and Mexico: Exploratory Heat–Smoke Comparisons With Cholelithiasis and Cholecystitis in Brazil"
 authors:
   - family-names: Feng
     given-names: Shuo
@@ -17,7 +17,7 @@ authors:
     given-names: Zhenghao
   - family-names: Meng
     given-names: Xianzhi
-version: "v1.1.0"
+version: 1.1.1
 date-released: 2026-11-16
 license: MIT
 repository-code: "https://github.com/FENG1567/brazil-mexico-temperature-urolithiasis"

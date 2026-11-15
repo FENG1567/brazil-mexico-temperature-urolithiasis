@@ -525,15 +525,15 @@ def make_fig1() -> plt.Figure:
 
     b = d["brazil"]
     box(
-        ax, (0.05, 0.58), 0.42, 0.19,
+        ax, (0.05, 0.485), 0.42, 0.19,
         "Primary cohort • N20–N23\n2008–2022",
         f"{fmt_n(b['valid_geography_n'])} regions • {fmt_n(b['source_or_input_n'])} region-days\n{fmt_n(b['events_broad_or_named'])} aggregate admissions",
         BLUE,
     )
     s = d["brazil_service"]
-    ax.add_patch(FancyArrowPatch((0.26, 0.57), (0.26, 0.49), arrowstyle="-|>", mutation_scale=11, color=SLATE, lw=1.2))
+    ax.add_patch(FancyArrowPatch((0.26, 0.475), (0.26, 0.395), arrowstyle="-|>", mutation_scale=11, color=SLATE, lw=1.2))
     box(
-        ax, (0.05, 0.27), 0.42, 0.19,
+        ax, (0.05, 0.175), 0.42, 0.19,
         "Strict N20 service frame\n2018–2022",
         f"{fmt_n(s['valid_geography_n'])} regions × {fmt_n(d['service_days'])} days\n{fmt_n(s['source_or_input_n'])} region-days • {fmt_n(s['events_urgent'])} urgent",
         TEAL,
