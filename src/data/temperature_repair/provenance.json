@@ -1,0 +1,78 @@
+{
+  "status": "repaired_panel_staged",
+  "created_utc": "2026-11-15T16:01:31.668025+00:00",
+  "corrected_panel": {
+    "source_path": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/panel_composite_humidity_exposure_repaired.parquet",
+    "sha256": "3a69caffabf814bce6f8eea1c587c458050313deed0484d0d99a9208617b8187",
+    "release_path": "data/processed_inputs/panel_composite_humidity_exposure_repaired.parquet",
+    "release_sha256": "b837328e149714d631257aa43eaffbb95506510b6b9275a35a6fd892d977d597",
+    "rows": 2629800,
+    "columns": [
+      "hrid",
+      "date",
+      "year",
+      "K80",
+      "K81",
+      "K85",
+      "N20_N23",
+      "tmean",
+      "tmax",
+      "rh",
+      "fire_pm25",
+      "heat",
+      "smoke",
+      "composite",
+      "cold",
+      "t_p90",
+      "s_p75",
+      "t_p10",
+      "pop"
+    ]
+  },
+  "fixed_grid_weights": {
+    "source_path": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/source_inputs/final_production_exposure_weights.csv",
+    "sha256": "2c5311c83064aa9ea4845f941163ad508d7a91305807247290549b26eeda51ae",
+    "release_path": "src/data/temperature_repair/final_production_exposure_weights.csv",
+    "source_bytes": 6935134
+  },
+  "repair_code": {
+    "source_path": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/scripts/repair_exposure.py",
+    "sha256": "6f74e28a61a6944e8a85eb5557b84ee90d9fc606b226dfbe9f02626ad55a5a11",
+    "release_path": "src/data/temperature_repair/repair_exposure.py",
+    "executed_source_sha256": "6f74e28a61a6944e8a85eb5557b84ee90d9fc606b226dfbe9f02626ad55a5a11",
+    "release_sha256": "c6b5b158a03b50d05fe09290437a4953c68a8e522589d7813c8d21733f60f3d2",
+    "release_adaptation": "Portable command-line input/output parameters added after the analysis; original executed source hash retained separately."
+  },
+  "assembly_manifest": {
+    "source_path": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/source_inputs/assembly_manifest.json",
+    "sha256": "bae568a58996400c7b62d858445acbb0f597c391300e3b8f13bdfeb6c45e6cf5",
+    "release_path": "src/data/temperature_repair/assembly_manifest.json"
+  },
+  "input_validation": {
+    "source_path": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/input_validation_primary.json",
+    "sha256": "5544a040d29edf193307ac3c70bf1fa0786c5c89270337b115660941a9d9771b",
+    "release_path": "src/data/temperature_repair/input_validation_primary.json"
+  },
+  "root_input_gate": {
+    "source_path": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/root_input_gate.json",
+    "sha256": "9ac11fbf92135a2975d3d30b5602af751970fa6eeece7cb69899b4bcfb4b3db2",
+    "release_path": "src/data/temperature_repair/root_input_gate.json"
+  },
+  "additional_model_matrix": {
+    "source_path": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/additional_model_matrix.json",
+    "sha256": "820ff2d5d3db8530e6054725396b073cc6717d5df9899e0d1f53a636597b080b",
+    "release_path": "src/data/temperature_repair/additional_model_matrix.json"
+  },
+  "scope": "fixed supplied-grid mean with recorded ERA5 single-level complement; source mass/assembly verified by gate; no independent raw-hourly/population reconstruction",
+  "rh_scope": "descriptive only; shared hourly/grid validity mask not independently verified; RH 2023 missingness preserved",
+  "private_inputs_not_staged": [
+    "primary_D_signed_rain_weather.parquet",
+    "mixed_region_day_contributions.parquet",
+    "948 MB source weather files"
+  ],
+  "legacy_panel_preserved": true,
+  "rh_2023_nonmissing": 0,
+  "rh_2023_missing": 164250,
+  "result_identity": "TEMP-20261115-C1",
+  "version": "v1.1.0"
+}

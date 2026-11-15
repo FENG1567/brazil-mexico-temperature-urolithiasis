@@ -1,0 +1,219 @@
+{
+  "script": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/run_repo/work/upgrade_20261112/holiday_sensitivity.py",
+  "window": "2018-01-01 through 2022-12-31",
+  "holiday_calendar": {
+    "calendar_window": "2018-01-01 through 2022-12-31",
+    "python_holidays_version": "0.108",
+    "pypi_project": "https://pypi.org/project/holidays/0.108/",
+    "package_location": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/run_repo/work/calendarlibs",
+    "category": "PUBLIC",
+    "observed": true,
+    "language": {
+      "BR": "pt_BR",
+      "MX": "es"
+    },
+    "source_method": "Generate recurring PUBLIC dates with python-holidays, observed=True, verify the recurring rules, and add officially dated nationwide federal elections in both countries as operational calendar controls.",
+    "official_rule_checks": {
+      "BR": "Lei 662/1949 as amended by 10.607/2002, Lei 6.802/1980; annual federal holiday calendars confirm Good Friday dates. Fixed statutory dates remain on their legal dates; no national substitute date is added by the package.",
+      "MX": "Ley Federal del Trabajo Article 74(I-VIII) as in force through 2022; first Monday in February, third Monday in March, third Monday in November, and 1 December 2018 executive transition date are matched exactly."
+    },
+    "supplemental_dates": [
+      {
+        "country": "BR",
+        "date": "2018-10-07",
+        "name": "Eleições gerais 2018 primeiro turno",
+        "basis": "Nationwide federal election date confirmed by TSE; operational calendar control."
+      },
+      {
+        "country": "BR",
+        "date": "2018-10-28",
+        "name": "Eleições gerais 2018 segundo turno",
+        "basis": "Nationwide federal election date confirmed by TSE; operational calendar control."
+      },
+      {
+        "country": "BR",
+        "date": "2022-10-02",
+        "name": "Eleições gerais 2022 primeiro turno",
+        "basis": "Nationwide federal election date confirmed by TSE; operational calendar control."
+      },
+      {
+        "country": "BR",
+        "date": "2022-10-30",
+        "name": "Eleições gerais 2022 segundo turno",
+        "basis": "Nationwide federal election date confirmed by TSE; operational calendar control."
+      },
+      {
+        "country": "MX",
+        "date": "2018-07-01",
+        "name": "Jornada electoral federal 2018",
+        "basis": "LFT Article 74(IX), nationwide federal ordinary election; date confirmed by INE official calendar."
+      },
+      {
+        "country": "MX",
+        "date": "2021-06-06",
+        "name": "Jornada electoral federal 2021",
+        "basis": "LFT Article 74(IX), nationwide federal ordinary election; date confirmed by INE official calendar."
+      }
+    ],
+    "date_counts": {
+      "python_holidays_core": {
+        "BR": 45,
+        "MX": 36
+      },
+      "after_national_election_supplement": {
+        "BR": 49,
+        "MX": 38
+      }
+    },
+    "included": "Recurring PUBLIC calendar dates, observed Monday dates in Mexico, and nationwide federal election days in both countries.",
+    "excluded": "State/local holidays, municipal religious holidays beyond the recurring country calendar, administrative optional days, Carnival/bridge days outside the PUBLIC category, and state/local-only elections.",
+    "known_coverage_limit": "This indicator does not represent all local schedules, hospital-specific staffing, bridge days, or every state/local election-related closure.",
+    "official_sources": [
+      {
+        "country": "BR",
+        "title": "Lei 662/1949, updated by Lei 10.607/2002",
+        "url": "https://www2.camara.leg.br/legin/fed/lei/1940-1949/lei-662-6-abril-1949-347136-normaatualizada-pl.html",
+        "supports": "National fixed holidays, including Tiradentes and Finados in the current wording."
+      },
+      {
+        "country": "BR",
+        "title": "Lei 6.802/1980",
+        "url": "https://legis.senado.gov.br/norma/548678/publicacao/15645366",
+        "supports": "12 October as a national holiday."
+      },
+      {
+        "country": "BR",
+        "title": "Lei 9.093/1995",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l9093.htm",
+        "supports": "Framework for civil and religious holidays; Good Friday is recognized in annual federal holiday calendars."
+      },
+      {
+        "country": "BR",
+        "title": "TCU Portaria 28/2018",
+        "url": "https://pesquisa.apps.tcu.gov.br/doc/norma/Portaria/TCU/28/2018/",
+        "supports": "2018 federal holiday calendar and Good Friday date."
+      },
+      {
+        "country": "BR",
+        "title": "Ministry of Planning Portaria 444/2018 for 2019",
+        "url": "https://www.gov.br/economia/pt-br/assuntos/planejamento/orcamento/orcamentos-anuais/2018/legislacao/programacao/portaria-mp-no-444-de-27-de-dezembro-de-2018.pdf",
+        "supports": "2019 federal holiday calendar and Good Friday date."
+      },
+      {
+        "country": "BR",
+        "title": "Federal District 2020 official holiday calendar",
+        "url": "https://www.economia.df.gov.br/calendario-de-feriados-e-pontos-facultativos-de-2020",
+        "supports": "2020 national holiday dates, including Good Friday; local and optional days are excluded from this calendar."
+      },
+      {
+        "country": "BR",
+        "title": "TCU Portaria 14/2021",
+        "url": "https://pesquisa.apps.tcu.gov.br/doc/norma/Portaria/TCU/14/2021/",
+        "supports": "2021 federal holiday calendar and Good Friday date."
+      },
+      {
+        "country": "BR",
+        "title": "Federal Government 2022 holiday calendar",
+        "url": "https://www.gov.br/pt-br/noticias/financas-impostos-e-gestao-publica/2021/12/governo-federal-divulga-calendario-2022-de-feriados-e-pontos-facultativos",
+        "supports": "2022 federal holiday calendar and Good Friday date."
+      },
+      {
+        "country": "BR",
+        "title": "Lei 10.607/2002, revocation of Lei 1.266/1950",
+        "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10607-19-dezembro-2002-473572-publicacaooriginal-1-pl.html",
+        "supports": "Revokes the earlier statute declaring nationwide election days holidays. Brazilian election dates are included separately as operational calendar controls, without assigning a statutory holiday classification."
+      },
+      {
+        "country": "MX",
+        "title": "Ley Federal del Trabajo, Article 74, last amendment through 2021",
+        "url": "https://portalhcd.diputados.gob.mx/LeyesBiblio/PortalWeb/Leyes/Vigentes/PDF/125_230421.pdf",
+        "supports": "Mandatory rest days, Monday-observed February/March/November dates, six-year executive transition day, and ordinary election day."
+      },
+      {
+        "country": "MX",
+        "title": "INE 2018 federal election calendar",
+        "url": "https://www.ine.mx/voto-y-elecciones/elecciones-2018/eleccion-federal/",
+        "supports": "Federal election day, 1 July 2018; added under LFT Article 74(IX)."
+      },
+      {
+        "country": "MX",
+        "title": "INE 2021 federal election calendar",
+        "url": "https://www.ine.mx/voto-y-elecciones/elecciones-2021/eleccion-federal-2021/",
+        "supports": "Federal election day, 6 June 2021; added under LFT Article 74(IX)."
+      },
+      {
+        "title": "TSE chronology of elections, 2018 dates",
+        "url": "https://www.tse.jus.br/eleicoes/historia/cronologia-das-eleicoes"
+      },
+      {
+        "title": "TSE official 2022 election calendar",
+        "url": "https://www.tse.jus.br/comunicacao/noticias/2022/Janeiro/confira-as-principais-datas-do-calendario-eleitoral-de-2022"
+      }
+    ]
+  },
+  "model_specifications_locked_before_fit": [
+    {
+      "model": "brazil_strict_n20_holiday_lag07",
+      "sample": "Brazil 27 states; strict N20 all admissions; 2018-2022",
+      "formula": "strict_N20 ~ t0 + t1 + t2 + t3 + t4 + t5 + t6 + t7 + holiday | state_year_month_day_of_week",
+      "cluster": "two-way CRV1 by state and date; t inference with df=min(G_state,G_date)-1"
+    },
+    {
+      "model": "mexico_strict_n20_holiday_lag07",
+      "sample": "Mexico 32 states; strict N20 all admissions; ERA5-Land temperature; 2018-2022",
+      "formula": "strict_N20 ~ t0 + t1 + t2 + t3 + t4 + t5 + t6 + t7 + holiday | state_year_month_day_of_week",
+      "cluster": "two-way CRV1 by state and date; t inference with df=min(G_state,G_date)-1"
+    },
+    {
+      "model": "sp_any_drainage_holiday_lag07",
+      "sample": "Brazil health-region days; any drainage outcome; 2018-2022",
+      "formula": "any_drainage ~ t0 + t1 + t2 + t3 + t4 + t5 + t6 + t7 + f0 + f1 + f2 + f3 + f4 + f5 + f6 + f7 + holiday | hrid_year_month_day_of_week",
+      "cluster": "CRV1 by hrid"
+    },
+    {
+      "model": "sp_any_removal_holiday_lag07",
+      "sample": "Brazil health-region days; any removal outcome; 2018-2022",
+      "formula": "any_removal ~ t0 + t1 + t2 + t3 + t4 + t5 + t6 + t7 + f0 + f1 + f2 + f3 + f4 + f5 + f6 + f7 + holiday | hrid_year_month_day_of_week",
+      "cluster": "CRV1 by hrid"
+    },
+    {
+      "model": "broad_urgent_elective_holiday_joint",
+      "sample": "Brazil region days stacked as N20-N23 urgent/elective counts; 2018-2022",
+      "formula": "count ~ C(outcome)*C(group) + C(outcome):holiday | stratum^outcome",
+      "cluster": "CRV1 by hrid"
+    },
+    {
+      "model": "strict_urgent_elective_holiday_joint",
+      "sample": "Brazil region days stacked as strict N20 urgent/elective counts; 2018-2022",
+      "formula": "count ~ C(outcome)*C(group) + C(outcome):holiday | stratum^outcome",
+      "cluster": "CRV1 by hrid"
+    }
+  ],
+  "models_executed": [
+    "brazil_strict_n20_holiday_lag07",
+    "sp_any_drainage_holiday_lag07",
+    "sp_any_removal_holiday_lag07",
+    "broad_urgent_elective_holiday_joint",
+    "strict_urgent_elective_holiday_joint"
+  ],
+  "state_input_sources": {
+    "Brazil": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/panel_composite_humidity_exposure_repaired.parquet",
+    "Mexico_ERA5": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/baseline_repo/data/processed_inputs/mex_state_day_2015_2023.csv",
+    "clinical_aggregate": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/baseline_repo/data/processed_inputs/clinical_code_day_aggregate.parquet"
+  },
+  "SP_link_source": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/baseline_repo/data/processed_inputs/sp_linked_daily_outcomes.csv",
+  "SP_link_sha256": "704980c745b9e9caf8768c48792b01200daf993295592f8c7bd110bb97779f5e",
+  "outputs": [
+    "holiday_calendar_dates.csv",
+    "holiday_calendar_provenance.json",
+    "holiday_model_specifications.json",
+    "holiday_model_coefficients.csv",
+    "holiday_model_contrasts.csv",
+    "holiday_model_summary.csv",
+    "holiday_sample_audit.csv",
+    "holiday_full_covariance.json",
+    "holiday_run_manifest.json",
+    "holiday_report_zh.md",
+    "holiday_fit_checkpoint.json"
+  ]
+}

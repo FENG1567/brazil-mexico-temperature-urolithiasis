@@ -1,0 +1,273 @@
+{
+  "models": {
+    "strict_n20_nominal": {
+      "model": "strict_n20_nominal",
+      "estimand": "strict N20 urgent reimbursement / strict N20 urgent admissions",
+      "formula": "log_cpc ~ C(group) | stratum",
+      "cluster": "CRV1 by hrid",
+      "price_basis": "nominal BRL",
+      "log_handling": "Use log(cost/admissions) on days with admissions > 0 and total cost > 0; exclude zero/negative cost days because log is undefined.",
+      "analysis_rows_before_fit": 147285,
+      "model_rows": 100805,
+      "rows_removed_by_fit": 46480,
+      "strata_before_fit": 83876,
+      "analysis_admissions": 226402.0,
+      "analysis_reimbursement": 169441941.26,
+      "analysis_cost_per_admission_arithmetic_day_mean": 724.4175217715492,
+      "positive_log_days": 147285,
+      "numerator_column": "strict_cost",
+      "denominator_column": "strict_admissions",
+      "coefficient_names": [
+        "C(group)[T.heat_only]",
+        "C(group)[T.smoke_only]",
+        "C(group)[T.both]"
+      ],
+      "coefficients": [
+        -0.003350338290129521,
+        0.005032601053983559,
+        -0.004946118428676223
+      ],
+      "covariance": [
+        [
+          0.00014907485416439732,
+          9.11165515260072e-06,
+          4.035522738016246e-06
+        ],
+        [
+          9.111655152600722e-06,
+          0.00010105081894768091,
+          8.615722280176273e-05
+        ],
+        [
+          4.035522738016248e-06,
+          8.61572228017627e-05,
+          0.0003651103662098188
+        ]
+      ],
+      "contrasts": [
+        {
+          "model": "strict_n20_nominal",
+          "estimand": "strict N20 urgent reimbursement / strict N20 urgent admissions",
+          "price_basis": "nominal BRL",
+          "term": "C(group)[T.heat_only]",
+          "exposure_group": "heat_only",
+          "beta_log_ratio": -0.003350338290129521,
+          "se": 0.012209621376783037,
+          "variance": 0.00014907485416439732,
+          "ratio": 0.9966552678306517,
+          "CI_low": 0.9730875745319264,
+          "CI_high": 1.0207937588478555,
+          "p": 0.7837760985905333
+        },
+        {
+          "model": "strict_n20_nominal",
+          "estimand": "strict N20 urgent reimbursement / strict N20 urgent admissions",
+          "price_basis": "nominal BRL",
+          "term": "C(group)[T.smoke_only]",
+          "exposure_group": "smoke_only",
+          "beta_log_ratio": 0.005032601053983559,
+          "se": 0.010052403640308169,
+          "variance": 0.00010105081894768091,
+          "ratio": 1.0050452858609316,
+          "CI_low": 0.9854369717104642,
+          "CI_high": 1.0250437680230133,
+          "p": 0.6166269080855069
+        },
+        {
+          "model": "strict_n20_nominal",
+          "estimand": "strict N20 urgent reimbursement / strict N20 urgent admissions",
+          "price_basis": "nominal BRL",
+          "term": "C(group)[T.both]",
+          "exposure_group": "both",
+          "beta_log_ratio": -0.004946118428676223,
+          "se": 0.019107861371954183,
+          "variance": 0.0003651103662098188,
+          "ratio": 0.9950660934729458,
+          "CI_low": 0.9584886799697603,
+          "CI_high": 1.0330393577634618,
+          "p": 0.7957490187900549
+        }
+      ]
+    },
+    "broad_n20_n23_nominal": {
+      "model": "broad_n20_n23_nominal",
+      "estimand": "broad N20-N23 urgent reimbursement / broad N20-N23 urgent admissions",
+      "formula": "log_cpc ~ C(group) | stratum",
+      "cluster": "CRV1 by hrid",
+      "price_basis": "nominal BRL",
+      "log_handling": "Use log(cost/admissions) on days with admissions > 0 and total cost > 0; exclude zero/negative cost days because log is undefined.",
+      "analysis_rows_before_fit": 196715,
+      "model_rows": 146548,
+      "rows_removed_by_fit": 50167,
+      "strata_before_fit": 103681,
+      "analysis_admissions": 315504.0,
+      "analysis_reimbursement": 205963818.74,
+      "analysis_cost_per_admission_arithmetic_day_mean": 622.2326464654603,
+      "positive_log_days": 196715,
+      "numerator_column": "broad_cost",
+      "denominator_column": "broad_admissions",
+      "coefficient_names": [
+        "C(group)[T.heat_only]",
+        "C(group)[T.smoke_only]",
+        "C(group)[T.both]"
+      ],
+      "coefficients": [
+        -0.003990438210369169,
+        0.0050250659380474,
+        0.004929905498732342
+      ],
+      "covariance": [
+        [
+          0.00010017454211550919,
+          3.5190537496503423e-06,
+          7.764505379763163e-06
+        ],
+        [
+          3.5190537496503406e-06,
+          6.458586755466509e-05,
+          4.522230128294428e-05
+        ],
+        [
+          7.76450537976316e-06,
+          4.522230128294426e-05,
+          0.00023362968882704495
+        ]
+      ],
+      "contrasts": [
+        {
+          "model": "broad_n20_n23_nominal",
+          "estimand": "broad N20-N23 urgent reimbursement / broad N20-N23 urgent admissions",
+          "price_basis": "nominal BRL",
+          "term": "C(group)[T.heat_only]",
+          "exposure_group": "heat_only",
+          "beta_log_ratio": -0.003990438210369169,
+          "se": 0.010008723300976463,
+          "variance": 0.00010017454211550919,
+          "ratio": 0.9960175130083878,
+          "CI_low": 0.9766689420671281,
+          "CI_high": 1.0157493941803144,
+          "p": 0.6901171960380255
+        },
+        {
+          "model": "broad_n20_n23_nominal",
+          "estimand": "broad N20-N23 urgent reimbursement / broad N20-N23 urgent admissions",
+          "price_basis": "nominal BRL",
+          "term": "C(group)[T.smoke_only]",
+          "exposure_group": "smoke_only",
+          "beta_log_ratio": 0.0050250659380474,
+          "se": 0.00803653330452037,
+          "variance": 6.458586755466509e-05,
+          "ratio": 1.0050377127567138,
+          "CI_low": 0.9893307848378545,
+          "CI_high": 1.0209940088226368,
+          "p": 0.5317887416693351
+        },
+        {
+          "model": "broad_n20_n23_nominal",
+          "estimand": "broad N20-N23 urgent reimbursement / broad N20-N23 urgent admissions",
+          "price_basis": "nominal BRL",
+          "term": "C(group)[T.both]",
+          "exposure_group": "both",
+          "beta_log_ratio": 0.004929905498732342,
+          "se": 0.015284949748921157,
+          "variance": 0.00023362968882704495,
+          "ratio": 1.0049420774768594,
+          "CI_low": 0.9752820224559283,
+          "CI_high": 1.035504147344357,
+          "p": 0.7470487040245191
+        }
+      ]
+    },
+    "strict_n20_ipca_2022": {
+      "model": "strict_n20_ipca_2022",
+      "estimand": "IPCA-adjusted strict N20 urgent reimbursement / strict N20 urgent admissions",
+      "formula": "log_cpc ~ C(group) | stratum",
+      "cluster": "CRV1 by hrid",
+      "price_basis": "2022-12 BRL, IPCA monthly by competence",
+      "log_handling": "Use log(cost/admissions) on days with admissions > 0 and total cost > 0; exclude zero/negative cost days because log is undefined.",
+      "analysis_rows_before_fit": 147285,
+      "model_rows": 100805,
+      "rows_removed_by_fit": 46480,
+      "strata_before_fit": 83876,
+      "analysis_admissions": 226402.0,
+      "analysis_reimbursement": 194858996.95072132,
+      "analysis_cost_per_admission_arithmetic_day_mean": 835.326280542301,
+      "positive_log_days": 147285,
+      "numerator_column": "strict_cost_2022",
+      "denominator_column": "strict_admissions",
+      "coefficient_names": [
+        "C(group)[T.heat_only]",
+        "C(group)[T.smoke_only]",
+        "C(group)[T.both]"
+      ],
+      "coefficients": [
+        -0.003568217689489244,
+        0.005206273304906452,
+        -0.004674916674516623
+      ],
+      "covariance": [
+        [
+          0.00014870770737258226,
+          9.253218275308885e-06,
+          4.046025313126602e-06
+        ],
+        [
+          9.253218275308885e-06,
+          0.00010075327625805041,
+          8.578902233740265e-05
+        ],
+        [
+          4.0460253131266e-06,
+          8.578902233740263e-05,
+          0.00036377304724585
+        ]
+      ],
+      "contrasts": [
+        {
+          "model": "strict_n20_ipca_2022",
+          "estimand": "IPCA-adjusted strict N20 urgent reimbursement / strict N20 urgent admissions",
+          "price_basis": "2022-12 BRL, IPCA monthly by competence",
+          "term": "C(group)[T.heat_only]",
+          "exposure_group": "heat_only",
+          "beta_log_ratio": -0.003568217689489244,
+          "se": 0.012194576965708252,
+          "variance": 0.00014870770737258226,
+          "ratio": 0.9964381408341367,
+          "CI_low": 0.9729042695406213,
+          "CI_high": 1.0205412799532743,
+          "p": 0.7698226185857439
+        },
+        {
+          "model": "strict_n20_ipca_2022",
+          "estimand": "IPCA-adjusted strict N20 urgent reimbursement / strict N20 urgent admissions",
+          "price_basis": "2022-12 BRL, IPCA monthly by competence",
+          "term": "C(group)[T.smoke_only]",
+          "exposure_group": "smoke_only",
+          "beta_log_ratio": 0.005206273304906452,
+          "se": 0.010037593150653718,
+          "variance": 0.00010075327625805041,
+          "ratio": 1.0052198494959974,
+          "CI_low": 0.9856367408294673,
+          "CI_high": 1.025192044860658,
+          "p": 0.6039856834821182
+        },
+        {
+          "model": "strict_n20_ipca_2022",
+          "estimand": "IPCA-adjusted strict N20 urgent reimbursement / strict N20 urgent admissions",
+          "price_basis": "2022-12 BRL, IPCA monthly by competence",
+          "term": "C(group)[T.both]",
+          "exposure_group": "both",
+          "beta_log_ratio": -0.004674916674516623,
+          "se": 0.019072835322674234,
+          "variance": 0.00036377304724585,
+          "ratio": 0.9953359937400591,
+          "CI_low": 0.9588144804006786,
+          "CI_high": 1.0332486217985677,
+          "p": 0.8063723153228649
+        }
+      ]
+    }
+  },
+  "panel_sha256": "3a69caffabf814bce6f8eea1c587c458050313deed0484d0d99a9208617b8187",
+  "scope": "Only original corrected consistent-denominator models; historical flawed mixed-denominator fit not rerun."
+}

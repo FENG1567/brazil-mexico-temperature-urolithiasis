@@ -1,0 +1,4 @@
+model,estimand,price_basis,term,exposure_group,beta_log_ratio,se,variance,ratio,CI_low,CI_high,p
+original_mixed_clipped,strict N20 urgent reimbursement / broad N20-N23 urgent admissions,nominal BRL,C(group)[T.heat_only],heat_only,0.043678703275026855,0.031923499732183065,0.0010191098351506921,1.0446466594119799,0.9812859670880235,1.1120984907783953,0.17123996417959897
+original_mixed_clipped,strict N20 urgent reimbursement / broad N20-N23 urgent admissions,nominal BRL,C(group)[T.smoke_only],smoke_only,0.010435836707106896,0.02813917310819923,0.0007918130632132028,1.0104904799682917,0.9562681223106789,1.0677873561645397,0.7107380248634458
+original_mixed_clipped,strict N20 urgent reimbursement / broad N20-N23 urgent admissions,nominal BRL,C(group)[T.composite],composite,0.007255374117854762,0.0480587296758529,0.0023096414980567047,1.0072817581146407,0.9167323398833293,1.1067751142712492,0.8800002396316235

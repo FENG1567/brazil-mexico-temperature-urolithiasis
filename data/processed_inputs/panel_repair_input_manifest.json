@@ -1,0 +1,12 @@
+{
+  "status": "corrected_panel_current",
+  "source_panel_path": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/panel_composite_humidity_exposure_repaired.parquet",
+  "source_panel_sha256": "3a69caffabf814bce6f8eea1c587c458050313deed0484d0d99a9208617b8187",
+  "released_compact_panel_path": "data/processed_inputs/panel_composite_humidity_exposure_repaired.parquet",
+  "released_compact_panel_sha256": "b837328e149714d631257aa43eaffbb95506510b6b9275a35a6fd892d977d597",
+  "fixed_weight_sha256": "2c5311c83064aa9ea4845f941163ad508d7a91305807247290549b26eeda51ae",
+  "assembly_manifest_sha256": "bae568a58996400c7b62d858445acbb0f597c391300e3b8f13bdfeb6c45e6cf5",
+  "input_validation_sha256": "5544a040d29edf193307ac3c70bf1fa0786c5c89270337b115660941a9d9771b",
+  "root_gate_sha256": "9ac11fbf92135a2975d3d30b5602af751970fa6eeece7cb69899b4bcfb4b3db2",
+  "previous_panel_inventory_entry_retained": true
+}

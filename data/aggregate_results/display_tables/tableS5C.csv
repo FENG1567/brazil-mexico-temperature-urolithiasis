@@ -1,16 +1,16 @@
-Outcome or comparison,Contrast / model,Estimate (95% CI),p / q / sample size / notes
-Mexico state compound-day group,"Compound vs neither, same-day P90 heat and P75 fire thresholds",RR 0.996 (0.936–1.060),Heat-only RR 0.983 (0.894–1.081); smoke-only RR 0.945 (0.897–0.996); interaction RR 1.072 (0.974–1.179)
-Brazil compound-day N20–N23,"Heat-only vs neither, two-way model",RR 1.0214 (1.0054–1.0376),"450 health regions and 5,479 retained dates; exploratory categorical contrast"
-Brazil compound-day N20–N23,"Smoke-only vs neither, two-way model",RR 1.0155 (1.0072–1.0239),Same fitted model
-Brazil compound-day N20–N23,"Compound vs neither, two-way model",RR 1.0676 (1.0507–1.0847),Same fitted model; no cross-country contrast estimated
-Brazil compound-day N20–N23,"Multiplicative heat-by-smoke interaction, two-way model",RR 1.0292 (1.0088–1.0501),p=0.0050; contrast is compound − heat-only − smoke-only on the log scale
-Mexico state compound-day N20–N23,Compound vs neither,RR 0.996 (0.936–1.060),No formal cross-country contrast; municipality three-group model not estimable
-Brazil K85 acute pancreatitis,Heat-only vs neither,RR 0.9701 (0.9503–0.9904),Health-region-clustered categorical comparison; exploratory
-Brazil K85 acute pancreatitis,Smoke-only vs neither,RR 0.9838 (0.9679–0.9998),Health-region-clustered categorical comparison; exploratory
-Brazil K85 acute pancreatitis,Compound vs neither,RR 0.9605 (0.9284–0.9936),Nominal p=0.0196; three-outcome BH q=0.0589; exploratory
-Brazil K81 cholecystitis,Heat-only vs neither,RR 0.9653 (0.9544–0.9763),Health-region-clustered categorical comparison; exploratory
-Brazil K81 cholecystitis,Smoke-only vs neither,RR 1.0094 (1.0021–1.0168),Health-region-clustered categorical comparison; exploratory
-Brazil K81 cholecystitis,Compound vs neither,RR 0.9982 (0.9836–1.0130),Nominal p=0.8059; three-outcome BH q=0.8059; exploratory
-Brazil K80 gallstones,Heat-only vs neither,RR 0.9696 (0.9599–0.9794),Health-region-clustered categorical comparison; exploratory
-Brazil K80 gallstones,Smoke-only vs neither,RR 1.0042 (0.9991–1.0093),Health-region-clustered categorical comparison; exploratory
-Brazil K80 gallstones,Compound vs neither,RR 1.0079 (0.9979–1.0179),Nominal p=0.1204; three-outcome BH q=0.1806; exploratory
+"Outcome or comparison","Contrast / model","Estimate (95% CI)","p / q / sample size / notes"
+"Mexico state compound-day group","Compound vs neither, same-day P90 heat and P75 fire thresholds","RR 0.996 (0.936–1.060)","Heat-only RR 0.983 (0.894–1.081); smoke-only RR 0.945 (0.897–0.996); interaction RR 1.072 (0.974–1.179)"
+"Brazil compound-day N20–N23","Heat-only vs neither, two-way model","RR 1.0206 (1.0044–1.0370)","450 health regions and 5,479 retained dates; exploratory categorical contrast"
+"Brazil compound-day N20–N23","Smoke-only vs neither, two-way model","RR 1.0155 (1.0071–1.0239)","Same fitted model"
+"Brazil compound-day N20–N23","Compound vs neither, two-way model","RR 1.0683 (1.0515–1.0853)","Same fitted model; no cross-country contrast estimated"
+"Brazil compound-day N20–N23","Multiplicative heat-by-smoke interaction, two-way model","RR 1.0308 (1.0100–1.0521)","p=0.0037; contrast is compound − heat-only − smoke-only on the log scale"
+"Mexico state compound-day N20–N23","Compound vs neither","RR 0.996 (0.936–1.060)","No formal cross-country contrast; municipality three-group model not estimable"
+"Brazil K85 acute pancreatitis","Heat-only vs neither","RR 0.9710 (0.9513–0.9911)","Health-region-clustered categorical comparison; exploratory"
+"Brazil K85 acute pancreatitis","Smoke-only vs neither","RR 0.9837 (0.9679–0.9998)","Health-region-clustered categorical comparison; exploratory"
+"Brazil K85 acute pancreatitis","Compound vs neither","RR 0.9610 (0.9285–0.9947)","Nominal p=0.0235; three-outcome BH q=0.0704; exploratory"
+"Brazil K81 cholecystitis","Heat-only vs neither","RR 0.9661 (0.9553–0.9771)","Health-region-clustered categorical comparison; exploratory"
+"Brazil K81 cholecystitis","Smoke-only vs neither","RR 1.0094 (1.0021–1.0167)","Health-region-clustered categorical comparison; exploratory"
+"Brazil K81 cholecystitis","Compound vs neither","RR 0.9987 (0.9840–1.0137)","Nominal p=0.8640; three-outcome BH q=0.8640; exploratory"
+"Brazil K80 gallstones","Heat-only vs neither","RR 0.9710 (0.9610–0.9811)","Health-region-clustered categorical comparison; exploratory"
+"Brazil K80 gallstones","Smoke-only vs neither","RR 1.0042 (0.9991–1.0094)","Health-region-clustered categorical comparison; exploratory"
+"Brazil K80 gallstones","Compound vs neither","RR 1.0082 (0.9983–1.0181)","Nominal p=0.1037; three-outcome BH q=0.1555; exploratory"

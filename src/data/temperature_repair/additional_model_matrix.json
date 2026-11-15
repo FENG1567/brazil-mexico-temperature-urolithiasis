@@ -1,0 +1,285 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Prepare-only inventory for additional displayed Brazil estimates affected by repaired Tmean and heat/compound labels; no model fits or document edits.",
+  "repair_root": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115",
+  "baseline_results": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/baseline_repo/data/aggregate_results",
+  "document_bindings": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/document_bindings.json",
+  "corrected_panel": {
+    "path": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/panel_composite_humidity_exposure_repaired.parquet",
+    "sha256": "3a69caffabf814bce6f8eea1c587c458050313deed0484d0d99a9208617b8187",
+    "fit_authorized": true
+  },
+  "constraints": {
+    "fit_started": false,
+    "no_mexico_fits": true,
+    "never_use_formatted_display_csv_as_model_input": true,
+    "never_substitute_old_broad_N20_acute_for_current_strict_N20": true,
+    "preserve_archived_model_formula_sample_weights_adjustment_clusters_and_inference": true,
+    "only_rewrite_paths_outputs_and_operational_thread_caps": true,
+    "RH": "S2b descriptive only; add no RH-adjusted fit unless an exact displayed row is source-bound.",
+    "PAF": "No PAF is bound in the supplied manuscript/supplement snapshots. Supplementary methods explicitly say the service scenario differences are not attributable fractions. Do not calculate or label a PAF."
+  },
+  "additional_models": [
+    {
+      "id": "compound_K85_K81_K80_and_N20_interaction",
+      "tables": [
+        "Main Table 2",
+        "Supplementary S5C"
+      ],
+      "binding_id": "compound_categories",
+      "displayed_values": [
+        {
+          "selector": "Brazil N20-N23 compound vs neither",
+          "RR_CI": "1.0676 (1.0507-1.0847)"
+        },
+        {
+          "selector": "Brazil multiplicative heat-smoke interaction",
+          "RR_CI": "1.0292 (1.0088-1.0501)"
+        },
+        {
+          "selector": "K85 compound vs neither",
+          "RR_CI": "0.9605 (0.9284-0.9936)"
+        },
+        {
+          "selector": "K81 compound vs neither",
+          "RR_CI": "0.9982 (0.9836-1.0130)"
+        },
+        {
+          "selector": "K80 compound vs neither",
+          "RR_CI": "1.0079 (0.9979-1.0179)"
+        }
+      ],
+      "fitted_source_bindings": [
+        {
+          "file": "alternative_model_results/composite_casecrossover.csv",
+          "key": {
+            "outcome": "K85/K81/K80",
+            "terms": [
+              "heat",
+              "smoke",
+              "heat:smoke"
+            ]
+          },
+          "contrast": "compound versus neither = exp(sum of heat, smoke, and interaction coefficients), using the full coefficient covariance"
+        },
+        {
+          "file": "covariance/brazil_compound_interaction_two_way.csv",
+          "key": {
+            "model": "brazil_primary_same_day_compound_two_way",
+            "estimand": "multiplicative_heat_smoke_interaction"
+          }
+        }
+      ],
+      "display_only_locator": "display_tables/tableS5C.csv",
+      "candidate_script": "source_inputs/fit_composite_casecrossover.py",
+      "source_status": "SOURCE-BOUND for K85/K81/K80 compound-versus-neither and N20–N23 interaction rows. The prepared copy uses the root-gated corrected panel; all category rows are in scope because the gate reports 698 compound-label changes.",
+      "required_inputs": [
+        "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/panel_composite_humidity_exposure_repaired.parquet",
+        "panel columns: K85, K81, K80, N20_N23, heat, smoke, stratum, hrid, date",
+        "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/root_input_gate.json"
+      ],
+      "planned_outputs": [
+        "composite_casecrossover.csv; outcome=K85/K81/K80, term=compound_vs_neither",
+        "composite_casecrossover.csv; outcome=N20_N23, term=heat:smoke"
+      ]
+    },
+    {
+      "id": "pooled_same_day_temperature_Q5_vs_Q1",
+      "tables": [
+        "Supplementary S2a"
+      ],
+      "binding_id": "s2a_q5_brazil",
+      "displayed_value": "RR 1.102 (1.086-1.119)",
+      "candidate_script": "source_inputs/fit_nonlinear_temperature.py",
+      "source_status": "SOURCE-BOUND per root clarification: Brazil country-panel quintiles, Q5 versus Q1, 2008–2023; Mexico fit omitted. Prepared copy emits only the displayed Brazilian Q5 coefficient.",
+      "required_inputs": [
+        "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/panel_composite_humidity_exposure_repaired.parquet",
+        "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/root_input_gate.json"
+      ],
+      "planned_outputs": [
+        "nonlinear_temperature.csv; country=Brazil, model=quintile_same_day, quintile=5"
+      ],
+      "fitted_source": {
+        "file": "alternative_model_results/nonlinear_temperature.csv",
+        "key": {
+          "country": "Brazil",
+          "model": "quintile_same_day",
+          "quintile": 5
+        }
+      }
+    },
+    {
+      "id": "capacity_heat_interactions",
+      "tables": [
+        "Supplementary S5D"
+      ],
+      "binding_id": "other_s5d_weather_models",
+      "displayed_selectors": [
+        "capacity heat interactions",
+        "monthly_continuous heat RR ratio 0.9846"
+      ],
+      "fitted_source": {
+        "file": "sensitivity_results/capacity_model_results.csv",
+        "key": {
+          "model": "monthly_continuous",
+          "estimand": "ratio of heat RRs per +100 SUS beds/100,000"
+        }
+      },
+      "candidate_script": "baseline_repo/analysis/work/upgrade_20261112/fit_capacity_monthly.py",
+      "source_status": "SOURCE-BOUND to the archived monthly_continuous heat_RR_ratio row. The prepared copy points to the uploaded monthly CNES table, baseline clinical aggregate, and root-gated corrected panel; no model was fit.",
+      "required_inputs": [
+        "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/source_inputs/cnes_monthly_health_region.csv",
+        "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/baseline_repo/data/processed_inputs/clinical_code_day_aggregate.parquet",
+        "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/panel_composite_humidity_exposure_repaired.parquet",
+        "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/root_input_gate.json"
+      ],
+      "planned_outputs": [
+        "capacity_model_results.csv; model=monthly_continuous, estimand=ratio of heat RRs per +100 SUS beds/100,000"
+      ]
+    },
+    {
+      "id": "resident_calendar_hospital_days",
+      "tables": [
+        "Supplementary S5D"
+      ],
+      "binding_id": "other_s5d_weather_models",
+      "displayed_selectors": [
+        "resident-associated calendar-day hospital-days, inclusive discharge date",
+        "resident-associated calendar-day hospital-days, discharge date excluded"
+      ],
+      "fitted_source": null,
+      "candidate_scripts": [],
+      "source_status": "BLOCKED: no producer script or exact fitted-row selector found among supplied archive/bindings; do not substitute admission-attributed bed-days or occupancy_heat_results",
+      "required_inputs": [
+        "verified resident calendar-day hospital-day series for both date definitions",
+        "exact source script/output selector"
+      ],
+      "planned_outputs": []
+    },
+    {
+      "id": "per_admission_cost_and_acute_secondary",
+      "tables": [
+        "Supplementary S5A",
+        "Supplementary S5D"
+      ],
+      "binding_id": "open_mapping_other_s5d",
+      "candidate_scripts": [
+        "source_inputs/fix_cost_mean.py",
+        "source_inputs/fit_cost_per_case.py"
+      ],
+      "source_status": "BLOCKED pending exact row-to-script binding and inputs; the root-owned service stage already covers released total/per-admission reimbursement rows, so do not duplicate them. ICU-or-death producer/selector is not yet bound.",
+      "missing_inputs": [
+        "n20_severe_health_region_day_2018_2022.parquet",
+        "n20_acute_health_region_day_2018_2022.parquet"
+      ],
+      "planned_outputs": []
+    },
+    {
+      "id": "acute_urgent_elective_difference_legacy",
+      "tables": [
+        "already covered by root-owned holiday stage if source-bound"
+      ],
+      "binding_id": "urgency_ratio",
+      "candidate_scripts": [
+        "source_inputs/fix_acute_joint.py",
+        "source_inputs/fit_acute_difference.py"
+      ],
+      "source_status": "EXCLUDED: these scripts use legacy broad N20-N23 daily input and duplicate the root-owned holiday outputs. Do not use for current strict-N20 result or fit without a separate exact binding.",
+      "missing_inputs": [
+        "n20_acute_health_region_day_2018_2022.parquet"
+      ],
+      "planned_outputs": []
+    },
+    {
+      "id": "unbound_n20_composite_sensitivity",
+      "tables": [
+        "unbound"
+      ],
+      "binding_id": null,
+      "candidate_script": "source_inputs/fit_n20_composite.py",
+      "source_status": "EXCLUDED pending exact published-row selector; do not expand the analysis set based on available code alone.",
+      "planned_outputs": []
+    }
+  ],
+  "script_inventory": [
+    {
+      "script": "fit_composite_casecrossover.py",
+      "model_id": "compound_K85_K81_K80_and_N20_interaction",
+      "source_path": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/source_inputs/fit_composite_casecrossover.py",
+      "source_exists": true,
+      "status": "prepared_source_only",
+      "prepared_copy": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/run_repo/additional_models/fit_composite_casecrossover.py",
+      "output_dir": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/run_outputs/additional/compound_K85_K81_K80_and_N20_interaction",
+      "source_sha256": "0bbd8d5bb7fe52cfac2b7c8892d9946b1c76a31f532ac6ce8f8684e9bd4a2d07",
+      "copy_sha256": "6ce905759d7c9bb1a7dd931498efa11c3f8ce99adb9ad32fb7e62d3f8e7c37ae",
+      "matrix_disposition": "source-bound K85/K81/K80 compound-versus-neither and N20–N23 interaction rows",
+      "command_plan": [
+        "/data/admin/fengshuo/climate_biliary_20261102/env/py/bin/python",
+        "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/run_repo/additional_models/fit_composite_casecrossover.py"
+      ]
+    },
+    {
+      "script": "fit_nonlinear_temperature.py",
+      "model_id": "pooled_same_day_temperature_Q5_vs_Q1",
+      "source_path": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/source_inputs/fit_nonlinear_temperature.py",
+      "source_exists": true,
+      "status": "prepared_source_only",
+      "prepared_copy": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/run_repo/additional_models/fit_nonlinear_temperature.py",
+      "output_dir": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/run_outputs/additional/pooled_same_day_temperature_Q5_vs_Q1",
+      "source_sha256": "bd75781093c65a12e54d2b17903cc0b6a77a40041d0e63af2ede0df1c93b9266",
+      "copy_sha256": "4c74ec5409720c53373030ac3c108090eb54ec3145a2b9861457e42e78bebe0b",
+      "matrix_disposition": "source-bound Brazil country-panel quintile Q5 versus Q1; Mexico omitted",
+      "command_plan": [
+        "/data/admin/fengshuo/climate_biliary_20261102/env/py/bin/python",
+        "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/run_repo/additional_models/fit_nonlinear_temperature.py"
+      ]
+    },
+    {
+      "script": "fit_capacity_monthly.py",
+      "model_id": "capacity_heat_interactions",
+      "source_path": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/baseline_repo/analysis/work/upgrade_20261112/fit_capacity_monthly.py",
+      "source_exists": true,
+      "status": "prepared_source_only",
+      "prepared_copy": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/run_repo/additional_models/fit_capacity_monthly.py",
+      "output_dir": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/run_outputs/additional/capacity_heat_interactions",
+      "source_sha256": "be2330413240909f62178a493c2ad8390049a38eb7d9e179424788f22c03d9b4",
+      "copy_sha256": "9a0cd1e59060ef8be5cec36bef1dc46c9ad15a1dae1f8905fdef5ab4f9b53c30",
+      "matrix_disposition": "exact source for the monthly_continuous heat_RR_ratio S5D row",
+      "command_plan": [
+        "/data/admin/fengshuo/climate_biliary_20261102/env/py/bin/python",
+        "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/run_repo/additional_models/fit_capacity_monthly.py"
+      ]
+    }
+  ],
+  "blocking_items": [
+    "PAF is not displayed/source-bound; displayed service scenario differences are explicitly not attributable fractions.",
+    "This runner is prepare-only; no model import or fit has started."
+  ],
+  "preparation": {
+    "created_utc": "2026-11-15T15:10:42.706031+00:00",
+    "fit_started": false,
+    "model_code_imported": false,
+    "root_input_gate": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/root_input_gate.json",
+    "root_input_gate_status": "passed",
+    "corrected_panel_path": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/panel_composite_humidity_exposure_repaired.parquet",
+    "corrected_panel_sha256": "3a69caffabf814bce6f8eea1c587c458050313deed0484d0d99a9208617b8187",
+    "prepared_copy_root": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/run_repo/additional_models",
+    "output_root": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/run_outputs/additional",
+    "command_policy": "commands are recorded for root review only; --run is disabled",
+    "status": "prepared_source_only"
+  },
+  "root_input_gate": {
+    "path": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/root_input_gate.json",
+    "status": "passed",
+    "root_authorized": true,
+    "panel_sha256": "3a69caffabf814bce6f8eea1c587c458050313deed0484d0d99a9208617b8187"
+  },
+  "root_repair_audit": {
+    "primary_label_changes": 2410,
+    "panel_rows": 2629800,
+    "compound_label_changes": 698,
+    "source": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/root_input_gate.json",
+    "implication": "refit every bound category row, including K85, K81 and K80"
+  },
+  "unresolved": []
+}

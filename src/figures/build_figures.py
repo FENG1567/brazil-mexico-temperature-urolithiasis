@@ -569,13 +569,28 @@ def make_fig2() -> plt.Figure:
     era = TABLES / "mexico_era5_results.csv"
     strict = REVISION / "nonlinear" / "temperature_and_category_contrasts.csv"
     specs = [
-        ("fig2", "A", "Brazil", same, {"country": "Brazil", "model": "continuous_lag07"}, ["country", "model", "RR", "CI_low", "CI_high", "p", "n"], BLUE),
+        ("fig2", "A", "Brazil", REVISION / "brazil_state_harmonized_model_results.csv", {"model": "brazil_population_weighted_panel_temperature_broad_N20_N23_lag07", "contrast": "cumulative_temperature_lag_0_7_per_C"}, ["model", "country", "exposure_product", "phenotype", "contrast", "RR_per_C", "normal_CI_low", "normal_CI_high", "normal_p", "model_n"], BLUE),
         ("fig2", "A", "Mexico • ERA5-Land", era, {"exposure": "ERA5_Land_state"}, ["exposure", "RR", "CI_low", "CI_high", "p", "n"], TEAL),
         ("fig2", "A", "Mexico • NASA POWER", same, {"country": "Mexico", "model": "continuous_lag07"}, ["country", "model", "RR", "CI_low", "CI_high", "p", "n"], SLATE),
     ]
     broad: list[dict[str, Any]] = []
     for _, panel, label, path, selector, columns, color in specs:
         row = register_row("fig2", panel, label, path, selector, columns)
+        if selector.get("model") == "brazil_population_weighted_panel_temperature_broad_N20_N23_lag07":
+            fit_source = (REVISION / "brazil_state_harmonized_model_results.csv").resolve()
+            canonical_source = ROOT / "data" / "aggregate_results" / "sensitivity_results" / "mexico_strict_model_results.csv"
+            if sha256(path) != sha256(fit_source):
+                raise ValueError("Figure 2 Brazil source copy no longer matches the repaired brazil_state fit output")
+            fit_rows = [item for item in read_csv(fit_source) if all(item.get(k) == v for k, v in selector.items())]
+            canonical_rows = [item for item in read_csv(canonical_source) if all(item.get(k) == v for k, v in selector.items())]
+            if len(fit_rows) != 1 or len(canonical_rows) != 1:
+                raise ValueError("Expected one repaired Brazil broad row in actual and canonical model outputs")
+            checked_fields = ["RR_per_C", "normal_CI_low", "normal_CI_high", "normal_p", "model_n"]
+            if any(row[field] != fit_rows[0][field] or row[field] != canonical_rows[0][field] for field in checked_fields):
+                raise ValueError("Figure 2 Brazil RR/normal CI differ from repaired actual or canonical model output")
+            SOURCE_RECORDS[-1]["actual_fit_output_file"] = {"path": "data/figure_inputs/revision/brazil_state_harmonized_model_results.csv", "sha256": sha256(fit_source), "bytes": fit_source.stat().st_size}
+            SOURCE_RECORDS[-1]["canonical_aggregate_file"] = {"path": "data/aggregate_results/sensitivity_results/mexico_strict_model_results.csv", "sha256": sha256(canonical_source), "bytes": canonical_source.stat().st_size, "row_selector": selector, "verified_columns": checked_fields}
+            row.update(RR=row["RR_per_C"], CI_low=row["normal_CI_low"], CI_high=row["normal_CI_high"], p=row["normal_p"], n=row["model_n"])
         row.update(plot_label=label, plot_color=color)
         broad.append(row)
     strict_rows: list[dict[str, Any]] = []
@@ -775,7 +790,7 @@ def make_fig4() -> plt.Figure:
     })
 
     fig = plt.figure(figsize=(7.2, 5.6))
-    add_title(fig, "Cumulative temperature effects and nonlinear responses", "Rate ratios • 95% confidence intervals")
+    add_title(fig, "Cumulative temperature effects and nonlinear responses", "Rate ratios • 95% confidence intervals • Brazil: ERA5-Land + ERA5 single-level fixed-grid mean")
     heading(fig, "A", "Brazil urgent admissions • cumulative RR per 1°C", 0.05, 0.87)
     draw_forest(fig, (0.38, 0.63, 0.35, 0.20), lag_rows, xlim=(0.99, 1.05), ticks=[1.00, 1.02, 1.04], label_x=0.35, value_x=0.76, label_size=9.2, value_size=9.0, value_digits=3)
 

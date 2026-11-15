@@ -1,0 +1,410 @@
+{
+  "changed_fields": [
+    "cold",
+    "composite",
+    "heat",
+    "rh",
+    "t_p10",
+    "t_p90",
+    "tmax",
+    "tmean"
+  ],
+  "changed_row_counts": {
+    "cold": 1686,
+    "composite": 698,
+    "heat": 2410,
+    "rh": 416404,
+    "t_p10": 444144,
+    "t_p90": 444144,
+    "tmax": 444144,
+    "tmean": 444144
+  },
+  "checks": [
+    {
+      "detail": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/source_inputs/assembly_manifest.json",
+      "gate": "exists:/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/source_inputs/assembly_manifest.json",
+      "passed": true
+    },
+    {
+      "detail": "observed=61826; expected=61826",
+      "gate": "bytes:assembly_manifest.json",
+      "passed": true
+    },
+    {
+      "detail": "observed=bae568a58996400c7b62d858445acbb0f597c391300e3b8f13bdfeb6c45e6cf5; expected=bae568a58996400c7b62d858445acbb0f597c391300e3b8f13bdfeb6c45e6cf5",
+      "gate": "sha256:assembly_manifest.json",
+      "passed": true
+    },
+    {
+      "detail": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/source_inputs/final_production_exposure_weights.csv",
+      "gate": "exists:/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/source_inputs/final_production_exposure_weights.csv",
+      "passed": true
+    },
+    {
+      "detail": "observed=6935134; expected=6935134",
+      "gate": "bytes:final_production_exposure_weights.csv",
+      "passed": true
+    },
+    {
+      "detail": "observed=2c5311c83064aa9ea4845f941163ad508d7a91305807247290549b26eeda51ae; expected=2c5311c83064aa9ea4845f941163ad508d7a91305807247290549b26eeda51ae",
+      "gate": "sha256:final_production_exposure_weights.csv",
+      "passed": true
+    },
+    {
+      "detail": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/source_inputs/primary_D_signed_rain_weather.parquet",
+      "gate": "exists:/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/source_inputs/primary_D_signed_rain_weather.parquet",
+      "passed": true
+    },
+    {
+      "detail": "observed=296424626; expected=296424626",
+      "gate": "bytes:primary_D_signed_rain_weather.parquet",
+      "passed": true
+    },
+    {
+      "detail": "observed=19bc7332ee461afe927f410e552b42ff6956028d0e53175c47a633b12d3db294; expected=19bc7332ee461afe927f410e552b42ff6956028d0e53175c47a633b12d3db294",
+      "gate": "sha256:primary_D_signed_rain_weather.parquet",
+      "passed": true
+    },
+    {
+      "detail": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/source_inputs/mixed_region_day_contributions.parquet",
+      "gate": "exists:/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/source_inputs/mixed_region_day_contributions.parquet",
+      "passed": true
+    },
+    {
+      "detail": "observed=651759371; expected=651759371",
+      "gate": "bytes:mixed_region_day_contributions.parquet",
+      "passed": true
+    },
+    {
+      "detail": "observed=c6571c6a619a820b6125eba11a747bf8bc0aa4eeaae29f38b46203334bba0622; expected=c6571c6a619a820b6125eba11a747bf8bc0aa4eeaae29f38b46203334bba0622",
+      "gate": "sha256:mixed_region_day_contributions.parquet",
+      "passed": true
+    },
+    {
+      "detail": "/data/admin/fengshuo/climate_biliary_github_20261114/repo/artifacts/processed_inputs/panel_composite_humidity.parquet",
+      "gate": "exists:/data/admin/fengshuo/climate_biliary_github_20261114/repo/artifacts/processed_inputs/panel_composite_humidity.parquet",
+      "passed": true
+    },
+    {
+      "detail": "observed=128705609; expected=None",
+      "gate": "bytes:panel_composite_humidity.parquet",
+      "passed": true
+    },
+    {
+      "detail": "observed=8791be152c870ab691754e930eeade1b2c82a48d591fc10db963612a61ef2031; expected=8791be152c870ab691754e930eeade1b2c82a48d591fc10db963612a61ef2031",
+      "gate": "sha256:panel_composite_humidity.parquet",
+      "passed": true
+    },
+    {
+      "detail": "add fixed-weight contributions; no denominator change or renormalization",
+      "gate": "assembly_contract",
+      "passed": true
+    },
+    {
+      "detail": "source manifest must report no missing-value filling and no fitted models",
+      "gate": "source_scope",
+      "passed": true
+    },
+    {
+      "detail": "missing=[]",
+      "gate": "schema:primary",
+      "passed": true
+    },
+    {
+      "detail": "missing=[]",
+      "gate": "schema:mixed",
+      "passed": true
+    },
+    {
+      "detail": "rows=3451500; keys=3451500",
+      "gate": "primary_region_day_unique",
+      "passed": true
+    },
+    {
+      "detail": "rows=3451500; keys=3451500",
+      "gate": "mixed_region_day_unique",
+      "passed": true
+    },
+    {
+      "detail": "expected 450 regions and daily 2003-01-01 through 2023-12-31",
+      "gate": "source_dates_regions",
+      "passed": true
+    },
+    {
+      "detail": "primary and mixed keys must be identical",
+      "gate": "source_key_complement",
+      "passed": true
+    },
+    {
+      "detail": "observed=['health_region_2023', 'latitude', 'longitude', 'source_product', 'population_weight', 'iana_timezone']",
+      "gate": "weight_schema",
+      "passed": true
+    },
+    {
+      "detail": "duplicate region/grid coordinates absent; this does not independently establish population-support accounting",
+      "gate": "unique_region_grid_coordinates",
+      "passed": true
+    },
+    {
+      "detail": "all supplied grid weights must be finite and nonnegative",
+      "gate": "finite_nonnegative_fixed_weights",
+      "passed": true
+    },
+    {
+      "detail": "['reanalysis-era5-land', 'reanalysis-era5-single-levels']",
+      "gate": "weight_sources",
+      "passed": true
+    },
+    {
+      "detail": "regions=450; min=0.9999999999999948; max=1.0000000000000042",
+      "gate": "fixed_weight_mass_one",
+      "passed": true
+    },
+    {
+      "detail": "daily fixed source masses must match the source weight artifact",
+      "gate": "daily_fixed_source_composition",
+      "passed": true
+    },
+    {
+      "detail": "LAND and ERA5 single-level fixed masses must be disjoint complements totaling one",
+      "gate": "daily_fixed_weight_mass_one",
+      "passed": true
+    },
+    {
+      "detail": "all fixed and recorded instantaneous source masses must be finite and nonnegative",
+      "gate": "finite_nonnegative_source_masses",
+      "passed": true
+    },
+    {
+      "detail": "each recorded instantaneous source mass must equal its own fixed source mass",
+      "gate": "source_specific_eligible_mass_complete",
+      "passed": true
+    },
+    {
+      "detail": "source-specific instantaneous eligible weights must cover the full fixed mass; generic weight_coverage is not used",
+      "gate": "instantaneous_eligible_mass_complete",
+      "passed": true
+    },
+    {
+      "detail": "eligible support cannot exceed assigned source weight",
+      "gate": "eligible_support_within_source_mass",
+      "passed": true
+    },
+    {
+      "detail": "all primary and source contribution values must be finite; no missing term may be filled with zero",
+      "gate": "finite:tmean",
+      "passed": true
+    },
+    {
+      "detail": "mixed contribution must equal LAND plus ERA5 single-level contributions",
+      "gate": "component_sum:tmean",
+      "passed": true
+    },
+    {
+      "detail": "primary weather field must equal the complete fixed-weight sum",
+      "gate": "primary_sum:tmean",
+      "passed": true
+    },
+    {
+      "detail": "all primary and source contribution values must be finite; no missing term may be filled with zero",
+      "gate": "finite:tmax",
+      "passed": true
+    },
+    {
+      "detail": "mixed contribution must equal LAND plus ERA5 single-level contributions",
+      "gate": "component_sum:tmax",
+      "passed": true
+    },
+    {
+      "detail": "primary weather field must equal the complete fixed-weight sum",
+      "gate": "primary_sum:tmax",
+      "passed": true
+    },
+    {
+      "detail": "all primary and source contribution values must be finite; no missing term may be filled with zero",
+      "gate": "finite:rh",
+      "passed": true
+    },
+    {
+      "detail": "mixed contribution must equal LAND plus ERA5 single-level contributions",
+      "gate": "component_sum:rh",
+      "passed": true
+    },
+    {
+      "detail": "primary weather field must equal the complete fixed-weight sum",
+      "gate": "primary_sum:rh",
+      "passed": true
+    },
+    {
+      "detail": "temperature fields named in Celsius must be in plausible Celsius bounds",
+      "gate": "temperature_units_celsius",
+      "passed": true
+    },
+    {
+      "detail": "relative humidity must be in [0,100] percent",
+      "gate": "rh_units_percent",
+      "passed": true
+    },
+    {
+      "detail": "panel_rows=2629800; matched=2629800; source_fields_complete=True",
+      "gate": "panel_source_key_completeness",
+      "passed": true
+    },
+    {
+      "detail": "expected 450 regions and daily 2008-01-01 through 2023-12-31",
+      "gate": "panel_dates_regions",
+      "passed": true
+    },
+    {
+      "detail": "LAND-normalized values require positive metric support",
+      "gate": "land_sensitivity_support",
+      "passed": true
+    },
+    {
+      "detail": "old panel value must equal the retained LAND weighted contribution",
+      "gate": "old_land_provenance:tmean",
+      "passed": true
+    },
+    {
+      "detail": "old panel value must equal the retained LAND weighted contribution",
+      "gate": "old_land_provenance:tmax",
+      "passed": true
+    },
+    {
+      "detail": "preserve original RH-builder window: 2008–2022, leaving 2023 missing",
+      "gate": "rh_source_window_mask",
+      "passed": true
+    },
+    {
+      "detail": "old RH must equal the retained LAND weighted contribution in its source window",
+      "gate": "old_land_provenance:rh",
+      "passed": true
+    },
+    {
+      "detail": "stored thresholds must match per-region pandas quantiles in the 2008–2020 reference window",
+      "gate": "original_threshold_rule",
+      "passed": true
+    },
+    {
+      "detail": "heat must use strict greater-than P90",
+      "gate": "original_heat_rule",
+      "passed": true
+    },
+    {
+      "detail": "cold must use strict less-than P10",
+      "gate": "original_cold_rule",
+      "passed": true
+    },
+    {
+      "detail": "composite must equal heat AND smoke",
+      "gate": "original_compound_rule",
+      "passed": true
+    },
+    {
+      "detail": "refusing to overwrite an existing corrected input",
+      "gate": "new_output_path",
+      "passed": true
+    },
+    {
+      "detail": "all outcomes, dates, fire/smoke, and unrelated columns must equal the unchanged source panel",
+      "gate": "preserve_unrelated_fields",
+      "passed": true
+    }
+  ],
+  "decision": "complete_fixed_weight_sum_land_plus_era5_single_level",
+  "heat_and_compound_counts": {
+    "after": {
+      "cold": 263466,
+      "composite": 104494,
+      "heat": 272434
+    },
+    "before": {
+      "cold": 263356,
+      "composite": 104774,
+      "heat": 272498
+    }
+  },
+  "input_paths": {
+    "/data/admin/fengshuo/climate_biliary_github_20261114/repo/artifacts/processed_inputs/panel_composite_humidity.parquet": {
+      "bytes": 128705609,
+      "sha256": "8791be152c870ab691754e930eeade1b2c82a48d591fc10db963612a61ef2031"
+    },
+    "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/source_inputs/assembly_manifest.json": {
+      "bytes": 61826,
+      "sha256": "bae568a58996400c7b62d858445acbb0f597c391300e3b8f13bdfeb6c45e6cf5"
+    },
+    "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/source_inputs/final_production_exposure_weights.csv": {
+      "bytes": 6935134,
+      "sha256": "2c5311c83064aa9ea4845f941163ad508d7a91305807247290549b26eeda51ae"
+    },
+    "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/source_inputs/mixed_region_day_contributions.parquet": {
+      "bytes": 651759371,
+      "sha256": "c6571c6a619a820b6125eba11a747bf8bc0aa4eeaae29f38b46203334bba0622"
+    },
+    "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/source_inputs/primary_D_signed_rain_weather.parquet": {
+      "bytes": 296424626,
+      "sha256": "19bc7332ee461afe927f410e552b42ff6956028d0e53175c47a633b12d3db294"
+    }
+  },
+  "land_normalized_sensitivity": {
+    "available": true,
+    "definition": "LAND contribution divided by LAND instantaneous eligible mass",
+    "exported_as_separate_panel": false,
+    "note": "Sensitivity panel export is deferred for root review; primary corrected input remains the complete fixed-weight sum."
+  },
+  "metric_checks": {
+    "rh": {
+      "era5_single_level_contribution": "era5_relative_humidity_mean_pct_weighted_contribution",
+      "land_contribution": "land_relative_humidity_mean_pct_weighted_contribution",
+      "mixed_contribution": "mixed_relative_humidity_mean_pct_weighted_contribution",
+      "primary_field": "relative_humidity_mean_pct",
+      "units": "percent RH"
+    },
+    "tmax": {
+      "era5_single_level_contribution": "era5_temperature_max_c_weighted_contribution",
+      "land_contribution": "land_temperature_max_c_weighted_contribution",
+      "mixed_contribution": "mixed_temperature_max_c_weighted_contribution",
+      "primary_field": "temperature_max_c",
+      "units": "degrees Celsius"
+    },
+    "tmean": {
+      "era5_single_level_contribution": "era5_temperature_mean_c_weighted_contribution",
+      "land_contribution": "land_temperature_mean_c_weighted_contribution",
+      "mixed_contribution": "mixed_temperature_mean_c_weighted_contribution",
+      "primary_field": "temperature_mean_c",
+      "units": "degrees Celsius"
+    }
+  },
+  "models_fitted": false,
+  "output_path": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/panel_composite_humidity_exposure_repaired.parquet",
+  "output_sha256": "3a69caffabf814bce6f8eea1c587c458050313deed0484d0d99a9208617b8187",
+  "row_counts": {
+    "panel_rows": 2629800,
+    "primary_region_days": 3451500
+  },
+  "schema": "exposure-input-validation-v1",
+  "status": "repaired_and_validated",
+  "support": {
+    "coverage_fallback_used": false,
+    "eligibility_fields_used": [
+      "land_instantaneous_eligible_weight",
+      "era5_instantaneous_eligible_weight"
+    ],
+    "era5_eligible_mass_max": 0.6318210249135288,
+    "era5_eligible_mass_min": 0.0,
+    "land_eligible_mass_max": 1.000000000000004,
+    "land_eligible_mass_min": 0.3681789750864715,
+    "static_era5_single_level_mass_max": 0.6318210249135288,
+    "static_era5_single_level_mass_min": 0.0,
+    "static_land_mass_max": 1.000000000000004,
+    "static_land_mass_min": 0.36817897508647157
+  },
+  "unchanged_columns_verified": 32,
+  "verification_scope": {
+    "population_raster_production_lineage_verified": false,
+    "rh_shared_hourly_grid_mask_independently_verified": false,
+    "rh_use": "descriptive only; preserve source limitation, no RH-adjusted inferential model admitted by this gate",
+    "target": "mean over supplied fixed health-region/grid support, not an independently reconstructed population-weighted exposure",
+    "validated": "input identity, recorded source mass and contribution assembly contract"
+  }
+}

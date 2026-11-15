@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "failures": [],
+  "models_succeeded": [
+    "categorical",
+    "continuous_lag0_7",
+    "monthly_continuous"
+  ],
+  "models_failed": [],
+  "result_rows": 10,
+  "command": "python work/upgrade_20261112/fit_capacity_monthly.py"
+}

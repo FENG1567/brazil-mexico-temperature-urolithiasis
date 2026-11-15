@@ -1,0 +1,40 @@
+{
+  "model": "monthly_continuous",
+  "formula": "urgent_n20 ~ heat + heat_capacity100 + fire10 | stratum",
+  "fixed_effect": "health-region × year-month × day-of-week",
+  "covariance": "CRV1 clustered by health region",
+  "terms": [
+    "heat",
+    "heat_capacity100",
+    "fire10"
+  ],
+  "coefficients": [
+    0.05015248338640986,
+    -0.015563682334026928,
+    0.043080191571178074
+  ],
+  "vcov": [
+    [
+      0.0001032608119915221,
+      -3.927284315337068e-05,
+      -3.338272341720605e-05
+    ],
+    [
+      -3.927284315337068e-05,
+      0.0002577546602121418,
+      2.410446906049829e-05
+    ],
+    [
+      -3.338272341720605e-05,
+      2.4104469060498293e-05,
+      0.0002010008074139596
+    ]
+  ],
+  "model_rows": 366584,
+  "input_rows": 821700,
+  "events_input": 226402,
+  "events_model": 226402,
+  "separated_rows": 455116,
+  "regions": 450,
+  "elapsed_seconds": 3.575
+}

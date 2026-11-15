@@ -1,0 +1,1892 @@
+{
+  "D_plus_N_sensitivity": "separate weather artifact; D plus audited eligible observed negative mass; same frozen Step04 transforms",
+  "admission_authorization_sha256": "4206de8a40f8bc9c33bbea968e560c6ce011b63ca297bdcd286f4b88d7356960",
+  "algorithm_reference_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-10-10\\brazil-biliary-repair-continuation-20261010\\work\\recovery_20261010\\mixed_primary_assembler_v2\\mixed_primary_assembler.py",
+  "algorithm_reference_sha256": "08f2a2ee96b661f1985a14b4b849c07e041d4b80162bd5caaf38dadedf9903aa",
+  "candidate_projection": {
+    "candidate_csv_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-10-10\\brazil-biliary-repair-continuation-20261010\\outputs\\recovery_20261010\\candidate_weights\\unchanged_mixed_candidate_projection.csv",
+    "candidate_csv_sha256": "2c5311c83064aa9ea4845f941163ad508d7a91305807247290549b26eeda51ae",
+    "candidate_json_path": "D:\\Brazil_Acute_Inflammation_Climate_2003_2023\\hybrid_work_v1\\private\\step04_island_source_amendment_v1\\mixed_spatial_candidate_v2\\mixed_spatial_candidate.json",
+    "candidate_json_sha256": "43e22861815b874cc08149f0f5f3e5bfd187ff620155e7b62fe3f376f13814e4",
+    "candidate_row_count": 66495,
+    "population_weights_renormalized": false,
+    "product_row_counts": {
+      "reanalysis-era5-land": 66030,
+      "reanalysis-era5-single-levels": 465
+    },
+    "region_count": 450,
+    "region_population_weight_totals": {
+      "11001": {
+        "reanalysis-era5-land": 0.9999999999999988,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "11002": {
+        "reanalysis-era5-land": 1.0,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "11003": {
+        "reanalysis-era5-land": 0.9999999999999982,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "11004": {
+        "reanalysis-era5-land": 0.9999999999999993,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "11005": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "11006": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "11007": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "12001": {
+        "reanalysis-era5-land": 0.9999999999999992,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "12002": {
+        "reanalysis-era5-land": 1.0000000000000024,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "12003": {
+        "reanalysis-era5-land": 0.9999999999999999,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "13001": {
+        "reanalysis-era5-land": 0.9999999999999991,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "13002": {
+        "reanalysis-era5-land": 1.000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "13003": {
+        "reanalysis-era5-land": 0.9999999999999986,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "13004": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "13005": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "13006": {
+        "reanalysis-era5-land": 0.9999999999999969,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "13007": {
+        "reanalysis-era5-land": 1.0,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "13008": {
+        "reanalysis-era5-land": 1.0000000000000016,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "13009": {
+        "reanalysis-era5-land": 0.9999999999999974,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "14001": {
+        "reanalysis-era5-land": 1.0000000000000027,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "14002": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "15001": {
+        "reanalysis-era5-land": 0.9999999999999982,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "15002": {
+        "reanalysis-era5-land": 0.9999999999999982,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "15003": {
+        "reanalysis-era5-land": 0.9999999999999991,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "15004": {
+        "reanalysis-era5-land": 0.9999999999999992,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "15006": {
+        "reanalysis-era5-land": 0.7450374886013044,
+        "reanalysis-era5-single-levels": 0.2549625113986953
+      },
+      "15007": {
+        "reanalysis-era5-land": 0.9535876388662534,
+        "reanalysis-era5-single-levels": 0.046412361133746804
+      },
+      "15008": {
+        "reanalysis-era5-land": 0.9926105401945639,
+        "reanalysis-era5-single-levels": 0.007389459805434972
+      },
+      "15009": {
+        "reanalysis-era5-land": 0.9721460833015863,
+        "reanalysis-era5-single-levels": 0.027853916698413087
+      },
+      "15010": {
+        "reanalysis-era5-land": 1.0000000000000009,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "15011": {
+        "reanalysis-era5-land": 0.9489586022052425,
+        "reanalysis-era5-single-levels": 0.0510413977947563
+      },
+      "15012": {
+        "reanalysis-era5-land": 0.9999999999999973,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "15013": {
+        "reanalysis-era5-land": 0.7041682991122779,
+        "reanalysis-era5-single-levels": 0.2958317008877218
+      },
+      "15014": {
+        "reanalysis-era5-land": 0.9700648321529515,
+        "reanalysis-era5-single-levels": 0.02993516784704731
+      },
+      "16001": {
+        "reanalysis-era5-land": 0.39936435568633405,
+        "reanalysis-era5-single-levels": 0.6006356443136662
+      },
+      "16002": {
+        "reanalysis-era5-land": 0.9898645446636086,
+        "reanalysis-era5-single-levels": 0.010135455336391219
+      },
+      "16003": {
+        "reanalysis-era5-land": 0.8372568242901698,
+        "reanalysis-era5-single-levels": 0.16274317570982996
+      },
+      "17001": {
+        "reanalysis-era5-land": 0.9999999999999988,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "17002": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "17003": {
+        "reanalysis-era5-land": 0.9999999999999989,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "17004": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "17005": {
+        "reanalysis-era5-land": 1.0000000000000009,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "17006": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "17007": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "17008": {
+        "reanalysis-era5-land": 0.9999999999999989,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "21001": {
+        "reanalysis-era5-land": 0.9999999999999968,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "21002": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "21003": {
+        "reanalysis-era5-land": 1.000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "21004": {
+        "reanalysis-era5-land": 0.9999999999999979,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "21005": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "21006": {
+        "reanalysis-era5-land": 0.9696574641984943,
+        "reanalysis-era5-single-levels": 0.030342535801505675
+      },
+      "21007": {
+        "reanalysis-era5-land": 1.0000000000000016,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "21008": {
+        "reanalysis-era5-land": 1.0000000000000009,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "21009": {
+        "reanalysis-era5-land": 0.9946137006749122,
+        "reanalysis-era5-single-levels": 0.005386299325088418
+      },
+      "21010": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "21011": {
+        "reanalysis-era5-land": 0.9712578808007953,
+        "reanalysis-era5-single-levels": 0.028742119199204903
+      },
+      "21012": {
+        "reanalysis-era5-land": 0.9999999999999988,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "21013": {
+        "reanalysis-era5-land": 0.981703010737649,
+        "reanalysis-era5-single-levels": 0.01829698926235268
+      },
+      "21014": {
+        "reanalysis-era5-land": 0.999999999999999,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "21015": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "21016": {
+        "reanalysis-era5-land": 0.7539192648053367,
+        "reanalysis-era5-single-levels": 0.24608073519466314
+      },
+      "21017": {
+        "reanalysis-era5-land": 0.9999999999999997,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "21018": {
+        "reanalysis-era5-land": 0.998050563965193,
+        "reanalysis-era5-single-levels": 0.00194943603480659
+      },
+      "21019": {
+        "reanalysis-era5-land": 0.9950100278527739,
+        "reanalysis-era5-single-levels": 0.0049899721472261085
+      },
+      "22001": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "22002": {
+        "reanalysis-era5-land": 1.000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "22003": {
+        "reanalysis-era5-land": 0.9999999999999977,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "22004": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "22005": {
+        "reanalysis-era5-land": 0.995559355884787,
+        "reanalysis-era5-single-levels": 0.004440644115213434
+      },
+      "22006": {
+        "reanalysis-era5-land": 0.9999999999999984,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "22007": {
+        "reanalysis-era5-land": 1.0,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "22008": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "22009": {
+        "reanalysis-era5-land": 1.0000000000000018,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "22010": {
+        "reanalysis-era5-land": 0.9999999999999999,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "22011": {
+        "reanalysis-era5-land": 0.9999999999999996,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "23001": {
+        "reanalysis-era5-land": 0.6654738972065273,
+        "reanalysis-era5-single-levels": 0.3345261027934718
+      },
+      "23002": {
+        "reanalysis-era5-land": 0.8710669409394028,
+        "reanalysis-era5-single-levels": 0.12893305906059788
+      },
+      "23003": {
+        "reanalysis-era5-land": 0.9999999999999992,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "23004": {
+        "reanalysis-era5-land": 1.000000000000001,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "23005": {
+        "reanalysis-era5-land": 0.9999999999999992,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "23006": {
+        "reanalysis-era5-land": 0.9576239866655731,
+        "reanalysis-era5-single-levels": 0.04237601333442719
+      },
+      "23007": {
+        "reanalysis-era5-land": 0.813867966608963,
+        "reanalysis-era5-single-levels": 0.1861320333910362
+      },
+      "23008": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "23009": {
+        "reanalysis-era5-land": 0.9999999999999982,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "23010": {
+        "reanalysis-era5-land": 1.0000000000000009,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "23011": {
+        "reanalysis-era5-land": 0.9999999999999963,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "23012": {
+        "reanalysis-era5-land": 0.903712469738684,
+        "reanalysis-era5-single-levels": 0.09628753026131709
+      },
+      "23013": {
+        "reanalysis-era5-land": 0.9999999999999997,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "23014": {
+        "reanalysis-era5-land": 0.9999999999999991,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "23015": {
+        "reanalysis-era5-land": 1.000000000000003,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "23016": {
+        "reanalysis-era5-land": 0.9999999999999994,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "23017": {
+        "reanalysis-era5-land": 1.0000000000000016,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "23018": {
+        "reanalysis-era5-land": 1.0000000000000022,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "23019": {
+        "reanalysis-era5-land": 0.9999999999999987,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "23020": {
+        "reanalysis-era5-land": 1.0000000000000024,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "23021": {
+        "reanalysis-era5-land": 1.0000000000000009,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "23022": {
+        "reanalysis-era5-land": 0.972933852277634,
+        "reanalysis-era5-single-levels": 0.027066147722366592
+      },
+      "24001": {
+        "reanalysis-era5-land": 0.9685934059749444,
+        "reanalysis-era5-single-levels": 0.03140659402505585
+      },
+      "24002": {
+        "reanalysis-era5-land": 0.9669343472992317,
+        "reanalysis-era5-single-levels": 0.03306565270076702
+      },
+      "24003": {
+        "reanalysis-era5-land": 0.8518284942331816,
+        "reanalysis-era5-single-levels": 0.1481715057668174
+      },
+      "24004": {
+        "reanalysis-era5-land": 0.9999999999999997,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "24005": {
+        "reanalysis-era5-land": 0.9999999999999982,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "24006": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "24007": {
+        "reanalysis-era5-land": 0.6294961233500783,
+        "reanalysis-era5-single-levels": 0.37050387664992096
+      },
+      "24008": {
+        "reanalysis-era5-land": 0.9886326612623955,
+        "reanalysis-era5-single-levels": 0.011367338737603346
+      },
+      "25001": {
+        "reanalysis-era5-land": 0.7180690531744444,
+        "reanalysis-era5-single-levels": 0.28193094682555353
+      },
+      "25002": {
+        "reanalysis-era5-land": 0.9999999999999998,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "25003": {
+        "reanalysis-era5-land": 1.0,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "25004": {
+        "reanalysis-era5-land": 0.9999999999999983,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "25005": {
+        "reanalysis-era5-land": 0.9999999999999981,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "25006": {
+        "reanalysis-era5-land": 1.0000000000000013,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "25007": {
+        "reanalysis-era5-land": 1.0000000000000009,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "25008": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "25009": {
+        "reanalysis-era5-land": 1.0000000000000016,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "25010": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "25011": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "25012": {
+        "reanalysis-era5-land": 1.0,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "25013": {
+        "reanalysis-era5-land": 0.9999999999999996,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "25014": {
+        "reanalysis-era5-land": 0.9611016040007391,
+        "reanalysis-era5-single-levels": 0.03889839599925939
+      },
+      "25015": {
+        "reanalysis-era5-land": 1.0000000000000013,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "25016": {
+        "reanalysis-era5-land": 0.9999999999999996,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "26001": {
+        "reanalysis-era5-land": 1.0000000000000013,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "26002": {
+        "reanalysis-era5-land": 0.9999999999999997,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "26003": {
+        "reanalysis-era5-land": 1.0,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "26004": {
+        "reanalysis-era5-land": 1.000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "26005": {
+        "reanalysis-era5-land": 0.9958036683549016,
+        "reanalysis-era5-single-levels": 0.004196331645098961
+      },
+      "26006": {
+        "reanalysis-era5-land": 1.000000000000001,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "26007": {
+        "reanalysis-era5-land": 0.9999999999999962,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "26008": {
+        "reanalysis-era5-land": 0.9713777384161382,
+        "reanalysis-era5-single-levels": 0.028622261583861237
+      },
+      "26009": {
+        "reanalysis-era5-land": 0.9999999999999991,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "26010": {
+        "reanalysis-era5-land": 0.6928951148920728,
+        "reanalysis-era5-single-levels": 0.307104885107928
+      },
+      "26011": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "26012": {
+        "reanalysis-era5-land": 0.9999999999999979,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "27001": {
+        "reanalysis-era5-land": 0.4625868659962309,
+        "reanalysis-era5-single-levels": 0.537413134003769
+      },
+      "27002": {
+        "reanalysis-era5-land": 0.8340735173729392,
+        "reanalysis-era5-single-levels": 0.16592648262706078
+      },
+      "27003": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "27004": {
+        "reanalysis-era5-land": 1.0000000000000009,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "27005": {
+        "reanalysis-era5-land": 0.9997876145555213,
+        "reanalysis-era5-single-levels": 0.00021238544447992012
+      },
+      "27006": {
+        "reanalysis-era5-land": 0.9456248461351562,
+        "reanalysis-era5-single-levels": 0.05437515386484263
+      },
+      "27007": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "27008": {
+        "reanalysis-era5-land": 0.9999999999999998,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "27009": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "27010": {
+        "reanalysis-era5-land": 1.0000000000000016,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "28001": {
+        "reanalysis-era5-land": 0.9333293519217039,
+        "reanalysis-era5-single-levels": 0.06667064807829588
+      },
+      "28002": {
+        "reanalysis-era5-land": 0.993684171251788,
+        "reanalysis-era5-single-levels": 0.0063158287482103104
+      },
+      "28003": {
+        "reanalysis-era5-land": 1.0,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "28004": {
+        "reanalysis-era5-land": 0.9999999999999987,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "28005": {
+        "reanalysis-era5-land": 1.000000000000003,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "28006": {
+        "reanalysis-era5-land": 0.9964501850337373,
+        "reanalysis-era5-single-levels": 0.003549814966263449
+      },
+      "28007": {
+        "reanalysis-era5-land": 0.9845114947757672,
+        "reanalysis-era5-single-levels": 0.015488505224234263
+      },
+      "29001": {
+        "reanalysis-era5-land": 0.9996154949167854,
+        "reanalysis-era5-single-levels": 0.0003845050832161622
+      },
+      "29002": {
+        "reanalysis-era5-land": 1.0000000000000013,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "29003": {
+        "reanalysis-era5-land": 0.9999999999999993,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "29004": {
+        "reanalysis-era5-land": 0.9085647657692714,
+        "reanalysis-era5-single-levels": 0.091435234230729
+      },
+      "29005": {
+        "reanalysis-era5-land": 0.9999947295145383,
+        "reanalysis-era5-single-levels": 5.270485461832031e-06
+      },
+      "29006": {
+        "reanalysis-era5-land": 0.9999999999999987,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "29007": {
+        "reanalysis-era5-land": 0.9999999999999986,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "29008": {
+        "reanalysis-era5-land": 1.0000000000000018,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "29009": {
+        "reanalysis-era5-land": 0.7033091584684309,
+        "reanalysis-era5-single-levels": 0.2966908415315691
+      },
+      "29010": {
+        "reanalysis-era5-land": 0.9999999999999958,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "29011": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "29012": {
+        "reanalysis-era5-land": 0.9935203930615254,
+        "reanalysis-era5-single-levels": 0.006479606938473111
+      },
+      "29013": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "29014": {
+        "reanalysis-era5-land": 0.9999999999999974,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "29015": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "29016": {
+        "reanalysis-era5-land": 0.9999999999999981,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "29017": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "29018": {
+        "reanalysis-era5-land": 0.8895097114121887,
+        "reanalysis-era5-single-levels": 0.11049028858781149
+      },
+      "29019": {
+        "reanalysis-era5-land": 0.9999999999999999,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "29020": {
+        "reanalysis-era5-land": 0.3681789750864715,
+        "reanalysis-era5-single-levels": 0.6318210249135288
+      },
+      "29021": {
+        "reanalysis-era5-land": 0.9999999999999994,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "29022": {
+        "reanalysis-era5-land": 0.9992563700311142,
+        "reanalysis-era5-single-levels": 0.0007436299688856156
+      },
+      "29023": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "29024": {
+        "reanalysis-era5-land": 0.9999999999999992,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "29025": {
+        "reanalysis-era5-land": 1.0000000000000016,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "29026": {
+        "reanalysis-era5-land": 0.9299694661938139,
+        "reanalysis-era5-single-levels": 0.07003053380618462
+      },
+      "29027": {
+        "reanalysis-era5-land": 0.9644090674597191,
+        "reanalysis-era5-single-levels": 0.03559093254027948
+      },
+      "29028": {
+        "reanalysis-era5-land": 0.9999999999999988,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31001": {
+        "reanalysis-era5-land": 0.9999999999999984,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31002": {
+        "reanalysis-era5-land": 0.9999999999999994,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31003": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31004": {
+        "reanalysis-era5-land": 1.000000000000001,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31006": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31007": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31008": {
+        "reanalysis-era5-land": 1.0000000000000022,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31009": {
+        "reanalysis-era5-land": 0.9999999999999998,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31010": {
+        "reanalysis-era5-land": 1.0000000000000029,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31011": {
+        "reanalysis-era5-land": 0.9999999999999997,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31012": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31013": {
+        "reanalysis-era5-land": 0.9999999999999993,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31015": {
+        "reanalysis-era5-land": 1.0000000000000013,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31016": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31017": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31018": {
+        "reanalysis-era5-land": 1.0000000000000013,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31019": {
+        "reanalysis-era5-land": 0.9999999999999984,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31020": {
+        "reanalysis-era5-land": 0.9999999999999998,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31021": {
+        "reanalysis-era5-land": 0.9999999999999993,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31022": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31023": {
+        "reanalysis-era5-land": 1.0000000000000022,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31024": {
+        "reanalysis-era5-land": 0.9999999999999993,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31025": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31026": {
+        "reanalysis-era5-land": 0.9999999999999992,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31027": {
+        "reanalysis-era5-land": 0.9999999999999994,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31028": {
+        "reanalysis-era5-land": 1.0000000000000013,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31030": {
+        "reanalysis-era5-land": 0.9999999999999992,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31031": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31032": {
+        "reanalysis-era5-land": 0.9999999999999987,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31034": {
+        "reanalysis-era5-land": 0.9999999999999984,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31035": {
+        "reanalysis-era5-land": 0.9999999999999998,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31036": {
+        "reanalysis-era5-land": 0.9999999999999974,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31037": {
+        "reanalysis-era5-land": 0.9999999999999992,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31038": {
+        "reanalysis-era5-land": 1.000000000000001,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31040": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31041": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31042": {
+        "reanalysis-era5-land": 1.000000000000001,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31044": {
+        "reanalysis-era5-land": 0.9999999999999997,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31045": {
+        "reanalysis-era5-land": 0.9999999999999978,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31046": {
+        "reanalysis-era5-land": 0.9999999999999997,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31047": {
+        "reanalysis-era5-land": 0.9999999999999998,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31048": {
+        "reanalysis-era5-land": 0.9999999999999999,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31049": {
+        "reanalysis-era5-land": 1.0000000000000018,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31050": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31051": {
+        "reanalysis-era5-land": 1.0,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31052": {
+        "reanalysis-era5-land": 0.9999999999999992,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31053": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31055": {
+        "reanalysis-era5-land": 1.0000000000000009,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31057": {
+        "reanalysis-era5-land": 0.9999999999999999,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31058": {
+        "reanalysis-era5-land": 0.999999999999999,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31059": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31060": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31061": {
+        "reanalysis-era5-land": 0.9999999999999999,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31062": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31064": {
+        "reanalysis-era5-land": 0.9999999999999987,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31065": {
+        "reanalysis-era5-land": 1.0000000000000009,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31066": {
+        "reanalysis-era5-land": 0.9999999999999991,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31067": {
+        "reanalysis-era5-land": 0.9999999999999988,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31068": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31070": {
+        "reanalysis-era5-land": 0.9999999999999992,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31071": {
+        "reanalysis-era5-land": 0.9999999999999991,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31072": {
+        "reanalysis-era5-land": 0.999999999999996,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31073": {
+        "reanalysis-era5-land": 0.9999999999999969,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31074": {
+        "reanalysis-era5-land": 1.0000000000000016,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31075": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31076": {
+        "reanalysis-era5-land": 0.9999999999999984,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31077": {
+        "reanalysis-era5-land": 0.9999999999999994,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31078": {
+        "reanalysis-era5-land": 0.9999999999999997,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31079": {
+        "reanalysis-era5-land": 0.9999999999999981,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31080": {
+        "reanalysis-era5-land": 0.9999999999999993,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31081": {
+        "reanalysis-era5-land": 0.9999999999999999,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31082": {
+        "reanalysis-era5-land": 1.0,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31083": {
+        "reanalysis-era5-land": 1.0000000000000013,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31084": {
+        "reanalysis-era5-land": 1.0000000000000009,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31085": {
+        "reanalysis-era5-land": 0.9999999999999977,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31086": {
+        "reanalysis-era5-land": 1.0000000000000009,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31087": {
+        "reanalysis-era5-land": 0.9999999999999987,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31088": {
+        "reanalysis-era5-land": 1.0000000000000016,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31089": {
+        "reanalysis-era5-land": 0.9999999999999996,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31090": {
+        "reanalysis-era5-land": 0.9999999999999996,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31091": {
+        "reanalysis-era5-land": 0.9999999999999994,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31092": {
+        "reanalysis-era5-land": 0.9999999999999996,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31093": {
+        "reanalysis-era5-land": 1.0,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31094": {
+        "reanalysis-era5-land": 0.9999999999999998,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31095": {
+        "reanalysis-era5-land": 1.0000000000000009,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31096": {
+        "reanalysis-era5-land": 1.0000000000000009,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31097": {
+        "reanalysis-era5-land": 0.9999999999999989,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31098": {
+        "reanalysis-era5-land": 0.9999999999999992,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "31099": {
+        "reanalysis-era5-land": 0.9999999999999998,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "32002": {
+        "reanalysis-era5-land": 0.8041257554449617,
+        "reanalysis-era5-single-levels": 0.19587424455503827
+      },
+      "32004": {
+        "reanalysis-era5-land": 0.9326737945337141,
+        "reanalysis-era5-single-levels": 0.06732620546628774
+      },
+      "32005": {
+        "reanalysis-era5-land": 0.9873008113946993,
+        "reanalysis-era5-single-levels": 0.012699188605301302
+      },
+      "33001": {
+        "reanalysis-era5-land": 0.40685209552304386,
+        "reanalysis-era5-single-levels": 0.5931479044769569
+      },
+      "33002": {
+        "reanalysis-era5-land": 0.590276064243813,
+        "reanalysis-era5-single-levels": 0.4097239357561888
+      },
+      "33003": {
+        "reanalysis-era5-land": 0.9999999999999989,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "33004": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "33005": {
+        "reanalysis-era5-land": 0.792920411774081,
+        "reanalysis-era5-single-levels": 0.20707958822591693
+      },
+      "33006": {
+        "reanalysis-era5-land": 0.8619949967776822,
+        "reanalysis-era5-single-levels": 0.138005003222317
+      },
+      "33007": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "33008": {
+        "reanalysis-era5-land": 0.9379860678653688,
+        "reanalysis-era5-single-levels": 0.06201393213463531
+      },
+      "33009": {
+        "reanalysis-era5-land": 0.9999999999999999,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35011": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35012": {
+        "reanalysis-era5-land": 1.0000000000000018,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35013": {
+        "reanalysis-era5-land": 0.999999999999998,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35014": {
+        "reanalysis-era5-land": 0.9999999999999999,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35015": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35016": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35021": {
+        "reanalysis-era5-land": 0.9999999999999997,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35022": {
+        "reanalysis-era5-land": 0.9999999999999997,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35023": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35031": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35032": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35033": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35034": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35041": {
+        "reanalysis-era5-land": 0.4913252384692001,
+        "reanalysis-era5-single-levels": 0.5086747615308018
+      },
+      "35051": {
+        "reanalysis-era5-land": 0.9999999999999994,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35052": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35061": {
+        "reanalysis-era5-land": 0.9999999999999996,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35062": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35063": {
+        "reanalysis-era5-land": 1.0000000000000013,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35064": {
+        "reanalysis-era5-land": 0.9999999999999994,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35065": {
+        "reanalysis-era5-land": 1.0000000000000016,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35071": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35072": {
+        "reanalysis-era5-land": 1.0000000000000018,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35073": {
+        "reanalysis-era5-land": 1.000000000000001,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35074": {
+        "reanalysis-era5-land": 0.9999999999999997,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35081": {
+        "reanalysis-era5-land": 0.9999999999999987,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35082": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35083": {
+        "reanalysis-era5-land": 1.0000000000000009,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35091": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35092": {
+        "reanalysis-era5-land": 0.9999999999999989,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35093": {
+        "reanalysis-era5-land": 1.0000000000000016,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35094": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35095": {
+        "reanalysis-era5-land": 1.0,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35101": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35102": {
+        "reanalysis-era5-land": 0.9999999999999989,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35103": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35104": {
+        "reanalysis-era5-land": 0.9999999999999996,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35111": {
+        "reanalysis-era5-land": 0.9999999999999998,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35112": {
+        "reanalysis-era5-land": 0.9999999999999982,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35113": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35114": {
+        "reanalysis-era5-land": 0.9999999999999986,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35115": {
+        "reanalysis-era5-land": 0.9999999999999982,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35121": {
+        "reanalysis-era5-land": 0.9307505263717754,
+        "reanalysis-era5-single-levels": 0.06924947362822563
+      },
+      "35131": {
+        "reanalysis-era5-land": 0.9999999999999998,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35132": {
+        "reanalysis-era5-land": 0.9999999999999983,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35133": {
+        "reanalysis-era5-land": 1.0000000000000009,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35141": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35142": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35143": {
+        "reanalysis-era5-land": 1.0000000000000013,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35151": {
+        "reanalysis-era5-land": 0.9999999999999998,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35152": {
+        "reanalysis-era5-land": 0.9999999999999994,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35153": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35154": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35155": {
+        "reanalysis-era5-land": 1.0000000000000013,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35156": {
+        "reanalysis-era5-land": 1.0000000000000018,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35157": {
+        "reanalysis-era5-land": 1.0000000000000009,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35161": {
+        "reanalysis-era5-land": 1.0000000000000013,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35162": {
+        "reanalysis-era5-land": 0.9999999999999999,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35163": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35171": {
+        "reanalysis-era5-land": 1.000000000000003,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35172": {
+        "reanalysis-era5-land": 1.000000000000001,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "35173": {
+        "reanalysis-era5-land": 0.685875584692983,
+        "reanalysis-era5-single-levels": 0.31412441530701696
+      },
+      "35174": {
+        "reanalysis-era5-land": 0.9999999999999993,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "41001": {
+        "reanalysis-era5-land": 0.507168048773257,
+        "reanalysis-era5-single-levels": 0.49283195122674317
+      },
+      "41002": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "41003": {
+        "reanalysis-era5-land": 0.9999999999999996,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "41004": {
+        "reanalysis-era5-land": 0.9999999999999999,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "41005": {
+        "reanalysis-era5-land": 0.9999999999999993,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "41006": {
+        "reanalysis-era5-land": 0.9999999999999996,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "41007": {
+        "reanalysis-era5-land": 1.0000000000000009,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "41008": {
+        "reanalysis-era5-land": 1.000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "41009": {
+        "reanalysis-era5-land": 0.9999999999999998,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "41010": {
+        "reanalysis-era5-land": 0.9999999999999954,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "41011": {
+        "reanalysis-era5-land": 0.9999999999999984,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "41012": {
+        "reanalysis-era5-land": 0.9999999999999971,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "41013": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "41014": {
+        "reanalysis-era5-land": 0.9999999999999994,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "41015": {
+        "reanalysis-era5-land": 1.000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "41016": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "41017": {
+        "reanalysis-era5-land": 1.0000000000000016,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "41018": {
+        "reanalysis-era5-land": 0.9999999999999997,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "41019": {
+        "reanalysis-era5-land": 0.9999999999999984,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "41020": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "41021": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "41022": {
+        "reanalysis-era5-land": 1.000000000000001,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "42001": {
+        "reanalysis-era5-land": 0.999999999999999,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "42002": {
+        "reanalysis-era5-land": 0.9999999999999991,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "42003": {
+        "reanalysis-era5-land": 0.9999999999999987,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "42004": {
+        "reanalysis-era5-land": 0.9999999999999998,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "42005": {
+        "reanalysis-era5-land": 0.8516030770326831,
+        "reanalysis-era5-single-levels": 0.14839692296731413
+      },
+      "42006": {
+        "reanalysis-era5-land": 0.999999999999999,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "42007": {
+        "reanalysis-era5-land": 0.8119975144382039,
+        "reanalysis-era5-single-levels": 0.18800248556179341
+      },
+      "42008": {
+        "reanalysis-era5-land": 0.9999999999999999,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "42009": {
+        "reanalysis-era5-land": 1.0000000000000013,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "42010": {
+        "reanalysis-era5-land": 0.9999999999999997,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "42011": {
+        "reanalysis-era5-land": 0.9222374220462208,
+        "reanalysis-era5-single-levels": 0.07776257795377854
+      },
+      "42012": {
+        "reanalysis-era5-land": 0.9999999999999967,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "42013": {
+        "reanalysis-era5-land": 1.0000000000000036,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "42014": {
+        "reanalysis-era5-land": 0.9356093571010146,
+        "reanalysis-era5-single-levels": 0.064390642898986
+      },
+      "42015": {
+        "reanalysis-era5-land": 0.9712365039856935,
+        "reanalysis-era5-single-levels": 0.028763496014306722
+      },
+      "42016": {
+        "reanalysis-era5-land": 0.9493142048467222,
+        "reanalysis-era5-single-levels": 0.050685795153278236
+      },
+      "42017": {
+        "reanalysis-era5-land": 0.940531091177392,
+        "reanalysis-era5-single-levels": 0.059468908822606914
+      },
+      "43001": {
+        "reanalysis-era5-land": 0.9999999999999997,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43002": {
+        "reanalysis-era5-land": 0.9999999999999984,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43003": {
+        "reanalysis-era5-land": 1.0000000000000024,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43004": {
+        "reanalysis-era5-land": 0.5315603122817496,
+        "reanalysis-era5-single-levels": 0.4684396877182514
+      },
+      "43005": {
+        "reanalysis-era5-land": 0.6919372349749049,
+        "reanalysis-era5-single-levels": 0.3080627650250951
+      },
+      "43006": {
+        "reanalysis-era5-land": 1.000000000000001,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43007": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43008": {
+        "reanalysis-era5-land": 0.9999999999999994,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43009": {
+        "reanalysis-era5-land": 0.9420563686726849,
+        "reanalysis-era5-single-levels": 0.05794363132731077
+      },
+      "43010": {
+        "reanalysis-era5-land": 0.9998607994490813,
+        "reanalysis-era5-single-levels": 0.00013920055091793914
+      },
+      "43011": {
+        "reanalysis-era5-land": 1.0000000000000013,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43012": {
+        "reanalysis-era5-land": 0.9999999999999996,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43013": {
+        "reanalysis-era5-land": 1.000000000000001,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43014": {
+        "reanalysis-era5-land": 0.9999999999999998,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43015": {
+        "reanalysis-era5-land": 0.9999999999999982,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43016": {
+        "reanalysis-era5-land": 1.0000000000000013,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43017": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43018": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43019": {
+        "reanalysis-era5-land": 0.9999999999999992,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43020": {
+        "reanalysis-era5-land": 0.9999999999999991,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43021": {
+        "reanalysis-era5-land": 0.8528977794319507,
+        "reanalysis-era5-single-levels": 0.14710222056805153
+      },
+      "43022": {
+        "reanalysis-era5-land": 1.000000000000001,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43023": {
+        "reanalysis-era5-land": 1.000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43024": {
+        "reanalysis-era5-land": 1.0000000000000004,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43025": {
+        "reanalysis-era5-land": 1.0000000000000016,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43026": {
+        "reanalysis-era5-land": 1.0000000000000016,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43027": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43028": {
+        "reanalysis-era5-land": 0.9999999999999992,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43029": {
+        "reanalysis-era5-land": 0.9999999999999992,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "43030": {
+        "reanalysis-era5-land": 1.000000000000001,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "50001": {
+        "reanalysis-era5-land": 0.9999999999999989,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "50002": {
+        "reanalysis-era5-land": 0.9999999999999986,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "50003": {
+        "reanalysis-era5-land": 0.9999999999999971,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "50004": {
+        "reanalysis-era5-land": 0.9999999999999987,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "51001": {
+        "reanalysis-era5-land": 0.999999999999998,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "51002": {
+        "reanalysis-era5-land": 1.000000000000001,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "51003": {
+        "reanalysis-era5-land": 0.9999999999999994,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "51004": {
+        "reanalysis-era5-land": 1.0000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "51005": {
+        "reanalysis-era5-land": 0.999999999999998,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "51006": {
+        "reanalysis-era5-land": 0.9999999999999994,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "51007": {
+        "reanalysis-era5-land": 1.000000000000001,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "51008": {
+        "reanalysis-era5-land": 1.0000000000000013,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "51009": {
+        "reanalysis-era5-land": 0.9999999999999997,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "51010": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "51011": {
+        "reanalysis-era5-land": 1.000000000000001,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "51012": {
+        "reanalysis-era5-land": 0.9999999999999993,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "51013": {
+        "reanalysis-era5-land": 1.000000000000001,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "51014": {
+        "reanalysis-era5-land": 1.000000000000001,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "51015": {
+        "reanalysis-era5-land": 0.9999999999999963,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "51016": {
+        "reanalysis-era5-land": 1.0000000000000009,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "52001": {
+        "reanalysis-era5-land": 1.000000000000002,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "52002": {
+        "reanalysis-era5-land": 1.0,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "52003": {
+        "reanalysis-era5-land": 1.0000000000000016,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "52004": {
+        "reanalysis-era5-land": 1.0000000000000027,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "52005": {
+        "reanalysis-era5-land": 0.9999999999999998,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "52006": {
+        "reanalysis-era5-land": 1.0000000000000013,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "52007": {
+        "reanalysis-era5-land": 0.9999999999999998,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "52008": {
+        "reanalysis-era5-land": 0.9999999999999998,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "52009": {
+        "reanalysis-era5-land": 1.0000000000000022,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "52010": {
+        "reanalysis-era5-land": 0.9999999999999992,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "52011": {
+        "reanalysis-era5-land": 1.0000000000000022,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "52012": {
+        "reanalysis-era5-land": 0.9999999999999983,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "52013": {
+        "reanalysis-era5-land": 1.0,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "52014": {
+        "reanalysis-era5-land": 1.000000000000001,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "52015": {
+        "reanalysis-era5-land": 1.0000000000000007,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "52016": {
+        "reanalysis-era5-land": 0.9999999999999988,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "52017": {
+        "reanalysis-era5-land": 1.0000000000000009,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "52018": {
+        "reanalysis-era5-land": 0.9999999999999986,
+        "reanalysis-era5-single-levels": 0.0
+      },
+      "53001": {
+        "reanalysis-era5-land": 0.999999999999996,
+        "reanalysis-era5-single-levels": 0.0
+      }
+    }
+  },
+  "candidate_status": "MIXED_PRIMARY_CANDIDATE_NOT_PRODUCTION_ADMITTED",
+  "complete_attempt_history_sha256": "c6ee1dffa54c13cd98a07480ee9235f5535267fc67c26de49e54e23faa4e6e92",
+  "cross_product_metric_assembly": "add fixed-weight contributions; no denominator change or renormalization",
+  "final_weight_timezone_rows": 66495,
+  "first_day_temperature_day_change": "null from the frozen lag operation; no fill",
+  "frozen_step04_sha256": "9dcd194992311dda2e37c1b66221d52a8c6787388fbbea76d40d723ee3bc719c",
+  "input_commit_inventory_sha256": "24f375b66c488314008dcba1bb3ccb5c9040349f34c97dec46f5cb31099d8ce0",
+  "main_models_fitted": false,
+  "missing_values_filled": false,
+  "mixed_contribution_rows": 3451500,
+  "negative_event_audit_driver_sha256": "e192f0fa6ccb0600ff084ce1d3c027702851c2592c55d29824d40740755b2547",
+  "negative_event_audit_report_path": "D:\\Brazil_Acute_Inflammation_Climate_2003_2023\\hybrid_work_v1\\private\\resumable_negative_event_audit_runs\\r2\\audit_output\\final\\resumable_negative_event_audit.json",
+  "negative_event_audit_report_sha256": "d459fe895a42d086dd6ae24ff19c440fd984fb964c2b62699ae16950c0f565b7",
+  "negative_event_audit_schema": "resumable-mixed-primary-negative-event-audit-v1",
+  "negative_event_impact_parquet_sha256": "9c02512c88c9eba8c954e8d9195ff82df74beeceb8e39ad1c72bd6d457e1c65b",
+  "output_rows": {
+    "final_historical_timezone_assignments.parquet": 66495,
+    "final_production_exposure_weights.parquet": 66495,
+    "mixed_region_day_contributions.parquet": 3451500,
+    "primary_D_signed_rain_weather.parquet": 3451500,
+    "sensitivity_D_plus_N_weather.parquet": 3451500
+  },
+  "output_sha256": {
+    "final_historical_timezone_assignments.csv": "2c5311c83064aa9ea4845f941163ad508d7a91305807247290549b26eeda51ae",
+    "final_historical_timezone_assignments.parquet": "dd2318076f1a9c9e0816dd20b3309ef79dfa12adc432fb7c8e8d7cbc3c1066e4",
+    "final_production_exposure_weights.csv": "2c5311c83064aa9ea4845f941163ad508d7a91305807247290549b26eeda51ae",
+    "final_production_exposure_weights.parquet": "dd2318076f1a9c9e0816dd20b3309ef79dfa12adc432fb7c8e8d7cbc3c1066e4",
+    "mixed_region_day_contributions.parquet": "c6571c6a619a820b6125eba11a747bf8bc0aa4eeaae29f38b46203334bba0622",
+    "primary_D_signed_rain_weather.parquet": "19bc7332ee461afe927f410e552b42ff6956028d0e53175c47a633b12d3db294",
+    "sensitivity_D_plus_N_weather.parquet": "9c0c5d6b137d436b400a2f790ac6ff0d49b61980cb44ce7963c56dce9863958e"
+  },
+  "owner_month_receipt_chain_sha256": "dc5477291b3ff602ccb39fd1ad4bcb3e599a87443d743073354e45921636d420",
+  "population_weights_renormalized": false,
+  "primary_D_rainfall": "unchanged signed precipitation sum from fixed-weight LAND plus ERA5 contributions",
+  "primary_period": [
+    "2003-01-01",
+    "2023-12-31"
+  ],
+  "primary_region_day_rows_per_weather_file": 3451500,
+  "production_pass_issued": false,
+  "reference_rainfall_dates_end": "2019-12-31",
+  "review_packet_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-10-11\\brazil-biliary-main-continuation-monitor-20261011\\outputs\\scientific_continuation_20261019\\actual_mixed_primary_review_packet_v1.json",
+  "review_packet_sha256": "f99cbc028d5d3a052fc1ce34645a7d2a68d5a75114f845b3e9695a3337930d64",
+  "schema": "resumable-v3-audit-mixed-primary-assembly-candidate-v1",
+  "scientific_pass_issued": false,
+  "status": "MIXED_PRIMARY_CANDIDATE_ASSEMBLED_NOT_PRODUCTION_ADMITTED",
+  "step04_pass_issued": false,
+  "step05_pass_issued": false,
+  "step06_pass_issued": false,
+  "weather_fields": [
+    "health_region_2023",
+    "date",
+    "period",
+    "temperature_mean_c",
+    "temperature_max_c",
+    "temperature_min_c",
+    "dtr_c",
+    "temperature_day_change_c",
+    "dewpoint_mean_c",
+    "relative_humidity_mean_pct",
+    "humidex_mean_c",
+    "precipitation_total_mm",
+    "precipitation_p95_reference_mm",
+    "precipitation_p99_reference_mm",
+    "precipitation_extreme_p95",
+    "precipitation_extreme_p99",
+    "consecutive_dry_days",
+    "valid_hours",
+    "expected_hours",
+    "weight_coverage"
+  ]
+}

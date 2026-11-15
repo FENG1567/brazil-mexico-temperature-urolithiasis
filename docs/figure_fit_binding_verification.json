@@ -1,0 +1,319 @@
+{
+  "status": "complete",
+  "created_at_utc": "2026-11-15T17:10:58+00:00",
+  "figure_contract": {
+    "core_conclusion": "The five figures trace the Brazil and Mexico analysis frames and summarize the released temperature, service, nonlinear, compound-exposure, and procedure results.",
+    "evidence_chain": {
+      "fig1": "analysis frames and sample flow",
+      "fig2": "continuous and strict temperature associations",
+      "fig3": "service outcomes and robustness",
+      "fig4": "temperature lags and nonlinear response curves",
+      "fig5": "exploratory compound and procedure contrasts"
+    },
+    "archetype": "quantitative grid; five multi-panel figures",
+    "backend": "Python / Matplotlib Agg for drawing, previews and exports; Python / PyMuPDF for PDF render QA",
+    "final_width_mm": 182.88,
+    "panel_labels": "uppercase A–D, Arial bold, 18 pt",
+    "other_text": "Arial bold",
+    "exports": [
+      "PDF",
+      "PNG 300 dpi",
+      "TIFF 600 dpi LZW",
+      "editable SVG"
+    ],
+    "model_fitting": "none"
+  },
+  "source_gate": {
+    "aggregate_summary_status": "complete_current_source_bound_publication_stage",
+    "additional_staging_status": "complete",
+    "mapped_input_count": 20,
+    "input_copy_and_released_source_hashes_match": true,
+    "source_records": 73,
+    "source_record_file_hash_selector_and_value_audit": "pass after fig2A source correction",
+    "brazil_core_rr_vs_repaired_aggregate": [
+      {
+        "model": "brazil_strict_N20_linear",
+        "estimand": "cumulative_temperature_lag0_7_per_C",
+        "RR_old": 1.0120885272368063,
+        "RR_repaired": 1.0115400447706024,
+        "plot_source_matches_repaired_aggregate": true
+      },
+      {
+        "model": "brazil_primary_linear_temp_fire_two_way",
+        "estimand": "cumulative_temperature_lag0_7_per_C",
+        "RR_old": 1.0147355263387658,
+        "RR_repaired": 1.0143634898339169,
+        "plot_source_matches_repaired_aggregate": true
+      },
+      {
+        "model": "brazil_primary_linear_temp_fire_two_way",
+        "estimand": "cumulative_fire_lag0_7_per_10ug_m3",
+        "RR_old": 1.0547419524185717,
+        "RR_repaired": 1.0555043462872438,
+        "plot_source_matches_repaired_aggregate": true
+      }
+    ],
+    "mexico_strict_curve_rows_retained": 100,
+    "mexico_preservation_flags": [
+      true,
+      true
+    ],
+    "unfixed_legacy_rr_detected": false,
+    "brazil_actual_fit_audit": {
+      "fig2A_broad": "actual run output + canonical aggregate + mapped input exact normal CI match",
+      "fig2B_strict": 1,
+      "fig3_service_rows": 12,
+      "fig3_occupancy_totals": 2,
+      "fig4_lag_rows": 6,
+      "fig4_brazil_nonlinear_curve_points": 200,
+      "fig4_psd_tests_raw_p_verified": 2,
+      "fig4_brazil_P50": "pass",
+      "fig5_compound": "pass",
+      "fig5_interaction": "derived from actual saved fit coefficients and full covariance; aggregate contrast agrees",
+      "total_brazil_rr_points_or_curve_points_verified": 222
+    },
+    "mexico_curve_rows_retained": 100,
+    "mexico_curve_rows_match_preserved_baseline": true,
+    "legacy_frozen_brazil_broad_row": "still present only in preserved frozen input; no longer selected or plotted by Figure 2A",
+    "pre_correction_backup": "../results/figure_refresh_pre_fig2_correction_backup_20261116"
+  },
+  "static_validation": {
+    "ready": true,
+    "strict": false,
+    "counts": {
+      "PASS": 14,
+      "WARN": 0,
+      "FAIL": 0
+    }
+  },
+  "render_checks": {
+    "figures": [
+      "fig1",
+      "fig2",
+      "fig3",
+      "fig4",
+      "fig5"
+    ],
+    "formats_per_figure": [
+      "PDF",
+      "PNG",
+      "TIFF",
+      "SVG"
+    ],
+    "output_files_verified": 20,
+    "png_visual_inspection": "all five exported PNGs previously reviewed; corrected fig2 PNG re-reviewed at final size and passed",
+    "pdf_visual_inspection": "all five PDFs previously reviewed; corrected fig2 PDF rendered with Python/PyMuPDF at final size and re-reviewed; passed",
+    "pdf_render_engine_note": "Server Python lacked PyMuPDF; the configured bundled Python runtime was used for PDF QA. Figure backend remained Python throughout.",
+    "page_width_mm": 182.88,
+    "page_heights_mm": {
+      "fig1": 121.92,
+      "fig2": 88.9,
+      "fig3": 162.56,
+      "fig4": 142.24,
+      "fig5": 182.88
+    },
+    "text_clipping_overlap_readability": "pass",
+    "confidence_interval_axis_clipping": "0 out-of-range intervals in the checked forest plots; no range changes needed",
+    "product_text": "Figure 4 identifies Brazil temperature exposure as ERA5-Land + ERA5 single-level fixed-grid mean",
+    "font_embedding": "Arial family registered from non-public font files; PDF TrueType and editable SVG text settings retained",
+    "baseline_outputs_preserved": "pre-refresh figure files matched the preserved baseline repository",
+    "pdf_embedded_fonts": {
+      "status": "pass",
+      "font": "Arial-BoldMT",
+      "font_type": "TrueType",
+      "verified_figures": 5,
+      "fig2_reverified_after_correction": true
+    },
+    "unchanged_other_figure_formats": [
+      "fig1.png",
+      "fig1.tiff",
+      "fig3.png",
+      "fig3.tiff",
+      "fig4.png",
+      "fig4.tiff",
+      "fig5.png",
+      "fig5.tiff"
+    ],
+    "fig2_corrected_display": "1.0143 (1.0096–1.0189)",
+    "figures_1_3_4_5_png_and_tiff_bytes_match_pre_correction_backup": true,
+    "figures_1_3_4_5_pdf_render_pixels_match_pre_correction_backup": true,
+    "pdf_rasterization_for_comparison": "Python/PyMuPDF at 72 dpi; all non-fig2 page renders pixel-identical to pre-correction PDFs",
+    "corrected_fig2_pdf": {
+      "page_count": 1,
+      "width_mm": 182.88,
+      "height_mm": 88.9,
+      "render_dpi": 72,
+      "visual_review": "passed",
+      "embedded_font": "Arial-BoldMT TrueType"
+    },
+    "corrected_fig2_png_visual_review": "passed at final size; Brazil broad displays 1.0143 (1.0096–1.0189)",
+    "updated_output_scope": "all five figures re-exported in PDF, PNG, TIFF and SVG"
+  },
+  "metadata_only_fix": {
+    "file": "data/figure_input_map.json",
+    "entry": "data/figure_inputs/upgrade/mexico_boundary_audit.json",
+    "reason": "stale SHA-256 in the mapping; publication copy and released source had identical actual SHA-256; only the recorded digest was corrected",
+    "actual_sha256": "3b6cf7216d3180ff9d51e9e984e2bd74d95cc7785c4522655cbe84aca439db96",
+    "source_csv_content_changed": false,
+    "figure_input_map_new_entry": "data/figure_inputs/revision/brazil_state_harmonized_model_results.csv -> ../run_outputs/brazil_state/mexico_strict_model_results.csv, additionally cross-bound to the canonical aggregate SHA"
+  },
+  "process": {
+    "location": "analysis server",
+    "pid": 1012010,
+    "status": "completed",
+    "log_path": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/logs/figure_refresh_20261116_fig2_correction.log",
+    "view_progress": "tail -f /data/admin/fengshuo/climate_biliary_temperature_repair_20261115/logs/figure_refresh_20261116_fig2_correction.log",
+    "stop_if_running": "kill 1012010"
+  },
+  "outputs": {
+    "fig1": {
+      "pdf": {
+        "path": "artifacts/figures/fig1.pdf",
+        "sha256": "899ddc94c731776dc60ded07f01a757fcd819e6365031c70dc82188f64d37040",
+        "bytes": 28553
+      },
+      "png": {
+        "path": "artifacts/figures/fig1.png",
+        "sha256": "8eb67c4fbcabf312f36245ef1478916dd25dd0ed67d97cd7091a2523c4ee6e4d",
+        "bytes": 243231
+      },
+      "tiff": {
+        "path": "artifacts/figures/fig1.tiff",
+        "sha256": "02d908e8ec2f1514c689c2c7861f723d15014b975a8beef328743d03956f1c9b",
+        "bytes": 1369300
+      },
+      "editable_svg": {
+        "path": "artifacts/figures/fig1.svg",
+        "sha256": "54a6057f83fcb18a74269e4e5d06fcd1d1d18f176b5640b59e6cd3c1a5a8dc3f",
+        "bytes": 12606
+      }
+    },
+    "fig2": {
+      "pdf": {
+        "path": "artifacts/figures/fig2.pdf",
+        "sha256": "6a2cc7dbaa7db2e191c5adb437efe0647abf8f7ef5b3978595240ad8aeb5a3a0",
+        "bytes": 29101
+      },
+      "png": {
+        "path": "artifacts/figures/fig2.png",
+        "sha256": "9e452eba63086a1ef6eb5fd0c2757ad41b030471fa65100cd415dc12a616e043",
+        "bytes": 143432
+      },
+      "tiff": {
+        "path": "artifacts/figures/fig2.tiff",
+        "sha256": "9fa2e62a4642719a048ad4614a3e516be1c28d2de4545f691c7ccc447e4b780d",
+        "bytes": 611470
+      },
+      "editable_svg": {
+        "path": "artifacts/figures/fig2.svg",
+        "sha256": "df21136aab2bc1d70ac1d9ec86b966ff014113d500c7c5a57b1577d41b3a2a60",
+        "bytes": 19149
+      }
+    },
+    "fig3": {
+      "pdf": {
+        "path": "artifacts/figures/fig3.pdf",
+        "sha256": "6735412f750c6e385c062830aea1d63f07d68bf2baa5db819a05c4b5e53f25c4",
+        "bytes": 31481
+      },
+      "png": {
+        "path": "artifacts/figures/fig3.png",
+        "sha256": "453c4f548cbc1caeb67087e89d917b8785bc9b0dc5912b127b9a8bdad100dde7",
+        "bytes": 333300
+      },
+      "tiff": {
+        "path": "artifacts/figures/fig3.tiff",
+        "sha256": "975d1d6ef6818e46eec9acaad85c2e1cc6878b0705ee0d8aae826b4de9468216",
+        "bytes": 1370934
+      },
+      "editable_svg": {
+        "path": "artifacts/figures/fig3.svg",
+        "sha256": "f67234ce7f1f1ad690d6bc563a3b113419bb175432cf0d37c6be86f4e81c2b89",
+        "bytes": 39785
+      }
+    },
+    "fig4": {
+      "pdf": {
+        "path": "artifacts/figures/fig4.pdf",
+        "sha256": "ed13fdcd94db73e9bca9e455ad0166784406b096d6c6f5927139049fed217b51",
+        "bytes": 38514
+      },
+      "png": {
+        "path": "artifacts/figures/fig4.png",
+        "sha256": "d75e6c64f261da17498157e93ae0d2575707c1c280ed7d6b9af0a419b0642895",
+        "bytes": 321490
+      },
+      "tiff": {
+        "path": "artifacts/figures/fig4.tiff",
+        "sha256": "e14fe8db1e9df6f35aee441e90397c955ba6a8849fb827c571555d9a40a1d8fa",
+        "bytes": 1292858
+      },
+      "editable_svg": {
+        "path": "artifacts/figures/fig4.svg",
+        "sha256": "07c956aaedbb72441a8cbfeb47d3c198cfa4ea6356a11ac127eaf16a739dc371",
+        "bytes": 58810
+      }
+    },
+    "fig5": {
+      "pdf": {
+        "path": "artifacts/figures/fig5.pdf",
+        "sha256": "00d9f7fd6c116e1d3546930c664062b37c661ff7632ad557313597334a1e4142",
+        "bytes": 33390
+      },
+      "png": {
+        "path": "artifacts/figures/fig5.png",
+        "sha256": "3a80758bd407ee1e8318621107999e9a16cd65ba4628d9b4de654946771fd1bc",
+        "bytes": 352627
+      },
+      "tiff": {
+        "path": "artifacts/figures/fig5.tiff",
+        "sha256": "53d98a22e8085e0bda384bf8b00858608e628bc0c02c40a5c4c3bd41a3e3998e",
+        "bytes": 1419838
+      },
+      "editable_svg": {
+        "path": "artifacts/figures/fig5.svg",
+        "sha256": "d2277f27ce824676ac227a71750b368fd03b73fd7951e7ddfb08efddcae88802",
+        "bytes": 43004
+      }
+    }
+  },
+  "correction_history": {
+    "issue_found": "Figure 2A Brazil broad harmonized row still pointed to the historical same_caliber_continuous estimate.",
+    "old_displayed_source": {
+      "path": "data/figure_inputs/frozen/tables/same_caliber_continuous.csv",
+      "RR": "1.0148594916621572",
+      "CI_low": "1.0102607095401082",
+      "CI_high": "1.0194792077835257"
+    },
+    "replacement": {
+      "input": "data/figure_inputs/revision/brazil_state_harmonized_model_results.csv",
+      "actual_fit_output": "../run_outputs/brazil_state/mexico_strict_model_results.csv",
+      "actual_fit_sha256": "82e31a766262860bacf565a1a1c52a9058b5d43d436eaae4beae4957a76a5802",
+      "canonical_aggregate": "data/aggregate_results/sensitivity_results/mexico_strict_model_results.csv",
+      "canonical_aggregate_sha256": "58170a1426b62fa490b4d9ae51e7b9b2f57a4d1ab48679aa4c9a7d5994491629",
+      "row_selector": {
+        "model": "brazil_population_weighted_panel_temperature_broad_N20_N23_lag07",
+        "contrast": "cumulative_temperature_lag_0_7_per_C"
+      },
+      "RR_per_C": "1.0142697023566782",
+      "normal_CI_low": "1.0096191860162755",
+      "normal_CI_high": "1.018941639944351",
+      "normal_p": "1.5136912484468898e-09",
+      "model_n": "46387"
+    },
+    "display": "1.0143 (1.0096–1.0189)",
+    "builder_source_binding": "Before plotting, the builder checks that the mapped input matches the actual fit output SHA and that RR, normal CI, normal p and model n match both actual fit and canonical aggregate row.",
+    "old_frozen_input": "preserved unchanged; it remains available for the Mexico NASA POWER row but is no longer selected for Brazil in Figure 2A."
+  },
+  "backup": {
+    "path": "../results/figure_refresh_pre_fig2_correction_backup_20261116",
+    "contents": [
+      "all previous figure exports",
+      "previous figure_sources.json",
+      "previous build_figures.py",
+      "previous figure_input_map.json",
+      "previous mapped input CSV",
+      "previous figure_refresh_qa.json"
+    ]
+  }
+}

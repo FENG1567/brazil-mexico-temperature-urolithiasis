@@ -23,6 +23,7 @@ ARCHIVE_WORK = ROOT / "analysis" / "work"
 MODEL_WORKSPACE = ROOT / "artifacts" / "model_workspace"
 PROCESSED = ROOT / "data" / "processed_inputs"
 AGGREGATES = ROOT / "data" / "aggregate_results"
+DEFAULT_BRAZIL_PANEL = Path("artifacts/processed_inputs/panel_composite_humidity.parquet")
 
 OLD_PYLIBS = "F:/analysis/climate_biliary_20261102/work/pylibs"
 
@@ -69,14 +70,14 @@ def _redirect_pylibs(source: str, path: Path) -> str:
     return result
 
 
-def _input_specs(stage: str) -> list[dict[str, Any]]:
+def _input_specs(stage: str, brazil_panel: Path = DEFAULT_BRAZIL_PANEL) -> list[dict[str, Any]]:
     """Canonical package source keys and expected materialized paths."""
     common = [
         {
             "key": "panel_composite_humidity",
-            "path": "artifacts/processed_inputs/panel_composite_humidity.parquet",
+            "path": brazil_panel.as_posix(),
             "required": True,
-            "note": "Reassembled from data/processed_inputs/panel_composite_humidity.parquet.parts.",
+            "note": "Repository-relative Brazil geographic-day panel selected by --brazil-panel.",
         },
         {
             "key": "clinical_code_day_aggregate",
@@ -180,14 +181,16 @@ def _materialize_nonlinear_clinical(workspace: Path) -> dict[str, Any]:
     return record
 
 
-def _rewrite_script(stage: str, relative_path: Path, source: str, workspace: Path) -> str:
-    inputs = {item["key"]: ROOT / item["path"] for item in _input_specs(stage)}
+def _rewrite_script(
+    stage: str, relative_path: Path, source: str, workspace: Path, brazil_panel: Path
+) -> str:
+    inputs = {item["key"]: ROOT / item["path"] for item in _input_specs(stage, brazil_panel)}
     if stage == "service" and relative_path.name == "fit_service_models.py":
         source = _redirect_pylibs(source, ROOT / "vendor" / "pylibs")
         replacements = {
             "OUT": _path_expr(workspace / "outputs" / "service"),
             "DATA": _path_expr(PROCESSED),
-            "EXPOSURE_PATH": _path_expr(ROOT / "artifacts/processed_inputs/panel_composite_humidity.parquet"),
+            "EXPOSURE_PATH": _path_expr(inputs["panel_composite_humidity"]),
             "CLINICAL_PATH": _path_expr(inputs["clinical_code_day_aggregate"]),
             "PRICE_PATH": _path_expr(inputs["ipca_monthly"]),
             "SP_LINK_PATH": _path_expr(inputs["sp_linked_daily_outcomes"]),
@@ -200,7 +203,7 @@ def _rewrite_script(stage: str, relative_path: Path, source: str, workspace: Pat
         source = _redirect_pylibs(source, ROOT / "vendor" / "pylibs")
         replacements = {
             "OUT": _path_expr(workspace / "outputs" / "nonlinear"),
-            "BRAZIL_PANEL": _path_expr(ROOT / "artifacts/processed_inputs/panel_composite_humidity.parquet"),
+            "BRAZIL_PANEL": _path_expr(inputs["panel_composite_humidity"]),
             "MEXICO_PANEL": _path_expr(inputs["mexico_composite_state_day_panel"]),
             "MEXICO_ERA5": _path_expr(inputs["mex_state_day_2015_2023"]),
             "MEXICO_DAILY": _path_expr(inputs["mexico_boundary_daily_counts"]),
@@ -215,7 +218,7 @@ def _rewrite_script(stage: str, relative_path: Path, source: str, workspace: Pat
         replacements = {
             "OUT": _path_expr(workspace / "outputs" / "strict_helper"),
             "SOURCE_WORK": _path_expr(PROCESSED),
-            "BRAZIL_PANEL_PATH": _path_expr(ROOT / "artifacts/processed_inputs/panel_composite_humidity.parquet"),
+            "BRAZIL_PANEL_PATH": _path_expr(inputs["panel_composite_humidity"]),
             "BRAZIL_CLINICAL_PATH": _path_expr(inputs["clinical_code_day_aggregate"]),
             "MEXICO_PANEL_PATH": _path_expr(inputs["mexico_composite_state_day_panel"]),
             "MEXICO_CLINICAL_PATH": _path_expr(inputs["mexico_n20_proced"]),
@@ -228,7 +231,7 @@ def _rewrite_script(stage: str, relative_path: Path, source: str, workspace: Pat
     return source
 
 
-def _prepare(stage: str) -> tuple[Path, dict[str, Any]]:
+def _prepare(stage: str, brazil_panel: Path) -> tuple[Path, dict[str, Any]]:
     workspace = MODEL_WORKSPACE / stage
     workspace.mkdir(parents=True, exist_ok=True)
     copied: list[str] = []
@@ -241,7 +244,7 @@ def _prepare(stage: str) -> tuple[Path, dict[str, Any]]:
         target_path.parent.mkdir(parents=True, exist_ok=True)
         if source_path.suffix == ".py":
             original = source_path.read_text(encoding="utf-8")
-            rewritten = _rewrite_script(stage, relative_path, original, workspace)
+            rewritten = _rewrite_script(stage, relative_path, original, workspace, brazil_panel)
             target_path.write_text(rewritten, encoding="utf-8")
         else:
             shutil.copy2(source_path, target_path)
@@ -249,7 +252,7 @@ def _prepare(stage: str) -> tuple[Path, dict[str, Any]]:
 
     inputs = []
     missing_required = []
-    for item in _input_specs(stage):
+    for item in _input_specs(stage, brazil_panel):
         path = ROOT / item["path"]
         present = path.is_file()
         record = {**item, "exists": present}
@@ -264,20 +267,23 @@ def _prepare(stage: str) -> tuple[Path, dict[str, Any]]:
         if materialized["required"] and not materialized["exists"]:
             missing_required.append(materialized["workspace_path"])
 
-    expected_reassembly = ROOT / "artifacts/processed_inputs/panel_composite_humidity.parquet"
+    selected_panel = ROOT / brazil_panel
     input_inventory = PROCESSED / "inventory.json"
     reassembly_helper = ROOT / "src/data/reassemble.py"
-    if not expected_reassembly.is_file():
+    if not selected_panel.is_file() and brazil_panel == DEFAULT_BRAZIL_PANEL:
         reassembly_note = (
-            "Reassembled panel is not present. If the parts and chunk index are available, "
-            "run `python src/data/reassemble.py` before model execution."
+            "Legacy reassembled panel is not present. If the parts and chunk index are available, "
+            "run python src/data/reassemble.py before model execution."
         )
+    elif not selected_panel.is_file():
+        reassembly_note = f"Selected Brazil panel is not present: {brazil_panel.as_posix()}"
     else:
         reassembly_note = None
 
     manifest: dict[str, Any] = {
         "source_release": "SRR-20261114-C3",
         "stage": stage,
+        "brazil_panel": brazil_panel.as_posix(),
         "mode": "prepare-only",
         "prepared_at_utc": datetime.now(timezone.utc).isoformat(),
         "workspace": workspace.relative_to(ROOT).as_posix(),
@@ -297,11 +303,29 @@ def _prepare(stage: str) -> tuple[Path, dict[str, Any]]:
     return workspace, manifest
 
 
+def _repository_relative_path(raw_path: str) -> Path:
+    candidate = Path(raw_path)
+    resolved = (ROOT / candidate).resolve() if not candidate.is_absolute() else candidate.resolve()
+    try:
+        relative = resolved.relative_to(ROOT.resolve())
+    except ValueError as exc:
+        raise ValueError("--brazil-panel must resolve to a file inside the repository") from exc
+    if not relative.parts:
+        raise ValueError("--brazil-panel must name a file inside the repository")
+    return relative
+
+
 def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Prepare archived service/nonlinear models; execution requires --run."
     )
     parser.add_argument("stage", choices=("service", "nonlinear"), help="model stage to prepare")
+    parser.add_argument(
+        "--brazil-panel",
+        default=DEFAULT_BRAZIL_PANEL.as_posix(),
+        metavar="PATH",
+        help="repository-relative Brazil panel; defaults to the historical v1.0.0 panel",
+    )
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument("--run", action="store_true", help="execute the copied model after complete preflight")
     mode.add_argument("--prepare-only", action="store_true", help="copy, path-map, and preflight without fitting (default)")
@@ -309,8 +333,13 @@ def _parser() -> argparse.ArgumentParser:
 
 
 def main() -> int:
-    args = _parser().parse_args()
-    workspace, manifest = _prepare(args.stage)
+    parser = _parser()
+    args = parser.parse_args()
+    try:
+        brazil_panel = _repository_relative_path(args.brazil_panel)
+    except ValueError as exc:
+        parser.error(str(exc))
+    workspace, manifest = _prepare(args.stage, brazil_panel)
     manifest_path = workspace / "preparation_manifest.json"
     print(f"Prepared {args.stage} workspace: {workspace}")
     print(f"Preparation manifest: {manifest_path}")

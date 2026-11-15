@@ -1,0 +1,44 @@
+{
+  "study_window": "2018-01-01 through 2022-12-31",
+  "six_fits_only": [
+    {
+      "model": "brazil_strict_n20_holiday_lag07",
+      "sample": "Brazil 27 states; strict N20 all admissions; 2018-2022",
+      "formula": "strict_N20 ~ t0 + t1 + t2 + t3 + t4 + t5 + t6 + t7 + holiday | state_year_month_day_of_week",
+      "cluster": "two-way CRV1 by state and date; t inference with df=min(G_state,G_date)-1"
+    },
+    {
+      "model": "mexico_strict_n20_holiday_lag07",
+      "sample": "Mexico 32 states; strict N20 all admissions; ERA5-Land temperature; 2018-2022",
+      "formula": "strict_N20 ~ t0 + t1 + t2 + t3 + t4 + t5 + t6 + t7 + holiday | state_year_month_day_of_week",
+      "cluster": "two-way CRV1 by state and date; t inference with df=min(G_state,G_date)-1"
+    },
+    {
+      "model": "sp_any_drainage_holiday_lag07",
+      "sample": "Brazil health-region days; any drainage outcome; 2018-2022",
+      "formula": "any_drainage ~ t0 + t1 + t2 + t3 + t4 + t5 + t6 + t7 + f0 + f1 + f2 + f3 + f4 + f5 + f6 + f7 + holiday | hrid_year_month_day_of_week",
+      "cluster": "CRV1 by hrid"
+    },
+    {
+      "model": "sp_any_removal_holiday_lag07",
+      "sample": "Brazil health-region days; any removal outcome; 2018-2022",
+      "formula": "any_removal ~ t0 + t1 + t2 + t3 + t4 + t5 + t6 + t7 + f0 + f1 + f2 + f3 + f4 + f5 + f6 + f7 + holiday | hrid_year_month_day_of_week",
+      "cluster": "CRV1 by hrid"
+    },
+    {
+      "model": "broad_urgent_elective_holiday_joint",
+      "sample": "Brazil region days stacked as N20-N23 urgent/elective counts; 2018-2022",
+      "formula": "count ~ C(outcome)*C(group) + C(outcome):holiday | stratum^outcome",
+      "cluster": "CRV1 by hrid"
+    },
+    {
+      "model": "strict_urgent_elective_holiday_joint",
+      "sample": "Brazil region days stacked as strict N20 urgent/elective counts; 2018-2022",
+      "formula": "count ~ C(outcome)*C(group) + C(outcome):holiday | stratum^outcome",
+      "cluster": "CRV1 by hrid"
+    }
+  ],
+  "holiday_covariate": "recurring PUBLIC date or nationwide federal election; country-specific dates in holiday_calendar_dates.csv",
+  "calendar_file": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/run_outputs/holiday/holiday_calendar_dates.csv",
+  "calendar_provenance_file": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/run_outputs/holiday/holiday_calendar_provenance.json"
+}

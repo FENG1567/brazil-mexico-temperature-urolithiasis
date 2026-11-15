@@ -1,0 +1,45 @@
+{
+  "status": "complete",
+  "panel_sha256": "3a69caffabf814bce6f8eea1c587c458050313deed0484d0d99a9208617b8187",
+  "cost_models": [
+    "strict_n20_nominal",
+    "broad_n20_n23_nominal",
+    "strict_n20_ipca_2022"
+  ],
+  "ICU_death": [
+    {
+      "outcome": "n20_severe",
+      "estimator": "fepois",
+      "group": "heat_only",
+      "coef": -0.02933426780073535,
+      "RR_or_pct": 0.9710918054859742,
+      "CI_low": 0.8419883858408693,
+      "CI_high": 1.1199908579976945,
+      "p": 0.6869209742510507,
+      "n": 20463
+    },
+    {
+      "outcome": "n20_severe",
+      "estimator": "fepois",
+      "group": "smoke_only",
+      "coef": 0.03881092866659025,
+      "RR_or_pct": 1.0395739114420444,
+      "CI_low": 0.9167266562866526,
+      "CI_high": 1.1788834871765541,
+      "p": 0.5452502366893417,
+      "n": 20463
+    },
+    {
+      "outcome": "n20_severe",
+      "estimator": "fepois",
+      "group": "composite",
+      "coef": 0.08531717257023233,
+      "RR_or_pct": 1.0890624326561082,
+      "CI_low": 0.8886663826091286,
+      "CI_high": 1.334648193555574,
+      "p": 0.4108880075370265,
+      "n": 20463
+    }
+  ],
+  "legacy_mixed_model_rows_retired": 3
+}

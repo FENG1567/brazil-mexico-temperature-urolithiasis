@@ -1,8 +1,8 @@
 ﻿model,family,outcome,source_rows_before_lag,analysis_rows_after_complete_lag_frame,source_events_full_window,events_after_lag_before_fit,zero_event_strata,zero_event_strata_rows_expected_removed,rows_remaining_after_zero_strata,positive_singleton_strata,positive_singleton_rows_expected_removed,other_solver_dropped_rows_after_zero_strata,model_rows_retained,events_model_retained,G_cluster_1_retained,G_cluster_2_retained,G_intersection_retained,cluster_1,cluster_2,t_df
-brazil_strict_N20_linear,strict_N20,Brazil strict N20,49302,49113,321201.0,320389.0,856,3677,45436,0,0,0,45436,320389.0,27,1819,45436,state,day_id,26
-brazil_strict_N20_spline3df,strict_N20,Brazil strict N20,49302,49113,321201.0,320389.0,856,3677,45436,0,0,0,45436,320389.0,27,1819,45436,state,day_id,26
 mexico_strict_N20_linear,strict_N20,Mexico strict N20,58432,58208,32446.0,32352.0,4372,18818,39390,0,0,0,39390,32352.0,32,1819,39390,state,day_id,31
 mexico_strict_N20_spline3df,strict_N20,Mexico strict N20,58432,58208,32446.0,32352.0,4372,18818,39390,0,0,0,39390,32352.0,32,1819,39390,state,day_id,31
+brazil_strict_N20_linear,strict_N20,Brazil strict N20,49302,49113,321201.0,320389.0,856,3677,45436,0,0,0,45436,320389.0,27,1819,45436,state,day_id,26
+brazil_strict_N20_spline3df,strict_N20,Brazil strict N20,49302,49113,321201.0,320389.0,856,3677,45436,0,0,0,45436,320389.0,27,1819,45436,state,day_id,26
 brazil_primary_linear_temp_fire_two_way,Brazil_primary,Brazil N20-N23 primary,2465550,2462400,1132163.0,1130926.0,227283,980880,1481520,0,0,0,1481520,1130926.0,450,5472,1481520,hrid,day_id,449
 brazil_primary_spline3df_temp_fire_two_way,Brazil_primary,Brazil N20-N23 primary,2465550,2462400,1132163.0,1130926.0,227283,980880,1481520,0,0,0,1481520,1130926.0,450,5472,1481520,hrid,day_id,449
 brazil_primary_same_day_compound_two_way,Brazil_compound,Brazil N20-N23 same-day categories,2465550,2465550,1132163.0,1132163.0,227070,981456,1484094,0,0,0,1484094,1132163.0,450,5479,1484094,hrid,day_id,449

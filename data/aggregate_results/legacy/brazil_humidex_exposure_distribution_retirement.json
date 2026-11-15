@@ -1,0 +1,14 @@
+{
+  "status": "humidex_retired_from_active_descriptive_aggregate",
+  "retired_rows": 0,
+  "legacy_path": "data/aggregate_results/legacy/brazil_humidex_exposure_distribution_legacy.csv",
+  "retirement_reason": "unused raw LAND humidity-index field is not a validated/corrected mean; no manuscript text changed",
+  "refreshed_variables": [
+    "tmean",
+    "tmax",
+    "rh"
+  ],
+  "cohort": "2008–2022 exactly as archived builder",
+  "RH_2023_missingness": "preserved; no imputation or independent hourly-mask claim",
+  "panel_sha256": "3a69caffabf814bce6f8eea1c587c458050313deed0484d0d99a9208617b8187"
+}

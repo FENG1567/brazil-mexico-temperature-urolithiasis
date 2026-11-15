@@ -493,5 +493,93 @@
     "data_level": "Geographic daily analysis panel; no individual hospital records",
     "redistribution_status": "Source-specific reuse terms require author verification before public release",
     "path": "data/processed_inputs/mexico_boundary_daily_counts.csv"
+  },
+  {
+    "name": "panel_composite_humidity_exposure_repaired.parquet",
+    "path": "data/processed_inputs/panel_composite_humidity_exposure_repaired.parquet",
+    "sha256": "b837328e149714d631257aa43eaffbb95506510b6b9275a35a6fd892d977d597",
+    "bytes": 83382645,
+    "rows": 2629800,
+    "columns": [
+      {
+        "name": "hrid",
+        "type": "str"
+      },
+      {
+        "name": "date",
+        "type": "datetime64[us]"
+      },
+      {
+        "name": "year",
+        "type": "int32"
+      },
+      {
+        "name": "K80",
+        "type": "int32"
+      },
+      {
+        "name": "K81",
+        "type": "int32"
+      },
+      {
+        "name": "K85",
+        "type": "int32"
+      },
+      {
+        "name": "N20_N23",
+        "type": "int32"
+      },
+      {
+        "name": "tmean",
+        "type": "float64"
+      },
+      {
+        "name": "tmax",
+        "type": "float64"
+      },
+      {
+        "name": "rh",
+        "type": "float64"
+      },
+      {
+        "name": "fire_pm25",
+        "type": "float64"
+      },
+      {
+        "name": "heat",
+        "type": "int8"
+      },
+      {
+        "name": "smoke",
+        "type": "int8"
+      },
+      {
+        "name": "composite",
+        "type": "int8"
+      },
+      {
+        "name": "cold",
+        "type": "int8"
+      },
+      {
+        "name": "t_p90",
+        "type": "float64"
+      },
+      {
+        "name": "s_p75",
+        "type": "float64"
+      },
+      {
+        "name": "t_p10",
+        "type": "float64"
+      },
+      {
+        "name": "pop",
+        "type": "float64"
+      }
+    ],
+    "source_panel": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/panel_composite_humidity_exposure_repaired.parquet",
+    "source_panel_sha256": "3a69caffabf814bce6f8eea1c587c458050313deed0484d0d99a9208617b8187",
+    "status": "new repaired compact panel; original panel inventory entry retained"
   }
 ]

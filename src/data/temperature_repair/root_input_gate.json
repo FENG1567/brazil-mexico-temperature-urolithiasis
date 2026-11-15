@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "root_authorized": true,
+  "panel_path": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/panel_composite_humidity_exposure_repaired.parquet",
+  "panel_sha256": "3a69caffabf814bce6f8eea1c587c458050313deed0484d0d99a9208617b8187",
+  "authorization": "User authorized bounded exposure repair and directly affected reruns on 2026-11-15.",
+  "scope": "Fixed supplied grid-support temperature mean; verifies recorded inputs and assembly, not independent raw-hourly/population reconstruction.",
+  "rh_scope": "Descriptive reconstruction only; shared RH hourly/grid validity mask not independently verified; no unreported RH-adjusted inference authorized by this gate.",
+  "gates": {
+    "recorded_temperature_eligible_mass": true,
+    "fixed_grid_weight_accounting": true,
+    "temperature_units": true,
+    "source_date_contract": true,
+    "no_missing_contribution_as_zero": true,
+    "unique_region_days": true,
+    "source_identity": true,
+    "full_sum_vs_component_reconciliation": true,
+    "unchanged_outcomes_dates_covariates": true
+  },
+  "input_validation_report": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/input_validation_primary.json",
+  "category_labels_changed": true,
+  "changed_row_counts": {
+    "cold": 1686,
+    "composite": 698,
+    "heat": 2410,
+    "rh": 416404,
+    "t_p10": 444144,
+    "t_p90": 444144,
+    "tmax": 444144,
+    "tmean": 444144
+  }
+}

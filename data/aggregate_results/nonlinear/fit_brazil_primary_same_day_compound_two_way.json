@@ -1,41 +1,41 @@
 {
   "model_key": "brazil_primary_same_day_compound_two_way",
   "code_revision": "nonlinear-m3-20261113-v1",
-  "spec_sha256": "3fa8bf9053d10fb885320f945c7237a069fe79b1857de2b382974f2556d222fa",
+  "spec_sha256": "2c535bf40d615a0ac8ad4043593d7f5b34a272db185a12a3ecd4e6ac80178259",
   "source_hashes": {
-    "work\\revision_20261113\\nonlinear\\prespecified_specification.json": {
-      "bytes": 4655,
-      "sha256": "3fa8bf9053d10fb885320f945c7237a069fe79b1857de2b382974f2556d222fa"
+    "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/run_repo/work/revision_20261113/nonlinear/prespecified_specification.json": {
+      "bytes": 4623,
+      "sha256": "2c535bf40d615a0ac8ad4043593d7f5b34a272db185a12a3ecd4e6ac80178259"
     },
-    "F:\\analysis\\climate_biliary_20261102\\work\\panel_composite_humidity.parquet": {
-      "bytes": 128705609,
-      "sha256": "8791be152c870ab691754e930eeade1b2c82a48d591fc10db963612a61ef2031"
+    "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/panel_composite_humidity_exposure_repaired.parquet": {
+      "bytes": 111014619,
+      "sha256": "3a69caffabf814bce6f8eea1c587c458050313deed0484d0d99a9208617b8187"
     },
-    "F:\\analysis\\climate_biliary_20261102\\work\\mexico_composite_state_day_panel.parquet": {
+    "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/baseline_repo/data/processed_inputs/mexico_composite_state_day_panel.parquet": {
       "bytes": 1023737,
       "sha256": "a1ff9a0cf41d8d332ef258df0fd943a6caeb5368bfcbdcf815af9f8a32b39507"
     },
-    "D:\\数据库集合\\新增数据\\ERA5_crossnational\\mex_state_day_2015_2023.csv": {
+    "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/baseline_repo/data/processed_inputs/mex_state_day_2015_2023.csv": {
       "bytes": 3046204,
       "sha256": "86c29713eff4de30501af92fcb06e16b78160eaab1188d81ee4f53137ecca565"
     },
-    "outputs\\upgrade_20261112\\mexico_boundary_daily_counts.csv": {
+    "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/baseline_repo/data/processed_inputs/mexico_boundary_daily_counts.csv": {
       "bytes": 2396026,
       "sha256": "324562604a3aa43245b85e6cbce4bd366b76e04eeaafa9eb286b896f335c6fb7"
     },
-    "outputs\\upgrade_20261112\\holiday_calendar_dates.csv": {
+    "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/baseline_repo/data/aggregate_results/sensitivity_results/holiday_calendar_dates.csv": {
       "bytes": 8545,
       "sha256": "81cc89846d36546ccdba3ef46f68d4bc0c35f9ec7b3d72613137c7a73a46579d"
     },
-    "work\\frozen_snapshot\\tables\\n20_composite_continuous_lag.csv": {
-      "bytes": 798,
-      "sha256": "ab98033afc74f8fcf56d2919290255c664a9d82b0e9dd9086a98db35f2882e86"
+    "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/baseline_repo/data/aggregate_results/alternative_model_results/n20_composite_continuous_lag.csv": {
+      "bytes": 764,
+      "sha256": "104d0ad09daf7cb4a208dc9c12be2506c02a25b3025267d0357cb34665b051a1"
     },
-    "work\\frozen_snapshot\\tables\\n20_composite_groups_corrected.csv": {
+    "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/baseline_repo/data/aggregate_results/alternative_model_results/n20_composite_groups_corrected.csv": {
       "bytes": 653,
       "sha256": "86d230b15be1b68b925855f22a7b97792a4de7a58b031abf8317755bb71cca88"
     },
-    "work\\upgrade_20261112\\clinical_code_day_aggregate.parquet": {
+    "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/run_repo/work/upgrade_20261112/clinical_code_day_aggregate.parquet": {
       "bytes": 3446417,
       "sha256": "30b614eefbf492409022ae8f3449ef739c38deb553b07b75aa42c899772369c6"
     }
@@ -54,33 +54,33 @@
     "both"
   ],
   "coefficients": [
-    0.021163756832288085,
-    0.015406227126895138,
-    0.06537645169833199
+    0.020366366389119206,
+    0.015335789624563482,
+    0.06604114927958799
   ],
   "covariance": [
     [
-      6.453315292724471e-05,
-      2.392366613101328e-06,
-      1.2104431238130322e-05
+      6.6071136344906e-05,
+      2.7775513858453275e-06,
+      1.0808878637141877e-05
     ],
     [
-      2.392366613101328e-06,
-      1.7560463822763045e-05,
-      1.2147612456085893e-05
+      2.7775513858453275e-06,
+      1.7614722394811868e-05,
+      1.2023241633499322e-05
     ],
     [
-      1.2104431238130322e-05,
-      1.2147612456085893e-05,
-      6.590789631231872e-05
+      1.0808878637141877e-05,
+      1.2023241633499322e-05,
+      6.451437326022278e-05
     ]
   ],
   "eigenvalues": [
-    1.4675322291398948e-05,
-    5.415195675613658e-05,
-    7.917423401479096e-05
+    1.471153344541634e-05,
+    5.5565299678820646e-05,
+    7.792339887570363e-05
   ],
-  "max_abs_asymmetry": 3.3881317890172014e-21,
+  "max_abs_asymmetry": 1.6940658945086007e-21,
   "analysis_rows": 2465550,
   "model_rows": 1484094,
   "events_model": 1132163.0,
@@ -88,6 +88,7 @@
   "clusters_2": 5479,
   "clusters_intersection": 1484094,
   "t_df": 449,
+  "fit_seconds": 12.046,
   "sample_flow": {
     "model": "brazil_primary_same_day_compound_two_way",
     "family": "Brazil_compound",

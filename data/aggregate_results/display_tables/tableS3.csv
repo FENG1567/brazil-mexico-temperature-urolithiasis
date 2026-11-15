@@ -1,0 +1,8 @@
+"Country and endpoint","Population and record source","Code definition","Full-window records in the final analysis"
+"Brazil: drainage/stent-related","Urgent strict N20; main-operation and/or SP detail record","0409010103, 0409010162, 0409010170, 0409010278, 0409010286, 0409010294","84,764"
+"Brazil: stone extraction/lithotripsy-related","Urgent strict N20; main-operation and/or SP detail record","0309030102, 0309030110, 0309030129, 0309030137, 0409010146, 0409010154, 0409010189, 0409010227, 0409010235, 0409010316, 0409010391, 0409010561, 0409010596","71,833"
+"Mexico: nephrostomy","Strict N20; PROMED","5502, 5503, 5504","1,760"
+"Mexico: ureteral catheterization","Strict N20; PROMED","598X","3,313"
+"Mexico: urinary stone fragmentation/lithotripsy","Strict N20; PROMED","5504, 5995, 9851","2,107"
+"Mexico: any recorded surgery","Strict N20; any TIPO=Q row","Surgery flag, not a code-specific endpoint","10,498"
+"Mexico: no recorded TIPO=Q surgery","Strict N20; no TIPO=Q row","Complement of the recorded surgery flag","21,948"

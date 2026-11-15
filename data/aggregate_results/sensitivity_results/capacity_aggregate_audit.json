@@ -1,0 +1,47 @@
+{
+  "clinical_source": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/baseline_repo/data/processed_inputs/clinical_code_day_aggregate.parquet",
+  "clinical_aggregate_rows_total": 387795,
+  "endpoint_definition": "IDENT='1' AND diagnosis='N20' AND CAR_INT='02'; admissions summed by health-region/date",
+  "eligible_rows_with_date_in_2018_2022": 201138,
+  "eligible_events_in_window_before_region_date_exclusions": 226402.0,
+  "eligible_missing_region_events_in_window": 0.0,
+  "eligible_missing_date_events_all_periods": 0.0,
+  "eligible_unknown_region_events_in_window": 0.0,
+  "analysis_events_after_region_date_link": 226402,
+  "analysis_days_with_events": 147285,
+  "analysis_rows": 821700,
+  "analysis_regions": 450,
+  "analysis_calendar_days": 1826,
+  "monthly_CNES_rows": 27000,
+  "monthly_CNES_regions": 450,
+  "monthly_CNES_months": 60,
+  "2018_baseline_regions": 450,
+  "baseline_q1_per_100k": 135.1780616818338,
+  "baseline_q2_per_100k": 179.0220625655416,
+  "baseline_capacity_groups": [
+    {
+      "capacity_group": "high",
+      "regions": 150,
+      "region_days": 273900,
+      "events": 96926.0,
+      "days_with_events": 58295
+    },
+    {
+      "capacity_group": "low",
+      "regions": 150,
+      "region_days": 273900,
+      "events": 57838.0,
+      "days_with_events": 40789
+    },
+    {
+      "capacity_group": "mid",
+      "regions": 150,
+      "region_days": 273900,
+      "events": 71638.0,
+      "days_with_events": 48201
+    }
+  ],
+  "monthly_population_within_region_month_unique": true,
+  "monthly_capacity_grand_mean_per_100k": 167.82464786717205,
+  "daily_panel_complete_before_lags": true
+}

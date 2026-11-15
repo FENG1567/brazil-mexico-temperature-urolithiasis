@@ -1,16 +1,16 @@
-Outcome or comparison,Contrast / model,Estimate (95% CI),p / q / sample size / notes
-Brazil urgent strict-N20 admissions,"Heat-only vs neither, holiday + two-way model",RR 1.0505 (1.0254–1.0762),"226,402 input events; 366,584 fitted rows; 450 regions and 1,826 dates"
-Brazil strict-N20 admission-attributed hospital-days,"Heat-only vs neither, holiday + two-way model",RR 1.0513 (1.0070–1.0975),"805,746 input days; 356,593 fitted rows; p=0.0229; 356,593 fitted rows; 805,746 outcome total"
-Brazil strict-N20 total reimbursement,"Heat-only vs neither, holiday + two-way model",RR 1.0364 (1.0035–1.0704),"194,858,997 BRL in December 2022 prices; p=0.0298; 366,584 fitted rows; 194,858,997 outcome total"
-Brazil urgent strict-N20 admissions,"Heat-only vs neither, excluding 2020–2021",RR 1.0283 (0.9942–1.0636),"136,094 input events; interval includes one; p=0.1049; 220,501 fitted rows; 136,094 total"
-Brazil admission-attributed hospital-days,"Heat-only vs neither, excluding 2020–2021",RR 1.0491 (0.9937–1.1075),"497,269 input days; interval includes one; p=0.0832; 215,201 fitted rows; 497,269 total"
-Brazil strict-N20 total reimbursement,"Heat-only vs neither, excluding 2020–2021",RR 1.0188 (0.9727–1.0670),"117,395,551 BRL in December 2022 prices; interval includes one; p=0.4298; 220,501 fitted rows; 117,395,551 total"
-Brazil N20–N23 urgent-to-elective ratio,"Heat-only urgent RR divided by elective RR, holiday + two-way",1.0550 (1.0104–1.1016),"p=0.0153; 431,374 joint input events; p=0.0153; 658,844 fitted rows; 431,374 outcome total"
-Brazil N20–N23 urgent-to-elective ratio,"Same contrast, excluding 2020–2021",1.0664 (1.0081–1.1281),p=0.0251
-Brazil strict-N20 urgent-to-elective ratio,"Heat-only urgent RR divided by elective RR, holiday + two-way",1.0403 (0.9919–1.0911),"p=0.1039; interval includes one; p=0.1039; 543,323 fitted rows; 321,201 outcome total"
-Brazil strict-N20 urgent-to-elective ratio,"Same contrast, excluding 2020–2021",1.0494 (0.9864–1.1163),p=0.1264; interval includes one
-Brazil urgent strict-N20 admissions,Heat-only reclassified as neither; holiday + two-way model,"+871 (parameter interval, 439–1,287)",Difference is 0.38% of the observed five-year input total; conditions on stratum totals
-Brazil admission-attributed hospital-days,Same heat-only reassignment,"+3,158 (402–5,751)",Difference is 0.39% of the observed five-year input total
-Brazil strict-N20 reimbursement,Same heat-only reassignment; December 2022 BRL,"+566,708 (53,636–1,065,941)",Difference is 0.29% of the observed five-year input total
-Brazil urgent strict-N20 bed-days,"Heat-only vs neither, health-region-clustered model",RR 1.0528 (1.0101–1.0973),Health-region-clustered model; calendar-adjusted two-way results are listed separately
-Brazil strict-N20 reimbursement per admission,Conditional geometric mean ratio; December 2022 BRL,0.9971 (0.9740–1.0207),"Positive-cost area-days; not patient-weighted arithmetic mean; p=0.8089; 100,805 fitted rows; 147,285 positive-cost days"
+"Outcome or comparison","Contrast / model","Estimate (95% CI)","p / q / sample size / notes"
+"Brazil urgent strict-N20 admissions","Heat-only vs neither, holiday + two-way model","RR 1.0509 (1.0259–1.0765)","226,402 input events; 366,584 fitted rows; 450 regions and 1,826 dates"
+"Brazil strict-N20 admission-attributed hospital-days","Heat-only vs neither, holiday + two-way model","RR 1.0486 (1.0043–1.0948)","805,746 input days; 356,593 fitted rows; p=0.0312; 356,593 fitted rows; 805,746 outcome total"
+"Brazil strict-N20 total reimbursement","Heat-only vs neither, holiday + two-way model","RR 1.0371 (1.0035–1.0719)","194,858,997 BRL in December 2022 prices; p=0.0303; 366,584 fitted rows; 194,858,997 outcome total"
+"Brazil urgent strict-N20 admissions","Heat-only vs neither, excluding 2020–2021","RR 1.0272 (0.9933–1.0623)","136,094 input events; interval includes one; p=0.1168; 220,501 fitted rows; 136,094 total"
+"Brazil admission-attributed hospital-days","Heat-only vs neither, excluding 2020–2021","RR 1.0428 (0.9874–1.1012)","497,269 input days; interval includes one; p=0.1322; 215,201 fitted rows; 497,269 total"
+"Brazil strict-N20 total reimbursement","Heat-only vs neither, excluding 2020–2021","RR 1.0179 (0.9720–1.0661)","117,395,551 BRL in December 2022 prices; interval includes one; p=0.4500; 220,501 fitted rows; 117,395,551 total"
+"Brazil N20–N23 urgent-to-elective ratio","Heat-only urgent RR divided by elective RR, holiday + two-way","1.0546 (1.0097–1.1015)","p=0.0167; 431,374 joint input events; p=0.0167; 658,844 fitted rows; 431,374 outcome total"
+"Brazil N20–N23 urgent-to-elective ratio","Same contrast, excluding 2020–2021","1.0655 (1.0067–1.1278)","p=0.0286"
+"Brazil strict-N20 urgent-to-elective ratio","Heat-only urgent RR divided by elective RR, holiday + two-way","1.0409 (0.9924–1.0918)","p=0.0997; interval includes one; p=0.0997; 543,323 fitted rows; 321,201 outcome total"
+"Brazil strict-N20 urgent-to-elective ratio","Same contrast, excluding 2020–2021","1.0486 (0.9846–1.1168)","p=0.1395; interval includes one"
+"Brazil urgent strict-N20 admissions","Heat-only reclassified as neither; holiday + two-way model","+881 (parameter interval, 450–1,296)","Difference is 0.39% of the observed five-year input total; conditions on stratum totals"
+"Brazil admission-attributed hospital-days","Same heat-only reassignment","+3,004 (266–5,616)","Difference is 0.37% of the observed five-year input total"
+"Brazil strict-N20 reimbursement","Same heat-only reassignment; December 2022 BRL","+579,066 (55,561–1,094,968)","Difference is 0.30% of the observed five-year input total"
+"Brazil urgent strict-N20 admission-attributed hospital-days","Heat-only vs neither, health-region-clustered model","RR 1.0503 (1.0075–1.0948)","Health-region-clustered model; calendar-adjusted two-way results are listed separately"
+"Brazil strict-N20 reimbursement per admission","Conditional geometric mean ratio; December 2022 BRL","0.9964 (0.9729–1.0205)","Positive-cost area-days; not patient-weighted arithmetic mean; p=0.7698; 100,805 fitted rows; 147,285 positive-cost days"

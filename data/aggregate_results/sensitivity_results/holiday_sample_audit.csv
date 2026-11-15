@@ -1,0 +1,7 @@
+﻿analysis,country,geographies,calendar_rows,unique_dates,events,national_holiday_dates,holiday_geography_days,input_rows_after_lag_warmup
+brazil_strict_n20_holiday_lag07,BR,27,49302,1826,321201.0,49.0,1323,49113
+brazil_strict_n20_holiday_lag07,BR,27,49113,1826,320389.0,,1296,49113
+sp_any_drainage_holiday_lag07,BR,450,818550,1826,84572.0,,21600,818550
+sp_any_removal_holiday_lag07,BR,450,818550,1826,71684.0,,21600,818550
+broad_urgent_elective_holiday_joint,BR,450,1643400,1826,431374.0,,44100,1643400
+strict_urgent_elective_holiday_joint,BR,450,1643400,1826,321201.0,,44100,1643400

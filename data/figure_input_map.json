@@ -27,17 +27,17 @@
   {
     "input": "data/figure_inputs/upgrade/mexico_boundary_audit.json",
     "released_source": "data/aggregate_results/additional_aggregate_results/mexico_boundary_audit.json",
-    "sha256": "87489c4e9d1cb17a14adea64e788e992e2099b7126818c10aeaf1c534699b616"
+    "sha256": "3b6cf7216d3180ff9d51e9e984e2bd74d95cc7785c4522655cbe84aca439db96"
   },
   {
     "input": "data/figure_inputs/upgrade/burden_occupancy_model_results.csv",
     "released_source": "data/aggregate_results/sensitivity_results/burden_occupancy_model_results.csv",
-    "sha256": "ac7f7c8b9e91d4f17e7b654679472ec6bc4ab273c87dbf0b372519ffc32dfdd3"
+    "sha256": "38064a79ac2871c3103cecff22626c2361489113d3b0315081cd8e6d57d4b5a7"
   },
   {
     "input": "data/figure_inputs/upgrade/acute_repair_model_results.csv",
     "released_source": "data/aggregate_results/sensitivity_results/acute_repair_model_results.csv",
-    "sha256": "e602c17e88c81c201397e6c83699353dca4f76e382fce6c123abf35d71cc200b"
+    "sha256": "10fbb527766684fbcc9514eb84aede6968485c392aca2a7abca8a64d2e488730"
   },
   {
     "input": "data/figure_inputs/upgrade/mexico_boundary_model_results.csv",
@@ -52,37 +52,37 @@
   {
     "input": "data/figure_inputs/revision/nonlinear/temperature_and_category_contrasts.csv",
     "released_source": "data/aggregate_results/nonlinear/temperature_and_category_contrasts.csv",
-    "sha256": "3b366e17377892cbaecc5895503ffef60ca33e8abfd56dce72d1fd80ee2bb225"
+    "sha256": "6727f5eaaf7ced0139dc8f710485b12cabadf5826cc9e5d68237aa3a582dfcac"
   },
   {
     "input": "data/figure_inputs/revision/nonlinear/sample_flow.csv",
     "released_source": "data/aggregate_results/nonlinear/sample_flow.csv",
-    "sha256": "ce0733845d1edb2def50587c3036ec5c5ce618e8e4eafd6eee33027c630f2e05"
+    "sha256": "e49a6cffb991d537f3f5c7b5a4ffb1aed655822159501e9101202572e3caee6f"
   },
   {
     "input": "data/figure_inputs/revision/service/results.csv",
     "released_source": "data/aggregate_results/brazil_service_results/results.csv",
-    "sha256": "bbd87d8d623b8d7d6c72dceb0eca5aa30dc7f164d1a363e2badab27433351a5a"
+    "sha256": "bb0f0b02e1c5224d0ddf84f09293be91056c07b47c7f024f67b65aca45a73a35"
   },
   {
     "input": "data/figure_inputs/revision/nonlinear/temperature_curves_psd.csv",
     "released_source": "data/aggregate_results/nonlinear/temperature_curves_psd.csv",
-    "sha256": "6c70a216ee022e724183e37d66fe1d205284aba30139c241086fec1b99393c43"
+    "sha256": "cd67fc8b2889fa3d4342e41d51e46905fcbdf2c1085e6a20dcd94cc1ac750b6a"
   },
   {
     "input": "data/figure_inputs/revision/nonlinear/joint_nonlinearity_tests_psd.csv",
     "released_source": "data/aggregate_results/nonlinear/joint_nonlinearity_tests_psd.csv",
-    "sha256": "7df31796c21a1b9019e12a460461517afe08e139e741552208ab62373220edea"
+    "sha256": "c968c1fd27c3a338f266cf8ec2cf2bc3862d7fffc47f4fbc8b6e129ac3b05e5a"
   },
   {
     "input": "data/figure_inputs/revision/nonlinear/temperature_curves.csv",
     "released_source": "data/aggregate_results/nonlinear/temperature_curves.csv",
-    "sha256": "1ca3257fc1c57356920746870cb99a54066411bd752c7918b74065deeca30b0b"
+    "sha256": "4591b1443f37c0ba6cbd379b0f5bbe77ff0fc5b02a6edecd5da5be2036ae0e87"
   },
   {
     "input": "data/figure_inputs/revision/covariance/brazil_compound_interaction_two_way.csv",
     "released_source": "data/aggregate_results/covariance/brazil_compound_interaction_two_way.csv",
-    "sha256": "adc0200f07c1057aa7fd11f0391063c67389f01a2a67eb9971ec34a3b45ea964"
+    "sha256": "f3cc53d074680feb58ad1b6232c20d7455723bf44927d9112741b24c2cd57d95"
   },
   {
     "input": "data/figure_inputs/revision/covariance/mexico_procedure_covariance_contrasts.csv",
@@ -93,5 +93,12 @@
     "input": "data/figure_inputs/revision/covariance/mexico_procedure_covariance_diagnostics.csv",
     "released_source": "data/aggregate_results/covariance/mexico_procedure_covariance_diagnostics.csv",
     "sha256": "d805957c541f0949cd01004e7558e89b8327001ac0136fdd688ecc21bc217061"
+  },
+  {
+    "input": "data/figure_inputs/revision/brazil_state_harmonized_model_results.csv",
+    "released_source": "../run_outputs/brazil_state/mexico_strict_model_results.csv",
+    "sha256": "82e31a766262860bacf565a1a1c52a9058b5d43d436eaae4beae4957a76a5802",
+    "canonical_aggregate_source": "data/aggregate_results/sensitivity_results/mexico_strict_model_results.csv",
+    "canonical_aggregate_sha256": "58170a1426b62fa490b4d9ae51e7b9b2f57a4d1ab48679aa4c9a7d5994491629"
   }
 ]

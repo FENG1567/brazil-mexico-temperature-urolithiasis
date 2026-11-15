@@ -1,0 +1,1127 @@
+{
+  "status": "complete_current_source_bound_publication_stage",
+  "created_utc": "2026-11-15T15:28:13.836068+00:00",
+  "baseline_repo": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/baseline_repo",
+  "publication_repo": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/publication_repo",
+  "baseline_preserved": true,
+  "baseline_copy_verified_no_hardlink": true,
+  "corrected_panel": {
+    "path": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/panel_composite_humidity_exposure_repaired.parquet",
+    "sha256": "3a69caffabf814bce6f8eea1c587c458050313deed0484d0d99a9208617b8187"
+  },
+  "root_input_gate": {
+    "status": "passed",
+    "root_authorized": true,
+    "scope": "Fixed supplied grid-support temperature mean; verifies recorded inputs and assembly, not independent raw-hourly/population reconstruction.",
+    "rh_scope": "Descriptive reconstruction only; shared RH hourly/grid validity mask not independently verified; no unreported RH-adjusted inference authorized by this gate."
+  },
+  "updated_files": [
+    "data/aggregate_results/alternative_model_results/composite_casecrossover.csv",
+    "data/aggregate_results/alternative_model_results/negative_controls_results.csv",
+    "data/aggregate_results/alternative_model_results/nonlinear_temperature.csv",
+    "data/aggregate_results/brazil_service_results/absolute_service_contrasts.csv",
+    "data/aggregate_results/brazil_service_results/holiday_calendar_used.csv",
+    "data/aggregate_results/brazil_service_results/model_events.csv",
+    "data/aggregate_results/brazil_service_results/model_fits.json",
+    "data/aggregate_results/brazil_service_results/model_summary.csv",
+    "data/aggregate_results/brazil_service_results/results.csv",
+    "data/aggregate_results/brazil_service_results/sample_audit.csv",
+    "data/aggregate_results/brazil_service_results/sampleflow.csv",
+    "data/aggregate_results/covariance/brazil_compound_interaction_two_way.csv",
+    "data/aggregate_results/covariance/compound_K85_K81_K80_N20_casecrossover_full_covariance.json",
+    "data/aggregate_results/descriptive/brazil_exposure_category_support.csv",
+    "data/aggregate_results/descriptive/brazil_exposure_distribution.csv",
+    "data/aggregate_results/display_tables/tableS5C.csv",
+    "data/aggregate_results/display_tables/tableS5D.csv",
+    "data/aggregate_results/display_tables/tableS5E.csv",
+    "data/aggregate_results/legacy/brazil_humidex_exposure_distribution_retirement.json",
+    "data/aggregate_results/main_tables/table2.csv",
+    "data/aggregate_results/nonlinear/analysis_metadata.json",
+    "data/aggregate_results/nonlinear/coefficients.csv",
+    "data/aggregate_results/nonlinear/covariance_diagnostics.csv",
+    "data/aggregate_results/nonlinear/covariance_matrices.json",
+    "data/aggregate_results/nonlinear/covariance_psd_sensitivity.json",
+    "data/aggregate_results/nonlinear/fit_brazil_primary_linear_temp_fire_two_way.json",
+    "data/aggregate_results/nonlinear/fit_brazil_primary_same_day_compound_two_way.json",
+    "data/aggregate_results/nonlinear/fit_brazil_primary_spline3df_temp_fire_two_way.json",
+    "data/aggregate_results/nonlinear/fit_brazil_strict_N20_linear.json",
+    "data/aggregate_results/nonlinear/fit_brazil_strict_N20_spline3df.json",
+    "data/aggregate_results/nonlinear/historical_vs_updated_inference.csv",
+    "data/aggregate_results/nonlinear/joint_nonlinearity_tests.csv",
+    "data/aggregate_results/nonlinear/joint_nonlinearity_tests_psd.csv",
+    "data/aggregate_results/nonlinear/knots_and_percentiles.json",
+    "data/aggregate_results/nonlinear/psd_covariance_diagnostics.csv",
+    "data/aggregate_results/nonlinear/raw_vs_psd_curve_uncertainty.csv",
+    "data/aggregate_results/nonlinear/raw_vs_psd_percentile_uncertainty.csv",
+    "data/aggregate_results/nonlinear/repair_core_rr_old_vs_new.csv",
+    "data/aggregate_results/nonlinear/repair_input_metadata.json",
+    "data/aggregate_results/nonlinear/sample_flow.csv",
+    "data/aggregate_results/nonlinear/source_sample_audit.json",
+    "data/aggregate_results/nonlinear/temperature_and_category_contrasts.csv",
+    "data/aggregate_results/nonlinear/temperature_contrasts_psd.csv",
+    "data/aggregate_results/nonlinear/temperature_curves.csv",
+    "data/aggregate_results/nonlinear/temperature_curves_psd.csv",
+    "data/aggregate_results/sensitivity_results/acute_repair_endpoint_counts.csv",
+    "data/aggregate_results/sensitivity_results/acute_repair_model_results.csv",
+    "data/aggregate_results/sensitivity_results/acute_repair_model_summary.csv",
+    "data/aggregate_results/sensitivity_results/brazil_state_model_summary.csv",
+    "data/aggregate_results/sensitivity_results/brazil_strict_two_way_model_summary.csv",
+    "data/aggregate_results/sensitivity_results/brazil_strict_two_way_repaired_full_covariance.json",
+    "data/aggregate_results/sensitivity_results/burden_occupancy_model_results.csv",
+    "data/aggregate_results/sensitivity_results/capacity_aggregate_audit.json",
+    "data/aggregate_results/sensitivity_results/capacity_categorical_fit.json",
+    "data/aggregate_results/sensitivity_results/capacity_continuous_lag0_7_fit.json",
+    "data/aggregate_results/sensitivity_results/capacity_model_results.csv",
+    "data/aggregate_results/sensitivity_results/capacity_monthly_continuous_fit.json",
+    "data/aggregate_results/sensitivity_results/capacity_run_status.json",
+    "data/aggregate_results/sensitivity_results/capacity_tier_cutpoints.csv",
+    "data/aggregate_results/sensitivity_results/holiday_calendar_dates.csv",
+    "data/aggregate_results/sensitivity_results/holiday_model_coefficients.csv",
+    "data/aggregate_results/sensitivity_results/holiday_model_contrasts.csv",
+    "data/aggregate_results/sensitivity_results/holiday_model_specifications.json",
+    "data/aggregate_results/sensitivity_results/holiday_model_summary.csv",
+    "data/aggregate_results/sensitivity_results/holiday_run_manifest.json",
+    "data/aggregate_results/sensitivity_results/holiday_sample_audit.csv",
+    "data/aggregate_results/sensitivity_results/land_linear_sensitivity.csv",
+    "data/aggregate_results/sensitivity_results/mexico_strict_model_results.csv",
+    "data/aggregate_results/sensitivity_results/mexico_strict_two_way_model_results.csv",
+    "data/aggregate_results/sensitivity_results/new_model_results.csv",
+    "data/aggregate_results/sensitivity_results/occupancy_absolute_service_contrasts.csv",
+    "data/aggregate_results/sensitivity_results/occupancy_boundary_exclusive_fit.json",
+    "data/aggregate_results/sensitivity_results/occupancy_boundary_inclusive_fit.json",
+    "data/aggregate_results/sensitivity_results/occupancy_heat_results.csv",
+    "data/aggregate_results/sensitivity_results/sp_model_results.csv",
+    "data/figure_input_map.json",
+    "data/processed_inputs/inventory.json",
+    "data/processed_inputs/panel_composite_humidity_exposure_repaired.parquet",
+    "data/processed_inputs/panel_repair_input_manifest.json",
+    "src/data/temperature_repair/additional_model_matrix.json",
+    "src/data/temperature_repair/assembly_manifest.json",
+    "src/data/temperature_repair/final_production_exposure_weights.csv",
+    "src/data/temperature_repair/input_validation_primary.json",
+    "src/data/temperature_repair/provenance.json",
+    "src/data/temperature_repair/repair_exposure.py",
+    "src/data/temperature_repair/root_input_gate.json"
+  ],
+  "file_operations": [
+    {
+      "path": "data/aggregate_results/alternative_model_results/negative_controls_results.csv",
+      "operation": "repaired model exact-key merge; unrelated rows retained",
+      "rows": 4
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/occupancy_heat_results.csv",
+      "operation": "repaired model exact-key merge; unrelated rows retained",
+      "rows": 2
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/mexico_strict_model_results.csv",
+      "operation": "repaired model exact-key merge; unrelated rows retained",
+      "rows": 6
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/brazil_state_model_summary.csv",
+      "operation": "repaired model exact-key merge; unrelated rows retained",
+      "rows": 2
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/acute_repair_model_results.csv",
+      "operation": "repaired model exact-key merge; unrelated rows retained",
+      "rows": 31
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/acute_repair_model_summary.csv",
+      "operation": "repaired model exact-key merge; unrelated rows retained",
+      "rows": 16
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/acute_repair_endpoint_counts.csv",
+      "operation": "repaired model exact-key merge; unrelated rows retained",
+      "rows": 32
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/sp_model_results.csv",
+      "operation": "repaired model exact-key merge; unrelated rows retained",
+      "rows": 10
+    },
+    {
+      "path": "data/aggregate_results/brazil_service_results/results.csv",
+      "operation": "service exact-key merge",
+      "rows": 127
+    },
+    {
+      "path": "data/aggregate_results/brazil_service_results/model_summary.csv",
+      "operation": "service exact-key merge",
+      "rows": 16
+    },
+    {
+      "path": "data/aggregate_results/brazil_service_results/sample_audit.csv",
+      "operation": "service exact-key merge",
+      "rows": 16
+    },
+    {
+      "path": "data/aggregate_results/brazil_service_results/model_events.csv",
+      "operation": "service exact-key merge",
+      "rows": 20
+    },
+    {
+      "path": "data/aggregate_results/brazil_service_results/absolute_service_contrasts.csv",
+      "operation": "service exact-key merge",
+      "rows": 6
+    },
+    {
+      "path": "data/aggregate_results/brazil_service_results/sampleflow.csv",
+      "operation": "service exact-key merge",
+      "rows": 37
+    },
+    {
+      "path": "data/aggregate_results/brazil_service_results/holiday_calendar_used.csv",
+      "operation": "service exact-key merge",
+      "rows": 49
+    },
+    {
+      "path": "data/aggregate_results/brazil_service_results/model_fits.json",
+      "operation": "model-keyed JSON upsert",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/burden_occupancy_model_results.csv",
+      "operation": "resident-boundary occupancy exact-key merge",
+      "rows": 16
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/occupancy_absolute_service_contrasts.csv",
+      "operation": "resident-boundary occupancy exact-key merge",
+      "rows": 4
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/occupancy_boundary_inclusive_fit.json",
+      "operation": "copied corrected-input resident-boundary fit metadata",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/occupancy_boundary_exclusive_fit.json",
+      "operation": "copied corrected-input resident-boundary fit metadata",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/holiday_calendar_dates.csv",
+      "operation": "holiday exact-key merge; Mexico rows retained",
+      "rows": 87
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/holiday_model_coefficients.csv",
+      "operation": "holiday exact-key merge; Mexico rows retained",
+      "rows": 65
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/holiday_model_coefficients.csv",
+      "operation": "holiday exact-key merge; Mexico rows retained",
+      "rows": 65
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/holiday_model_contrasts.csv",
+      "operation": "holiday exact-key merge; Mexico rows retained",
+      "rows": 22
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/holiday_model_summary.csv",
+      "operation": "holiday exact-key merge; Mexico rows retained",
+      "rows": 6
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/holiday_sample_audit.csv",
+      "operation": "holiday exact-key merge; Mexico rows retained",
+      "rows": 6
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/holiday_model_specifications.json",
+      "operation": "copied Brazil/SP holiday model metadata; Mexico estimates retained in keyed tables",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/holiday_run_manifest.json",
+      "operation": "copied Brazil/SP holiday model metadata; Mexico estimates retained in keyed tables",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/land_linear_sensitivity.csv",
+      "operation": "copied conditional ERA5-Land support sensitivity",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/new_model_results.csv",
+      "operation": "new2 core conditional-land sensitivity rows for S5E",
+      "rows": 38
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/coefficients.csv",
+      "operation": "corrected Brazil M3 model exact-key merge; Mexico baseline rows retained",
+      "rows": 119
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/covariance_diagnostics.csv",
+      "operation": "corrected Brazil M3 model exact-key merge; Mexico baseline rows retained",
+      "rows": 7
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/historical_vs_updated_inference.csv",
+      "operation": "corrected Brazil M3 model exact-key merge; Mexico baseline rows retained",
+      "rows": 5
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/joint_nonlinearity_tests.csv",
+      "operation": "corrected Brazil M3 model exact-key merge; Mexico baseline rows retained",
+      "rows": 3
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/sample_flow.csv",
+      "operation": "corrected Brazil M3 model exact-key merge; Mexico baseline rows retained",
+      "rows": 7
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/temperature_and_category_contrasts.csv",
+      "operation": "corrected Brazil M3 model exact-key merge; Mexico baseline rows retained",
+      "rows": 19
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/temperature_curves.csv",
+      "operation": "corrected Brazil M3 model exact-key merge; Mexico baseline rows retained",
+      "rows": 300
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/fit_brazil_primary_linear_temp_fire_two_way.json",
+      "operation": "copied corrected-input Brazil fit checkpoint",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/fit_brazil_strict_N20_linear.json",
+      "operation": "copied corrected-input Brazil fit checkpoint",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/fit_brazil_strict_N20_spline3df.json",
+      "operation": "copied corrected-input Brazil fit checkpoint",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/fit_brazil_primary_same_day_compound_two_way.json",
+      "operation": "copied corrected-input Brazil fit checkpoint",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/fit_brazil_primary_spline3df_temp_fire_two_way.json",
+      "operation": "copied corrected-input Brazil fit checkpoint",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/covariance_matrices.json",
+      "operation": "model-keyed JSON upsert",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/knots_and_percentiles.json",
+      "operation": "Brazil-only nested JSON upsert",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/source_sample_audit.json",
+      "operation": "Brazil-only nested JSON upsert",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/repair_input_metadata.json",
+      "operation": "new corrected-input provenance metadata",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/analysis_metadata.json",
+      "operation": "added corrected-input model provenance while preserving baseline metadata",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/psd_covariance_diagnostics.csv",
+      "operation": "Brazil spline exact-key merge; Mexico baseline rows retained",
+      "rows": 3
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/joint_nonlinearity_tests_psd.csv",
+      "operation": "Brazil spline exact-key merge; Mexico baseline rows retained",
+      "rows": 3
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/temperature_curves_psd.csv",
+      "operation": "Brazil spline exact-key merge; Mexico baseline rows retained",
+      "rows": 300
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/temperature_contrasts_psd.csv",
+      "operation": "Brazil spline exact-key merge; Mexico baseline rows retained",
+      "rows": 12
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/raw_vs_psd_curve_uncertainty.csv",
+      "operation": "Brazil spline exact-key merge; Mexico baseline rows retained",
+      "rows": 300
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/raw_vs_psd_percentile_uncertainty.csv",
+      "operation": "Brazil spline exact-key merge; Mexico baseline rows retained",
+      "rows": 12
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/covariance_psd_sensitivity.json",
+      "operation": "model-keyed JSON upsert",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/descriptive/brazil_exposure_distribution.csv",
+      "operation": "Brazil tmean/RH distribution exact-key refresh; prior cohort retained",
+      "rows": 80
+    },
+    {
+      "path": "data/aggregate_results/descriptive/brazil_exposure_category_support.csv",
+      "operation": "Brazil category support exact-key refresh from repaired panel",
+      "rows": 4
+    },
+    {
+      "path": "data/aggregate_results/nonlinear/repair_core_rr_old_vs_new.csv",
+      "operation": "old/new core RR exact-key comparison",
+      "rows": 3
+    },
+    {
+      "path": "data/figure_input_map.json",
+      "operation": "updated only figure map entries with refreshed mapped sources",
+      "rows": 19
+    },
+    {
+      "path": "src/data/temperature_repair/final_production_exposure_weights.csv",
+      "operation": "copied fixed-grid production weight table",
+      "rows": null
+    },
+    {
+      "path": "src/data/temperature_repair/repair_exposure.py",
+      "operation": "copied panel repair source code",
+      "rows": null
+    },
+    {
+      "path": "src/data/temperature_repair/assembly_manifest.json",
+      "operation": "copied source assembly manifest; raw parts remain private",
+      "rows": null
+    },
+    {
+      "path": "src/data/temperature_repair/input_validation_primary.json",
+      "operation": "copied corrected-panel validation report",
+      "rows": null
+    },
+    {
+      "path": "src/data/temperature_repair/root_input_gate.json",
+      "operation": "copied passed root input gate",
+      "rows": null
+    },
+    {
+      "path": "src/data/temperature_repair/additional_model_matrix.json",
+      "operation": "copied source-bound additional model matrix",
+      "rows": null
+    },
+    {
+      "path": "data/processed_inputs/panel_composite_humidity_exposure_repaired.parquet",
+      "operation": "created compact repaired region-day exposure/count panel",
+      "rows": 2629800
+    },
+    {
+      "path": "data/processed_inputs/inventory.json",
+      "operation": "appended repaired panel inventory record without replacing legacy input",
+      "rows": 7
+    },
+    {
+      "path": "src/data/temperature_repair/provenance.json",
+      "operation": "written corrected-panel and source provenance",
+      "rows": null
+    },
+    {
+      "path": "data/processed_inputs/panel_repair_input_manifest.json",
+      "operation": "bound publication panel manifest to corrected panel SHA",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/descriptive/brazil_exposure_distribution.csv",
+      "operation": "updated only Brazil tmean/tmax/RH distribution; humidex retired",
+      "rows": 64
+    },
+    {
+      "path": "data/aggregate_results/legacy/brazil_humidex_exposure_distribution_retirement.json",
+      "operation": "recorded humidex descriptive retirement",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/alternative_model_results/composite_casecrossover.csv",
+      "operation": "updated Brazil case-crossover categories and full-covariance compound contrasts",
+      "rows": 16
+    },
+    {
+      "path": "data/aggregate_results/covariance/compound_K85_K81_K80_N20_casecrossover_full_covariance.json",
+      "operation": "copied full covariance records for four Brazil category fits",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/covariance/brazil_compound_interaction_two_way.csv",
+      "operation": "refreshed N20 primary two-way interaction from full covariance",
+      "rows": 1
+    },
+    {
+      "path": "data/aggregate_results/alternative_model_results/nonlinear_temperature.csv",
+      "operation": "updated Brazil Q2-Q5 temperature rows; Mexico rows retained",
+      "rows": 10
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/capacity_model_results.csv",
+      "operation": "updated capacity heat interaction rows by exact model/estimand/contrast",
+      "rows": 10
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/capacity_tier_cutpoints.csv",
+      "operation": "refreshed capacity cutpoints by exact capacity group",
+      "rows": 3
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/capacity_aggregate_audit.json",
+      "operation": "copied capacity analysis metadata/checkpoint; no fit executed during publication stage",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/capacity_run_status.json",
+      "operation": "copied capacity analysis metadata/checkpoint; no fit executed during publication stage",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/capacity_categorical_fit.json",
+      "operation": "copied capacity analysis metadata/checkpoint; no fit executed during publication stage",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/capacity_continuous_lag0_7_fit.json",
+      "operation": "copied capacity analysis metadata/checkpoint; no fit executed during publication stage",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/capacity_monthly_continuous_fit.json",
+      "operation": "copied capacity analysis metadata/checkpoint; no fit executed during publication stage",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/mexico_strict_two_way_model_results.csv",
+      "operation": "updated Brazil strict two-way row by exact model/contrast; Mexico retained",
+      "rows": 2
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/brazil_strict_two_way_model_summary.csv",
+      "operation": "staged Brazil strict two-way model summary",
+      "rows": 1
+    },
+    {
+      "path": "data/aggregate_results/sensitivity_results/brazil_strict_two_way_repaired_full_covariance.json",
+      "operation": "copied repaired Brazil strict two-way full covariance",
+      "rows": null
+    },
+    {
+      "path": "data/aggregate_results/display_tables/tableS5C.csv",
+      "operation": "updated exact bound display rows",
+      "rows": 13
+    },
+    {
+      "path": "data/aggregate_results/main_tables/table2.csv",
+      "operation": "updated exact bound display rows",
+      "rows": 3
+    },
+    {
+      "path": "data/aggregate_results/display_tables/tableS5D.csv",
+      "operation": "updated exact bound display rows",
+      "rows": 1
+    },
+    {
+      "path": "data/aggregate_results/display_tables/tableS5E.csv",
+      "operation": "updated exact bound display rows",
+      "rows": 1
+    },
+    {
+      "path": "data/figure_input_map.json",
+      "operation": "refreshed only existing exact source-map entries",
+      "rows": 1
+    }
+  ],
+  "figures_or_document_files_generated": false,
+  "additional_families_pending": [],
+  "outputs": {
+    "aggregate_outputs": {
+      "alternative_model_results/negative_controls_results.csv": {
+        "incoming_rows": 4,
+        "replaced_rows": 4,
+        "legacy_rows_removed": 0,
+        "output_rows": 4
+      },
+      "sensitivity_results/occupancy_heat_results.csv": {
+        "incoming_rows": 2,
+        "replaced_rows": 2,
+        "legacy_rows_removed": 0,
+        "output_rows": 2
+      },
+      "sensitivity_results/mexico_strict_model_results.csv": {
+        "incoming_rows": 2,
+        "replaced_rows": 2,
+        "legacy_rows_removed": 0,
+        "output_rows": 6
+      },
+      "sensitivity_results/brazil_state_model_summary.csv": {
+        "incoming_rows": 2,
+        "replaced_rows": 2,
+        "legacy_rows_removed": 0,
+        "output_rows": 2
+      },
+      "sensitivity_results/acute_repair_model_results.csv": {
+        "incoming_rows": 31,
+        "replaced_rows": 31,
+        "legacy_rows_removed": 0,
+        "output_rows": 31
+      },
+      "sensitivity_results/acute_repair_model_summary.csv": {
+        "incoming_rows": 15,
+        "replaced_rows": 15,
+        "legacy_rows_removed": 0,
+        "output_rows": 16
+      },
+      "sensitivity_results/acute_repair_endpoint_counts.csv": {
+        "incoming_rows": 32,
+        "replaced_rows": 32,
+        "legacy_rows_removed": 0,
+        "output_rows": 32
+      },
+      "sensitivity_results/sp_model_results.csv": {
+        "incoming_rows": 10,
+        "replaced_rows": 10,
+        "legacy_rows_removed": 0,
+        "output_rows": 10
+      },
+      "brazil_service_results/results.csv": {
+        "incoming_rows": 127,
+        "replaced_rows": 127,
+        "legacy_rows_removed": 0,
+        "output_rows": 127
+      },
+      "brazil_service_results/model_summary.csv": {
+        "incoming_rows": 16,
+        "replaced_rows": 16,
+        "legacy_rows_removed": 0,
+        "output_rows": 16
+      },
+      "brazil_service_results/sample_audit.csv": {
+        "incoming_rows": 16,
+        "replaced_rows": 16,
+        "legacy_rows_removed": 0,
+        "output_rows": 16
+      },
+      "brazil_service_results/model_events.csv": {
+        "incoming_rows": 20,
+        "replaced_rows": 20,
+        "legacy_rows_removed": 0,
+        "output_rows": 20
+      },
+      "brazil_service_results/absolute_service_contrasts.csv": {
+        "incoming_rows": 6,
+        "replaced_rows": 6,
+        "legacy_rows_removed": 0,
+        "output_rows": 6
+      },
+      "brazil_service_results/sampleflow.csv": {
+        "incoming_rows": 37,
+        "replaced_rows": 37,
+        "legacy_rows_removed": 0,
+        "output_rows": 37
+      },
+      "brazil_service_results/holiday_calendar_used.csv": {
+        "incoming_rows": 49,
+        "replaced_rows": 49,
+        "legacy_rows_removed": 0,
+        "output_rows": 49
+      },
+      "sensitivity_results/burden_occupancy_model_results.csv (occupancy)": {
+        "incoming_rows": 16,
+        "replaced_rows": 16,
+        "legacy_rows_removed": 0,
+        "output_rows": 16
+      },
+      "sensitivity_results/absolute_service_contrasts.csv (occupancy)": {
+        "incoming_rows": 4,
+        "replaced_rows": 4,
+        "legacy_rows_removed": 0,
+        "output_rows": 4
+      },
+      "sensitivity_results/holiday_calendar_dates.csv": {
+        "incoming_rows": 87,
+        "replaced_rows": 87,
+        "legacy_rows_removed": 0,
+        "output_rows": 87
+      },
+      "sensitivity_results/holiday_model_coefficients.csv": {
+        "incoming_rows": 65,
+        "replaced_rows": 65,
+        "legacy_rows_removed": 0,
+        "output_rows": 65
+      },
+      "sensitivity_results/holiday_model_contrasts.csv": {
+        "incoming_rows": 20,
+        "replaced_rows": 20,
+        "legacy_rows_removed": 0,
+        "output_rows": 22
+      },
+      "sensitivity_results/holiday_model_summary.csv": {
+        "incoming_rows": 5,
+        "replaced_rows": 5,
+        "legacy_rows_removed": 0,
+        "output_rows": 6
+      },
+      "sensitivity_results/holiday_sample_audit.csv": {
+        "incoming_rows": 6,
+        "replaced_rows": 6,
+        "legacy_rows_removed": 0,
+        "output_rows": 6
+      },
+      "land_sensitivity": {
+        "rows": 3,
+        "merge": {
+          "incoming_rows": 3,
+          "replaced_rows": 3,
+          "legacy_rows_removed": 0,
+          "output_rows": 38
+        },
+        "panel_sha256": [
+          "0fe68cce8808df05d607a4d44cfc0d8b7786cfb46a6387b009fec69755e7037e"
+        ],
+        "path": "data/aggregate_results/sensitivity_results/new_model_results.csv"
+      }
+    },
+    "nonlinear": {
+      "updated_brazil_models": [
+        "brazil_primary_linear_temp_fire_two_way",
+        "brazil_primary_same_day_compound_two_way",
+        "brazil_primary_spline3df_temp_fire_two_way",
+        "brazil_strict_N20_linear",
+        "brazil_strict_N20_spline3df"
+      ],
+      "mexico_rows_preserved": true,
+      "repair_metadata": "data/aggregate_results/nonlinear/repair_input_metadata.json"
+    },
+    "psd_sensitivity": {
+      "updated_brazil_models": [
+        "brazil_strict_N20_spline3df",
+        "brazil_primary_spline3df_temp_fire_two_way"
+      ],
+      "psd_curve_rows": 200,
+      "psd_contrast_rows": 8,
+      "psd_tests": 2,
+      "mexico_baseline_rows_retained": true,
+      "procedure_source": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/publication_repo/analysis/work/revision_20261113/nonlinear/matrix_psd_sensitivity.py",
+      "model_fits_recomputed": false
+    },
+    "descriptives": {
+      "distribution": {
+        "incoming_rows": 32,
+        "replaced_rows": 32,
+        "legacy_rows_removed": 0,
+        "output_rows": 80
+      },
+      "category_support": {
+        "incoming_rows": 4,
+        "replaced_rows": 4,
+        "legacy_rows_removed": 0,
+        "output_rows": 4
+      },
+      "cohort_years": "2008-2022, matching archived builder",
+      "rh_2023_nonmissing": 0,
+      "rh_2023_missing": 164250,
+      "rh_scope": "descriptive only; shared hourly/grid validity mask not independently verified",
+      "temperature_scope": "fixed supplied-grid mean incl. recorded ERA5 single-level complement; no new reconstruction"
+    },
+    "core_rr_old_vs_new": {
+      "rows": 3,
+      "path": "data/aggregate_results/nonlinear/repair_core_rr_old_vs_new.csv"
+    },
+    "figure_inputs_refreshed": [
+      {
+        "input": "data/figure_inputs/upgrade/burden_occupancy_model_results.csv",
+        "released_source": "data/aggregate_results/sensitivity_results/burden_occupancy_model_results.csv",
+        "sha256": "38064a79ac2871c3103cecff22626c2361489113d3b0315081cd8e6d57d4b5a7"
+      },
+      {
+        "input": "data/figure_inputs/upgrade/acute_repair_model_results.csv",
+        "released_source": "data/aggregate_results/sensitivity_results/acute_repair_model_results.csv",
+        "sha256": "10fbb527766684fbcc9514eb84aede6968485c392aca2a7abca8a64d2e488730"
+      },
+      {
+        "input": "data/figure_inputs/revision/nonlinear/temperature_and_category_contrasts.csv",
+        "released_source": "data/aggregate_results/nonlinear/temperature_and_category_contrasts.csv",
+        "sha256": "6727f5eaaf7ced0139dc8f710485b12cabadf5826cc9e5d68237aa3a582dfcac"
+      },
+      {
+        "input": "data/figure_inputs/revision/nonlinear/sample_flow.csv",
+        "released_source": "data/aggregate_results/nonlinear/sample_flow.csv",
+        "sha256": "e49a6cffb991d537f3f5c7b5a4ffb1aed655822159501e9101202572e3caee6f"
+      },
+      {
+        "input": "data/figure_inputs/revision/service/results.csv",
+        "released_source": "data/aggregate_results/brazil_service_results/results.csv",
+        "sha256": "bb0f0b02e1c5224d0ddf84f09293be91056c07b47c7f024f67b65aca45a73a35"
+      },
+      {
+        "input": "data/figure_inputs/revision/nonlinear/temperature_curves_psd.csv",
+        "released_source": "data/aggregate_results/nonlinear/temperature_curves_psd.csv",
+        "sha256": "cd67fc8b2889fa3d4342e41d51e46905fcbdf2c1085e6a20dcd94cc1ac750b6a"
+      },
+      {
+        "input": "data/figure_inputs/revision/nonlinear/joint_nonlinearity_tests_psd.csv",
+        "released_source": "data/aggregate_results/nonlinear/joint_nonlinearity_tests_psd.csv",
+        "sha256": "c968c1fd27c3a338f266cf8ec2cf2bc3862d7fffc47f4fbc8b6e129ac3b05e5a"
+      },
+      {
+        "input": "data/figure_inputs/revision/nonlinear/temperature_curves.csv",
+        "released_source": "data/aggregate_results/nonlinear/temperature_curves.csv",
+        "sha256": "4591b1443f37c0ba6cbd379b0f5bbe77ff0fc5b02a6edecd5da5be2036ae0e87"
+      }
+    ]
+  },
+  "additional_families_staged": [
+    "compound K85/K81/K80 and N20 interaction",
+    "Brazil Q2–Q5 temperature",
+    "capacity heat interactions",
+    "Brazil strict two-way temperature"
+  ],
+  "additional_publication": {
+    "status": "complete_for_all_source_bound_additional_families",
+    "created_utc": "2026-11-15T16:01:33.747197+00:00",
+    "source_runs_complete": true,
+    "staged_models": [
+      "compound K85/K81/K80 and N20 interaction",
+      "Brazil Q2–Q5 temperature",
+      "capacity heat interactions",
+      "Brazil strict two-way temperature"
+    ],
+    "source_matrix": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/additional_model_matrix.json",
+    "outputs": {
+      "exposure_distribution": {
+        "cohort": "2008–2022 exactly as archived builder",
+        "refreshed_variables": [
+          "tmean",
+          "tmax",
+          "rh"
+        ],
+        "humidex_rows_retired": 0,
+        "rh_2023_missingness_preserved": true
+      },
+      "compound": {
+        "casecrossover": {
+          "incoming_rows": 16,
+          "replaced_rows": 12,
+          "output_rows": 16
+        },
+        "compound_contrasts": {
+          "K85": {
+            "beta": -0.03975847576955398,
+            "variance": 0.00030793554202497857,
+            "se": 0.01754809226169553,
+            "RR": 0.9610215211078148,
+            "CI_low": 0.9285298625136463,
+            "CI_high": 0.9946501467730713,
+            "p": 0.023470584575663103
+          },
+          "K81": {
+            "beta": -0.0012990920078782935,
+            "variance": 5.756548539653999e-05,
+            "se": 0.007587192194517019,
+            "RR": 0.9987017514468629,
+            "CI_low": 0.983960043740473,
+            "CI_high": 1.0136643196927464,
+            "p": 0.8640494388783406
+          },
+          "K80": {
+            "beta": 0.00815073510670282,
+            "variance": 2.5087941273484373e-05,
+            "se": 0.005008786407253195,
+            "RR": 1.0081840427806021,
+            "CI_low": 0.9983349015656666,
+            "CI_high": 1.018130351371455,
+            "p": 0.10367606858033494
+          },
+          "N20_N23": {
+            "beta": 0.06604114927958768,
+            "variance": 5.164758704736669e-05,
+            "se": 0.007186625567494573,
+            "RR": 1.068270674830248,
+            "CI_low": 1.0533287242059561,
+            "CI_high": 1.0834245838710608,
+            "p": 3.948484291779356e-20
+          }
+        },
+        "bh_q_three_disease_only": {
+          "K85": 0.07041175372698931,
+          "K81": 0.8640494388783407,
+          "K80": 0.1555141028705024
+        },
+        "primary_n20_two_way_contrasts": {
+          "heat_only_vs_neither": {
+            "beta": 0.020366366389119206,
+            "variance": 6.6071136344906e-05,
+            "se": 0.00812841536493467,
+            "RR": 1.0205751759841595,
+            "CI_low": 1.004401563424631,
+            "CI_high": 1.0370092279463645,
+            "p": 0.012578127572855794
+          },
+          "smoke_only_vs_neither": {
+            "beta": 0.015335789624563482,
+            "variance": 1.7614722394811868e-05,
+            "se": 0.004196989682476223,
+            "RR": 1.0154539862863523,
+            "CI_low": 1.007112784055116,
+            "CI_high": 1.0238642727907346,
+            "p": 0.0002886842768482664
+          },
+          "compound_vs_neither": {
+            "beta": 0.06604114927958799,
+            "variance": 6.451437326022278e-05,
+            "se": 0.008032083992353589,
+            "RR": 1.0682706748302482,
+            "CI_low": 1.0515402605400013,
+            "CI_high": 1.0852672765151457,
+            "p": 2.169529117396817e-15
+          },
+          "multiplicative_interaction": {
+            "beta": 0.0303389932659053,
+            "variance": 0.0001080910942303489,
+            "se": 0.01039668669482489,
+            "RR": 1.03080391031612,
+            "CI_low": 1.0099560201597115,
+            "CI_high": 1.0520821504237126,
+            "p": 0.0036980651952609224
+          }
+        },
+        "primary_n20_covariance_source": "run_outputs/nonlinear/fit_brazil_primary_same_day_compound_two_way.json",
+        "one_way_n20_not_substituted_for_two_way": true
+      },
+      "q5_and_capacity": {
+        "q5_rows": {
+          "incoming_rows": 4,
+          "replaced_rows": 4,
+          "output_rows": 10
+        },
+        "q5_values": [
+          {
+            "quintile": 2,
+            "RR": 1.0190337187829839,
+            "CI_low": 1.0111277294560317,
+            "CI_high": 1.0270015248966953,
+            "p": 2.0867572574885766e-06
+          },
+          {
+            "quintile": 3,
+            "RR": 1.037208161076605,
+            "CI_low": 1.0267966919911167,
+            "CI_high": 1.0477251999300559,
+            "p": 1.2708210452113664e-12
+          },
+          {
+            "quintile": 4,
+            "RR": 1.0625325405701607,
+            "CI_low": 1.0492560937024353,
+            "CI_high": 1.075976976971127,
+            "p": 3.23305210839606e-21
+          },
+          {
+            "quintile": 5,
+            "RR": 1.0942151459701213,
+            "CI_low": 1.0752098398216179,
+            "CI_high": 1.1135563880898374,
+            "p": 7.361272425371783e-24
+          }
+        ],
+        "capacity_rows": {
+          "incoming_rows": 10,
+          "replaced_rows": 10,
+          "output_rows": 10
+        },
+        "capacity_cutpoints": {
+          "incoming_rows": 3,
+          "replaced_rows": 3,
+          "output_rows": 3
+        }
+      },
+      "strict_two_way": {
+        "model_rows": {
+          "incoming_rows": 1,
+          "replaced_rows": 1,
+          "output_rows": 2
+        },
+        "summary": {
+          "incoming_rows": 1,
+          "replaced_rows": 0,
+          "output_rows": 1
+        },
+        "model": "brazil_population_weighted_panel_temperature_strict_N20_lag07_two_way",
+        "RR": 1.0124776095298818,
+        "CI_low_t": 1.0059356128214105,
+        "CI_high_t": 1.0190621514275162,
+        "p_t": 0.0005578936443775071,
+        "input_panel_sha256": "3a69caffabf814bce6f8eea1c587c458050313deed0484d0d99a9208617b8187"
+      },
+      "display_tables": {
+        "tableS5C_rows_updated": 13,
+        "main_table2_rows_updated": 3,
+        "tableS5D_rows_updated": 1,
+        "tableS5E_rows_updated": 1
+      },
+      "additional_source_matrix_sha256": "820ff2d5d3db8530e6054725396b073cc6717d5df9899e0d1f53a636597b080b",
+      "corrected_input_validation_sha256": "5544a040d29edf193307ac3c70bf1fa0786c5c89270337b115660941a9d9771b"
+    },
+    "figure_inputs_refreshed": [
+      {
+        "released_source": "data/aggregate_results/covariance/brazil_compound_interaction_two_way.csv",
+        "input": "data/figure_inputs/revision/covariance/brazil_compound_interaction_two_way.csv",
+        "sha256": "f3cc53d074680feb58ad1b6232c20d7455723bf44927d9112741b24c2cd57d95"
+      }
+    ],
+    "input_provenance": {
+      "compact_panel": {
+        "name": "panel_composite_humidity_exposure_repaired.parquet",
+        "path": "data/processed_inputs/panel_composite_humidity_exposure_repaired.parquet",
+        "sha256": "b837328e149714d631257aa43eaffbb95506510b6b9275a35a6fd892d977d597",
+        "bytes": 83382645,
+        "rows": 2629800,
+        "columns": [
+          {
+            "name": "hrid",
+            "type": "str"
+          },
+          {
+            "name": "date",
+            "type": "datetime64[us]"
+          },
+          {
+            "name": "year",
+            "type": "int32"
+          },
+          {
+            "name": "K80",
+            "type": "int32"
+          },
+          {
+            "name": "K81",
+            "type": "int32"
+          },
+          {
+            "name": "K85",
+            "type": "int32"
+          },
+          {
+            "name": "N20_N23",
+            "type": "int32"
+          },
+          {
+            "name": "tmean",
+            "type": "float64"
+          },
+          {
+            "name": "tmax",
+            "type": "float64"
+          },
+          {
+            "name": "rh",
+            "type": "float64"
+          },
+          {
+            "name": "fire_pm25",
+            "type": "float64"
+          },
+          {
+            "name": "heat",
+            "type": "int8"
+          },
+          {
+            "name": "smoke",
+            "type": "int8"
+          },
+          {
+            "name": "composite",
+            "type": "int8"
+          },
+          {
+            "name": "cold",
+            "type": "int8"
+          },
+          {
+            "name": "t_p90",
+            "type": "float64"
+          },
+          {
+            "name": "s_p75",
+            "type": "float64"
+          },
+          {
+            "name": "t_p10",
+            "type": "float64"
+          },
+          {
+            "name": "pop",
+            "type": "float64"
+          }
+        ],
+        "source_panel": "/data/admin/fengshuo/climate_biliary_temperature_repair_20261115/results/panel_composite_humidity_exposure_repaired.parquet",
+        "source_panel_sha256": "3a69caffabf814bce6f8eea1c587c458050313deed0484d0d99a9208617b8187",
+        "status": "new repaired compact panel; original panel inventory entry retained"
+      },
+      "fixed_grid_weights_sha256": "2c5311c83064aa9ea4845f941163ad508d7a91305807247290549b26eeda51ae",
+      "repair_code_sha256": "6f74e28a61a6944e8a85eb5557b84ee90d9fc606b226dfbe9f02626ad55a5a11",
+      "assembly_manifest_sha256": "bae568a58996400c7b62d858445acbb0f597c391300e3b8f13bdfeb6c45e6cf5",
+      "validation_report_sha256": "5544a040d29edf193307ac3c70bf1fa0786c5c89270337b115660941a9d9771b",
+      "additional_model_matrix_sha256": "820ff2d5d3db8530e6054725396b073cc6717d5df9899e0d1f53a636597b080b",
+      "provenance_path": "src/data/temperature_repair/provenance.json",
+      "private_weather_staged": false
+    },
+    "no_fits_or_figures_during_publication_stage": true,
+    "primary_n20_covariance_note": "Main Table 2/S5C use the repaired primary two-way HR/date covariance; the one-way case-crossover N20 rows are retained only in their own sensitivity aggregate.",
+    "paf": "No PAF calculated or displayed.",
+    "current_metadata_hashes": {
+      "data/aggregate_results/additional_publication_staging_checkpoint.json": "5b18fbde8eecc7cf448f2c597bbfd45999d400bb48d4d29d48761ae5a287b1f7",
+      "data/aggregate_results/alternative_model_results/composite_casecrossover.csv": "af9cb174958b6c3763683eeb8845c934ec74c4b47a5a916f279f7d6df437b17a",
+      "data/aggregate_results/alternative_model_results/nonlinear_temperature.csv": "391ebc125a339f3a240e67069cf846a11088a52db70c96208a7e9fd4d1ae5a70",
+      "data/aggregate_results/covariance/brazil_compound_interaction_two_way.csv": "f3cc53d074680feb58ad1b6232c20d7455723bf44927d9112741b24c2cd57d95",
+      "data/aggregate_results/covariance/compound_K85_K81_K80_N20_casecrossover_full_covariance.json": "54d097e54e8ad88ce20637857abd02d9fa435a59a7e87682524af72926ed9fea",
+      "data/aggregate_results/descriptive/brazil_exposure_distribution.csv": "4b6e40d5152f807c71418d4cee7c4ec31f46df3b804a8e9e4d72ac6819459334",
+      "data/aggregate_results/display_tables/tableS5C.csv": "026046af2e1c1388560cffdfee7d61b50f4ccdb6eeeed19691eeb145fb1baf7d",
+      "data/aggregate_results/display_tables/tableS5D.csv": "f60b3cafba79cf84548361ebc5f753b63b23fe08313e792a2e9a7d8c933bf61e",
+      "data/aggregate_results/display_tables/tableS5E.csv": "4c6a21b96d0435d1686b982cc74aac203c3bb693be0802d7f96f4e59811c1646",
+      "data/aggregate_results/legacy/brazil_humidex_exposure_distribution_retirement.json": "d2db3de0057a607a827634fa41b9b2fe47e1a5d322d6d2c1f2276026d2b6fd60",
+      "data/aggregate_results/main_tables/table2.csv": "4f840c6441c3078054cf7e7c1cb70793d444b1761c7190a6b3066b3bc1fd9d4d",
+      "data/aggregate_results/repair_aggregate_changes_summary.json": "93d3ac79133dc2023240c79060d5be5c85fabf7fb979e65fa3ddbc70619f0343",
+      "data/aggregate_results/sensitivity_results/brazil_strict_two_way_model_summary.csv": "6ee1a9d8eb08ead60fcef4cebc87ec70356aaeee1a84f5d3a60438923d162fc5",
+      "data/aggregate_results/sensitivity_results/brazil_strict_two_way_repaired_full_covariance.json": "d3b75c57dac1bc3b9391322f448b9e3470158e939e47feef910265949d11ef95",
+      "data/aggregate_results/sensitivity_results/capacity_aggregate_audit.json": "12264d804c22a340f153525096befb9e1e4af78d6331e31382a6d79bd89a53b7",
+      "data/aggregate_results/sensitivity_results/capacity_categorical_fit.json": "c766d07711590422da1631061117c854885538259322da752f31ca6e8ecc164e",
+      "data/aggregate_results/sensitivity_results/capacity_continuous_lag0_7_fit.json": "bda22ce73dca08a2e8991407e1745eb8575546c08149ab970156f3f8ebc48762",
+      "data/aggregate_results/sensitivity_results/capacity_model_results.csv": "d60ba35d1c8e70187ad4a7aeaa91c8fe65fca48d5f19e8c4074024fa73382374",
+      "data/aggregate_results/sensitivity_results/capacity_monthly_continuous_fit.json": "6aa934a27a13743a8e4c6733b46fb67fbc4616edefa38406c0eba04684d7adbe",
+      "data/aggregate_results/sensitivity_results/capacity_run_status.json": "f746e544da633cb542c3a0fe4ad09d621bd4ca96712e0a5c6ce8f6c7c67c0c6b",
+      "data/aggregate_results/sensitivity_results/capacity_tier_cutpoints.csv": "f4bd9a22215a3f9d21932380e03a9c46d1cbc67563b4313b6c49b0d660162834",
+      "data/aggregate_results/sensitivity_results/mexico_strict_two_way_model_results.csv": "db48ed38eebfb41b8ed9d112fb2fa29aaf3f849da094972463168781b38309f9",
+      "data/figure_input_map.json": "acc9cb31ed88b60938e302ee1b9e26533a0b8f9781dbe259ce4f8ed4d1302980",
+      "data/processed_inputs/inventory.json": "c9353491dd7fc16495d87ebec974ff89cb8ae4244667a53a700239db2e697386",
+      "data/processed_inputs/panel_composite_humidity_exposure_repaired.parquet": "b837328e149714d631257aa43eaffbb95506510b6b9275a35a6fd892d977d597",
+      "data/processed_inputs/panel_repair_input_manifest.json": "011621f0f47d95b7aafeb5f58d5fa1dcd544cd9aaf66c562f0426190f04904b9",
+      "src/data/temperature_repair/additional_model_matrix.json": "820ff2d5d3db8530e6054725396b073cc6717d5df9899e0d1f53a636597b080b",
+      "src/data/temperature_repair/assembly_manifest.json": "bae568a58996400c7b62d858445acbb0f597c391300e3b8f13bdfeb6c45e6cf5",
+      "src/data/temperature_repair/final_production_exposure_weights.csv": "2c5311c83064aa9ea4845f941163ad508d7a91305807247290549b26eeda51ae",
+      "src/data/temperature_repair/input_validation_primary.json": "5544a040d29edf193307ac3c70bf1fa0786c5c89270337b115660941a9d9771b",
+      "src/data/temperature_repair/provenance.json": "bcfb3efbb7052067f1ef46bb1ea01e6e26ebfbbcb69efeb46b098a20c0d5b669",
+      "src/data/temperature_repair/repair_exposure.py": "6f74e28a61a6944e8a85eb5557b84ee90d9fc606b226dfbe9f02626ad55a5a11",
+      "src/data/temperature_repair/root_input_gate.json": "9ac11fbf92135a2975d3d30b5602af751970fa6eeece7cb69899b4bcfb4b3db2"
+    }
+  }
+}
